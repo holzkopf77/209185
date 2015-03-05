@@ -5,5 +5,5 @@
 
 int main()
 {
-
+	std::cout << "Hi folks.";
 }
