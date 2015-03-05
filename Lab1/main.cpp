@@ -6,4 +6,6 @@
 int main()
 {
 	std::cout << "Hi folks.";
+	std::cin.get();
+
 }
