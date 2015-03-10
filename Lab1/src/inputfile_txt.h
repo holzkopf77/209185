@@ -10,6 +10,8 @@
 #include <vector>
 #include <cstdio>
 #include <cassert>
+#include <ctime>
+#include <random>
 
 #include <boost/algorithm/string/erase.hpp>
 /*! \class InputFiles
@@ -50,5 +52,12 @@ class InputFiles {
 		int filesNumber;
 		std::vector<std::string>filesNamesTab;
 		std::vector<int>filesSizes;
-};
+
+		//! Create random integers data into files
+		/*
+			 Generating random integers data (size from filesSizes vector)
+			 and putting them into files (names from filesNamesTab)
+		*/
+		void GenerateRandomIntData();
+};	
 #endif
