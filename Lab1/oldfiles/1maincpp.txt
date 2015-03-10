@@ -1,0 +1,30 @@
+﻿using std::cout;
+	using std::endl;
+	using std::cin;
+	using std::mt19937;
+	using std::uniform_int_distribution;
+
+	//Boost cast for integer type
+	int tabSize = boost::lexical_cast<int>(argv[1]);
+	int* intTable = new int[tabSize];
+	int seedGen = time(NULL);
+	int Counter = 0;
+	mt19937 randomNumbr(seedGen);
+
+	//Number from 0 to argument from console
+	uniform_int_distribution<>range(0, 1);
+
+	//Start measure time
+	boost::timer::auto_cpu_timer t;
+	for (Counter; Counter < tabSize; Counter++)
+	{
+		intTable[Counter] = range(randomNumbr);
+	}
+	
+	#include <iostream>
+#include <ctime>
+#include <random>
+#include <typeinfo>
+
+#include <boost\timer\timer.hpp>
+#include <boost\lexical_cast.hpp>
