@@ -9,6 +9,9 @@
 #include <fstream>
 #include <vector>
 #include <cstdio>
+#include <cassert>
+
+#include <boost/algorithm/string/erase.hpp>
 /*! \class InputFiles
 
 	Making an object which contain text files with 
@@ -39,6 +42,9 @@ class InputFiles {
 		InputFiles(int filNr, std::vector<int>filSiz);
 
 		//! Show info about files
+		/*!
+			Display: number of files, names of files, sizes of files
+		*/
 		void show_info();
 	private:
 		int filesNumber;

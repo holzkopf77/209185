@@ -1,14 +1,17 @@
+#include <cstdio>
+#include <iostream>
+
 #include "inputfile_txt.h"
 
 int main(int argc, char* argv[])
 {
-	std::vector<int>Sizes;
-	Sizes.push_back(10);
-	Sizes.push_back(2);
-	Sizes.push_back(3);
-	Sizes.push_back(4);
-	Sizes.push_back(41);
+	//! Container for sizes from command prompt
+	std::vector<int>FilesSizes;
 
-	InputFiles newFilesList(5, Sizes);
+	//! First argument is a name of the program so i = 1
+	for (int i = 1; i < argc ; i++)
+		FilesSizes.push_back(atoi(argv[i]));
+
+	InputFiles newFilesList(argc, FilesSizes);
 	newFilesList.show_info();
 }
