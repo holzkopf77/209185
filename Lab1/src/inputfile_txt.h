@@ -28,16 +28,21 @@ class InputFiles {
 		
 		//! A constructor
 		/*!
-			Adding number of files(1);
-			Generating files names(1);
+			Adding number of files;
+			Generating files names;
+			Adding sizes of files;
+			Parameters inherit from list of arguments from command prompt
+
+			\param filNr number of files
+			\param filSiz sizes of files
 		*/
 		InputFiles(int filNr, std::vector<int>filSiz);
 
 		//! Show info about files
-		std::string show_info();
+		void show_info();
 	private:
 		int filesNumber;
 		std::vector<std::string>filesNamesTab;
-		std::vector<int>filesSize;
+		std::vector<int>filesSizes;
 };
 #endif
