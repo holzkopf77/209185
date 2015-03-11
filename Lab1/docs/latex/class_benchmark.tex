@@ -1,0 +1,62 @@
+\hypertarget{class_benchmark}{}\section{Benchmark Class Reference}
+\label{class_benchmark}\index{Benchmark@{Benchmark}}
+
+
+{\ttfamily \#include $<$benchmark\+\_\+frm.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_benchmark_a4107fff4e0da31d561fc6109e359b341}{test} (\hyperlink{class_input_files}{Input\+Files} files)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Making a framework for testing inserted data structure. Using time to estimate computational complexity. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_benchmark_a4107fff4e0da31d561fc6109e359b341}{}\index{Benchmark@{Benchmark}!test@{test}}
+\index{test@{test}!Benchmark@{Benchmark}}
+\subsubsection[{test}]{\setlength{\rightskip}{0pt plus 5cm}void Benchmark\+::test (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\+Files}}]{files}
+\end{DoxyParamCaption}
+)}\label{class_benchmark_a4107fff4e0da31d561fc6109e359b341}
+Opening file + making new table with content
+
+Check if file is opened correctly
+
+Testing time here 
+\begin{DoxyCode}
+13                                     \{
+14     \textcolor{keywordtype}{int}* tabForData = NULL;
+15     \textcolor{keywordtype}{int} tempValue = 0;
+16     \textcolor{keywordtype}{int} count = 0;
+17     std::fstream newFile;
+18 
+19     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < files.\hyperlink{class_input_files_a5b1547e90d17d2332daed2203939ce25}{return\_number\_files}() - 
+      \hyperlink{inputfile__txt_8h_ac6795aca310766e1b10d90013aac6d47}{FIRST\_ARGUMENT}; i++)\{
+20         
+22         tabForData = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[files.\hyperlink{class_input_files_ad0bb8456352c7e008315a284d9003086}{return\_file\_size}(i)];
+23         newFile.open((files.\hyperlink{class_input_files_a9867703917e916ceea50b9d7d4b07d2f}{return\_file\_name}(i) + \textcolor{stringliteral}{".txt"}), std::ios::in);
+24         
+26         assert(newFile.is\_open() && (\textcolor{stringliteral}{"I can't open file."}));
+27 
+28         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < files.\hyperlink{class_input_files_ad0bb8456352c7e008315a284d9003086}{return\_file\_size}(i); j++)\{
+29             newFile >> tempValue;
+30             tabForData[j] = tempValue;
+31         \}
+32         newFile.close();
+33 
+35         measureTime(tabForData, files.\hyperlink{class_input_files_ad0bb8456352c7e008315a284d9003086}{return\_file\_size}(i));
+36         \textcolor{keyword}{delete}[] tabForData;
+37         
+38     \}
+39 \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{benchmark__frm_8h}{benchmark\+\_\+frm.\+h}\item 
+src/\hyperlink{benchmark__frm_8cpp}{benchmark\+\_\+frm.\+cpp}\end{DoxyCompactItemize}

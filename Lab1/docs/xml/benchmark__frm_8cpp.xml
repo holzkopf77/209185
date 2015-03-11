@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="benchmark__frm_8cpp" kind="file" language="C++">
+    <compoundname>benchmark_frm.cpp</compoundname>
+    <includes refid="benchmark__frm_8h" local="yes">benchmark_frm.h</includes>
+    <incdepgraph>
+      <node id="12">
+        <label>boost/algorithm/string/erase.hpp</label>
+      </node>
+      <node id="9">
+        <label>cassert</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>benchmark_frm.h</label>
+        <link refid="benchmark__frm_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="0">
+        <label>src/benchmark_frm.cpp</label>
+        <link refid="benchmark_frm.cpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>fstream</label>
+      </node>
+      <node id="11">
+        <label>random</label>
+      </node>
+      <node id="8">
+        <label>cstdio</label>
+      </node>
+      <node id="10">
+        <label>ctime</label>
+      </node>
+      <node id="2">
+        <label>vector</label>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="4">
+        <label>boost\timer\timer.hpp</label>
+      </node>
+      <node id="5">
+        <label>inputfile_txt.h</label>
+        <link refid="inputfile__txt_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="2"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="benchmark__frm_8h" kindref="compound">benchmark_frm.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Benchmark::measureTime(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*dataTable,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dataSize){</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::timer::auto_cpu_timer<sp/>t;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>dataSize;<sp/>i++){</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dataTable[i]<sp/>*=<sp/>2;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_benchmark_1a4107fff4e0da31d561fc6109e359b341" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_benchmark_1a4107fff4e0da31d561fc6109e359b341" kindref="member">Benchmark::test</ref>(<ref refid="class_input_files" kindref="compound">InputFiles</ref><sp/>files){</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>tabForData<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tempValue<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>std::fstream<sp/>newFile;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>files.<ref refid="class_input_files_1a5b1547e90d17d2332daed2203939ce25" kindref="member">return_number_files</ref>()<sp/>-<sp/><ref refid="inputfile__txt_8h_1ac6795aca310766e1b10d90013aac6d47" kindref="member">FIRST_ARGUMENT</ref>;<sp/>i++){</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tabForData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">[files.<ref refid="class_input_files_1ad0bb8456352c7e008315a284d9003086" kindref="member">return_file_size</ref>(i)];</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newFile.open((files.<ref refid="class_input_files_1a9867703917e916ceea50b9d7d4b07d2f" kindref="member">return_file_name</ref>(i)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.txt&quot;</highlight><highlight class="normal">),<sp/>std::ios::in);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(newFile.is_open()<sp/>&amp;&amp;<sp/>(</highlight><highlight class="stringliteral">&quot;I<sp/>can&apos;t<sp/>open<sp/>file.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>files.<ref refid="class_input_files_1ad0bb8456352c7e008315a284d9003086" kindref="member">return_file_size</ref>(i);<sp/>j++){</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newFile<sp/>&gt;&gt;<sp/>tempValue;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tabForData[j]<sp/>=<sp/>tempValue;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newFile.close();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>measureTime(tabForData,<sp/>files.<ref refid="class_input_files_1ad0bb8456352c7e008315a284d9003086" kindref="member">return_file_size</ref>(i));</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>tabForData;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.cpp"/>
+  </compounddef>
+</doxygen>

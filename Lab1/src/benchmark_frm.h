@@ -1,8 +1,8 @@
 /*! \file benchmark.h
 	\brief A benchmark for framework class
 */
-#ifndef benchmark_frm
-#define benchmark_frm
+#ifndef BENCHMARK_FRM_H_
+#define BENCHMARK_FRM_H_
 
 #include <vector>
 #include <fstream>
@@ -18,12 +18,10 @@
 */
 class Benchmark {
 	public:
-		void test(InputFiles Files);
+		void test(InputFiles files);
 	private:
+		void measureTime(int *dataTable, int dataSize);
 		std::vector<long double>testTimes;
 };
-
-
-
 
 #endif

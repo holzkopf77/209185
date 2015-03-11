@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="class_input_files" kind="class" language="C++" prot="public">
+    <compoundname>InputFiles</compoundname>
+    <includes refid="inputfile__txt_8h" local="no">inputfile_txt.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_input_files_1aa1c405cc71b38dae8dbabc3cac0925e4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int InputFiles::filesNumber</definition>
+        <argsstring></argsstring>
+        <name>filesNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" line="86" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_input_files_1abbdfa73eda4af470d13c3d54a8665a0e" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; InputFiles::filesNamesTab</definition>
+        <argsstring></argsstring>
+        <name>filesNamesTab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" line="87" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_input_files_1a72f1784ee9848a58c413e8da2529b70d" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; InputFiles::filesSizes</definition>
+        <argsstring></argsstring>
+        <name>filesSizes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" line="88" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_input_files_1a85a092f7ad25a9f959f1a93e5afb2045" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>InputFiles::InputFiles</definition>
+        <argsstring>()</argsstring>
+        <name>InputFiles</name>
+        <briefdescription>
+<para>A default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Adding number of files(UNDEF_VALUE = 1); Generating file name; Adding size of file (UNDEF_VALUE = 1);</para><para>Just in case, when program starts without any parameters.</para><para>A new file object class source code </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" line="38" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.cpp" bodystart="4" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_input_files_1a500e1a86787be57b9525836c6c912311" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>InputFiles::InputFiles</definition>
+        <argsstring>(int filNr, std::vector&lt; int &gt;filSiz)</argsstring>
+        <name>InputFiles</name>
+        <param>
+          <type>int</type>
+          <declname>filNr</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>filSiz</declname>
+        </param>
+        <briefdescription>
+<para>A constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Adding number of files; Generating files names; Adding sizes of files; Parameters inherit from list of arguments from command prompt</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filNr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of files </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filSiz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sizes of files </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Create new names for files</para><para>Delete all prohibit char from string</para><para>Open files with new names</para><para>Check if file is opened correctly </para>        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" line="50" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.cpp" bodystart="14" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_input_files_1adacb161e743183a2acef22b26dc7b954" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InputFiles::show_info</definition>
+        <argsstring>()</argsstring>
+        <name>show_info</name>
+        <briefdescription>
+<para>Show info about files. </para>        </briefdescription>
+        <detaileddescription>
+<para>Display: number of files, names of files, sizes of files </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" line="56" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.cpp" bodystart="40" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_input_files_1ae5bb1d7ff253b873327a3a3d84f64584" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InputFiles::generate_random_int_data</definition>
+        <argsstring>()</argsstring>
+        <name>generate_random_int_data</name>
+        <briefdescription>
+<para>Create random integers data into files. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Seed for Mersenne Twister 19937 generator</para><para>Mersenne Twister 19937 generator</para><para>More info about this generator: <ulink url="linkURL">http://pl.wikipedia.org/wiki/Mersenne_Twister</ulink></para><para>Uniform distribution random number</para><para>Max number: uncomment next line More info about this distribution: <ulink url="linkURL">http://pl.wikipedia.org/wiki/Rozk%C5%82ad_jednostajny</ulink></para><para>Check if file is opened correctly </para>        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" line="63" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.cpp" bodystart="55" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_input_files_1a9867703917e916ceea50b9d7d4b07d2f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string</type>
+        <definition>const std::string InputFiles::return_file_name</definition>
+        <argsstring>(int Nmbr)</argsstring>
+        <name>return_file_name</name>
+        <param>
+          <type>int</type>
+          <declname>Nmbr</declname>
+        </param>
+        <briefdescription>
+<para>Return names of files (only for read purpose) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Nmbr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of the file </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" line="69" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" bodystart="69" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_input_files_1ad0bb8456352c7e008315a284d9003086" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int InputFiles::return_file_size</definition>
+        <argsstring>(int Nmbr)</argsstring>
+        <name>return_file_size</name>
+        <param>
+          <type>int</type>
+          <declname>Nmbr</declname>
+        </param>
+        <briefdescription>
+<para>Return sizes of files (only for read purpose) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Nmbr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of the file </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" line="77" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" bodystart="77" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_input_files_1a5b1547e90d17d2332daed2203939ce25" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int InputFiles::return_number_files</definition>
+        <argsstring>()</argsstring>
+        <name>return_number_files</name>
+        <briefdescription>
+<para>Return number of files. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" line="82" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" bodystart="82" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Making an object which contain text files with generated random integer numbers. </para>    </detaileddescription>
+    <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" line="28" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" bodystart="28" bodyend="89"/>
+    <listofallmembers>
+      <member refid="class_input_files_1abbdfa73eda4af470d13c3d54a8665a0e" prot="private" virt="non-virtual"><scope>InputFiles</scope><name>filesNamesTab</name></member>
+      <member refid="class_input_files_1aa1c405cc71b38dae8dbabc3cac0925e4" prot="private" virt="non-virtual"><scope>InputFiles</scope><name>filesNumber</name></member>
+      <member refid="class_input_files_1a72f1784ee9848a58c413e8da2529b70d" prot="private" virt="non-virtual"><scope>InputFiles</scope><name>filesSizes</name></member>
+      <member refid="class_input_files_1ae5bb1d7ff253b873327a3a3d84f64584" prot="public" virt="non-virtual"><scope>InputFiles</scope><name>generate_random_int_data</name></member>
+      <member refid="class_input_files_1a85a092f7ad25a9f959f1a93e5afb2045" prot="public" virt="non-virtual"><scope>InputFiles</scope><name>InputFiles</name></member>
+      <member refid="class_input_files_1a500e1a86787be57b9525836c6c912311" prot="public" virt="non-virtual"><scope>InputFiles</scope><name>InputFiles</name></member>
+      <member refid="class_input_files_1a9867703917e916ceea50b9d7d4b07d2f" prot="public" virt="non-virtual"><scope>InputFiles</scope><name>return_file_name</name></member>
+      <member refid="class_input_files_1ad0bb8456352c7e008315a284d9003086" prot="public" virt="non-virtual"><scope>InputFiles</scope><name>return_file_size</name></member>
+      <member refid="class_input_files_1a5b1547e90d17d2332daed2203939ce25" prot="public" virt="non-virtual"><scope>InputFiles</scope><name>return_number_files</name></member>
+      <member refid="class_input_files_1adacb161e743183a2acef22b26dc7b954" prot="public" virt="non-virtual"><scope>InputFiles</scope><name>show_info</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

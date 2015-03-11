@@ -1,8 +1,8 @@
 /*! \file inputfile_txt.h
 	\brief A new input files class
 */
-#ifndef inputfile_txt
-#define inputfile_txt
+#ifndef INPUTFILE_TXT_H_
+#define INPUTFILE_TXT_H_
 
 #include <iostream>
 #include <string>

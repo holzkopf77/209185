@@ -1,0 +1,60 @@
+.TH "Benchmark" 3 "Wed Mar 11 2015" "Version 1.0" "Lab1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Benchmark \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <benchmark_frm\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBtest\fP (\fBInputFiles\fP files)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Making a framework for testing inserted data structure\&. Using time to estimate computational complexity\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void Benchmark::test (\fBInputFiles\fP files)"
+Opening file + making new table with content
+.PP
+Check if file is opened correctly
+.PP
+Testing time here 
+.PP
+.nf
+13                                     {
+14     int* tabForData = NULL;
+15     int tempValue = 0;
+16     int count = 0;
+17     std::fstream newFile;
+18 
+19     for (int i = 0; i < files\&.return_number_files() - FIRST_ARGUMENT; i++){
+20         
+22         tabForData = new int[files\&.return_file_size(i)];
+23         newFile\&.open((files\&.return_file_name(i) + "\&.txt"), std::ios::in);
+24         
+26         assert(newFile\&.is_open() && ("I can't open file\&."));
+27 
+28         for (int j = 0; j < files\&.return_file_size(i); j++){
+29             newFile >> tempValue;
+30             tabForData[j] = tempValue;
+31         }
+32         newFile\&.close();
+33 
+35         measureTime(tabForData, files\&.return_file_size(i));
+36         delete[] tabForData;
+37         
+38     }
+39 }
+.fi
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Lab1 from the source code\&.

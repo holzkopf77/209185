@@ -1,0 +1,43 @@
+.TH "src/main.cpp" 3 "Wed Mar 11 2015" "Version 1.0" "Lab1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/main.cpp \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'inputfile_txt\&.h'\fP
+.br
+\fC#include 'benchmark_frm\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBmain\fP (int argc, char *argv[])"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "int main (int argc, char * argv[])"
+Container for sizes from command prompt
+.PP
+First argument is a name of the program so i = 1 
+.PP
+.nf
+5 {
+7     std::vector<int>FilesSizes;
+8 
+10     for (int i = 1; i < argc ; i++)
+11         FilesSizes\&.push_back(atoi(argv[i]));
+12     
+13     InputFiles newFilesList(argc, FilesSizes);
+14     Benchmark NewTest;
+15     newFilesList\&.generate_random_int_data();
+16     NewTest\&.test(newFilesList);
+17 }
+.fi
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Lab1 from the source code\&.

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.9.1">
+  <compound refid="class_benchmark" kind="class"><name>Benchmark</name>
+    <member refid="class_benchmark_1a25ae68610896ae6138ffdf9d29ced16c" kind="variable"><name>testTimes</name></member>
+    <member refid="class_benchmark_1a4107fff4e0da31d561fc6109e359b341" kind="function"><name>test</name></member>
+    <member refid="class_benchmark_1a15bf329b615acce5a56b84df0cb94d4a" kind="function"><name>measureTime</name></member>
+  </compound>
+  <compound refid="class_input_files" kind="class"><name>InputFiles</name>
+    <member refid="class_input_files_1aa1c405cc71b38dae8dbabc3cac0925e4" kind="variable"><name>filesNumber</name></member>
+    <member refid="class_input_files_1abbdfa73eda4af470d13c3d54a8665a0e" kind="variable"><name>filesNamesTab</name></member>
+    <member refid="class_input_files_1a72f1784ee9848a58c413e8da2529b70d" kind="variable"><name>filesSizes</name></member>
+    <member refid="class_input_files_1a85a092f7ad25a9f959f1a93e5afb2045" kind="function"><name>InputFiles</name></member>
+    <member refid="class_input_files_1a500e1a86787be57b9525836c6c912311" kind="function"><name>InputFiles</name></member>
+    <member refid="class_input_files_1adacb161e743183a2acef22b26dc7b954" kind="function"><name>show_info</name></member>
+    <member refid="class_input_files_1ae5bb1d7ff253b873327a3a3d84f64584" kind="function"><name>generate_random_int_data</name></member>
+    <member refid="class_input_files_1a9867703917e916ceea50b9d7d4b07d2f" kind="function"><name>return_file_name</name></member>
+    <member refid="class_input_files_1ad0bb8456352c7e008315a284d9003086" kind="function"><name>return_file_size</name></member>
+    <member refid="class_input_files_1a5b1547e90d17d2332daed2203939ce25" kind="function"><name>return_number_files</name></member>
+  </compound>
+  <compound refid="benchmark__frm_8cpp" kind="file"><name>benchmark_frm.cpp</name>
+  </compound>
+  <compound refid="benchmark__frm_8h" kind="file"><name>benchmark_frm.h</name>
+  </compound>
+  <compound refid="inputfile__txt_8cpp" kind="file"><name>inputfile_txt.cpp</name>
+  </compound>
+  <compound refid="inputfile__txt_8h" kind="file"><name>inputfile_txt.h</name>
+    <member refid="inputfile__txt_8h_1ac6795aca310766e1b10d90013aac6d47" kind="variable"><name>FIRST_ARGUMENT</name></member>
+    <member refid="inputfile__txt_8h_1adccf682ffd569bf29d8a9e214a411771" kind="variable"><name>UNDEF_VALUE</name></member>
+    <member refid="inputfile__txt_8h_1a902304230ce19afe946c01bcdb5f4d6b" kind="variable"><name>PROGRAM_NAME</name></member>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+</doxygenindex>

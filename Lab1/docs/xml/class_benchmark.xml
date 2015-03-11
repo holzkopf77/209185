@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="class_benchmark" kind="class" language="C++" prot="public">
+    <compoundname>Benchmark</compoundname>
+    <includes refid="benchmark__frm_8h" local="no">benchmark_frm.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_benchmark_1a25ae68610896ae6138ffdf9d29ced16c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; long double &gt;</type>
+        <definition>std::vector&lt;long double&gt; Benchmark::testTimes</definition>
+        <argsstring></argsstring>
+        <name>testTimes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.h" line="24" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_benchmark_1a4107fff4e0da31d561fc6109e359b341" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Benchmark::test</definition>
+        <argsstring>(InputFiles files)</argsstring>
+        <name>test</name>
+        <param>
+          <type><ref refid="class_input_files" kindref="compound">InputFiles</ref></type>
+          <declname>files</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Opening file + making new table with content</para><para>Check if file is opened correctly</para><para>Testing time here </para>        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.h" line="21" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.cpp" bodystart="13" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_benchmark_1a15bf329b615acce5a56b84df0cb94d4a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Benchmark::measureTime</definition>
+        <argsstring>(int *dataTable, int dataSize)</argsstring>
+        <name>measureTime</name>
+        <param>
+          <type>int *</type>
+          <declname>dataTable</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dataSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A benchmark framework class source code </para>        </detaileddescription>
+        <inbodydescription>
+<para>Here starts the timer</para><para>Here it ends </para>        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.h" line="23" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.cpp" bodystart="4" bodyend="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Making a framework for testing inserted data structure. Using time to estimate computational complexity. </para>    </detaileddescription>
+    <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.h" line="19" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.h" bodystart="19" bodyend="25"/>
+    <listofallmembers>
+      <member refid="class_benchmark_1a15bf329b615acce5a56b84df0cb94d4a" prot="private" virt="non-virtual"><scope>Benchmark</scope><name>measureTime</name></member>
+      <member refid="class_benchmark_1a4107fff4e0da31d561fc6109e359b341" prot="public" virt="non-virtual"><scope>Benchmark</scope><name>test</name></member>
+      <member refid="class_benchmark_1a25ae68610896ae6138ffdf9d29ced16c" prot="private" virt="non-virtual"><scope>Benchmark</scope><name>testTimes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
