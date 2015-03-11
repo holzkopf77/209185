@@ -17,9 +17,15 @@
     <ClCompile Include="..\src\inputfile_txt.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\benchmark_frm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\inputfile_txt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\benchmark_frm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

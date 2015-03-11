@@ -14,6 +14,7 @@
 #include <random>
 
 #include <boost/algorithm/string/erase.hpp>
+
 /*! \class InputFiles
 
 	Making an object which contain text files with 
@@ -48,16 +49,31 @@ class InputFiles {
 			Display: number of files, names of files, sizes of files
 		*/
 		void show_info();
+
+		//! Create random integers data into files
+		/*
+		Generating random integers data (size from filesSizes vector)
+		and putting them into files (names from filesNamesTab)
+		*/
+		void generate_random_int_data();
+
+		//! Return names of files (only for read purpose)
+		std::vector<std::string>return_files_names(){
+			return filesNamesTab;
+		}
+
+		//! Return sizes of files (only for read purpose)
+		std::vector<int>return_files_sizes(){
+			return filesSizes;
+		}
+
+		//! Return number of files
+		int return_number_files(){
+			return filesNumber;
+		}
 	private:
 		int filesNumber;
 		std::vector<std::string>filesNamesTab;
 		std::vector<int>filesSizes;
-
-		//! Create random integers data into files
-		/*
-			 Generating random integers data (size from filesSizes vector)
-			 and putting them into files (names from filesNamesTab)
-		*/
-		void GenerateRandomIntData();
 };	
 #endif

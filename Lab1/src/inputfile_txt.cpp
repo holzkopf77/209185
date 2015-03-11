@@ -1,6 +1,7 @@
 /*! A new file object class source code */
 #include "inputfile_txt.h"
 
+//! First argument from command prompt (name of the program)
 const int FIRST_ARGUMENT = 1;
 const int UNDEF_VALUE = 1;
 const int PROGRAM_NAME = 1;
@@ -56,15 +57,36 @@ void InputFiles::show_info(){
 	std::cout << "--------" << std::endl;
 }
 
-void InputFiles::GenerateRandomIntData(){
+void InputFiles::generate_random_int_data(){
 	std::ofstream NewFile;
-	
+
+	//! Seed for Mersenne Twister 19937 generator
+	int seedGen = time(NULL);
+
+	//! Mersenne Twister 19937 generator
+	/*!
+		More info about this generator:
+		<a href="linkURL">http://pl.wikipedia.org/wiki/Mersenne_Twister</a> 
+	*/
+	std::mt19937 randomNumbr(seedGen);
+
+	//! Uniform distribution random number
+	/*!
+		Max number: uncomment next line
+		More info about this distribution:
+		<a href="linkURL">http://pl.wikipedia.org/wiki/Rozk%C5%82ad_jednostajny</a>
+	*/
+	//std::cout << std::numeric_limits<int>::max() << std::endl;
+	std::uniform_int_distribution<>newDistr;
+
 	for (int i = 1; i < filesNumber; i++){
 		NewFile.open((filesNamesTab[i - PROGRAM_NAME] + ".txt"),std::ios::in);
 		//! Check if file is opened correctly
-		assert(NewFile.is_open() && "I can't open this file.");
-
-		
+		assert(NewFile.is_open() && ("I can't open file."));
+		for (int j = 0; j < filesSizes[i - FIRST_ARGUMENT]; j++){
+			NewFile << newDistr(randomNumbr) << "\n";
+		}
+		NewFile.close();
 	}
 }
 

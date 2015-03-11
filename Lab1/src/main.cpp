@@ -1,7 +1,5 @@
-#include <cstdio>
-#include <iostream>
-
 #include "inputfile_txt.h"
+#include "benchmark_frm.h"
 
 int main(int argc, char* argv[])
 {
@@ -13,5 +11,5 @@ int main(int argc, char* argv[])
 		FilesSizes.push_back(atoi(argv[i]));
 
 	InputFiles newFilesList(argc, FilesSizes);
-	newFilesList.show_info();
+	newFilesList.generate_random_int_data();
 }

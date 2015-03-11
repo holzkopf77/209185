@@ -11,10 +11,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\benchmark_frm.cpp" />
     <ClCompile Include="..\src\inputfile_txt.cpp" />
     <ClCompile Include="..\src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\src\benchmark_frm.h" />
     <ClInclude Include="..\src\inputfile_txt.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
