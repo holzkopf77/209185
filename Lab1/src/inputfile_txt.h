@@ -15,6 +15,11 @@
 
 #include <boost/algorithm/string/erase.hpp>
 
+//! First argument from command prompt (name of the program)
+const int FIRST_ARGUMENT = 1;
+const int UNDEF_VALUE = 1;
+const int PROGRAM_NAME = 1;
+
 /*! \class InputFiles
 
 	Making an object which contain text files with 
@@ -58,17 +63,23 @@ class InputFiles {
 		void generate_random_int_data();
 
 		//! Return names of files (only for read purpose)
-		std::vector<std::string>return_files_names(){
-			return filesNamesTab;
+		/*!
+			\param Nmbr number of the file
+		*/
+		const std::string return_file_name(int Nmbr){
+			return filesNamesTab[Nmbr];
 		}
 
 		//! Return sizes of files (only for read purpose)
-		std::vector<int>return_files_sizes(){
-			return filesSizes;
+		/*!
+			\param Nmbr number of the file
+		*/
+		const int return_file_size(int Nmbr){
+			return filesSizes[Nmbr];
 		}
 
 		//! Return number of files
-		int return_number_files(){
+		const int return_number_files(){
 			return filesNumber;
 		}
 	private:

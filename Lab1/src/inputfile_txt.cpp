@@ -1,11 +1,6 @@
 /*! A new file object class source code */
 #include "inputfile_txt.h"
 
-//! First argument from command prompt (name of the program)
-const int FIRST_ARGUMENT = 1;
-const int UNDEF_VALUE = 1;
-const int PROGRAM_NAME = 1;
-
 InputFiles::InputFiles(){
 	filesNumber = UNDEF_VALUE;
 
@@ -58,7 +53,6 @@ void InputFiles::show_info(){
 }
 
 void InputFiles::generate_random_int_data(){
-	std::ofstream NewFile;
 
 	//! Seed for Mersenne Twister 19937 generator
 	int seedGen = time(NULL);
@@ -78,6 +72,8 @@ void InputFiles::generate_random_int_data(){
 	*/
 	//std::cout << std::numeric_limits<int>::max() << std::endl;
 	std::uniform_int_distribution<>newDistr;
+
+	std::ofstream NewFile;
 
 	for (int i = 1; i < filesNumber; i++){
 		NewFile.open((filesNamesTab[i - PROGRAM_NAME] + ".txt"),std::ios::in);

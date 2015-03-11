@@ -5,7 +5,12 @@
 #define benchmark_frm
 
 #include <vector>
+#include <fstream>
+
+#include <boost\timer\timer.hpp>
+
 #include "inputfile_txt.h"
+
 /*! \class Benchmark
 	
 	Making a framework for testing inserted data structure.
@@ -13,11 +18,9 @@
 */
 class Benchmark {
 	public:
-		void Test(InputFiles Files);
+		void test(InputFiles Files);
 	private:
-		std::vector<long double>TestTimes;
-		
-
+		std::vector<long double>testTimes;
 };
 
 
