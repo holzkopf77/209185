@@ -13,7 +13,9 @@ TODO:
 Wsadzić szablony
 
 Uzupełnić dokumentacje:
+
   -strona tytułowa
+  
   -wsadzić wykresy, obrazki, ogarnąć doxygena
   
 Uprościć kod
