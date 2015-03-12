@@ -1,4 +1,4 @@
-.TH "Benchmark" 3 "Wed Mar 11 2015" "Version 1.0" "Lab1" \" -*- nroff -*-
+.TH "Benchmark" 3 "Thu Mar 12 2015" "Version 1.1" "Lab 1" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -14,13 +14,138 @@ Benchmark \-
 .ti -1c
 .RI "void \fBtest\fP (\fBInputFiles\fP files)"
 .br
+.RI "\fIMain testing function\&. \fP"
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBgenerateRaport\fP (long double nextTime, int size)"
+.br
+.RI "\fIGenerates raport with program tests outputs\&. \fP"
+.ti -1c
+.RI "long double \fBgetAvr\fP (std::vector< long double >times)"
+.br
+.RI "\fIMeasures the average duration from 10 samples\&. \fP"
+.ti -1c
+.RI "void \fBmeasureTime\fP (int *dataTable, int dataSize)"
+.br
+.RI "\fIMeasures the duration of the work of assignment function\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< long double > \fBtestTimes\fP"
+.br
+.RI "\fIA container for calculated times\&. \fP"
 .in -1c
 .SH "Detailed Description"
 .PP 
 Making a framework for testing inserted data structure\&. Using time to estimate computational complexity\&. 
 .SH "Member Function Documentation"
 .PP 
-.SS "void Benchmark::test (\fBInputFiles\fP files)"
+.SS "Benchmark::generateRaport (long double nextTime, int size)\fC [private]\fP"
+
+.PP
+Generates raport with program tests outputs\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fInextTime\fP A new calculated time (for new file size)\&. 
+.br
+\fISize\fP A size of the currently working file\&. 
+.RE
+.PP
+
+.PP
+\fBTodo\fP
+.RS 4
+FILE OVERWRITING, NEED TO IMPLEMENT NEW NAMES 
+.RE
+.PP
+
+.PP
+.nf
+6                                                             {
+7     std::ofstream raportFile;
+8     raportFile\&.open("test\&.xls", std::ios::in | std::ios::app);
+9     /*! \todo FILE OVERWRITING, NEED TO IMPLEMENT NEW NAMES */
+10     assert(raportFile\&.is_open() && ("I can't open file\&."));
+11     std::string stringNextTime = std::to_string(nextTime);
+12     boost::algorithm::replace_first(stringNextTime, "\&.", ",");
+13     raportFile << size << "\n" << stringNextTime << "\n";
+14     raportFile\&.close();
+15 }
+.fi
+.SS "Benchmark::getAvr (std::vector< long double > times)\fC [private]\fP"
+
+.PP
+Measures the average duration from 10 samples\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItimes\fP A container with times from tests\&. 
+.RE
+.PP
+
+.PP
+.nf
+17                                                         {
+18     long double avrg = 0\&.0;
+19     for (int i = 0; i < (signed)times\&.size(); i++){
+20         avrg += times[i];
+21     }
+22     avrg /= (long double)times\&.size();
+23     return avrg;
+24 }
+.fi
+.SS "Benchmark::measureTime (int * dataTable, int dataSize)\fC [private]\fP"
+
+.PP
+Measures the duration of the work of assignment function\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdataTable\fP A container with random integers from earlier made files\&. 
+.br
+\fIdataSize\fP A size of the file\&. 
+.RE
+.PP
+Here starts the timer
+.PP
+Here it ends 
+.PP
+.nf
+26                                                        {
+27     
+28     std::vector<long double> estimateTimes;
+29     for (int j = 0; j < 10; j++){
+30         //! Here starts the timer
+31         boost::timer::cpu_timer startTime;
+32         for (int i = 0; i < dataSize; i++){
+33             dataTable[i] *= 2;
+34         }
+35         //! Here it ends
+36         boost::timer::cpu_times endTime = startTime\&.elapsed();
+37         estimateTimes\&.push_back(static_cast<long double>(endTime\&.wall * SEC));
+38     }
+39     std::cout\&.fixed;
+40     long double DurTime = getAvr(estimateTimes);
+41     std::cout << "Time (average, 10 samples) for " << dataSize << " elements: " << DurTime << " sec"<< std::endl;
+42     generateRaport(DurTime, dataSize);
+43 }
+.fi
+.SS "Benchmark::test (\fBInputFiles\fP files)"
+
+.PP
+Main testing function\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIfiles\fP random generated files with integers 
+.RE
+.PP
 Opening file + making new table with content
 .PP
 Check if file is opened correctly
@@ -28,33 +153,41 @@ Check if file is opened correctly
 Testing time here 
 .PP
 .nf
-13                                     {
-14     int* tabForData = NULL;
-15     int tempValue = 0;
-16     int count = 0;
-17     std::fstream newFile;
-18 
-19     for (int i = 0; i < files\&.return_number_files() - FIRST_ARGUMENT; i++){
-20         
-22         tabForData = new int[files\&.return_file_size(i)];
-23         newFile\&.open((files\&.return_file_name(i) + "\&.txt"), std::ios::in);
-24         
-26         assert(newFile\&.is_open() && ("I can't open file\&."));
-27 
-28         for (int j = 0; j < files\&.return_file_size(i); j++){
-29             newFile >> tempValue;
-30             tabForData[j] = tempValue;
-31         }
-32         newFile\&.close();
-33 
-35         measureTime(tabForData, files\&.return_file_size(i));
-36         delete[] tabForData;
-37         
-38     }
-39 }
+45                                     {
+46     int* tabForData = NULL;
+47     int tempValue = 0;
+48     int count = 0;
+49     std::fstream newFile;
+50 
+51     for (int i = 0; i < files\&.return_number_files() - FIRST_ARGUMENT; i++){
+52         
+53         //! Opening file + making new table with content
+54         tabForData = new int[files\&.return_file_size(i)];
+55         newFile\&.open((files\&.return_file_name(i) + "\&.txt"), std::ios::in);
+56         
+57         //! Check if file is opened correctly
+58         assert(newFile\&.is_open() && ("I can't open file\&."));
+59 
+60         for (int j = 0; j < files\&.return_file_size(i); j++){
+61             newFile >> tempValue;
+62             tabForData[j] = tempValue;
+63         }
+64         newFile\&.close();
+65 
+66         //! Testing time here
+67         measureTime(tabForData, files\&.return_file_size(i));
+68         delete[] tabForData;
+69         
+70     }
+71 }
 .fi
+.SH "Member Data Documentation"
+.PP 
+.SS "Benchmark::testTimes\fC [private]\fP"
 
+.PP
+A container for calculated times\&. 
 
 .SH "Author"
 .PP 
-Generated automatically by Doxygen for Lab1 from the source code\&.
+Generated automatically by Doxygen for Lab 1 from the source code\&.

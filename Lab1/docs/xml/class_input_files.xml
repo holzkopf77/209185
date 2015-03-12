@@ -2,21 +2,8 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
   <compounddef id="class_input_files" kind="class" language="C++" prot="public">
     <compoundname>InputFiles</compoundname>
-    <includes refid="inputfile__txt_8h" local="no">inputfile_txt.h</includes>
+    <includes local="no">inputfile_txt.h</includes>
       <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="class_input_files_1aa1c405cc71b38dae8dbabc3cac0925e4" prot="private" static="no" mutable="no">
-        <type>int</type>
-        <definition>int InputFiles::filesNumber</definition>
-        <argsstring></argsstring>
-        <name>filesNumber</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" line="86" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" bodystart="86" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="class_input_files_1abbdfa73eda4af470d13c3d54a8665a0e" prot="private" static="no" mutable="no">
         <type>std::vector&lt; std::string &gt;</type>
         <definition>std::vector&lt;std::string&gt; InputFiles::filesNamesTab</definition>
@@ -29,6 +16,19 @@
         <inbodydescription>
         </inbodydescription>
         <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" line="87" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_input_files_1aa1c405cc71b38dae8dbabc3cac0925e4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int InputFiles::filesNumber</definition>
+        <argsstring></argsstring>
+        <name>filesNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" line="86" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" bodystart="86" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_input_files_1a72f1784ee9848a58c413e8da2529b70d" prot="private" static="no" mutable="no">
         <type>std::vector&lt; int &gt;</type>
@@ -45,6 +45,19 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_input_files_1ae5bb1d7ff253b873327a3a3d84f64584" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InputFiles::generate_random_int_data</definition>
+        <argsstring>()</argsstring>
+        <name>generate_random_int_data</name>
+        <briefdescription>
+<para>Create random integers data into files. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Seed for Mersenne Twister 19937 generator</para><para>Mersenne Twister 19937 generator</para><para>More info about this generator: <ulink url="linkURL">http://pl.wikipedia.org/wiki/Mersenne_Twister</ulink></para><para>Uniform distribution random number</para><para>Max number: uncomment next line More info about this distribution: <ulink url="linkURL">http://pl.wikipedia.org/wiki/Rozk%C5%82ad_jednostajny</ulink></para><para>Check if file is opened correctly </para>        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" line="63" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.cpp" bodystart="57" bodyend="89"/>
+      </memberdef>
       <memberdef kind="function" id="class_input_files_1a85a092f7ad25a9f959f1a93e5afb2045" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>InputFiles::InputFiles</definition>
@@ -53,10 +66,10 @@
         <briefdescription>
 <para>A default constructor. </para>        </briefdescription>
         <detaileddescription>
-<para>Adding number of files(UNDEF_VALUE = 1); Generating file name; Adding size of file (UNDEF_VALUE = 1);</para><para>Just in case, when program starts without any parameters.</para><para>A new file object class source code </para>        </detaileddescription>
+<para>Adding number of files(UNDEF_VALUE = 1); Generating file name; Adding size of file (UNDEF_VALUE = 1);</para><para>Just in case, when program starts without any parameters. </para>        </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" line="38" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.cpp" bodystart="4" bodyend="12"/>
+<para><xrefsect id="todo_1_todo000002"><xreftitle>Todo</xreftitle><xrefdescription><para>EXCEPTIONS HANDLING </para></xrefdescription></xrefsect></para>        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" line="38" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.cpp" bodystart="6" bodyend="14"/>
       </memberdef>
       <memberdef kind="function" id="class_input_files_1a500e1a86787be57b9525836c6c912311" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -92,33 +105,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
 <para>Create new names for files</para><para>Delete all prohibit char from string</para><para>Open files with new names</para><para>Check if file is opened correctly </para>        </inbodydescription>
-        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" line="50" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.cpp" bodystart="14" bodyend="38"/>
-      </memberdef>
-      <memberdef kind="function" id="class_input_files_1adacb161e743183a2acef22b26dc7b954" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void InputFiles::show_info</definition>
-        <argsstring>()</argsstring>
-        <name>show_info</name>
-        <briefdescription>
-<para>Show info about files. </para>        </briefdescription>
-        <detaileddescription>
-<para>Display: number of files, names of files, sizes of files </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" line="56" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.cpp" bodystart="40" bodyend="53"/>
-      </memberdef>
-      <memberdef kind="function" id="class_input_files_1ae5bb1d7ff253b873327a3a3d84f64584" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void InputFiles::generate_random_int_data</definition>
-        <argsstring>()</argsstring>
-        <name>generate_random_int_data</name>
-        <briefdescription>
-<para>Create random integers data into files. </para>        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-<para>Seed for Mersenne Twister 19937 generator</para><para>Mersenne Twister 19937 generator</para><para>More info about this generator: <ulink url="linkURL">http://pl.wikipedia.org/wiki/Mersenne_Twister</ulink></para><para>Uniform distribution random number</para><para>Max number: uncomment next line More info about this distribution: <ulink url="linkURL">http://pl.wikipedia.org/wiki/Rozk%C5%82ad_jednostajny</ulink></para><para>Check if file is opened correctly </para>        </inbodydescription>
-        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" line="63" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.cpp" bodystart="55" bodyend="87"/>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" line="50" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.cpp" bodystart="16" bodyend="40"/>
       </memberdef>
       <memberdef kind="function" id="class_input_files_1a9867703917e916ceea50b9d7d4b07d2f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const std::string</type>
@@ -182,6 +169,19 @@
         <inbodydescription>
         </inbodydescription>
         <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" line="82" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" bodystart="82" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_input_files_1adacb161e743183a2acef22b26dc7b954" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InputFiles::show_info</definition>
+        <argsstring>()</argsstring>
+        <name>show_info</name>
+        <briefdescription>
+<para>Show info about files. </para>        </briefdescription>
+        <detaileddescription>
+<para>Display: number of files, names of files, sizes of files </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.h" line="56" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.cpp" bodystart="42" bodyend="55"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

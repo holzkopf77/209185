@@ -5,67 +5,69 @@
     <includes refid="inputfile__txt_8h" local="yes">inputfile_txt.h</includes>
     <includes refid="benchmark__frm_8h" local="yes">benchmark_frm.h</includes>
     <incdepgraph>
-      <node id="66">
+      <node id="70">
         <label>boost/algorithm/string/erase.hpp</label>
       </node>
-      <node id="63">
+      <node id="67">
         <label>cassert</label>
       </node>
-      <node id="59">
+      <node id="63">
         <label>string</label>
       </node>
-      <node id="67">
+      <node id="71">
         <label>benchmark_frm.h</label>
         <link refid="benchmark__frm_8h"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
         <childnode refid="61" relation="include">
         </childnode>
-        <childnode refid="60" relation="include">
-        </childnode>
-        <childnode refid="68" relation="include">
-        </childnode>
-        <childnode refid="57" relation="include">
-        </childnode>
       </node>
-      <node id="60">
-        <label>fstream</label>
-      </node>
-      <node id="65">
-        <label>random</label>
-      </node>
-      <node id="62">
-        <label>cstdio</label>
+      <node id="73">
+        <label>boost\chrono\duration.hpp</label>
       </node>
       <node id="64">
-        <label>ctime</label>
+        <label>fstream</label>
       </node>
-      <node id="61">
-        <label>vector</label>
+      <node id="69">
+        <label>random</label>
       </node>
-      <node id="56">
-        <label>src/main.cpp</label>
-        <link refid="main.cpp"/>
-        <childnode refid="57" relation="include">
-        </childnode>
-        <childnode refid="67" relation="include">
-        </childnode>
-      </node>
-      <node id="58">
-        <label>iostream</label>
+      <node id="66">
+        <label>cstdio</label>
       </node>
       <node id="68">
-        <label>boost\timer\timer.hpp</label>
+        <label>ctime</label>
       </node>
-      <node id="57">
-        <label>inputfile_txt.h</label>
-        <link refid="inputfile__txt_8h"/>
-        <childnode refid="58" relation="include">
-        </childnode>
-        <childnode refid="59" relation="include">
-        </childnode>
-        <childnode refid="60" relation="include">
-        </childnode>
+      <node id="65">
+        <label>vector</label>
+      </node>
+      <node id="60">
+        <label>src/main.cpp</label>
+        <link refid="main.cpp"/>
         <childnode refid="61" relation="include">
         </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>boost\algorithm\string\replace.hpp</label>
+      </node>
+      <node id="62">
+        <label>iostream</label>
+      </node>
+      <node id="72">
+        <label>boost\timer\timer.hpp</label>
+      </node>
+      <node id="61">
+        <label>inputfile_txt.h</label>
+        <link refid="inputfile__txt_8h"/>
         <childnode refid="62" relation="include">
         </childnode>
         <childnode refid="63" relation="include">
@@ -75,6 +77,14 @@
         <childnode refid="65" relation="include">
         </childnode>
         <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -99,29 +109,35 @@
         </detaileddescription>
         <inbodydescription>
 <para>Container for sizes from command prompt</para><para>First argument is a name of the program so i = 1 </para>        </inbodydescription>
-        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/main.cpp" line="4" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/main.cpp" bodystart="4" bodyend="17"/>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/main.cpp" line="8" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/main.cpp" bodystart="8" bodyend="21"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-    </briefdescription>
+<para>Master file. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="inputfile__txt_8h" kindref="compound">inputfile_txt.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="benchmark__frm_8h" kindref="compound">benchmark_frm.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
-<codeline lineno="4" refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>argv[])</highlight></codeline>
-<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;FilesSizes;</highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>argc<sp/>;<sp/>i++)</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FilesSizes.push_back(atoi(argv[i]));</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_input_files" kindref="compound">InputFiles</ref><sp/>newFilesList(argc,<sp/>FilesSizes);</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_benchmark" kindref="compound">Benchmark</ref><sp/>NewTest;</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>newFilesList.<ref refid="class_input_files_1ae5bb1d7ff253b873327a3a3d84f64584" kindref="member">generate_random_int_data</ref>();</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>NewTest.<ref refid="class_benchmark_1a4107fff4e0da31d561fc6109e359b341" kindref="member">test</ref>(newFilesList);</highlight></codeline>
-<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1"><highlight class="comment">/*!<sp/>\file<sp/>main.cpp</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/>\brief<sp/>Master<sp/>file</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="inputfile__txt_8h" kindref="compound" tooltip="A InputFile class. ">inputfile_txt.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="benchmark__frm_8h" kindref="compound" tooltip="A Benchmark class. ">benchmark_frm.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>argv[])</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>//!<sp/>Container<sp/>for<sp/>sizes<sp/>from<sp/>command<sp/>prompt</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;FilesSizes;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>//!<sp/>First<sp/>argument<sp/>is<sp/>a<sp/>name<sp/>of<sp/>the<sp/>program<sp/>so<sp/>i<sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>argc<sp/>;<sp/>i++)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FilesSizes.push_back(atoi(argv[i]));</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_input_files" kindref="compound">InputFiles</ref><sp/>newFilesList(argc,<sp/>FilesSizes);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_benchmark" kindref="compound">Benchmark</ref><sp/>NewTest;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>newFilesList.generate_random_int_data();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>NewTest.<ref refid="class_benchmark_1a9d8c911b12652e87e91da87f85e6cdf7" kindref="member" tooltip="Main testing function. ">test</ref>(newFilesList);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/main.cpp"/>
   </compounddef>

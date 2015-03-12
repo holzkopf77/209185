@@ -7,20 +7,29 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+void \hyperlink{class_input_files_ae5bb1d7ff253b873327a3a3d84f64584}{generate\+\_\+random\+\_\+int\+\_\+data} ()
+\begin{DoxyCompactList}\small\item\em Create random integers data into files. \end{DoxyCompactList}\item 
 \hyperlink{class_input_files_a85a092f7ad25a9f959f1a93e5afb2045}{Input\+Files} ()
 \begin{DoxyCompactList}\small\item\em A default constructor. \end{DoxyCompactList}\item 
 \hyperlink{class_input_files_a500e1a86787be57b9525836c6c912311}{Input\+Files} (int fil\+Nr, std\+::vector$<$ int $>$fil\+Siz)
 \begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
-void \hyperlink{class_input_files_adacb161e743183a2acef22b26dc7b954}{show\+\_\+info} ()
-\begin{DoxyCompactList}\small\item\em Show info about files. \end{DoxyCompactList}\item 
-void \hyperlink{class_input_files_ae5bb1d7ff253b873327a3a3d84f64584}{generate\+\_\+random\+\_\+int\+\_\+data} ()
-\begin{DoxyCompactList}\small\item\em Create random integers data into files. \end{DoxyCompactList}\item 
 const std\+::string \hyperlink{class_input_files_a9867703917e916ceea50b9d7d4b07d2f}{return\+\_\+file\+\_\+name} (int Nmbr)
 \begin{DoxyCompactList}\small\item\em Return names of files (only for read purpose) \end{DoxyCompactList}\item 
 const int \hyperlink{class_input_files_ad0bb8456352c7e008315a284d9003086}{return\+\_\+file\+\_\+size} (int Nmbr)
 \begin{DoxyCompactList}\small\item\em Return sizes of files (only for read purpose) \end{DoxyCompactList}\item 
 const int \hyperlink{class_input_files_a5b1547e90d17d2332daed2203939ce25}{return\+\_\+number\+\_\+files} ()
-\begin{DoxyCompactList}\small\item\em Return number of files. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Return number of files. \end{DoxyCompactList}\item 
+void \hyperlink{class_input_files_adacb161e743183a2acef22b26dc7b954}{show\+\_\+info} ()
+\begin{DoxyCompactList}\small\item\em Show info about files. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{class_input_files_abbdfa73eda4af470d13c3d54a8665a0e}{files\+Names\+Tab}
+\item 
+int \hyperlink{class_input_files_aa1c405cc71b38dae8dbabc3cac0925e4}{files\+Number}
+\item 
+std\+::vector$<$ int $>$ \hyperlink{class_input_files_a72f1784ee9848a58c413e8da2529b70d}{files\+Sizes}
+\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -40,19 +49,19 @@ A default constructor.
 
 Adding number of files(U\+N\+D\+E\+F\+\_\+\+V\+A\+L\+U\+E = 1); Generating file name; Adding size of file (U\+N\+D\+E\+F\+\_\+\+V\+A\+L\+U\+E = 1);
 
-Just in case, when program starts without any parameters.
+Just in case, when program starts without any parameters. \begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000002}{Todo}]E\+X\+C\+E\+P\+T\+I\+O\+N\+S H\+A\+N\+D\+L\+I\+N\+G \end{DoxyRefDesc}
 
-A new file object class source code 
 \begin{DoxyCode}
-4                       \{
-5     filesNumber = \hyperlink{inputfile__txt_8h_adccf682ffd569bf29d8a9e214a411771}{UNDEF\_VALUE};
-6 
-7     \textcolor{comment}{//TODO: EXCEPTIONS HANDLING}
-8     std::string TempName = std::tmpnam(\textcolor{keyword}{nullptr});
-9 
-10     filesNamesTab.push\_back(TempName);
-11     filesSizes.push\_back(\hyperlink{inputfile__txt_8h_adccf682ffd569bf29d8a9e214a411771}{UNDEF\_VALUE});
-12 \}
+6                       \{
+7     \hyperlink{class_input_files_aa1c405cc71b38dae8dbabc3cac0925e4}{filesNumber} = \hyperlink{inputfile__txt_8h_adccf682ffd569bf29d8a9e214a411771}{UNDEF\_VALUE};
+8 \textcolor{comment}{}
+9 \textcolor{comment}{    /*! \(\backslash\)todo EXCEPTIONS HANDLING */}
+10     std::string TempName = std::tmpnam(\textcolor{keyword}{nullptr});
+11 
+12     \hyperlink{class_input_files_abbdfa73eda4af470d13c3d54a8665a0e}{filesNamesTab}.push\_back(TempName);
+13     \hyperlink{class_input_files_a72f1784ee9848a58c413e8da2529b70d}{filesSizes}.push\_back(\hyperlink{inputfile__txt_8h_adccf682ffd569bf29d8a9e214a411771}{UNDEF\_VALUE});
+14 \}
 \end{DoxyCode}
 \hypertarget{class_input_files_a500e1a86787be57b9525836c6c912311}{}\index{Input\+Files@{Input\+Files}!Input\+Files@{Input\+Files}}
 \index{Input\+Files@{Input\+Files}!Input\+Files@{Input\+Files}}
@@ -83,27 +92,31 @@ Open files with new names
 
 Check if file is opened correctly 
 \begin{DoxyCode}
-14                                                      \{
-15     filesNumber = filNr;
-16     filesSizes = filSiz;
-17     
-19     std::string TempName;
-20     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i < filesNumber; i++)\{
-21         TempName = std::tmpnam(\textcolor{keyword}{nullptr});
-22 
-24         boost::algorithm::erase\_all(TempName, \textcolor{stringliteral}{"/"});
-25         boost::algorithm::erase\_all(TempName, \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)"});
-26 
-27         filesNamesTab.push\_back(TempName);
-28     \}
-29 
-31     std::ofstream NewFile;
-32     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i < filesNumber; i++)\{
-33         NewFile.open(filesNamesTab[i - \hyperlink{inputfile__txt_8h_a902304230ce19afe946c01bcdb5f4d6b}{PROGRAM\_NAME}] + \textcolor{stringliteral}{".txt"});
-35         assert(NewFile.is\_open() && \textcolor{stringliteral}{"I can't open this file."});
-36         NewFile.close();
-37     \}
-38 \}
+16                                                      \{
+17     \hyperlink{class_input_files_aa1c405cc71b38dae8dbabc3cac0925e4}{filesNumber} = filNr;
+18     \hyperlink{class_input_files_a72f1784ee9848a58c413e8da2529b70d}{filesSizes} = filSiz;
+19     \textcolor{comment}{}
+20 \textcolor{comment}{    //! Create new names for files}
+21 \textcolor{comment}{}    std::string TempName;
+22     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i < \hyperlink{class_input_files_aa1c405cc71b38dae8dbabc3cac0925e4}{filesNumber}; i++)\{
+23         TempName = std::tmpnam(\textcolor{keyword}{nullptr});
+24 \textcolor{comment}{}
+25 \textcolor{comment}{        //! Delete all prohibit char from string}
+26 \textcolor{comment}{}        boost::algorithm::erase\_all(TempName, \textcolor{stringliteral}{"/"});
+27         boost::algorithm::erase\_all(TempName, \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)"});
+28 
+29         \hyperlink{class_input_files_abbdfa73eda4af470d13c3d54a8665a0e}{filesNamesTab}.push\_back(TempName);
+30     \}
+31 \textcolor{comment}{}
+32 \textcolor{comment}{    //! Open files with new names}
+33 \textcolor{comment}{}    std::ofstream NewFile;
+34     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i < \hyperlink{class_input_files_aa1c405cc71b38dae8dbabc3cac0925e4}{filesNumber}; i++)\{
+35         NewFile.open(\hyperlink{class_input_files_abbdfa73eda4af470d13c3d54a8665a0e}{filesNamesTab}[i - \hyperlink{inputfile__txt_8h_a902304230ce19afe946c01bcdb5f4d6b}{PROGRAM\_NAME}] + \textcolor{stringliteral}{".txt"});\textcolor{comment}{}
+36 \textcolor{comment}{        //! Check if file is opened correctly}
+37 \textcolor{comment}{}        assert(NewFile.is\_open() && \textcolor{stringliteral}{"I can't open this file."});
+38         NewFile.close();
+39     \}
+40 \}
 \end{DoxyCode}
 
 
@@ -131,28 +144,39 @@ Max number\+: uncomment next line More info about this distribution\+: \href{lin
 
 Check if file is opened correctly 
 \begin{DoxyCode}
-55                                          \{
-56 
-58     \textcolor{keywordtype}{int} seedGen = time(NULL);
-59 
-61 
-65     std::mt19937 randomNumbr(seedGen);
-66 
-68 
-73     \textcolor{comment}{//std::cout << std::numeric\_limits<int>::max() << std::endl;}
-74     std::uniform\_int\_distribution<>newDistr;
-75 
-76     std::ofstream NewFile;
+57                                          \{
+58 \textcolor{comment}{}
+59 \textcolor{comment}{    //! Seed for Mersenne Twister 19937 generator}
+60 \textcolor{comment}{}    \textcolor{keywordtype}{int} seedGen = time(NULL);
+61 \textcolor{comment}{}
+62 \textcolor{comment}{    //! Mersenne Twister 19937 generator}
+63 \textcolor{comment}{}\textcolor{comment}{    /*!}
+64 \textcolor{comment}{        More info about this generator:}
+65 \textcolor{comment}{        <a href="linkURL">http://pl.wikipedia.org/wiki/Mersenne\_Twister</a> }
+66 \textcolor{comment}{    */}
+67     std::mt19937 randomNumbr(seedGen);
+68 \textcolor{comment}{}
+69 \textcolor{comment}{    //! Uniform distribution random number}
+70 \textcolor{comment}{}\textcolor{comment}{    /*!}
+71 \textcolor{comment}{        Max number: uncomment next line}
+72 \textcolor{comment}{        More info about this distribution:}
+73 \textcolor{comment}{        <a href="linkURL">http://pl.wikipedia.org/wiki/Rozk%C5%82ad\_jednostajny</a>}
+74 \textcolor{comment}{    */}
+75     \textcolor{comment}{//std::cout << std::numeric\_limits<int>::max() << std::endl;}
+76     std::uniform\_int\_distribution<>newDistr;
 77 
-78     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i < filesNumber; i++)\{
-79         NewFile.open((filesNamesTab[i - \hyperlink{inputfile__txt_8h_a902304230ce19afe946c01bcdb5f4d6b}{PROGRAM\_NAME}] + \textcolor{stringliteral}{".txt"}),std::ios::in);
-81         assert(NewFile.is\_open() && (\textcolor{stringliteral}{"I can't open file."}));
-82         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < filesSizes[i - \hyperlink{inputfile__txt_8h_ac6795aca310766e1b10d90013aac6d47}{FIRST\_ARGUMENT}]; j++)\{
-83             NewFile << newDistr(randomNumbr) << \textcolor{stringliteral}{"\(\backslash\)n"};
-84         \}
-85         NewFile.close();
-86     \}
-87 \}
+78     std::ofstream NewFile;
+79 
+80     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i < \hyperlink{class_input_files_aa1c405cc71b38dae8dbabc3cac0925e4}{filesNumber}; i++)\{
+81         NewFile.open((\hyperlink{class_input_files_abbdfa73eda4af470d13c3d54a8665a0e}{filesNamesTab}[i - \hyperlink{inputfile__txt_8h_a902304230ce19afe946c01bcdb5f4d6b}{PROGRAM\_NAME}] + \textcolor{stringliteral}{".txt"}),std::ios::in);\textcolor{comment}{}
+82 \textcolor{comment}{        //! Check if file is opened correctly}
+83 \textcolor{comment}{}        assert(NewFile.is\_open() && (\textcolor{stringliteral}{"I can't open file."}));
+84         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \hyperlink{class_input_files_a72f1784ee9848a58c413e8da2529b70d}{filesSizes}[i - \hyperlink{inputfile__txt_8h_ac6795aca310766e1b10d90013aac6d47}{FIRST\_ARGUMENT}]; j++)\{
+85             NewFile << newDistr(randomNumbr) << \textcolor{stringliteral}{"\(\backslash\)n"};
+86         \}
+87         NewFile.close();
+88     \}
+89 \}
 \end{DoxyCode}
 \hypertarget{class_input_files_a9867703917e916ceea50b9d7d4b07d2f}{}\index{Input\+Files@{Input\+Files}!return\+\_\+file\+\_\+name@{return\+\_\+file\+\_\+name}}
 \index{return\+\_\+file\+\_\+name@{return\+\_\+file\+\_\+name}!Input\+Files@{Input\+Files}}
@@ -173,7 +197,7 @@ Return names of files (only for read purpose)
 
 \begin{DoxyCode}
 69                                                   \{
-70             \textcolor{keywordflow}{return} filesNamesTab[Nmbr];
+70             \textcolor{keywordflow}{return} \hyperlink{class_input_files_abbdfa73eda4af470d13c3d54a8665a0e}{filesNamesTab}[Nmbr];
 71         \}
 \end{DoxyCode}
 \hypertarget{class_input_files_ad0bb8456352c7e008315a284d9003086}{}\index{Input\+Files@{Input\+Files}!return\+\_\+file\+\_\+size@{return\+\_\+file\+\_\+size}}
@@ -195,7 +219,7 @@ Return sizes of files (only for read purpose)
 
 \begin{DoxyCode}
 77                                             \{
-78             \textcolor{keywordflow}{return} filesSizes[Nmbr];
+78             \textcolor{keywordflow}{return} \hyperlink{class_input_files_a72f1784ee9848a58c413e8da2529b70d}{filesSizes}[Nmbr];
 79         \}
 \end{DoxyCode}
 \hypertarget{class_input_files_a5b1547e90d17d2332daed2203939ce25}{}\index{Input\+Files@{Input\+Files}!return\+\_\+number\+\_\+files@{return\+\_\+number\+\_\+files}}
@@ -212,7 +236,7 @@ Return number of files.
 
 \begin{DoxyCode}
 82                                        \{
-83             \textcolor{keywordflow}{return} filesNumber;
+83             \textcolor{keywordflow}{return} \hyperlink{class_input_files_aa1c405cc71b38dae8dbabc3cac0925e4}{filesNumber};
 84         \}
 \end{DoxyCode}
 \hypertarget{class_input_files_adacb161e743183a2acef22b26dc7b954}{}\index{Input\+Files@{Input\+Files}!show\+\_\+info@{show\+\_\+info}}
@@ -228,21 +252,33 @@ Show info about files.
 
 Display\+: number of files, names of files, sizes of files 
 \begin{DoxyCode}
-40                           \{ 
-41     
-42     std::cout << \textcolor{stringliteral}{"--------"} << std::endl;
-43     std::cout << filesNumber - \hyperlink{inputfile__txt_8h_ac6795aca310766e1b10d90013aac6d47}{FIRST\_ARGUMENT} << std::endl;
-44 
-45     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < (signed)filesNamesTab.size(); i++)\{
-46         std::cout << filesNamesTab[i] << std::endl;
-47     \}
-48     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < (signed)filesSizes.size(); i++)\{
-49         std::cout << filesSizes[i] << std::endl;
-50     \}
-51 
-52     std::cout << \textcolor{stringliteral}{"--------"} << std::endl;
-53 \}
+42                           \{ 
+43     
+44     std::cout << \textcolor{stringliteral}{"--------"} << std::endl;
+45     std::cout << \hyperlink{class_input_files_aa1c405cc71b38dae8dbabc3cac0925e4}{filesNumber} - \hyperlink{inputfile__txt_8h_ac6795aca310766e1b10d90013aac6d47}{FIRST\_ARGUMENT} << std::endl;
+46 
+47     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < (signed)\hyperlink{class_input_files_abbdfa73eda4af470d13c3d54a8665a0e}{filesNamesTab}.size(); i++)\{
+48         std::cout << \hyperlink{class_input_files_abbdfa73eda4af470d13c3d54a8665a0e}{filesNamesTab}[i] << std::endl;
+49     \}
+50     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < (signed)\hyperlink{class_input_files_a72f1784ee9848a58c413e8da2529b70d}{filesSizes}.size(); i++)\{
+51         std::cout << \hyperlink{class_input_files_a72f1784ee9848a58c413e8da2529b70d}{filesSizes}[i] << std::endl;
+52     \}
+53 
+54     std::cout << \textcolor{stringliteral}{"--------"} << std::endl;
+55 \}
 \end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_input_files_abbdfa73eda4af470d13c3d54a8665a0e}{}\index{Input\+Files@{Input\+Files}!files\+Names\+Tab@{files\+Names\+Tab}}
+\index{files\+Names\+Tab@{files\+Names\+Tab}!Input\+Files@{Input\+Files}}
+\subsubsection[{files\+Names\+Tab}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ Input\+Files\+::files\+Names\+Tab\hspace{0.3cm}{\ttfamily [private]}}\label{class_input_files_abbdfa73eda4af470d13c3d54a8665a0e}
+\hypertarget{class_input_files_aa1c405cc71b38dae8dbabc3cac0925e4}{}\index{Input\+Files@{Input\+Files}!files\+Number@{files\+Number}}
+\index{files\+Number@{files\+Number}!Input\+Files@{Input\+Files}}
+\subsubsection[{files\+Number}]{\setlength{\rightskip}{0pt plus 5cm}int Input\+Files\+::files\+Number\hspace{0.3cm}{\ttfamily [private]}}\label{class_input_files_aa1c405cc71b38dae8dbabc3cac0925e4}
+\hypertarget{class_input_files_a72f1784ee9848a58c413e8da2529b70d}{}\index{Input\+Files@{Input\+Files}!files\+Sizes@{files\+Sizes}}
+\index{files\+Sizes@{files\+Sizes}!Input\+Files@{Input\+Files}}
+\subsubsection[{files\+Sizes}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$int$>$ Input\+Files\+::files\+Sizes\hspace{0.3cm}{\ttfamily [private]}}\label{class_input_files_a72f1784ee9848a58c413e8da2529b70d}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

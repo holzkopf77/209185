@@ -1,8 +1,9 @@
-.TH "src/main.cpp" 3 "Wed Mar 11 2015" "Version 1.0" "Lab1" \" -*- nroff -*-
+.TH "src/main.cpp" 3 "Thu Mar 12 2015" "Version 1.1" "Lab 1" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-src/main.cpp \- 
+src/main.cpp \- Master file\&.  
+
 .SH SYNOPSIS
 .br
 .PP
@@ -18,6 +19,11 @@ src/main.cpp \-
 .RI "int \fBmain\fP (int argc, char *argv[])"
 .br
 .in -1c
+.SH "Detailed Description"
+.PP 
+Master file\&. 
+
+
 .SH "Function Documentation"
 .PP 
 .SS "int main (int argc, char * argv[])"
@@ -26,18 +32,20 @@ Container for sizes from command prompt
 First argument is a name of the program so i = 1 
 .PP
 .nf
-5 {
-7     std::vector<int>FilesSizes;
-8 
-10     for (int i = 1; i < argc ; i++)
-11         FilesSizes\&.push_back(atoi(argv[i]));
-12     
-13     InputFiles newFilesList(argc, FilesSizes);
-14     Benchmark NewTest;
-15     newFilesList\&.generate_random_int_data();
-16     NewTest\&.test(newFilesList);
-17 }
+9 {
+10     //! Container for sizes from command prompt
+11     std::vector<int>FilesSizes;
+12 
+13     //! First argument is a name of the program so i = 1
+14     for (int i = 1; i < argc ; i++)
+15         FilesSizes\&.push_back(atoi(argv[i]));
+16     
+17     InputFiles newFilesList(argc, FilesSizes);
+18     Benchmark NewTest;
+19     newFilesList\&.generate_random_int_data();
+20     NewTest\&.test(newFilesList);
+21 }
 .fi
 .SH "Author"
 .PP 
-Generated automatically by Doxygen for Lab1 from the source code\&.
+Generated automatically by Doxygen for Lab 1 from the source code\&.

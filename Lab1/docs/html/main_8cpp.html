@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>Lab1: src/main.cpp File Reference</title>
+<title>Lab 1: src/main.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,10 +23,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Lab1
-   &#160;<span id="projectnumber">1.0</span>
+   <div id="projectname">Lab 1
+   &#160;<span id="projectnumber">1.1</span>
    </div>
-   <div id="projectbrief">Benchmark framework</div>
+   <div id="projectbrief">Dynamic tables</div>
   </td>
  </tr>
  </tbody>
@@ -40,6 +40,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,17 +93,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">main.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="">inputfile_txt.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="">benchmark_frm.h</a>&quot;</code><br />
-</div>
-<p><a href="">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+
+<p>Master file.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="inputfile__txt_8h.html">inputfile_txt.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="benchmark__frm_8h.html">benchmark_frm.h</a>&quot;</code><br />
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
 <tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Master file. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a0ddf1224851353fc92bfbff6f499fa97"></a>
 <div class="memitem">
 <div class="memproto">
@@ -128,26 +132,25 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Container for sizes from command prompt</p>
 <p>First argument is a name of the program so i = 1 </p>
-<div class="fragment"><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    std::vector&lt;int&gt;FilesSizes;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; argc ; i++)</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        FilesSizes.push_back(atoi(argv[i]));</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_input_files.html">InputFiles</a> newFilesList(argc, FilesSizes);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_benchmark.html">Benchmark</a> NewTest;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    newFilesList.generate_random_int_data();</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    NewTest.<a class="code" href="class_benchmark.html#a4107fff4e0da31d561fc6109e359b341">test</a>(newFilesList);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}<div class="ttc" id="class_input_files_html"><div class="ttname"><a href="class_input_files.html">InputFiles</a></div><div class="ttdef"><b>Definition:</b> inputfile_txt.h:28</div></div>
-<div class="ttc" id="class_benchmark_html_a4107fff4e0da31d561fc6109e359b341"><div class="ttname"><a href="class_benchmark.html#a4107fff4e0da31d561fc6109e359b341">Benchmark::test</a></div><div class="ttdeci">void test(InputFiles files)</div><div class="ttdef"><b>Definition:</b> benchmark_frm.cpp:13</div></div>
-<div class="ttc" id="class_benchmark_html"><div class="ttname"><a href="class_benchmark.html">Benchmark</a></div><div class="ttdef"><b>Definition:</b> benchmark_frm.h:19</div></div>
-</div><!-- fragment -->
+<div class="fragment"><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{<span class="comment"></span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">    //! Container for sizes from command prompt</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"></span>    std::vector&lt;int&gt;FilesSizes;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">    //! First argument is a name of the program so i = 1</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"></span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; argc ; i++)</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        FilesSizes.push_back(atoi(argv[i]));</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_input_files.html">InputFiles</a> newFilesList(argc, FilesSizes);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_benchmark.html">Benchmark</a> NewTest;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    newFilesList.generate_random_int_data();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    NewTest.<a class="code" href="class_benchmark.html#a9d8c911b12652e87e91da87f85e6cdf7" title="Main testing function. ">test</a>(newFilesList);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 11 2015 15:21:46 for Lab1 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 12 2015 02:54:47 for Lab 1 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

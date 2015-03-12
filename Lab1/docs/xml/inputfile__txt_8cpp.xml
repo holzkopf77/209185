@@ -4,50 +4,42 @@
     <compoundname>inputfile_txt.cpp</compoundname>
     <includes refid="inputfile__txt_8h" local="yes">inputfile_txt.h</includes>
     <incdepgraph>
-      <node id="39">
+      <node id="43">
         <label>boost/algorithm/string/erase.hpp</label>
       </node>
-      <node id="36">
+      <node id="40">
         <label>cassert</label>
       </node>
-      <node id="32">
+      <node id="36">
         <label>string</label>
       </node>
-      <node id="33">
+      <node id="37">
         <label>fstream</label>
       </node>
-      <node id="38">
+      <node id="42">
         <label>random</label>
       </node>
-      <node id="35">
+      <node id="39">
         <label>cstdio</label>
       </node>
-      <node id="37">
+      <node id="41">
         <label>ctime</label>
       </node>
-      <node id="34">
+      <node id="38">
         <label>vector</label>
       </node>
-      <node id="29">
+      <node id="33">
         <label>src/inputfile_txt.cpp</label>
         <link refid="inputfile_txt.cpp"/>
-        <childnode refid="30" relation="include">
-        </childnode>
-      </node>
-      <node id="31">
-        <label>iostream</label>
-      </node>
-      <node id="30">
-        <label>inputfile_txt.h</label>
-        <link refid="inputfile__txt_8h"/>
-        <childnode refid="31" relation="include">
-        </childnode>
-        <childnode refid="32" relation="include">
-        </childnode>
-        <childnode refid="33" relation="include">
-        </childnode>
         <childnode refid="34" relation="include">
         </childnode>
+      </node>
+      <node id="35">
+        <label>iostream</label>
+      </node>
+      <node id="34">
+        <label>inputfile_txt.h</label>
+        <link refid="inputfile__txt_8h"/>
         <childnode refid="35" relation="include">
         </childnode>
         <childnode refid="36" relation="include">
@@ -58,86 +50,111 @@
         </childnode>
         <childnode refid="39" relation="include">
         </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <briefdescription>
-    </briefdescription>
+<para>Source code for InputFile class. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"></codeline>
-<codeline lineno="2"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="inputfile__txt_8h" kindref="compound">inputfile_txt.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
-<codeline lineno="4" refid="class_input_files_1a85a092f7ad25a9f959f1a93e5afb2045" refkind="member"><highlight class="normal"><ref refid="class_input_files_1a85a092f7ad25a9f959f1a93e5afb2045" kindref="member">InputFiles::InputFiles</ref>(){</highlight></codeline>
-<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>filesNumber<sp/>=<sp/><ref refid="inputfile__txt_8h_1adccf682ffd569bf29d8a9e214a411771" kindref="member">UNDEF_VALUE</ref>;</highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO:<sp/>EXCEPTIONS<sp/>HANDLING</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>TempName<sp/>=<sp/>std::tmpnam(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>filesNamesTab.push_back(TempName);</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>filesSizes.push_back(<ref refid="inputfile__txt_8h_1adccf682ffd569bf29d8a9e214a411771" kindref="member">UNDEF_VALUE</ref>);</highlight></codeline>
-<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14" refid="class_input_files_1a500e1a86787be57b9525836c6c912311" refkind="member"><highlight class="normal"><ref refid="class_input_files_1a85a092f7ad25a9f959f1a93e5afb2045" kindref="member">InputFiles::InputFiles</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filNr,<sp/>std::vector&lt;int&gt;filSiz){</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>filesNumber<sp/>=<sp/>filNr;</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>filesSizes<sp/>=<sp/>filSiz;</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>TempName;</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>filesNumber;<sp/>i++){</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TempName<sp/>=<sp/>std::tmpnam(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::algorithm::erase_all(TempName,<sp/></highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::algorithm::erase_all(TempName,<sp/></highlight><highlight class="stringliteral">&quot;\\&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>filesNamesTab.push_back(TempName);</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ofstream<sp/>NewFile;</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>filesNumber;<sp/>i++){</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NewFile.open(filesNamesTab[i<sp/>-<sp/><ref refid="inputfile__txt_8h_1a902304230ce19afe946c01bcdb5f4d6b" kindref="member">PROGRAM_NAME</ref>]<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.txt&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(NewFile.is_open()<sp/>&amp;&amp;<sp/></highlight><highlight class="stringliteral">&quot;I<sp/>can&apos;t<sp/>open<sp/>this<sp/>file.&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NewFile.close();</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight></codeline>
-<codeline lineno="40" refid="class_input_files_1adacb161e743183a2acef22b26dc7b954" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_input_files_1adacb161e743183a2acef22b26dc7b954" kindref="member">InputFiles::show_info</ref>(){<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;--------&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>filesNumber<sp/>-<sp/><ref refid="inputfile__txt_8h_1ac6795aca310766e1b10d90013aac6d47" kindref="member">FIRST_ARGUMENT</ref><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>(signed)filesNamesTab.size();<sp/>i++){</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>filesNamesTab[i]<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>(signed)filesSizes.size();<sp/>i++){</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>filesSizes[i]<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;--------&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
-<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55" refid="class_input_files_1ae5bb1d7ff253b873327a3a3d84f64584" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_input_files_1ae5bb1d7ff253b873327a3a3d84f64584" kindref="member">InputFiles::generate_random_int_data</ref>(){</highlight></codeline>
+<codeline lineno="1"><highlight class="comment">/*!<sp/>\file<sp/>inputfile_txt.cpp</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/>\brief<sp/>Source<sp/>code<sp/>for<sp/>InputFile<sp/>class</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="inputfile__txt_8h" kindref="compound" tooltip="A InputFile class. ">inputfile_txt.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><ref refid="class_input_files_1a85a092f7ad25a9f959f1a93e5afb2045" kindref="member" tooltip="A default constructor. ">InputFiles::InputFiles</ref>(){</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_input_files_1aa1c405cc71b38dae8dbabc3cac0925e4" kindref="member">filesNumber</ref><sp/>=<sp/><ref refid="inputfile__txt_8h_1adccf682ffd569bf29d8a9e214a411771" kindref="member">UNDEF_VALUE</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>/*!<sp/>\todo<sp/>EXCEPTIONS<sp/>HANDLING<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>TempName<sp/>=<sp/>std::tmpnam(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_input_files_1abbdfa73eda4af470d13c3d54a8665a0e" kindref="member">filesNamesTab</ref>.push_back(TempName);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_input_files_1a72f1784ee9848a58c413e8da2529b70d" kindref="member">filesSizes</ref>.push_back(<ref refid="inputfile__txt_8h_1adccf682ffd569bf29d8a9e214a411771" kindref="member">UNDEF_VALUE</ref>);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><ref refid="class_input_files_1a85a092f7ad25a9f959f1a93e5afb2045" kindref="member" tooltip="A default constructor. ">InputFiles::InputFiles</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filNr,<sp/>std::vector&lt;int&gt;filSiz){</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_input_files_1aa1c405cc71b38dae8dbabc3cac0925e4" kindref="member">filesNumber</ref><sp/>=<sp/>filNr;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_input_files_1a72f1784ee9848a58c413e8da2529b70d" kindref="member">filesSizes</ref><sp/>=<sp/>filSiz;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/>//!<sp/>Create<sp/>new<sp/>names<sp/>for<sp/>files</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>TempName;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/><ref refid="class_input_files_1aa1c405cc71b38dae8dbabc3cac0925e4" kindref="member">filesNumber</ref>;<sp/>i++){</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TempName<sp/>=<sp/>std::tmpnam(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//!<sp/>Delete<sp/>all<sp/>prohibit<sp/>char<sp/>from<sp/>string</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::algorithm::erase_all(TempName,<sp/></highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::algorithm::erase_all(TempName,<sp/></highlight><highlight class="stringliteral">&quot;\\&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_input_files_1abbdfa73eda4af470d13c3d54a8665a0e" kindref="member">filesNamesTab</ref>.push_back(TempName);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/><sp/>//!<sp/>Open<sp/>files<sp/>with<sp/>new<sp/>names</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>std::ofstream<sp/>NewFile;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/><ref refid="class_input_files_1aa1c405cc71b38dae8dbabc3cac0925e4" kindref="member">filesNumber</ref>;<sp/>i++){</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NewFile.open(<ref refid="class_input_files_1abbdfa73eda4af470d13c3d54a8665a0e" kindref="member">filesNamesTab</ref>[i<sp/>-<sp/><ref refid="inputfile__txt_8h_1a902304230ce19afe946c01bcdb5f4d6b" kindref="member">PROGRAM_NAME</ref>]<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.txt&quot;</highlight><highlight class="normal">);</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//!<sp/>Check<sp/>if<sp/>file<sp/>is<sp/>opened<sp/>correctly</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(NewFile.is_open()<sp/>&amp;&amp;<sp/></highlight><highlight class="stringliteral">&quot;I<sp/>can&apos;t<sp/>open<sp/>this<sp/>file.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NewFile.close();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_input_files_1adacb161e743183a2acef22b26dc7b954" kindref="member" tooltip="Show info about files. ">InputFiles::show_info</ref>(){<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;--------&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>filesNumber<sp/>-<sp/><ref refid="inputfile__txt_8h_1ac6795aca310766e1b10d90013aac6d47" kindref="member" tooltip="First argument from command prompt (name of the program) ">FIRST_ARGUMENT</ref><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>(signed)<ref refid="class_input_files_1abbdfa73eda4af470d13c3d54a8665a0e" kindref="member">filesNamesTab</ref>.size();<sp/>i++){</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/><ref refid="class_input_files_1abbdfa73eda4af470d13c3d54a8665a0e" kindref="member">filesNamesTab</ref>[i]<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>(signed)<ref refid="class_input_files_1a72f1784ee9848a58c413e8da2529b70d" kindref="member">filesSizes</ref>.size();<sp/>i++){</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/><ref refid="class_input_files_1a72f1784ee9848a58c413e8da2529b70d" kindref="member">filesSizes</ref>[i]<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;--------&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>seedGen<sp/>=<sp/>time(NULL);</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>std::mt19937<sp/>randomNumbr(seedGen);</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>std::numeric_limits&lt;int&gt;::max()<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>std::uniform_int_distribution&lt;&gt;newDistr;</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ofstream<sp/>NewFile;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_input_files_1ae5bb1d7ff253b873327a3a3d84f64584" kindref="member" tooltip="Create random integers data into files. ">InputFiles::generate_random_int_data</ref>(){</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/><sp/><sp/><sp/>//!<sp/>Seed<sp/>for<sp/>Mersenne<sp/>Twister<sp/>19937<sp/>generator</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>seedGen<sp/>=<sp/>time(NULL);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/><sp/><sp/><sp/>//!<sp/>Mersenne<sp/>Twister<sp/>19937<sp/>generator</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/*!</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>More<sp/>info<sp/>about<sp/>this<sp/>generator:</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;a<sp/>href=&quot;linkURL&quot;&gt;http://pl.wikipedia.org/wiki/Mersenne_Twister&lt;/a&gt;<sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>std::mt19937<sp/>randomNumbr(seedGen);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/><sp/><sp/><sp/>//!<sp/>Uniform<sp/>distribution<sp/>random<sp/>number</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/*!</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Max<sp/>number:<sp/>uncomment<sp/>next<sp/>line</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>More<sp/>info<sp/>about<sp/>this<sp/>distribution:</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;a<sp/>href=&quot;linkURL&quot;&gt;http://pl.wikipedia.org/wiki/Rozk%C5%82ad_jednostajny&lt;/a&gt;</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>std::numeric_limits&lt;int&gt;::max()<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>std::uniform_int_distribution&lt;&gt;newDistr;</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>filesNumber;<sp/>i++){</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NewFile.open((filesNamesTab[i<sp/>-<sp/><ref refid="inputfile__txt_8h_1a902304230ce19afe946c01bcdb5f4d6b" kindref="member">PROGRAM_NAME</ref>]<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.txt&quot;</highlight><highlight class="normal">),std::ios::in);</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(NewFile.is_open()<sp/>&amp;&amp;<sp/>(</highlight><highlight class="stringliteral">&quot;I<sp/>can&apos;t<sp/>open<sp/>file.&quot;</highlight><highlight class="normal">));</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>filesSizes[i<sp/>-<sp/><ref refid="inputfile__txt_8h_1ac6795aca310766e1b10d90013aac6d47" kindref="member">FIRST_ARGUMENT</ref>];<sp/>j++){</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NewFile<sp/>&lt;&lt;<sp/>newDistr(randomNumbr)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NewFile.close();</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ofstream<sp/>NewFile;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/><ref refid="class_input_files_1aa1c405cc71b38dae8dbabc3cac0925e4" kindref="member">filesNumber</ref>;<sp/>i++){</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NewFile.open((<ref refid="class_input_files_1abbdfa73eda4af470d13c3d54a8665a0e" kindref="member">filesNamesTab</ref>[i<sp/>-<sp/><ref refid="inputfile__txt_8h_1a902304230ce19afe946c01bcdb5f4d6b" kindref="member">PROGRAM_NAME</ref>]<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.txt&quot;</highlight><highlight class="normal">),std::ios::in);</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//!<sp/>Check<sp/>if<sp/>file<sp/>is<sp/>opened<sp/>correctly</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(NewFile.is_open()<sp/>&amp;&amp;<sp/>(</highlight><highlight class="stringliteral">&quot;I<sp/>can&apos;t<sp/>open<sp/>file.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/><ref refid="class_input_files_1a72f1784ee9848a58c413e8da2529b70d" kindref="member">filesSizes</ref>[i<sp/>-<sp/><ref refid="inputfile__txt_8h_1ac6795aca310766e1b10d90013aac6d47" kindref="member" tooltip="First argument from command prompt (name of the program) ">FIRST_ARGUMENT</ref>];<sp/>j++){</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NewFile<sp/>&lt;&lt;<sp/>newDistr(randomNumbr)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NewFile.close();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/inputfile_txt.cpp"/>
   </compounddef>

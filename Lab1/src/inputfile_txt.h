@@ -1,5 +1,5 @@
 /*! \file inputfile_txt.h
-	\brief A new input files class
+	\brief A InputFile class
 */
 #ifndef INPUTFILE_TXT_H_
 #define INPUTFILE_TXT_H_
@@ -15,15 +15,14 @@
 
 #include <boost/algorithm/string/erase.hpp>
 
-//! First argument from command prompt (name of the program)
-const int FIRST_ARGUMENT = 1;
-const int UNDEF_VALUE = 1;
-const int PROGRAM_NAME = 1;
+const int FIRST_ARGUMENT = 1; //!< A const value for representing first argument from command prompt (name of the program) */
+const int UNDEF_VALUE = 1; //!<  A value for undefined arguments */
+const int PROGRAM_NAME = 1; //!< The same as FIRST_ARGUMENT */
 
 /*! \class InputFiles
 
-	Making an object which contain text files with 
-	generated random integer numbers.
+Making an object which contain text files with
+generated random integer numbers.
 */
 class InputFiles {	
 	public:
@@ -49,42 +48,57 @@ class InputFiles {
 		*/
 		InputFiles(int filNr, std::vector<int>filSiz);
 
-		//! Show info about files
-		/*!
+		/*! \fn show_info()
+			\brief Showes info obout files.
+
 			Display: number of files, names of files, sizes of files
 		*/
 		void show_info();
 
-		//! Create random integers data into files
-		/*
-		Generating random integers data (size from filesSizes vector)
-		and putting them into files (names from filesNamesTab)
+		/*! \fn generate_random_int_data
+			\brief Puts random int data into files.
+
+			Generating random integers data (size from filesSizes vector)
+			and putting them into files (names from filesNamesTab)
 		*/
 		void generate_random_int_data();
 
-		//! Return names of files (only for read purpose)
-		/*!
-			\param Nmbr number of the file
+		/*! \fn return_file_name
+			\brief Return names of files (only for read purpose)
+			\param Nmbr Number of the file.
 		*/
 		const std::string return_file_name(int Nmbr){
 			return filesNamesTab[Nmbr];
 		}
 
-		//! Return sizes of files (only for read purpose)
-		/*!
-			\param Nmbr number of the file
+		/*! \fn return_file_size
+			\brief Return sizes of files (only for read purpose)
+			\param Nmbr Number of the file.
 		*/
 		const int return_file_size(int Nmbr){
 			return filesSizes[Nmbr];
 		}
 
-		//! Return number of files
+		/*! \fn return_number_files
+			\brief Return number of files
+		*/
 		const int return_number_files(){
 			return filesNumber;
 		}
 	private:
+		/*! \var filesNumber
+			\brief Number of generated files
+		*/
 		int filesNumber;
+
+		/*! \varfilesNamesTab
+			\brief Container for generated file names
+		*/
 		std::vector<std::string>filesNamesTab;
+
+		/*! \var filesSizes
+			\brief Container for file sizes
+		*/
 		std::vector<int>filesSizes;
 };	
 #endif
