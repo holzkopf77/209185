@@ -11,7 +11,9 @@ Użyto bibliotek Boost, więcej info: http://www.boost.org/
 -------
 TODO:
 Wsadzić szablony
+
 Uzupełnić dokumentacje:
-  strona tytułowa
-  wsadzić wykresy, obrazki, ogarnąć doxygena
+  -strona tytułowa
+  -wsadzić wykresy, obrazki, ogarnąć doxygena
+  
 Uprościć kod
