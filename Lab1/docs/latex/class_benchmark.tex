@@ -52,16 +52,20 @@ Generates raport with program tests outputs.
 \item[\hyperlink{todo__todo000001}{Todo}]F\+I\+L\+E O\+V\+E\+R\+W\+R\+I\+T\+I\+N\+G, N\+E\+E\+D T\+O I\+M\+P\+L\+E\+M\+E\+N\+T N\+E\+W N\+A\+M\+E\+S \end{DoxyRefDesc}
 
 \begin{DoxyCode}
-6                                                             \{
-7     std::ofstream raportFile;
-8     raportFile.open(\textcolor{stringliteral}{"test.xls"}, std::ios::in | std::ios::app);\textcolor{comment}{}
-9 \textcolor{comment}{    /*! \(\backslash\)todo FILE OVERWRITING, NEED TO IMPLEMENT NEW NAMES */}
-10     assert(raportFile.is\_open() && (\textcolor{stringliteral}{"I can't open file."}));
-11     std::string stringNextTime = std::to\_string(nextTime);
-12     boost::algorithm::replace\_first(stringNextTime, \textcolor{stringliteral}{"."}, \textcolor{stringliteral}{","});
-13     raportFile << size << \textcolor{stringliteral}{"\(\backslash\)n"} << stringNextTime << \textcolor{stringliteral}{"\(\backslash\)n"};
-14     raportFile.close();
-15 \}
+6                                                             \{\textcolor{comment}{}
+7 \textcolor{comment}{    /*! \(\backslash\)todo FILE OVERWRITING, NEED TO IMPLEMENT NEW NAMES */}
+8     std::ofstream raportFile;
+9     std::string stringNextTime = std::to\_string(nextTime);
+10 
+11     \textcolor{comment}{// .xls as excel file format}
+12     raportFile.open(\textcolor{stringliteral}{"test.xls"}, std::ios::in | std::ios::app);
+13         assert(raportFile.is\_open() && (\textcolor{stringliteral}{"I can't open file."}));
+14     \textcolor{comment}{// need to change '.' on ',' due to excel string format }
+15     boost::algorithm::replace\_first(stringNextTime, \textcolor{stringliteral}{"."}, \textcolor{stringliteral}{","});
+16     
+17     raportFile << size << \textcolor{stringliteral}{"\(\backslash\)n"} << stringNextTime << \textcolor{stringliteral}{"\(\backslash\)n"};
+18     raportFile.close();
+19 \}
 \end{DoxyCode}
 \hypertarget{class_benchmark_a3efa1ec3d4e76eb0fa1633dda265c711}{}\index{Benchmark@{Benchmark}!get\+Avr@{get\+Avr}}
 \index{get\+Avr@{get\+Avr}!Benchmark@{Benchmark}}
@@ -81,14 +85,17 @@ Measures the average duration from 10 samples.
 \end{DoxyParams}
 
 \begin{DoxyCode}
-17                                                         \{
-18     \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} avrg = 0.0;
-19     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < (signed)times.size(); i++)\{
-20         avrg += times[i];
-21     \}
-22     avrg /= (\textcolor{keywordtype}{long} double)times.size();
-23     \textcolor{keywordflow}{return} avrg;
-24 \}
+21                                                         \{
+22     \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} avrg = 0.0;
+23 
+24     \textcolor{comment}{//add 10 values, than count average}
+25     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < (signed)times.size(); i++)\{
+26         avrg += times[i];
+27     \}
+28 
+29     avrg /= (\textcolor{keywordtype}{long} double)times.size();
+30     \textcolor{keywordflow}{return} avrg;
+31 \}
 \end{DoxyCode}
 \hypertarget{class_benchmark_a2256d13e70e2e5f0df7583118dd88d49}{}\index{Benchmark@{Benchmark}!measure\+Time@{measure\+Time}}
 \index{measure\+Time@{measure\+Time}!Benchmark@{Benchmark}}
@@ -109,29 +116,30 @@ Measures the duration of the work of assignment function.
 {\em data\+Size} & A size of the file. \\
 \hline
 \end{DoxyParams}
-Here starts the timer
 
-Here it ends 
 \begin{DoxyCode}
-26                                                        \{
-27     
-28     std::vector<long double> estimateTimes;
-29     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < 10; j++)\{\textcolor{comment}{}
-30 \textcolor{comment}{        //! Here starts the timer}
-31 \textcolor{comment}{}        boost::timer::cpu\_timer startTime;
-32         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < dataSize; i++)\{
-33             dataTable[i] *= 2;
-34         \}\textcolor{comment}{}
-35 \textcolor{comment}{        //! Here it ends}
-36 \textcolor{comment}{}        boost::timer::cpu\_times endTime = startTime.elapsed();
-37         estimateTimes.push\_back(static\_cast<long double>(endTime.wall * \hyperlink{benchmark__frm_8h_a0383b9707104291ad0c37593d975221b}{SEC}));
-38     \}
-39     std::cout.fixed;
-40     \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} DurTime = \hyperlink{class_benchmark_a3efa1ec3d4e76eb0fa1633dda265c711}{getAvr}(estimateTimes);
-41     std::cout << \textcolor{stringliteral}{"Time (average, 10 samples) for "} << dataSize << \textcolor{stringliteral}{" elements: "} << DurTime << \textcolor{stringliteral}{" sec"}<< 
+33                                                        \{
+34     \textcolor{comment}{// container for counted working times}
+35     std::vector<long double> estimateTimes;
+36 
+37     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < 10; j++)\{
+38         \textcolor{comment}{// Here starts the timer}
+39         boost::timer::cpu\_timer startTime;
+40         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < dataSize; i++)\{
+41             dataTable[i] *= 2;
+42         \}
+43         \textcolor{comment}{// Here it ends}
+44         boost::timer::cpu\_times endTime = startTime.elapsed();
+45         \textcolor{comment}{// add new time to the vector}
+46         estimateTimes.push\_back(static\_cast<long double>(endTime.wall * \hyperlink{benchmark__frm_8h_a0383b9707104291ad0c37593d975221b}{SEC}));
+47     \}
+48     \textcolor{comment}{// for better display}
+49     std::cout.fixed;
+50     \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} DurTime = \hyperlink{class_benchmark_a3efa1ec3d4e76eb0fa1633dda265c711}{getAvr}(estimateTimes);
+51     std::cout << \textcolor{stringliteral}{"Time (average, 10 samples) for "} << dataSize << \textcolor{stringliteral}{" elements: "} << DurTime << \textcolor{stringliteral}{" sec"}<< 
       std::endl;
-42     \hyperlink{class_benchmark_a967a51b006393725fedf53119f467a16}{generateRaport}(DurTime, dataSize);
-43 \}
+52     \hyperlink{class_benchmark_a967a51b006393725fedf53119f467a16}{generateRaport}(DurTime, dataSize);
+53 \}
 \end{DoxyCode}
 \hypertarget{class_benchmark_a9d8c911b12652e87e91da87f85e6cdf7}{}\index{Benchmark@{Benchmark}!test@{test}}
 \index{test@{test}!Benchmark@{Benchmark}}
@@ -149,40 +157,35 @@ Main testing function.
 {\em files} & random generated files with integers \\
 \hline
 \end{DoxyParams}
-Opening file + making new table with content
 
-Check if file is opened correctly
-
-Testing time here 
 \begin{DoxyCode}
-45                                     \{
-46     \textcolor{keywordtype}{int}* tabForData = NULL;
-47     \textcolor{keywordtype}{int} tempValue = 0;
-48     \textcolor{keywordtype}{int} count = 0;
-49     std::fstream newFile;
-50 
-51     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < files.\hyperlink{class_input_files_a5b1547e90d17d2332daed2203939ce25}{return\_number\_files}() - 
+55                                     \{
+56     \textcolor{comment}{// temp memory container}
+57     \textcolor{keywordtype}{int}* tabForData = NULL;
+58     \textcolor{keywordtype}{int} tempValue = 0;
+59     \textcolor{keywordtype}{int} count = 0;
+60     std::fstream newFile;
+61 
+62     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < files.\hyperlink{class_input_files_a3db5accd81913e0b89fdd3b4650c8923}{return\_number\_files}() - 
       \hyperlink{inputfile__txt_8h_ac6795aca310766e1b10d90013aac6d47}{FIRST\_ARGUMENT}; i++)\{
-52         \textcolor{comment}{}
-53 \textcolor{comment}{        //! Opening file + making new table with content}
-54 \textcolor{comment}{}        tabForData = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[files.\hyperlink{class_input_files_ad0bb8456352c7e008315a284d9003086}{return\_file\_size}(i)];
-55         newFile.open((files.\hyperlink{class_input_files_a9867703917e916ceea50b9d7d4b07d2f}{return\_file\_name}(i) + \textcolor{stringliteral}{".txt"}), std::ios::in);
-56         \textcolor{comment}{}
-57 \textcolor{comment}{        //! Check if file is opened correctly}
-58 \textcolor{comment}{}        assert(newFile.is\_open() && (\textcolor{stringliteral}{"I can't open file."}));
-59 
-60         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < files.\hyperlink{class_input_files_ad0bb8456352c7e008315a284d9003086}{return\_file\_size}(i); j++)\{
-61             newFile >> tempValue;
-62             tabForData[j] = tempValue;
-63         \}
-64         newFile.close();
-65 \textcolor{comment}{}
-66 \textcolor{comment}{        //! Testing time here}
-67 \textcolor{comment}{}        \hyperlink{class_benchmark_a2256d13e70e2e5f0df7583118dd88d49}{measureTime}(tabForData, files.\hyperlink{class_input_files_ad0bb8456352c7e008315a284d9003086}{return\_file\_size}(i));
-68         \textcolor{keyword}{delete}[] tabForData;
-69         
-70     \}
-71 \}
+63         \textcolor{comment}{// Opening file + making new table with content}
+64         tabForData = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[files.\hyperlink{class_input_files_a9c65bfcc0e684642c40c999959d6d014}{return\_file\_size}(i)];
+65         newFile.open((files.\hyperlink{class_input_files_a9246bc217efcfa1569478bcf44e1cd20}{return\_file\_name}(i) + \textcolor{stringliteral}{".txt"}), std::ios::in);
+66         
+67         \textcolor{comment}{// Checking if file is opened correctly}
+68         assert(newFile.is\_open() && (\textcolor{stringliteral}{"I can't open file."}));
+69 
+70         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < files.\hyperlink{class_input_files_a9c65bfcc0e684642c40c999959d6d014}{return\_file\_size}(i); j++)\{
+71             newFile >> tempValue;
+72             tabForData[j] = tempValue;
+73         \}
+74         newFile.close();
+75 
+76         \textcolor{comment}{// Testing time here}
+77         \hyperlink{class_benchmark_a2256d13e70e2e5f0df7583118dd88d49}{measureTime}(tabForData, files.\hyperlink{class_input_files_a9c65bfcc0e684642c40c999959d6d014}{return\_file\_size}(i));
+78         \textcolor{keyword}{delete}[] tabForData;
+79     \}
+80 \}
 \end{DoxyCode}
 
 

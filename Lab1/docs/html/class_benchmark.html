@@ -164,16 +164,20 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>FILE OVERWRITING, NEED TO IMPLEMENT NEW NAMES </dd></dl>
-<div class="fragment"><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;                                                            {</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    std::ofstream raportFile;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    raportFile.open(<span class="stringliteral">&quot;test.xls&quot;</span>, std::ios::in | std::ios::app);<span class="comment"></span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">    /*! \todo FILE OVERWRITING, NEED TO IMPLEMENT NEW NAMES */</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    assert(raportFile.is_open() &amp;&amp; (<span class="stringliteral">&quot;I can&#39;t open file.&quot;</span>));</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    std::string stringNextTime = std::to_string(nextTime);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    boost::algorithm::replace_first(stringNextTime, <span class="stringliteral">&quot;.&quot;</span>, <span class="stringliteral">&quot;,&quot;</span>);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    raportFile &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; stringNextTime &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    raportFile.close();</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;                                                            {<span class="comment"></span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">    /*! \todo FILE OVERWRITING, NEED TO IMPLEMENT NEW NAMES */</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    std::ofstream raportFile;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    std::string stringNextTime = std::to_string(nextTime);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="comment">// .xls as excel file format</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    raportFile.open(<span class="stringliteral">&quot;test.xls&quot;</span>, std::ios::in | std::ios::app);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        assert(raportFile.is_open() &amp;&amp; (<span class="stringliteral">&quot;I can&#39;t open file.&quot;</span>));</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">// need to change &#39;.&#39; on &#39;,&#39; due to excel string format </span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    boost::algorithm::replace_first(stringNextTime, <span class="stringliteral">&quot;.&quot;</span>, <span class="stringliteral">&quot;,&quot;</span>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    raportFile &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; stringNextTime &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    raportFile.close();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -206,14 +210,17 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                                                        {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">double</span> avrg = 0.0;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; (signed)times.size(); i++){</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        avrg += times[i];</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    avrg /= (<span class="keywordtype">long</span> double)times.size();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">return</span> avrg;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                                                        {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">double</span> avrg = 0.0;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">//add 10 values, than count average</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; (signed)times.size(); i++){</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        avrg += times[i];</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    avrg /= (<span class="keywordtype">long</span> double)times.size();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> avrg;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -257,26 +264,27 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>Here starts the timer</p>
-<p>Here it ends </p>
-<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                                       {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    std::vector&lt;long double&gt; estimateTimes;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; 10; j++){<span class="comment"></span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">        //! Here starts the timer</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"></span>        boost::timer::cpu_timer startTime;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; dataSize; i++){</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            dataTable[i] *= 2;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        }<span class="comment"></span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">        //! Here it ends</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"></span>        boost::timer::cpu_times endTime = startTime.elapsed();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        estimateTimes.push_back(static_cast&lt;long double&gt;(endTime.wall * <a class="code" href="benchmark__frm_8h.html#a0383b9707104291ad0c37593d975221b">SEC</a>));</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    std::cout.fixed;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">double</span> DurTime = <a class="code" href="class_benchmark.html#a3efa1ec3d4e76eb0fa1633dda265c711" title="Measures the average duration from 10 samples. ">getAvr</a>(estimateTimes);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Time (average, 10 samples) for &quot;</span> &lt;&lt; dataSize &lt;&lt; <span class="stringliteral">&quot; elements: &quot;</span> &lt;&lt; DurTime &lt;&lt; <span class="stringliteral">&quot; sec&quot;</span>&lt;&lt; std::endl;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_benchmark.html#a967a51b006393725fedf53119f467a16" title="Generates raport with program tests outputs. ">generateRaport</a>(DurTime, dataSize);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                                       {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">// container for counted working times</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    std::vector&lt;long double&gt; estimateTimes;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; 10; j++){</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="comment">// Here starts the timer</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        boost::timer::cpu_timer startTime;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; dataSize; i++){</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            dataTable[i] *= 2;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="comment">// Here it ends</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        boost::timer::cpu_times endTime = startTime.elapsed();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="comment">// add new time to the vector</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        estimateTimes.push_back(static_cast&lt;long double&gt;(endTime.wall * <a class="code" href="benchmark__frm_8h.html#a0383b9707104291ad0c37593d975221b">SEC</a>));</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// for better display</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    std::cout.fixed;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">double</span> DurTime = <a class="code" href="class_benchmark.html#a3efa1ec3d4e76eb0fa1633dda265c711" title="Measures the average duration from 10 samples. ">getAvr</a>(estimateTimes);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Time (average, 10 samples) for &quot;</span> &lt;&lt; dataSize &lt;&lt; <span class="stringliteral">&quot; elements: &quot;</span> &lt;&lt; DurTime &lt;&lt; <span class="stringliteral">&quot; sec&quot;</span>&lt;&lt; std::endl;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_benchmark.html#a967a51b006393725fedf53119f467a16" title="Generates raport with program tests outputs. ">generateRaport</a>(DurTime, dataSize);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -301,36 +309,32 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>Opening file + making new table with content</p>
-<p>Check if file is opened correctly</p>
-<p>Testing time here </p>
-<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                    {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">int</span>* tabForData = NULL;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">int</span> tempValue = 0;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">int</span> count = 0;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    std::fstream newFile;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; files.<a class="code" href="class_input_files.html#a5b1547e90d17d2332daed2203939ce25" title="Return number of files. ">return_number_files</a>() - <a class="code" href="inputfile__txt_8h.html#ac6795aca310766e1b10d90013aac6d47" title="First argument from command prompt (name of the program) ">FIRST_ARGUMENT</a>; i++){</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="comment"></span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">        //! Opening file + making new table with content</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"></span>        tabForData = <span class="keyword">new</span> <span class="keywordtype">int</span>[files.<a class="code" href="class_input_files.html#ad0bb8456352c7e008315a284d9003086" title="Return sizes of files (only for read purpose) ">return_file_size</a>(i)];</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        newFile.open((files.<a class="code" href="class_input_files.html#a9867703917e916ceea50b9d7d4b07d2f" title="Return names of files (only for read purpose) ">return_file_name</a>(i) + <span class="stringliteral">&quot;.txt&quot;</span>), std::ios::in);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="comment"></span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">        //! Check if file is opened correctly</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"></span>        assert(newFile.is_open() &amp;&amp; (<span class="stringliteral">&quot;I can&#39;t open file.&quot;</span>));</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; files.<a class="code" href="class_input_files.html#ad0bb8456352c7e008315a284d9003086" title="Return sizes of files (only for read purpose) ">return_file_size</a>(i); j++){</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            newFile &gt;&gt; tempValue;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            tabForData[j] = tempValue;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        newFile.close();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">        //! Testing time here</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"></span>        <a class="code" href="class_benchmark.html#a2256d13e70e2e5f0df7583118dd88d49" title="Measures the duration of the work of assignment function. ">measureTime</a>(tabForData, files.<a class="code" href="class_input_files.html#ad0bb8456352c7e008315a284d9003086" title="Return sizes of files (only for read purpose) ">return_file_size</a>(i));</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keyword">delete</span>[] tabForData;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                    {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// temp memory container</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span>* tabForData = NULL;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">int</span> tempValue = 0;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">int</span> count = 0;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    std::fstream newFile;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; files.<a class="code" href="class_input_files.html#a3db5accd81913e0b89fdd3b4650c8923" title="Return number of files. ">return_number_files</a>() - <a class="code" href="inputfile__txt_8h.html#ac6795aca310766e1b10d90013aac6d47" title="A const value for representing first argument from command prompt (name of the program) */...">FIRST_ARGUMENT</a>; i++){</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="comment">// Opening file + making new table with content</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        tabForData = <span class="keyword">new</span> <span class="keywordtype">int</span>[files.<a class="code" href="class_input_files.html#a9c65bfcc0e684642c40c999959d6d014" title="Return sizes of files (only for read purpose) ">return_file_size</a>(i)];</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        newFile.open((files.<a class="code" href="class_input_files.html#a9246bc217efcfa1569478bcf44e1cd20" title="Return names of files (only for read purpose) ">return_file_name</a>(i) + <span class="stringliteral">&quot;.txt&quot;</span>), std::ios::in);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="comment">// Checking if file is opened correctly</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        assert(newFile.is_open() &amp;&amp; (<span class="stringliteral">&quot;I can&#39;t open file.&quot;</span>));</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; files.<a class="code" href="class_input_files.html#a9c65bfcc0e684642c40c999959d6d014" title="Return sizes of files (only for read purpose) ">return_file_size</a>(i); j++){</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            newFile &gt;&gt; tempValue;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            tabForData[j] = tempValue;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        newFile.close();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="comment">// Testing time here</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <a class="code" href="class_benchmark.html#a2256d13e70e2e5f0df7583118dd88d49" title="Measures the duration of the work of assignment function. ">measureTime</a>(tabForData, files.<a class="code" href="class_input_files.html#a9c65bfcc0e684642c40c999959d6d014" title="Return sizes of files (only for read purpose) ">return_file_size</a>(i));</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keyword">delete</span>[] tabForData;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -364,7 +368,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 12 2015 02:54:47 for Lab 1 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 12 2015 03:33:33 for Lab 1 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

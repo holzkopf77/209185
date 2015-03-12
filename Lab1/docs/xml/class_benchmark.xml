@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.h" line="59" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.h" bodystart="59" bodyend="-1"/>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.h" line="58" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.h" bodystart="58" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -41,8 +41,8 @@
 </parameterlist>
 </para>        </detaileddescription>
         <inbodydescription>
-<para>Opening file + making new table with content</para><para>Check if file is opened correctly</para><para>Testing time here </para>        </inbodydescription>
-        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.h" line="30" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.cpp" bodystart="45" bodyend="71"/>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.h" line="30" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.cpp" bodystart="55" bodyend="80"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -80,7 +80,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
 <para><xrefsect id="todo_1_todo000001"><xreftitle>Todo</xreftitle><xrefdescription><para>FILE OVERWRITING, NEED TO IMPLEMENT NEW NAMES </para></xrefdescription></xrefsect></para>        </inbodydescription>
-        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.h" line="54" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.cpp" bodystart="6" bodyend="15"/>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.h" line="53" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.cpp" bodystart="6" bodyend="19"/>
       </memberdef>
       <memberdef kind="function" id="class_benchmark_1a3efa1ec3d4e76eb0fa1633dda265c711" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>long double</type>
@@ -105,7 +105,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.h" line="46" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.cpp" bodystart="17" bodyend="24"/>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.h" line="45" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.cpp" bodystart="21" bodyend="31"/>
       </memberdef>
       <memberdef kind="function" id="class_benchmark_1a2256d13e70e2e5f0df7583118dd88d49" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -140,15 +140,15 @@
 </parameterlist>
 </para>        </detaileddescription>
         <inbodydescription>
-<para>Here starts the timer</para><para>Here it ends </para>        </inbodydescription>
-        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.h" line="39" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.cpp" bodystart="26" bodyend="43"/>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.h" line="38" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.cpp" bodystart="33" bodyend="53"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
 <para>Making a framework for testing inserted data structure. Using time to estimate computational complexity. </para>    </detaileddescription>
-    <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.h" line="23" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.h" bodystart="23" bodyend="60"/>
+    <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.h" line="23" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.h" bodystart="23" bodyend="59"/>
     <listofallmembers>
       <member refid="class_benchmark_1a967a51b006393725fedf53119f467a16" prot="private" virt="non-virtual"><scope>Benchmark</scope><name>generateRaport</name></member>
       <member refid="class_benchmark_1a3efa1ec3d4e76eb0fa1633dda265c711" prot="private" virt="non-virtual"><scope>Benchmark</scope><name>getAvr</name></member>

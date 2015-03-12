@@ -28,20 +28,19 @@ Master file.
 \item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
 \end{DoxyParamCaption}
 )}\label{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}
-Container for sizes from command prompt
 
-First argument is a name of the program so i = 1 
 \begin{DoxyCode}
-9 \{\textcolor{comment}{}
-10 \textcolor{comment}{    //! Container for sizes from command prompt}
-11 \textcolor{comment}{}    std::vector<int>FilesSizes;
-12 \textcolor{comment}{}
-13 \textcolor{comment}{    //! First argument is a name of the program so i = 1}
-14 \textcolor{comment}{}    \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i < argc ; i++)
+9 \{
+10     \textcolor{comment}{// Container for sizes from command prompt}
+11     std::vector<int>FilesSizes;
+12 
+13     \textcolor{comment}{// First argument is a name of the program so i = 1}
+14     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i < argc ; i++)
 15         FilesSizes.push\_back(atoi(argv[i]));
-16     
+16 
 17     \hyperlink{class_input_files}{InputFiles} newFilesList(argc, FilesSizes);
 18     \hyperlink{class_benchmark}{Benchmark} NewTest;
-19     newFilesList.generate\_random\_int\_data();
-20     NewTest.\hyperlink{class_benchmark_a9d8c911b12652e87e91da87f85e6cdf7}{test}(newFilesList);
-21 \}\end{DoxyCode}
+19 
+20     newFilesList.generate\_random\_int\_data();
+21     NewTest.\hyperlink{class_benchmark_a9d8c911b12652e87e91da87f85e6cdf7}{test}(newFilesList);
+22 \}\end{DoxyCode}

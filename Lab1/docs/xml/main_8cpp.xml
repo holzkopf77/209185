@@ -108,8 +108,8 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-<para>Container for sizes from command prompt</para><para>First argument is a name of the program so i = 1 </para>        </inbodydescription>
-        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/main.cpp" line="8" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/main.cpp" bodystart="8" bodyend="21"/>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/main.cpp" line="8" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/main.cpp" bodystart="8" bodyend="22"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -125,19 +125,20 @@
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="benchmark__frm_8h" kindref="compound" tooltip="A Benchmark class. ">benchmark_frm.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>argv[])</highlight></codeline>
-<codeline lineno="9"><highlight class="normal">{</highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>//!<sp/>Container<sp/>for<sp/>sizes<sp/>from<sp/>command<sp/>prompt</highlight></codeline>
-<codeline lineno="11"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;FilesSizes;</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>//!<sp/>First<sp/>argument<sp/>is<sp/>a<sp/>name<sp/>of<sp/>the<sp/>program<sp/>so<sp/>i<sp/>=<sp/>1</highlight></codeline>
-<codeline lineno="14"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>argc<sp/>;<sp/>i++)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Container<sp/>for<sp/>sizes<sp/>from<sp/>command<sp/>prompt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;FilesSizes;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>First<sp/>argument<sp/>is<sp/>a<sp/>name<sp/>of<sp/>the<sp/>program<sp/>so<sp/>i<sp/>=<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>argc<sp/>;<sp/>i++)</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FilesSizes.push_back(atoi(argv[i]));</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_input_files" kindref="compound">InputFiles</ref><sp/>newFilesList(argc,<sp/>FilesSizes);</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_benchmark" kindref="compound">Benchmark</ref><sp/>NewTest;</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>newFilesList.generate_random_int_data();</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>NewTest.<ref refid="class_benchmark_1a9d8c911b12652e87e91da87f85e6cdf7" kindref="member" tooltip="Main testing function. ">test</ref>(newFilesList);</highlight></codeline>
-<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>newFilesList.generate_random_int_data();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>NewTest.<ref refid="class_benchmark_1a9d8c911b12652e87e91da87f85e6cdf7" kindref="member" tooltip="Main testing function. ">test</ref>(newFilesList);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/main.cpp"/>
   </compounddef>
