@@ -67,7 +67,4 @@ private:
 	*/
 	int addCount;
 };
-
-#include "stack.cpp"
-
 #endif

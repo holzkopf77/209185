@@ -6,6 +6,7 @@
 
 #include "inputfile_txt.h"
 #include "stack.h"
+#include "stack.cpp"
 
 int main(int argc, char* argv[]){
 	
