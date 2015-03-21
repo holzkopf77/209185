@@ -1,0 +1,205 @@
+\hypertarget{class_benchmark}{}\section{Benchmark Class Reference}
+\label{class_benchmark}\index{Benchmark@{Benchmark}}
+
+
+{\ttfamily \#include $<$benchmark\+\_\+frm.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_benchmark_a9d8c911b12652e87e91da87f85e6cdf7}{test} (\hyperlink{class_input_files}{Input\+Files} files)
+\begin{DoxyCompactList}\small\item\em Main testing function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_benchmark_a967a51b006393725fedf53119f467a16}{generate\+Raport} (long double next\+Time, int size)
+\begin{DoxyCompactList}\small\item\em Generates raport with program tests outputs. \end{DoxyCompactList}\item 
+long double \hyperlink{class_benchmark_a3efa1ec3d4e76eb0fa1633dda265c711}{get\+Avr} (std\+::vector$<$ long double $>$times)
+\begin{DoxyCompactList}\small\item\em Measures the average duration from 10 samples. \end{DoxyCompactList}\item 
+void \hyperlink{class_benchmark_a2256d13e70e2e5f0df7583118dd88d49}{measure\+Time} (int $\ast$data\+Table, int data\+Size)
+\begin{DoxyCompactList}\small\item\em Measures the duration of the work of assignment function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ long double $>$ \hyperlink{class_benchmark_a5563f218941d6b01ac7783f1e6582025}{test\+Times}
+\begin{DoxyCompactList}\small\item\em A container for calculated times. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Making a framework for testing inserted data structure. Using time to estimate computational complexity. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_benchmark_a967a51b006393725fedf53119f467a16}{}\index{Benchmark@{Benchmark}!generate\+Raport@{generate\+Raport}}
+\index{generate\+Raport@{generate\+Raport}!Benchmark@{Benchmark}}
+\subsubsection[{generate\+Raport}]{\setlength{\rightskip}{0pt plus 5cm}Benchmark\+::generate\+Raport (
+\begin{DoxyParamCaption}
+\item[{long double}]{next\+Time, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_benchmark_a967a51b006393725fedf53119f467a16}
+
+
+Generates raport with program tests outputs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em next\+Time} & A new calculated time (for new file size). \\
+\hline
+{\em Size} & A size of the currently working file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]F\+I\+L\+E O\+V\+E\+R\+W\+R\+I\+T\+I\+N\+G, N\+E\+E\+D T\+O I\+M\+P\+L\+E\+M\+E\+N\+T N\+E\+W N\+A\+M\+E\+S \end{DoxyRefDesc}
+
+\begin{DoxyCode}
+6                                                             \{\textcolor{comment}{}
+7 \textcolor{comment}{    /*! \(\backslash\)todo FILE OVERWRITING, NEED TO IMPLEMENT NEW NAMES */}
+8     std::ofstream raportFile;
+9     std::string stringNextTime = std::to\_string(nextTime);
+10 
+11     \textcolor{comment}{// .xls as excel file format}
+12     raportFile.open(\textcolor{stringliteral}{"test.xls"}, std::ios::in | std::ios::app);
+13         assert(raportFile.is\_open() && (\textcolor{stringliteral}{"I can't open file."}));
+14     \textcolor{comment}{// need to change '.' on ',' due to excel string format }
+15     boost::algorithm::replace\_first(stringNextTime, \textcolor{stringliteral}{"."}, \textcolor{stringliteral}{","});
+16     
+17     raportFile << size << \textcolor{stringliteral}{"\(\backslash\)n"} << stringNextTime << \textcolor{stringliteral}{"\(\backslash\)n"};
+18     raportFile.close();
+19 \}
+\end{DoxyCode}
+\hypertarget{class_benchmark_a3efa1ec3d4e76eb0fa1633dda265c711}{}\index{Benchmark@{Benchmark}!get\+Avr@{get\+Avr}}
+\index{get\+Avr@{get\+Avr}!Benchmark@{Benchmark}}
+\subsubsection[{get\+Avr}]{\setlength{\rightskip}{0pt plus 5cm}Benchmark\+::get\+Avr (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ long double $>$}]{times}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_benchmark_a3efa1ec3d4e76eb0fa1633dda265c711}
+
+
+Measures the average duration from 10 samples. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em times} & A container with times from tests. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+21                                                         \{
+22     \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} avrg = 0.0;
+23 
+24     \textcolor{comment}{//add 10 values, than count average}
+25     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < (signed)times.size(); i++)\{
+26         avrg += times[i];
+27     \}
+28 
+29     avrg /= (\textcolor{keywordtype}{long} double)times.size();
+30     \textcolor{keywordflow}{return} avrg;
+31 \}
+\end{DoxyCode}
+\hypertarget{class_benchmark_a2256d13e70e2e5f0df7583118dd88d49}{}\index{Benchmark@{Benchmark}!measure\+Time@{measure\+Time}}
+\index{measure\+Time@{measure\+Time}!Benchmark@{Benchmark}}
+\subsubsection[{measure\+Time}]{\setlength{\rightskip}{0pt plus 5cm}Benchmark\+::measure\+Time (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{data\+Table, }
+\item[{int}]{data\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_benchmark_a2256d13e70e2e5f0df7583118dd88d49}
+
+
+Measures the duration of the work of assignment function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+Table} & A container with random integers from earlier made files. \\
+\hline
+{\em data\+Size} & A size of the file. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+33                                                        \{
+34     \textcolor{comment}{// container for counted working times}
+35     std::vector<long double> estimateTimes;
+36 
+37     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < 10; j++)\{
+38         \textcolor{comment}{// Here starts the timer}
+39         boost::timer::cpu\_timer startTime;
+40         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < dataSize; i++)\{
+41             dataTable[i] *= 2;
+42         \}
+43         \textcolor{comment}{// Here it ends}
+44         boost::timer::cpu\_times endTime = startTime.elapsed();
+45         \textcolor{comment}{// add new time to the vector}
+46         estimateTimes.push\_back(static\_cast<long double>(endTime.wall * \hyperlink{benchmark__frm_8h_a0383b9707104291ad0c37593d975221b}{SEC}));
+47     \}
+48     \textcolor{comment}{// for better display}
+49     std::cout.fixed;
+50     \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} DurTime = \hyperlink{class_benchmark_a3efa1ec3d4e76eb0fa1633dda265c711}{getAvr}(estimateTimes);
+51     std::cout << \textcolor{stringliteral}{"Time (average, 10 samples) for "} << dataSize << \textcolor{stringliteral}{" elements: "} << DurTime << \textcolor{stringliteral}{" sec"}<< 
+      std::endl;
+52     \hyperlink{class_benchmark_a967a51b006393725fedf53119f467a16}{generateRaport}(DurTime, dataSize);
+53 \}
+\end{DoxyCode}
+\hypertarget{class_benchmark_a9d8c911b12652e87e91da87f85e6cdf7}{}\index{Benchmark@{Benchmark}!test@{test}}
+\index{test@{test}!Benchmark@{Benchmark}}
+\subsubsection[{test}]{\setlength{\rightskip}{0pt plus 5cm}Benchmark\+::test (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\+Files}}]{files}
+\end{DoxyParamCaption}
+)}\label{class_benchmark_a9d8c911b12652e87e91da87f85e6cdf7}
+
+
+Main testing function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em files} & random generated files with integers \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+55                                     \{
+56     \textcolor{comment}{// temp memory container}
+57     \textcolor{keywordtype}{int}* tabForData = NULL;
+58     \textcolor{keywordtype}{int} tempValue = 0;
+59     \textcolor{keywordtype}{int} count = 0;
+60     std::fstream newFile;
+61 
+62     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < files.\hyperlink{class_input_files_a3db5accd81913e0b89fdd3b4650c8923}{return\_number\_files}() - 
+      \hyperlink{inputfile__txt_8h_ac6795aca310766e1b10d90013aac6d47}{FIRST\_ARGUMENT}; i++)\{
+63         \textcolor{comment}{// Opening file + making new table with content}
+64         tabForData = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[files.\hyperlink{class_input_files_a9c65bfcc0e684642c40c999959d6d014}{return\_file\_size}(i)];
+65         newFile.open((files.\hyperlink{class_input_files_a9246bc217efcfa1569478bcf44e1cd20}{return\_file\_name}(i) + \textcolor{stringliteral}{".txt"}), std::ios::in);
+66         
+67         \textcolor{comment}{// Checking if file is opened correctly}
+68         assert(newFile.is\_open() && (\textcolor{stringliteral}{"I can't open file."}));
+69 
+70         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < files.\hyperlink{class_input_files_a9c65bfcc0e684642c40c999959d6d014}{return\_file\_size}(i); j++)\{
+71             newFile >> tempValue;
+72             tabForData[j] = tempValue;
+73         \}
+74         newFile.close();
+75 
+76         \textcolor{comment}{// Testing time here}
+77         \hyperlink{class_benchmark_a2256d13e70e2e5f0df7583118dd88d49}{measureTime}(tabForData, files.\hyperlink{class_input_files_a9c65bfcc0e684642c40c999959d6d014}{return\_file\_size}(i));
+78         \textcolor{keyword}{delete}[] tabForData;
+79     \}
+80 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_benchmark_a5563f218941d6b01ac7783f1e6582025}{}\index{Benchmark@{Benchmark}!test\+Times@{test\+Times}}
+\index{test\+Times@{test\+Times}!Benchmark@{Benchmark}}
+\subsubsection[{test\+Times}]{\setlength{\rightskip}{0pt plus 5cm}Benchmark\+::test\+Times\hspace{0.3cm}{\ttfamily [private]}}\label{class_benchmark_a5563f218941d6b01ac7783f1e6582025}
+
+
+A container for calculated times. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{benchmark__frm_8h}{benchmark\+\_\+frm.\+h}\item 
+src/\hyperlink{benchmark__frm_8cpp}{benchmark\+\_\+frm.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,260 @@
+.TH "InputFiles" 3 "Thu Mar 12 2015" "Version 1.1" "Lab 1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+InputFiles \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <inputfile_txt\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBgenerate_random_int_data\fP ()"
+.br
+.RI "\fIPuts random int data into files\&. \fP"
+.ti -1c
+.RI "\fBInputFiles\fP ()"
+.br
+.RI "\fIA default constructor\&. \fP"
+.ti -1c
+.RI "\fBInputFiles\fP (int filNr, std::vector< int >filSiz)"
+.br
+.RI "\fIA constructor\&. \fP"
+.ti -1c
+.RI "const std::string \fBreturn_file_name\fP (int Nmbr)"
+.br
+.RI "\fIReturn names of files (only for read purpose) \fP"
+.ti -1c
+.RI "const int \fBreturn_file_size\fP (int Nmbr)"
+.br
+.RI "\fIReturn sizes of files (only for read purpose) \fP"
+.ti -1c
+.RI "const int \fBreturn_number_files\fP ()"
+.br
+.RI "\fIReturn number of files\&. \fP"
+.ti -1c
+.RI "void \fBshow_info\fP ()"
+.br
+.RI "\fIShowes info obout files\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< std::string > \fBfilesNamesTab\fP"
+.br
+.RI "\fIContainer for generated file names\&. \fP"
+.ti -1c
+.RI "int \fBfilesNumber\fP"
+.br
+.RI "\fINumber of generated files\&. \fP"
+.ti -1c
+.RI "std::vector< int > \fBfilesSizes\fP"
+.br
+.RI "\fIContainer for file sizes\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Making an object which contain text files with generated random integer numbers\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "InputFiles::InputFiles ()"
+
+.PP
+A default constructor\&. Adding number of files(UNDEF_VALUE = 1); Generating file name; Adding size of file (UNDEF_VALUE = 1);
+.PP
+Just in case, when program starts without any parameters\&. 
+.PP
+\fBTodo\fP
+.RS 4
+EXCEPTIONS HANDLING 
+.RE
+.PP
+
+.PP
+.nf
+6                       {
+7     /*! \todo EXCEPTIONS HANDLING */
+8     // When there are no arguments from command prompt:
+9     filesNumber = UNDEF_VALUE;
+10     std::string TempName = std::tmpnam(nullptr);
+11     filesNamesTab\&.push_back(TempName);
+12     filesSizes\&.push_back(UNDEF_VALUE);
+13 }
+.fi
+.SS "InputFiles::InputFiles (int filNr, std::vector< int > filSiz)"
+
+.PP
+A constructor\&. Adding number of files; Generating files names; Adding sizes of files; Parameters inherit from list of arguments from command prompt
+.PP
+\fBParameters:\fP
+.RS 4
+\fIfilNr\fP number of files 
+.br
+\fIfilSiz\fP sizes of files 
+.RE
+.PP
+Open files with new names
+.PP
+Check if file is opened correctly 
+.PP
+.nf
+15                                                      {
+16     filesNumber = filNr;
+17     filesSizes = filSiz;
+18     // Create new names for files
+19     std::string TempName;
+20 
+21     for (int i = 1; i < filesNumber; i++){
+22         // Generate new unique name for file
+23         TempName = std::tmpnam(nullptr);
+24         // Delete all prohibit char from string
+25         boost::algorithm::erase_all(TempName, "/");
+26         boost::algorithm::erase_all(TempName, "\\");
+27         // Put name into names container
+28         filesNamesTab\&.push_back(TempName);
+29     }
+30     //! Open files with new names
+31     std::ofstream newFile;
+32     for (int i = 1; i < filesNumber; i++){
+33         newFile\&.open(filesNamesTab[i - PROGRAM_NAME] + "\&.txt");
+34             //! Check if file is opened correctly
+35             assert(newFile\&.is_open() && "I can't open this file\&.");
+36         newFile\&.close();
+37     }
+38 }
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "InputFiles::generate_random_int_data ()"
+
+.PP
+Puts random int data into files\&. Generating random integers data (size from filesSizes vector) and putting them into files (names from filesNamesTab) < Seed for Mersenne Twister 19937 generator
+.PP
+Mersenne Twister 19937 generator
+.PP
+More info about this generator: \fChttp://pl\&.wikipedia\&.org/wiki/Mersenne_Twister\fP
+.PP
+Uniform distribution random number
+.PP
+Max number: uncomment next line More info about this distribution: \fChttp://pl\&.wikipedia\&.org/wiki/Rozk%C5%82ad_jednostajny\fP
+.PP
+Check if file is opened correctly 
+.PP
+.nf
+52                                          {
+53     int seedGen = time(NULL); /*!< Seed for Mersenne Twister 19937 generator */
+54 
+55     //! Mersenne Twister 19937 generator
+56     /*!
+57         More info about this generator:
+58         <a href="linkURL">http://pl\&.wikipedia\&.org/wiki/Mersenne_Twister</a> 
+59     */
+60     std::mt19937 randomNumbr(seedGen);
+61 
+62     //! Uniform distribution random number
+63     /*!
+64         Max number: uncomment next line
+65         More info about this distribution:
+66         <a href="linkURL">http://pl\&.wikipedia\&.org/wiki/Rozk%C5%82ad_jednostajny</a>
+67     */
+68     //std::cout << std::numeric_limits<int>::max() << std::endl;
+69     std::uniform_int_distribution<>newDistr;
+70 
+71     std::ofstream NewFile;
+72     for (int i = 1; i < filesNumber; i++){
+73         NewFile\&.open((filesNamesTab[i - PROGRAM_NAME] + "\&.txt"), std::ios::in);
+74             //! Check if file is opened correctly
+75             assert(NewFile\&.is_open() && ("I can't open file\&."));
+76         //Generate random int data
+77         for (int j = 0; j < filesSizes[i - FIRST_ARGUMENT]; j++){
+78             NewFile << newDistr(randomNumbr) << "\n";
+79         }
+80 
+81         NewFile\&.close();
+82     }
+83 }
+.fi
+.SS "InputFiles::return_file_name (int Nmbr)\fC [inline]\fP"
+
+.PP
+Return names of files (only for read purpose) 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINmbr\fP Number of the file\&. 
+.RE
+.PP
+
+.PP
+.nf
+70                                                   {
+71             return filesNamesTab[Nmbr];
+72         }
+.fi
+.SS "InputFiles::return_file_size (int Nmbr)\fC [inline]\fP"
+
+.PP
+Return sizes of files (only for read purpose) 
+.PP
+\fBParameters:\fP
+.RS 4
+\fINmbr\fP Number of the file\&. 
+.RE
+.PP
+
+.PP
+.nf
+78                                             {
+79             return filesSizes[Nmbr];
+80         }
+.fi
+.SS "InputFiles::return_number_files ()\fC [inline]\fP"
+
+.PP
+Return number of files\&. 
+.PP
+.nf
+85                                        {
+86             return filesNumber;
+87         }
+.fi
+.SS "InputFiles::show_info ()"
+
+.PP
+Showes info obout files\&. Display: number of files, names of files, sizes of files 
+.PP
+.nf
+40                           { 
+41     std::cout << "--------" << std::endl;
+42     std::cout << filesNumber - FIRST_ARGUMENT << std::endl;
+43     for (int i = 0; i < (signed)filesNamesTab\&.size(); i++){
+44         std::cout << filesNamesTab[i] << std::endl;
+45     }
+46     for (int i = 0; i < (signed)filesSizes\&.size(); i++){
+47         std::cout << filesSizes[i] << std::endl;
+48     }
+49     std::cout << "--------" << std::endl;
+50 }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "std::vector<std::string> InputFiles::filesNamesTab\fC [private]\fP"
+
+.PP
+Container for generated file names\&. 
+.SS "InputFiles::filesNumber\fC [private]\fP"
+
+.PP
+Number of generated files\&. 
+.SS "InputFiles::filesSizes\fC [private]\fP"
+
+.PP
+Container for file sizes\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Lab 1 from the source code\&.
