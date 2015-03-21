@@ -2,15 +2,10 @@
 \file main.cpp
 \brief A master file
 */
+#include <iostream>
 
-#include "tree.h"
-#include "tree_node.h"
-#include "queue.h"
-#include "list.h"
-#include "stack.h"
 #include "inputfile_txt.h"
-#include "benchmark_frm.h"
-
+#include "stack.h"
 
 int main(int argc, char* argv[]){
 	
@@ -23,18 +18,6 @@ int main(int argc, char* argv[]){
 	InputFiles openFile(argc, fileSize);
 	openFile.generate_random_int_data();
 
-	Benchmark treeTest;
-	Tree newTree(openFile,treeTest);
-
-	Benchmark queueTest(treeTest);
-	Queue newQueue(openFile, queueTest);
-
-	Benchmark listTest(treeTest);
-	List newList(openFile, listTest);
-
-	Benchmark stackTest(treeTest);
-	Stack newStack(openFile, stackTest);
-
-	system("pause");
+	std::cin.get();
 	return 0;
 }

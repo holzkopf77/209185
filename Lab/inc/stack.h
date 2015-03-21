@@ -5,40 +5,69 @@
 #ifndef STACK_H
 #define STACK_H
 
-#include "inputfile_txt.h"
-#include "benchmark_frm.h"
-
+#include <vector>
+#include <cassert>
 /*! \class Stack
 
 	Own implementation of stack.
 	As simple as possible.
 */
-class Stack{
-	public:
-		//! A constructor
-		/*
-			\param file file with random generated int data
-			\param stackTest benchmark for testing stack
-		*/
-		Stack(InputFiles& file, Benchmark& stackTest);
-		
-		/*! \fn add
-			
-			Puts new element on the top of the stack
+template<class T>
+class Stack {
+public:
+	/*! \fn A constructor
+		\brief Create stack memory, assign size of the stack
+	*/
+	Stack(int stackSize) : stack(std::vector<T>(stackSize)), sizeStc(stackSize), addCount(0) {}
 
-			\param openFile pointer to the actually opened file with random data
-			\param fileSize size of actually opened file
-		*/
-		void add(std::fstream& openFile, int fileSize);
-	private:
-		/*! \var stackContainer
-			Dynamically created table for date from stack.
-		*/
-		int* stackContainer;
+	/*! \fn push
+		\brief Puts one object on the stack.
 
-		/*! \var nrOfElement
-			Number of actually element from stack. 
-		*/
-		int nrOfElement;
+		When stack is overload, automatticaly add one more place.
+		(Used vector abillity to adding new memory space in this case)
+	*/
+	void push(T data);
+
+	/*! \fn push
+		\brief Puts one object on the stack.
+
+		When stack is overload, automatticaly add percent of old place as a added new memory.
+		After hitting fullness, multiply size of the vector twice.
+	*/
+	void push_prc(T data);
+	/*! \fn pop */
+	T pop();
+
+	/*!	\fn size */
+	inline int size(){
+		return this->sizeStc;
+	}
+
+	/*! \fn operator<< */
+	friend std::ostream& operator<<(std::ostream& out, const Stack& stack){
+		for (auto iterator : stack.stack){
+			out << iterator << ' ';
+		}
+		return out;
+	}
+private:
+	/*!	\var stackBox
+		\brief Container for stack date.
+	*/
+	std::vector<T> stack;
+
+	/*! \var sizeStc */
+	int sizeStc;
+
+	/*! \var addCount
+		\brief Counter of elements added to the vector
+
+		Used in push_prc, if addCount == size, dupcilate vector.
+		Testing purpose.
+	*/
+	int addCount;
 };
+
+#include "stack.cpp"
+
 #endif
