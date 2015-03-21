@@ -1,0 +1,119 @@
+.TH "Stack" 3 "Thu Mar 19 2015" "Version 1.0" "Lab 2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Stack \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <stack\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBadd\fP (std::fstream &openFile, int fileSize)"
+.br
+.ti -1c
+.RI "\fBStack\fP (\fBInputFiles\fP &file, \fBBenchmark\fP &stackTest)"
+.br
+.RI "\fIA constructor\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBnrOfElement\fP"
+.br
+.ti -1c
+.RI "int * \fBstackContainer\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Own implementation of stack\&. As simple as possible\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Stack::Stack (\fBInputFiles\fP & file, \fBBenchmark\fP & stackTest)"
+
+.PP
+A constructor\&. 
+.PP
+.nf
+8                                                   {
+9     // open file for data in root
+10     std::fstream openFile;
+11     // take name of this file
+12     std::string fileName;
+13     // file size
+14     int fileSize;
+15     // average time from test
+16     long double avrgTime;
+17 
+18     for (int i = 0; i < file\&.return_number_files() - FIRST_ARGUMENT; i++){
+19         fileName = file\&.return_file_name(i);
+20         fileSize = file\&.return_file_size(i);
+21         for (int i = 0; i < 10; i++){
+22             openFile\&.open(fileName + "\&.txt");
+23             // Check if file is opened correctly
+24             assert(openFile\&.is_open() && "I can't open this file\&.");
+25             
+26             this->stackContainer = new int[fileSize];
+27             this->nrOfElement = 0;
+28             stackTest\&.test(fileSize, openFile, this);
+29 
+30             //initial again for next test
+31             delete this->stackContainer;
+32             this->nrOfElement = 0;
+33             openFile\&.close();
+34         }
+35         //generate raport
+36         avrgTime = stackTest\&.getAvr(stackTest\&.testTimes);
+37         stackTest\&.generateRaport(avrgTime, fileSize, fileName, STACK);
+38     }
+39 }
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "Stack::add (std::fstream & openFile, int fileSize)"
+Puts new element on the top of the stack
+.PP
+\fBParameters:\fP
+.RS 4
+\fIopenFile\fP pointer to the actually opened file with random data 
+.br
+\fIfileSize\fP size of actually opened file 
+.RE
+.PP
+
+.PP
+.nf
+41                                                  {
+42     //container for temporary data
+43     int tempData;
+44 
+45     //take first element
+46     openFile >> tempData;
+47     this->stackContainer[this->nrOfElement];
+48 
+49     while (openFile >> tempData){
+50         this->nrOfElement += 1;
+51         if (this->nrOfElement >= fileSize){
+52             std::cout << "STACK OVERFLOW OMG OMG OMG NOSCOPE M8" << std::endl;
+53         }
+54         else{
+55             this->stackContainer[this->nrOfElement] = tempData;
+56         }
+57     }
+58 }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "Stack::nrOfElement\fC [private]\fP"
+Number of actually element from stack\&. 
+.SS "Stack::stackContainer\fC [private]\fP"
+Dynamically created table for date from stack\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Lab 2 from the source code\&.

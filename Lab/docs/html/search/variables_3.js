@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['testtimes',['testTimes',['../class_benchmark.html#a5563f218941d6b01ac7783f1e6582025',1,'Benchmark']]]
+  ['is_5fempty',['is_empty',['../class_node.html#a03859657e8fb6e70be22fa53cb848241',1,'Node']]]
 ];

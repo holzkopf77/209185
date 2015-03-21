@@ -1,12 +1,22 @@
-.TH "src/main.cpp" 3 "Thu Mar 12 2015" "Version 1.1" "Lab 1" \" -*- nroff -*-
+.TH "C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/main.cpp" 3 "Thu Mar 19 2015" "Version 1.0" "Lab 2" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-src/main.cpp \- Master file\&.  
+C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/main.cpp \- A master file\&.  
 
 .SH SYNOPSIS
 .br
 .PP
+\fC#include 'tree\&.h'\fP
+.br
+\fC#include 'tree_node\&.h'\fP
+.br
+\fC#include 'queue\&.h'\fP
+.br
+\fC#include 'list\&.h'\fP
+.br
+\fC#include 'stack\&.h'\fP
+.br
 \fC#include 'inputfile_txt\&.h'\fP
 .br
 \fC#include 'benchmark_frm\&.h'\fP
@@ -21,30 +31,45 @@ src/main.cpp \- Master file\&.
 .in -1c
 .SH "Detailed Description"
 .PP 
-Master file\&. 
+A master file\&. 
 
 
+.PP
+Definition in file \fBmain\&.cpp\fP\&.
 .SH "Function Documentation"
 .PP 
 .SS "int main (int argc, char * argv[])"
 
 .PP
 .nf
-9 {
-10     // Container for sizes from command prompt
-11     std::vector<int>FilesSizes;
-12 
-13     // First argument is a name of the program so i = 1
-14     for (int i = 1; i < argc ; i++)
-15         FilesSizes\&.push_back(atoi(argv[i]));
-16 
-17     InputFiles newFilesList(argc, FilesSizes);
-18     Benchmark NewTest;
-19 
-20     newFilesList\&.generate_random_int_data();
-21     NewTest\&.test(newFilesList);
-22 }
+15                                 {
+16     
+17     // contains only one size, implementation from Lab1
+18     std::vector<int>fileSize;
+19     // First argument is a name of the program so i = 1
+20     for (int i = 1; i < argc; i++)
+21         fileSize\&.push_back(atoi(argv[i]));
+22     
+23     InputFiles openFile(argc, fileSize);
+24     openFile\&.generate_random_int_data();
+25 
+26     Benchmark treeTest;
+27     Tree newTree(openFile,treeTest);
+28 
+29     Benchmark queueTest(treeTest);
+30     Queue newQueue(openFile, queueTest);
+31 
+32     Benchmark listTest(treeTest);
+33     List newList(openFile, listTest);
+34 
+35     Benchmark stackTest(treeTest);
+36     Stack newStack(openFile, stackTest);
+37 
+38     std::cin\&.clear();
+39     std::cin\&.get();
+40     return 0;
+41 }
 .fi
 .SH "Author"
 .PP 
-Generated automatically by Doxygen for Lab 1 from the source code\&.
+Generated automatically by Doxygen for Lab 2 from the source code\&.

@@ -1,4 +1,4 @@
-.TH "Benchmark" 3 "Thu Mar 12 2015" "Version 1.1" "Lab 1" \" -*- nroff -*-
+.TH "Benchmark" 3 "Thu Mar 19 2015" "Version 1.0" "Lab 2" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -12,9 +12,30 @@ Benchmark \-
 
 .in +1c
 .ti -1c
+.RI "\fBBenchmark\fP ()"
+.br
+.ti -1c
+.RI "\fBBenchmark\fP (const \fBBenchmark\fP &copy)"
+.br
+.ti -1c
+.RI "void \fBshow_testTimes_v\fP ()"
+.br
+.RI "\fIshow filled vector with test times \fP"
+.ti -1c
 .RI "void \fBtest\fP (\fBInputFiles\fP files)"
 .br
-.RI "\fIMain testing function\&. \fP"
+.ti -1c
+.RI "void \fBtest\fP (std::fstream &file, \fBNode\fP *root)"
+.br
+.ti -1c
+.RI "void \fBtest\fP (int fileSize, std::fstream &openFile, \fBQueue\fP *newQueue)"
+.br
+.ti -1c
+.RI "void \fBtest\fP (std::fstream &openFile, \fBList\fP *newList)"
+.br
+.ti -1c
+.RI "void \fBtest\fP (int fileSize, std::fstream &openFile, \fBStack\fP *newStack)"
+.br
 .in -1c
 .SS "Private Member Functions"
 
@@ -22,7 +43,9 @@ Benchmark \-
 .ti -1c
 .RI "void \fBgenerateRaport\fP (long double nextTime, int size)"
 .br
-.RI "\fIGenerates raport with program tests outputs\&. \fP"
+.ti -1c
+.RI "void \fBgenerateRaport\fP (long double avgTime, int size, std::string fileName, \fBdata_type\fP type)"
+.br
 .ti -1c
 .RI "long double \fBgetAvr\fP (std::vector< long double >times)"
 .br
@@ -40,23 +63,46 @@ Benchmark \-
 .br
 .RI "\fIA container for calculated times\&. \fP"
 .in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBList\fP"
+.br
+.ti -1c
+.RI "class \fBQueue\fP"
+.br
+.ti -1c
+.RI "class \fBStack\fP"
+.br
+.ti -1c
+.RI "class \fBTree\fP"
+.br
+.in -1c
 .SH "Detailed Description"
 .PP 
 Making a framework for testing inserted data structure\&. Using time to estimate computational complexity\&. 
-.SH "Member Function Documentation"
+.SH "Constructor & Destructor Documentation"
 .PP 
-.SS "Benchmark::generateRaport (long double nextTime, int size)\fC [private]\fP"
+.SS "Benchmark::Benchmark ()"
 
 .PP
-Generates raport with program tests outputs\&. 
+.nf
+15                     {
+16     ;
+17 }
+.fi
+.SS "Benchmark::Benchmark (const \fBBenchmark\fP & copy)"
+
 .PP
-\fBParameters:\fP
-.RS 4
-\fInextTime\fP A new calculated time (for new file size)\&. 
-.br
-\fISize\fP A size of the currently working file\&. 
-.RE
-.PP
+.nf
+11                                          {
+12     testTimes = copy\&.testTimes;
+13 }
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "void Benchmark::generateRaport (long double nextTime, int size)\fC [private]\fP"
 
 .PP
 \fBTodo\fP
@@ -67,20 +113,77 @@ FILE OVERWRITING, NEED TO IMPLEMENT NEW NAMES
 
 .PP
 .nf
-6                                                             {
-7     /*! \todo FILE OVERWRITING, NEED TO IMPLEMENT NEW NAMES */
-8     std::ofstream raportFile;
-9     std::string stringNextTime = std::to_string(nextTime);
-10 
-11     // \&.xls as excel file format
-12     raportFile\&.open("test\&.xls", std::ios::in | std::ios::app);
-13         assert(raportFile\&.is_open() && ("I can't open file\&."));
-14     // need to change '\&.' on ',' due to excel string format 
-15     boost::algorithm::replace_first(stringNextTime, "\&.", ",");
-16     
-17     raportFile << size << "\n" << stringNextTime << "\n";
-18     raportFile\&.close();
-19 }
+101                                                             {
+103     std::ofstream raportFile;
+104     std::string stringNextTime = std::to_string(nextTime);
+105 
+106     // \&.xls as excel file format
+107     raportFile\&.open("test\&.xls", std::ios::in | std::ios::app);
+108         assert(raportFile\&.is_open() && ("I can't open file\&."));
+109     // need to change '\&.' on ',' due to excel string format 
+110     boost::algorithm::replace_first(stringNextTime, "\&.", ",");
+111     
+112     raportFile << size << "\n" << stringNextTime << "\n";
+113     raportFile\&.close();
+114 }
+.fi
+.SS "void Benchmark::generateRaport (long double avgTime, int size, std::string fileName, \fBdata_type\fP type)\fC [private]\fP"
+
+.PP
+.nf
+116                                                                                                {
+117     std::ofstream raportFile;
+118     std::string stringNextTime = std::to_string(avgTime);
+119 
+120     if (type == BIN_TREE){
+121         // \&.xls as excel file format
+122         raportFile\&.open("test_btree\&.xls", std::ios::in | std::ios::app);
+123         assert(raportFile\&.is_open() && ("I can't open file\&."));
+124         // need to change '\&.' on ',' due to excel string format 
+125         boost::algorithm::replace_first(stringNextTime, "\&.", ",");
+126 
+127         raportFile << size << "\n" << stringNextTime << "\n";
+128         raportFile\&.close();
+129 
+130         std::cout << "(BinaryTree) For file " << "> " << fileName << " <" << " (size: " << size << ")" << " average test time (10 times) was: " << avgTime << std::endl;
+131     }
+132     else if (type == QUEUE){
+133         // \&.xls as excel file format
+134         raportFile\&.open("test_queue\&.xls", std::ios::in | std::ios::app);
+135         assert(raportFile\&.is_open() && ("I can't open file\&."));
+136         // need to change '\&.' on ',' due to excel string format 
+137         boost::algorithm::replace_first(stringNextTime, "\&.", ",");
+138 
+139         raportFile << size << "\n" << stringNextTime << "\n";
+140         raportFile\&.close();
+141 
+142         std::cout << "(Queue) For file " << "> " << fileName << " <" << " (size: " << size << ")" << " average test time (10 times) was: " << avgTime << std::endl;
+143     }
+144     else if (type == LIST){
+145         // \&.xls as excel file format
+146         raportFile\&.open("test_list\&.xls", std::ios::in | std::ios::app);
+147             assert(raportFile\&.is_open() && ("I can't open file\&."));
+148         // need to change '\&.' on ',' due to excel string format 
+149         boost::algorithm::replace_first(stringNextTime, "\&.", ",");
+150 
+151         raportFile << size << "\n" << stringNextTime << "\n";
+152         raportFile\&.close();
+153 
+154         std::cout << "(List) For file " << "> " << fileName << " <" << " (size: " << size << ")" << " average test time (10 times) was: " << avgTime << std::endl;
+155     }
+156     else if (type == STACK){
+157         // \&.xls as excel file format
+158         raportFile\&.open("test_stack\&.xls", std::ios::in | std::ios::app);
+159         assert(raportFile\&.is_open() && ("I can't open file\&."));
+160         // need to change '\&.' on ',' due to excel string format 
+161         boost::algorithm::replace_first(stringNextTime, "\&.", ",");
+162 
+163         raportFile << size << "\n" << stringNextTime << "\n";
+164         raportFile\&.close();
+165 
+166         std::cout << "(Stack) For file " << "> " << fileName << " <" << " (size: " << size << ")" << " average test time (10 times) was: " << avgTime << std::endl;
+167     }
+168 }
 .fi
 .SS "Benchmark::getAvr (std::vector< long double > times)\fC [private]\fP"
 
@@ -95,22 +198,22 @@ Measures the average duration from 10 samples\&.
 
 .PP
 .nf
-21                                                         {
-22     long double avrg = 0\&.0;
-23 
-24     //add 10 values, than count average
-25     for (int i = 0; i < (signed)times\&.size(); i++){
-26         avrg += times[i];
-27     }
-28 
-29     avrg /= (long double)times\&.size();
-30     return avrg;
-31 }
+170                                                         {
+171     long double avrg = 0\&.0;
+172 
+173     //add 10 values, than count average
+174     for (int i = 0; i < (signed)times\&.size(); i++){
+175         avrg += times[i];
+176     }
+177 
+178     avrg /= (long double)times\&.size();
+179     return avrg;
+180 }
 .fi
 .SS "Benchmark::measureTime (int * dataTable, int dataSize)\fC [private]\fP"
 
 .PP
-Measures the duration of the work of assignment function\&. 
+Measures the duration of the work of assignment function\&. Version for dynamic table
 .PP
 \fBParameters:\fP
 .RS 4
@@ -122,68 +225,147 @@ Measures the duration of the work of assignment function\&.
 
 .PP
 .nf
-33                                                        {
-34     // container for counted working times
-35     std::vector<long double> estimateTimes;
-36 
-37     for (int j = 0; j < 10; j++){
-38         // Here starts the timer
-39         boost::timer::cpu_timer startTime;
-40         for (int i = 0; i < dataSize; i++){
-41             dataTable[i] *= 2;
-42         }
-43         // Here it ends
-44         boost::timer::cpu_times endTime = startTime\&.elapsed();
-45         // add new time to the vector
-46         estimateTimes\&.push_back(static_cast<long double>(endTime\&.wall * SEC));
-47     }
-48     // for better display
-49     std::cout\&.fixed;
-50     long double DurTime = getAvr(estimateTimes);
-51     std::cout << "Time (average, 10 samples) for " << dataSize << " elements: " << DurTime << " sec"<< std::endl;
-52     generateRaport(DurTime, dataSize);
-53 }
+182                                                        {
+183     // container for counted working times
+184     std::vector<long double> estimateTimes;
+185 
+186     for (int j = 0; j < 10; j++){
+187         // Here starts the timer
+188         boost::timer::cpu_timer startTime;
+189         for (int i = 0; i < dataSize; i++){
+190             dataTable[i] *= 2;
+191         }
+192         // Here it ends
+193         boost::timer::cpu_times endTime = startTime\&.elapsed();
+194         // add new time to the vector
+195         estimateTimes\&.push_back(static_cast<long double>(endTime\&.wall * SEC));
+196     }
+197     // for better display
+198     std::cout\&.fixed;
+199     long double DurTime = getAvr(estimateTimes);
+200     std::cout << "Time (average, 10 samples) for " << dataSize << " elements: " << DurTime << " sec"<< std::endl;
+201     generateRaport(DurTime, dataSize);
+202 }
 .fi
-.SS "Benchmark::test (\fBInputFiles\fP files)"
+.SS "Benchmark::show_testTimes_v ()"
 
 .PP
-Main testing function\&. 
+show filled vector with test times 
 .PP
-\fBParameters:\fP
-.RS 4
-\fIfiles\fP random generated files with integers 
-.RE
-.PP
+.nf
+204                                 {
+205     for (int i = 0; i < (signed)this->testTimes\&.size(); i++){
+206         std::cout << testTimes[i] << std::endl;
+207     }
+208 }
+.fi
+.SS "void Benchmark::test (\fBInputFiles\fP files)"
 
 .PP
 .nf
-55                                     {
-56     // temp memory container
-57     int* tabForData = NULL;
-58     int tempValue = 0;
-59     int count = 0;
-60     std::fstream newFile;
-61 
-62     for (int i = 0; i < files\&.return_number_files() - FIRST_ARGUMENT; i++){
-63         // Opening file + making new table with content
-64         tabForData = new int[files\&.return_file_size(i)];
-65         newFile\&.open((files\&.return_file_name(i) + "\&.txt"), std::ios::in);
-66         
-67         // Checking if file is opened correctly
-68         assert(newFile\&.is_open() && ("I can't open file\&."));
-69 
-70         for (int j = 0; j < files\&.return_file_size(i); j++){
-71             newFile >> tempValue;
-72             tabForData[j] = tempValue;
-73         }
-74         newFile\&.close();
-75 
-76         // Testing time here
-77         measureTime(tabForData, files\&.return_file_size(i));
-78         delete[] tabForData;
-79     }
-80 }
+19                                     {
+20     // temp memory container
+21     int* tabForData = NULL;
+22     int tempValue = 0;
+23     std::fstream newFile;
+24 
+25     for (int i = 0; i < files\&.return_number_files() - FIRST_ARGUMENT; i++){
+26         // Opening file + making new table with content
+27         tabForData = new int[files\&.return_file_size(i)];
+28         newFile\&.open((files\&.return_file_name(i) + "\&.txt"), std::ios::in);
+29 
+30         // Checking if file is opened correctly
+31         assert(newFile\&.is_open() && ("I can't open file\&."));
+32 
+33         for (int j = 0; j < files\&.return_file_size(i); j++){
+34             newFile >> tempValue;
+35             tabForData[j] = tempValue;
+36         }
+37         newFile\&.close();
+38 
+39         // Testing time here
+40         measureTime(tabForData, files\&.return_file_size(i));
+41         delete[] tabForData;
+42     }
+43 }
 .fi
+.SS "void Benchmark::test (std::fstream & file, \fBNode\fP * root)"
+
+.PP
+.nf
+46                                                 {
+47     // temporary data container
+48     int tempData;
+49 
+50     //here starts timer
+51     boost::timer::cpu_timer startTime;
+52     while (file >> tempData)
+53         root->add(file, tempData);
+54     //here ends
+55     boost::timer::cpu_times endTime = startTime\&.elapsed();
+56 
+57     //put new time to the vector
+58     this->testTimes\&.push_back(static_cast<long double>(endTime\&.wall * SEC));
+59 }
+.fi
+.SS "void Benchmark::test (int fileSize, std::fstream & openFile, \fBQueue\fP * newQueue)"
+
+.PP
+.nf
+62                                                                        {
+63 
+64     //here starts timer
+65     boost::timer::cpu_timer startTime;
+66     newQueue->add(openFile, fileSize);
+67     //here ends
+68     boost::timer::cpu_times endTime = startTime\&.elapsed();
+69 
+70     //put new time to the vector
+71     this->testTimes\&.push_back(static_cast<long double>(endTime\&.wall * SEC));
+72 }
+.fi
+.SS "void Benchmark::test (std::fstream & openFile, \fBList\fP * newList)"
+
+.PP
+.nf
+75                                                        {
+76 
+77     //here starts timer
+78     boost::timer::cpu_timer startTime;
+79     newList->add(openFile);
+80     //here ends
+81     boost::timer::cpu_times endTime = startTime\&.elapsed();
+82 
+83     //put new time to the vector
+84     this->testTimes\&.push_back(static_cast<long double>(endTime\&.wall * SEC));
+85 }
+.fi
+.SS "void Benchmark::test (int fileSize, std::fstream & openFile, \fBStack\fP * newStack)"
+
+.PP
+.nf
+88                                                                        {
+89     
+90     //here starts timer
+91     boost::timer::cpu_timer startTime;
+92     newStack->add(openFile, fileSize);
+93     //here ends
+94     boost::timer::cpu_times endTime = startTime\&.elapsed();
+95 
+96     //put new time to the vector
+97     this->testTimes\&.push_back(static_cast<long double>(endTime\&.wall * SEC));
+98 }
+.fi
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class \fBList\fP\fC [friend]\fP"
+
+.SS "friend class \fBQueue\fP\fC [friend]\fP"
+
+.SS "friend class \fBStack\fP\fC [friend]\fP"
+
+.SS "friend class \fBTree\fP\fC [friend]\fP"
+
 .SH "Member Data Documentation"
 .PP 
 .SS "Benchmark::testTimes\fC [private]\fP"
@@ -193,4 +375,4 @@ A container for calculated times\&.
 
 .SH "Author"
 .PP 
-Generated automatically by Doxygen for Lab 1 from the source code\&.
+Generated automatically by Doxygen for Lab 2 from the source code\&.

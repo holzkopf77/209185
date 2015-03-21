@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="class_queue" kind="class" language="C++" prot="public">
+    <compoundname>Queue</compoundname>
+    <includes refid="queue_8h" local="no">queue.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_queue_1a6d40dfb591ad9ff13fd1084b9e1eb0d5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>Queue::front</definition>
+        <argsstring></argsstring>
+        <name>front</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A head of queue position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/queue.h" line="55" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/queue.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_queue_1a8e206ea3eba2e59137f36b4425761a1d" prot="private" static="no" mutable="no">
+        <type>int *</type>
+        <definition>Queue::queueTab</definition>
+        <argsstring></argsstring>
+        <name>queueTab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A dynamic container for elements of queue </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/queue.h" line="44" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/queue.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_queue_1ac09196d6d91d62b8547bae02ae9063c5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>Queue::rear</definition>
+        <argsstring></argsstring>
+        <name>rear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A tail of queue position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/queue.h" line="49" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/queue.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_queue_1a906083f1eae7bc4efb1e4ac04684f83a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>Queue::add</definition>
+        <argsstring>(std::fstream &amp;openFile, int fileSize)</argsstring>
+        <name>add</name>
+        <param>
+          <type>std::fstream &amp;</type>
+          <declname>openFile</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>fileSize</declname>
+        </param>
+        <briefdescription>
+<para>Adding new element to the rear part of queue. </para>        </briefdescription>
+        <detaileddescription>
+<para>Adding new element, on the rear part, move this pointer to the next element.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>openFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the opened file </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fileSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a size of opened file </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/queue.h" line="38" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/queue.cpp" bodystart="55" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_queue_1a435084ac15aec95620f6fee2198174bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Queue::Queue</definition>
+        <argsstring>(InputFiles &amp;file, Benchmark &amp;queueTest)</argsstring>
+        <name>Queue</name>
+        <param>
+          <type><ref refid="class_input_files" kindref="compound">InputFiles</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type><ref refid="class_benchmark" kindref="compound">Benchmark</ref> &amp;</type>
+          <declname>queueTest</declname>
+        </param>
+        <briefdescription>
+<para>A constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/queue.h" line="25" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/queue.cpp" bodystart="10" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_queue_1a00d119db8fa3050da37746e82cbcf94f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Queue::~Queue</definition>
+        <argsstring>()</argsstring>
+        <name>~Queue</name>
+        <briefdescription>
+<para>A deconstructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/queue.h" line="28" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/queue.cpp" bodystart="47" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>An implementation of queue based on dynamically created table. Info based on <ulink url="http://www.studytonight.com/data-structures/queue-data-structure">http://www.studytonight.com/data-structures/queue-data-structure</ulink> </para>    </detaileddescription>
+    <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/queue.h" line="18" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/queue.h" bodystart="18" bodyend="57"/>
+    <listofallmembers>
+      <member refid="class_queue_1a906083f1eae7bc4efb1e4ac04684f83a" prot="public" virt="non-virtual"><scope>Queue</scope><name>add</name></member>
+      <member refid="class_queue_1a6d40dfb591ad9ff13fd1084b9e1eb0d5" prot="private" virt="non-virtual"><scope>Queue</scope><name>front</name></member>
+      <member refid="class_queue_1a435084ac15aec95620f6fee2198174bf" prot="public" virt="non-virtual"><scope>Queue</scope><name>Queue</name></member>
+      <member refid="class_queue_1a8e206ea3eba2e59137f36b4425761a1d" prot="private" virt="non-virtual"><scope>Queue</scope><name>queueTab</name></member>
+      <member refid="class_queue_1ac09196d6d91d62b8547bae02ae9063c5" prot="private" virt="non-virtual"><scope>Queue</scope><name>rear</name></member>
+      <member refid="class_queue_1a00d119db8fa3050da37746e82cbcf94f" prot="public" virt="non-virtual"><scope>Queue</scope><name>~Queue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

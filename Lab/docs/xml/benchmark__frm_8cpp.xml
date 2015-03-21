@@ -3,15 +3,20 @@
   <compounddef id="benchmark__frm_8cpp" kind="file" language="C++">
     <compoundname>benchmark_frm.cpp</compoundname>
     <includes refid="benchmark__frm_8h" local="yes">benchmark_frm.h</includes>
+    <includes refid="queue_8h" local="yes">queue.h</includes>
+    <includes refid="list_8h" local="yes">list.h</includes>
+    <includes refid="stack_8h" local="yes">stack.h</includes>
     <incdepgraph>
       <node id="14">
         <label>boost/algorithm/string/erase.hpp</label>
       </node>
-      <node id="11">
-        <label>cassert</label>
-      </node>
-      <node id="9">
-        <label>string</label>
+      <node id="19">
+        <label>stack.h</label>
+        <link refid="stack_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
       </node>
       <node id="1">
         <label>benchmark_frm.h</label>
@@ -28,39 +33,20 @@
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
-      </node>
-      <node id="0">
-        <label>src/benchmark_frm.cpp</label>
-        <link refid="benchmark_frm.cpp"/>
-        <childnode refid="1" relation="include">
+        <childnode refid="15" relation="include">
         </childnode>
+      </node>
+      <node id="11">
+        <label>cassert</label>
+      </node>
+      <node id="9">
+        <label>string</label>
       </node>
       <node id="5">
         <label>boost\chrono\duration.hpp</label>
       </node>
       <node id="3">
         <label>fstream</label>
-      </node>
-      <node id="13">
-        <label>random</label>
-      </node>
-      <node id="10">
-        <label>cstdio</label>
-      </node>
-      <node id="12">
-        <label>ctime</label>
-      </node>
-      <node id="2">
-        <label>vector</label>
-      </node>
-      <node id="6">
-        <label>boost\algorithm\string\replace.hpp</label>
-      </node>
-      <node id="8">
-        <label>iostream</label>
-      </node>
-      <node id="4">
-        <label>boost\timer\timer.hpp</label>
       </node>
       <node id="7">
         <label>inputfile_txt.h</label>
@@ -84,94 +70,280 @@
         <childnode refid="14" relation="include">
         </childnode>
       </node>
+      <node id="0">
+        <label>C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/benchmark_frm.cpp</label>
+        <link refid="benchmark_frm.cpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>random</label>
+      </node>
+      <node id="10">
+        <label>cstdio</label>
+      </node>
+      <node id="12">
+        <label>ctime</label>
+      </node>
+      <node id="15">
+        <label>tree_node.h</label>
+        <link refid="tree__node_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vector</label>
+      </node>
+      <node id="6">
+        <label>boost\algorithm\string\replace.hpp</label>
+      </node>
+      <node id="16">
+        <label>queue.h</label>
+        <link refid="queue_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>list.h</label>
+        <link refid="list_8h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>iostream</label>
+      </node>
+      <node id="4">
+        <label>boost\timer\timer.hpp</label>
+      </node>
+      <node id="18">
+        <label>list_node.h</label>
+        <link refid="list__node_8h"/>
+      </node>
     </incdepgraph>
     <briefdescription>
 <para>Source code for <ref refid="class_benchmark" kindref="compound">Benchmark</ref> class. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="comment">/*!<sp/>\file<sp/>benchmark_frm.cpp</highlight></codeline>
-<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/>\brief<sp/>Source<sp/>code<sp/>for<sp/>Benchmark<sp/>class</highlight></codeline>
-<codeline lineno="3"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="benchmark__frm_8h" kindref="compound" tooltip="A Benchmark class. ">benchmark_frm.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_benchmark_1a967a51b006393725fedf53119f467a16" kindref="member" tooltip="Generates raport with program tests outputs. ">Benchmark::generateRaport</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>nextTime,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size){</highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>/*!<sp/>\todo<sp/>FILE<sp/>OVERWRITING,<sp/>NEED<sp/>TO<sp/>IMPLEMENT<sp/>NEW<sp/>NAMES<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ofstream<sp/>raportFile;</highlight></codeline>
-<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>stringNextTime<sp/>=<sp/>std::to_string(nextTime);</highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>.xls<sp/>as<sp/>excel<sp/>file<sp/>format</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>raportFile.open(</highlight><highlight class="stringliteral">&quot;test.xls&quot;</highlight><highlight class="normal">,<sp/>std::ios::in<sp/>|<sp/>std::ios::app);</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(raportFile.is_open()<sp/>&amp;&amp;<sp/>(</highlight><highlight class="stringliteral">&quot;I<sp/>can&apos;t<sp/>open<sp/>file.&quot;</highlight><highlight class="normal">));</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>need<sp/>to<sp/>change<sp/>&apos;.&apos;<sp/>on<sp/>&apos;,&apos;<sp/>due<sp/>to<sp/>excel<sp/>string<sp/>format<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::algorithm::replace_first(stringNextTime,<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>raportFile<sp/>&lt;&lt;<sp/>size<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>stringNextTime<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>raportFile.close();</highlight></codeline>
-<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_benchmark_1a3efa1ec3d4e76eb0fa1633dda265c711" kindref="member" tooltip="Measures the average duration from 10 samples. ">Benchmark::getAvr</ref>(std::vector&lt;long<sp/>double&gt;times){</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>avrg<sp/>=<sp/>0.0;</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//add<sp/>10<sp/>values,<sp/>than<sp/>count<sp/>average</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>(signed)times.size();<sp/>i++){</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>avrg<sp/>+=<sp/>times[i];</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>avrg<sp/>/=<sp/>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>double)times.size();</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>avrg;</highlight></codeline>
-<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1"></codeline>
+<codeline lineno="5"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="benchmark__frm_8h" kindref="compound">benchmark_frm.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="queue_8h" kindref="compound">queue.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="list_8h" kindref="compound">list.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stack_8h" kindref="compound">stack.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//Copy<sp/>constructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="class_benchmark_1ae9237b5fd5cac90bdcc953837e8aee1a" refkind="member"><highlight class="normal"><ref refid="class_benchmark_1acfca497989836a688d44477802e822d8" kindref="member">Benchmark::Benchmark</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_benchmark" kindref="compound">Benchmark</ref>&amp;<sp/>copy){</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_benchmark_1a5563f218941d6b01ac7783f1e6582025" kindref="member">testTimes</ref><sp/>=<sp/>copy.<ref refid="class_benchmark_1a5563f218941d6b01ac7783f1e6582025" kindref="member">testTimes</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//A<sp/>default<sp/>constructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_benchmark_1acfca497989836a688d44477802e822d8" refkind="member"><highlight class="normal"><ref refid="class_benchmark_1acfca497989836a688d44477802e822d8" kindref="member">Benchmark::Benchmark</ref>(){</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_benchmark_1a4107fff4e0da31d561fc6109e359b341" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_benchmark_1a4107fff4e0da31d561fc6109e359b341" kindref="member">Benchmark::test</ref>(<ref refid="class_input_files" kindref="compound">InputFiles</ref><sp/>files){</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>temp<sp/>memory<sp/>container</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>tabForData<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tempValue<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>std::fstream<sp/>newFile;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>files.<ref refid="class_input_files_1a3db5accd81913e0b89fdd3b4650c8923" kindref="member">return_number_files</ref>()<sp/>-<sp/><ref refid="inputfile__txt_8h_1ac6795aca310766e1b10d90013aac6d47" kindref="member">FIRST_ARGUMENT</ref>;<sp/>i++){</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Opening<sp/>file<sp/>+<sp/>making<sp/>new<sp/>table<sp/>with<sp/>content</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tabForData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">[files.<ref refid="class_input_files_1a9c65bfcc0e684642c40c999959d6d014" kindref="member">return_file_size</ref>(i)];</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newFile.open((files.<ref refid="class_input_files_1a9246bc217efcfa1569478bcf44e1cd20" kindref="member">return_file_name</ref>(i)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.txt&quot;</highlight><highlight class="normal">),<sp/>std::ios::in);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Checking<sp/>if<sp/>file<sp/>is<sp/>opened<sp/>correctly</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(newFile.is_open()<sp/>&amp;&amp;<sp/>(</highlight><highlight class="stringliteral">&quot;I<sp/>can&apos;t<sp/>open<sp/>file.&quot;</highlight><highlight class="normal">));</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_benchmark_1a2256d13e70e2e5f0df7583118dd88d49" kindref="member" tooltip="Measures the duration of the work of assignment function. ">Benchmark::measureTime</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*dataTable,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dataSize){</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>container<sp/>for<sp/>counted<sp/>working<sp/>times</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;long<sp/>double&gt;<sp/>estimateTimes;</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>10;<sp/>j++){</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Here<sp/>starts<sp/>the<sp/>timer</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::timer::cpu_timer<sp/>startTime;</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>dataSize;<sp/>i++){</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dataTable[i]<sp/>*=<sp/>2;</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Here<sp/>it<sp/>ends</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::timer::cpu_times<sp/>endTime<sp/>=<sp/>startTime.elapsed();</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>add<sp/>new<sp/>time<sp/>to<sp/>the<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>estimateTimes.push_back(static_cast&lt;long<sp/>double&gt;(endTime.wall<sp/>*<sp/><ref refid="benchmark__frm_8h_1a0383b9707104291ad0c37593d975221b" kindref="member">SEC</ref>));</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>better<sp/>display</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout.fixed;</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>DurTime<sp/>=<sp/><ref refid="class_benchmark_1a3efa1ec3d4e76eb0fa1633dda265c711" kindref="member" tooltip="Measures the average duration from 10 samples. ">getAvr</ref>(estimateTimes);</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Time<sp/>(average,<sp/>10<sp/>samples)<sp/>for<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>dataSize<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>elements:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>DurTime<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>sec&quot;</highlight><highlight class="normal">&lt;&lt;<sp/>std::endl;</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_benchmark_1a967a51b006393725fedf53119f467a16" kindref="member" tooltip="Generates raport with program tests outputs. ">generateRaport</ref>(DurTime,<sp/>dataSize);</highlight></codeline>
-<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_benchmark_1a9d8c911b12652e87e91da87f85e6cdf7" kindref="member" tooltip="Main testing function. ">Benchmark::test</ref>(<ref refid="class_input_files" kindref="compound">InputFiles</ref><sp/>files){</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>temp<sp/>memory<sp/>container</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>tabForData<sp/>=<sp/>NULL;</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tempValue<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>std::fstream<sp/>newFile;</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>files.<ref refid="class_input_files_1a3db5accd81913e0b89fdd3b4650c8923" kindref="member" tooltip="Return number of files. ">return_number_files</ref>()<sp/>-<sp/><ref refid="inputfile__txt_8h_1ac6795aca310766e1b10d90013aac6d47" kindref="member" tooltip="A const value for representing first argument from command prompt (name of the program) */...">FIRST_ARGUMENT</ref>;<sp/>i++){</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Opening<sp/>file<sp/>+<sp/>making<sp/>new<sp/>table<sp/>with<sp/>content</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tabForData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">[files.<ref refid="class_input_files_1a9c65bfcc0e684642c40c999959d6d014" kindref="member" tooltip="Return sizes of files (only for read purpose) ">return_file_size</ref>(i)];</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newFile.open((files.<ref refid="class_input_files_1a9246bc217efcfa1569478bcf44e1cd20" kindref="member" tooltip="Return names of files (only for read purpose) ">return_file_name</ref>(i)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.txt&quot;</highlight><highlight class="normal">),<sp/>std::ios::in);</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Checking<sp/>if<sp/>file<sp/>is<sp/>opened<sp/>correctly</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(newFile.is_open()<sp/>&amp;&amp;<sp/>(</highlight><highlight class="stringliteral">&quot;I<sp/>can&apos;t<sp/>open<sp/>file.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>files.<ref refid="class_input_files_1a9c65bfcc0e684642c40c999959d6d014" kindref="member">return_file_size</ref>(i);<sp/>j++){</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newFile<sp/>&gt;&gt;<sp/>tempValue;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tabForData[j]<sp/>=<sp/>tempValue;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newFile.close();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Testing<sp/>time<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_benchmark_1a2256d13e70e2e5f0df7583118dd88d49" kindref="member">measureTime</ref>(tabForData,<sp/>files.<ref refid="class_input_files_1a9c65bfcc0e684642c40c999959d6d014" kindref="member">return_file_size</ref>(i));</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>tabForData;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/>BINARY<sp/>TREE<sp/>TEST</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="class_benchmark_1a4143fd45a2d12adaab64820a54d446a1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_benchmark_1a4107fff4e0da31d561fc6109e359b341" kindref="member">Benchmark::test</ref>(std::fstream&amp;<sp/>file,<sp/><ref refid="class_node" kindref="compound">Node</ref>*<sp/>root){</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>temporary<sp/>data<sp/>container</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tempData;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//here<sp/>starts<sp/>timer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::timer::cpu_timer<sp/>startTime;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(file<sp/>&gt;&gt;<sp/>tempData)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>root-&gt;<ref refid="class_node_1ace073e8a8e2688a520e432360a4212f5" kindref="member">add</ref>(file,<sp/>tempData);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//here<sp/>ends</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::timer::cpu_times<sp/>endTime<sp/>=<sp/>startTime.elapsed();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//put<sp/>new<sp/>time<sp/>to<sp/>the<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_benchmark_1a5563f218941d6b01ac7783f1e6582025" kindref="member">testTimes</ref>.push_back(static_cast&lt;long<sp/>double&gt;(endTime.wall<sp/>*<sp/><ref refid="benchmark__frm_8h_1a0383b9707104291ad0c37593d975221b" kindref="member">SEC</ref>));</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//<sp/>QUEUE<sp/>TEST</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="class_benchmark_1a6fafa73a98bc705879c1cf369244b91a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_benchmark_1a4107fff4e0da31d561fc6109e359b341" kindref="member">Benchmark::test</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fileSize,<sp/>std::fstream&amp;<sp/>openFile,<sp/><ref refid="class_queue" kindref="compound">Queue</ref>*<sp/>newQueue){</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//here<sp/>starts<sp/>timer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::timer::cpu_timer<sp/>startTime;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>newQueue-&gt;<ref refid="class_queue_1a906083f1eae7bc4efb1e4ac04684f83a" kindref="member">add</ref>(openFile,<sp/>fileSize);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//here<sp/>ends</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::timer::cpu_times<sp/>endTime<sp/>=<sp/>startTime.elapsed();</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"></highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>files.<ref refid="class_input_files_1a9c65bfcc0e684642c40c999959d6d014" kindref="member" tooltip="Return sizes of files (only for read purpose) ">return_file_size</ref>(i);<sp/>j++){</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newFile<sp/>&gt;&gt;<sp/>tempValue;</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tabForData[j]<sp/>=<sp/>tempValue;</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newFile.close();</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Testing<sp/>time<sp/>here</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_benchmark_1a2256d13e70e2e5f0df7583118dd88d49" kindref="member" tooltip="Measures the duration of the work of assignment function. ">measureTime</ref>(tabForData,<sp/>files.<ref refid="class_input_files_1a9c65bfcc0e684642c40c999959d6d014" kindref="member" tooltip="Return sizes of files (only for read purpose) ">return_file_size</ref>(i));</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>tabForData;</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//put<sp/>new<sp/>time<sp/>to<sp/>the<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_benchmark_1a5563f218941d6b01ac7783f1e6582025" kindref="member">testTimes</ref>.push_back(static_cast&lt;long<sp/>double&gt;(endTime.wall<sp/>*<sp/><ref refid="benchmark__frm_8h_1a0383b9707104291ad0c37593d975221b" kindref="member">SEC</ref>));</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LINKED<sp/>LIST<sp/>TEST</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="class_benchmark_1a700cf39637091962d47c6c6ac0a1ecca" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_benchmark_1a4107fff4e0da31d561fc6109e359b341" kindref="member">Benchmark::test</ref>(std::fstream&amp;<sp/>openFile,<sp/><ref refid="class_list" kindref="compound">List</ref>*<sp/>newList){</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//here<sp/>starts<sp/>timer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::timer::cpu_timer<sp/>startTime;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>newList-&gt;<ref refid="class_list_1a2356cce9e60410b48020bca33c661032" kindref="member">add</ref>(openFile);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//here<sp/>ends</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::timer::cpu_times<sp/>endTime<sp/>=<sp/>startTime.elapsed();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//put<sp/>new<sp/>time<sp/>to<sp/>the<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_benchmark_1a5563f218941d6b01ac7783f1e6582025" kindref="member">testTimes</ref>.push_back(static_cast&lt;long<sp/>double&gt;(endTime.wall<sp/>*<sp/><ref refid="benchmark__frm_8h_1a0383b9707104291ad0c37593d975221b" kindref="member">SEC</ref>));</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">//<sp/>STACK<sp/>TEST</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="class_benchmark_1acbb9f8719dd94407c114683c88a2170d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_benchmark_1a4107fff4e0da31d561fc6109e359b341" kindref="member">Benchmark::test</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fileSize,<sp/>std::fstream&amp;<sp/>openFile,<sp/><ref refid="class_stack" kindref="compound">Stack</ref>*<sp/>newStack){</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//here<sp/>starts<sp/>timer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::timer::cpu_timer<sp/>startTime;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>newStack-&gt;<ref refid="class_stack_1a1f6b76a21e8f574d54123fbb460b0975" kindref="member">add</ref>(openFile,<sp/>fileSize);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//here<sp/>ends</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::timer::cpu_times<sp/>endTime<sp/>=<sp/>startTime.elapsed();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//put<sp/>new<sp/>time<sp/>to<sp/>the<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_benchmark_1a5563f218941d6b01ac7783f1e6582025" kindref="member">testTimes</ref>.push_back(static_cast&lt;long<sp/>double&gt;(endTime.wall<sp/>*<sp/><ref refid="benchmark__frm_8h_1a0383b9707104291ad0c37593d975221b" kindref="member">SEC</ref>));</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="class_benchmark_1abf697c20cfadd6d084cd32bc2c9f6c9f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_benchmark_1abf697c20cfadd6d084cd32bc2c9f6c9f" kindref="member">Benchmark::generateRaport</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>nextTime,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size){</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ofstream<sp/>raportFile;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>stringNextTime<sp/>=<sp/>std::to_string(nextTime);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>.xls<sp/>as<sp/>excel<sp/>file<sp/>format</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>raportFile.open(</highlight><highlight class="stringliteral">&quot;test.xls&quot;</highlight><highlight class="normal">,<sp/>std::ios::in<sp/>|<sp/>std::ios::app);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(raportFile.is_open()<sp/>&amp;&amp;<sp/>(</highlight><highlight class="stringliteral">&quot;I<sp/>can&apos;t<sp/>open<sp/>file.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>need<sp/>to<sp/>change<sp/>&apos;.&apos;<sp/>on<sp/>&apos;,&apos;<sp/>due<sp/>to<sp/>excel<sp/>string<sp/>format<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::algorithm::replace_first(stringNextTime,<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>raportFile<sp/>&lt;&lt;<sp/>size<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>stringNextTime<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>raportFile.close();</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="class_benchmark_1a5a3439fc5d0841cada080cdd14c9ebd1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_benchmark_1abf697c20cfadd6d084cd32bc2c9f6c9f" kindref="member">Benchmark::generateRaport</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>avgTime,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/>std::string<sp/>fileName,<sp/><ref refid="benchmark__frm_8h_1ac2ad7f431e3446fddcd9b6b9f93c4c14" kindref="member">data_type</ref><sp/>type){</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ofstream<sp/>raportFile;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>stringNextTime<sp/>=<sp/>std::to_string(avgTime);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(type<sp/>==<sp/><ref refid="benchmark__frm_8h_1ac2ad7f431e3446fddcd9b6b9f93c4c14ae7f0b7f228990e5b8ce4a9541f26c062" kindref="member">BIN_TREE</ref>){</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>.xls<sp/>as<sp/>excel<sp/>file<sp/>format</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>raportFile.open(</highlight><highlight class="stringliteral">&quot;test_btree.xls&quot;</highlight><highlight class="normal">,<sp/>std::ios::in<sp/>|<sp/>std::ios::app);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(raportFile.is_open()<sp/>&amp;&amp;<sp/>(</highlight><highlight class="stringliteral">&quot;I<sp/>can&apos;t<sp/>open<sp/>file.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>need<sp/>to<sp/>change<sp/>&apos;.&apos;<sp/>on<sp/>&apos;,&apos;<sp/>due<sp/>to<sp/>excel<sp/>string<sp/>format<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::algorithm::replace_first(stringNextTime,<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>raportFile<sp/>&lt;&lt;<sp/>size<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>stringNextTime<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>raportFile.close();</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;(BinaryTree)<sp/>For<sp/>file<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;&gt;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>fileName<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&lt;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(size:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>size<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>average<sp/>test<sp/>time<sp/>(10<sp/>times)<sp/>was:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>avgTime<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(type<sp/>==<sp/><ref refid="benchmark__frm_8h_1ac2ad7f431e3446fddcd9b6b9f93c4c14a15daaafacaefff3b690c1c2669ef0caa" kindref="member">QUEUE</ref>){</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>.xls<sp/>as<sp/>excel<sp/>file<sp/>format</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>raportFile.open(</highlight><highlight class="stringliteral">&quot;test_queue.xls&quot;</highlight><highlight class="normal">,<sp/>std::ios::in<sp/>|<sp/>std::ios::app);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(raportFile.is_open()<sp/>&amp;&amp;<sp/>(</highlight><highlight class="stringliteral">&quot;I<sp/>can&apos;t<sp/>open<sp/>file.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>need<sp/>to<sp/>change<sp/>&apos;.&apos;<sp/>on<sp/>&apos;,&apos;<sp/>due<sp/>to<sp/>excel<sp/>string<sp/>format<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::algorithm::replace_first(stringNextTime,<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>raportFile<sp/>&lt;&lt;<sp/>size<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>stringNextTime<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>raportFile.close();</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;(Queue)<sp/>For<sp/>file<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;&gt;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>fileName<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&lt;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(size:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>size<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>average<sp/>test<sp/>time<sp/>(10<sp/>times)<sp/>was:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>avgTime<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(type<sp/>==<sp/><ref refid="benchmark__frm_8h_1ac2ad7f431e3446fddcd9b6b9f93c4c14a25688e799536738ea469158ef15fd1c0" kindref="member">LIST</ref>){</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>.xls<sp/>as<sp/>excel<sp/>file<sp/>format</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>raportFile.open(</highlight><highlight class="stringliteral">&quot;test_list.xls&quot;</highlight><highlight class="normal">,<sp/>std::ios::in<sp/>|<sp/>std::ios::app);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(raportFile.is_open()<sp/>&amp;&amp;<sp/>(</highlight><highlight class="stringliteral">&quot;I<sp/>can&apos;t<sp/>open<sp/>file.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>need<sp/>to<sp/>change<sp/>&apos;.&apos;<sp/>on<sp/>&apos;,&apos;<sp/>due<sp/>to<sp/>excel<sp/>string<sp/>format<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::algorithm::replace_first(stringNextTime,<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>raportFile<sp/>&lt;&lt;<sp/>size<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>stringNextTime<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>raportFile.close();</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;(List)<sp/>For<sp/>file<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;&gt;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>fileName<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&lt;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(size:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>size<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>average<sp/>test<sp/>time<sp/>(10<sp/>times)<sp/>was:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>avgTime<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(type<sp/>==<sp/><ref refid="benchmark__frm_8h_1ac2ad7f431e3446fddcd9b6b9f93c4c14a3bfeb3e4822bcc96abf42601a42bbcd3" kindref="member">STACK</ref>){</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>.xls<sp/>as<sp/>excel<sp/>file<sp/>format</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>raportFile.open(</highlight><highlight class="stringliteral">&quot;test_stack.xls&quot;</highlight><highlight class="normal">,<sp/>std::ios::in<sp/>|<sp/>std::ios::app);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(raportFile.is_open()<sp/>&amp;&amp;<sp/>(</highlight><highlight class="stringliteral">&quot;I<sp/>can&apos;t<sp/>open<sp/>file.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>need<sp/>to<sp/>change<sp/>&apos;.&apos;<sp/>on<sp/>&apos;,&apos;<sp/>due<sp/>to<sp/>excel<sp/>string<sp/>format<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::algorithm::replace_first(stringNextTime,<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>raportFile<sp/>&lt;&lt;<sp/>size<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>stringNextTime<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>raportFile.close();</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;(Stack)<sp/>For<sp/>file<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;&gt;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>fileName<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&lt;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(size:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>size<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>average<sp/>test<sp/>time<sp/>(10<sp/>times)<sp/>was:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>avgTime<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="class_benchmark_1a3efa1ec3d4e76eb0fa1633dda265c711" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_benchmark_1a3efa1ec3d4e76eb0fa1633dda265c711" kindref="member">Benchmark::getAvr</ref>(std::vector&lt;long<sp/>double&gt;times){</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>avrg<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//add<sp/>10<sp/>values,<sp/>than<sp/>count<sp/>average</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>(signed)times.size();<sp/>i++){</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>avrg<sp/>+=<sp/>times[i];</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>avrg<sp/>/=<sp/>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>double)times.size();</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>avrg;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182" refid="class_benchmark_1a2256d13e70e2e5f0df7583118dd88d49" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_benchmark_1a2256d13e70e2e5f0df7583118dd88d49" kindref="member">Benchmark::measureTime</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*dataTable,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dataSize){</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>container<sp/>for<sp/>counted<sp/>working<sp/>times</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;long<sp/>double&gt;<sp/>estimateTimes;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>10;<sp/>j++){</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Here<sp/>starts<sp/>the<sp/>timer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::timer::cpu_timer<sp/>startTime;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>dataSize;<sp/>i++){</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dataTable[i]<sp/>*=<sp/>2;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Here<sp/>it<sp/>ends</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::timer::cpu_times<sp/>endTime<sp/>=<sp/>startTime.elapsed();</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>add<sp/>new<sp/>time<sp/>to<sp/>the<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>estimateTimes.push_back(static_cast&lt;long<sp/>double&gt;(endTime.wall<sp/>*<sp/><ref refid="benchmark__frm_8h_1a0383b9707104291ad0c37593d975221b" kindref="member">SEC</ref>));</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>better<sp/>display</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout.fixed;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>DurTime<sp/>=<sp/><ref refid="class_benchmark_1a3efa1ec3d4e76eb0fa1633dda265c711" kindref="member">getAvr</ref>(estimateTimes);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Time<sp/>(average,<sp/>10<sp/>samples)<sp/>for<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>dataSize<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>elements:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>DurTime<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>sec&quot;</highlight><highlight class="normal">&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_benchmark_1abf697c20cfadd6d084cd32bc2c9f6c9f" kindref="member">generateRaport</ref>(DurTime,<sp/>dataSize);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="class_benchmark_1a973fa2d47ed4383e23dd710de955b03b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_benchmark_1a973fa2d47ed4383e23dd710de955b03b" kindref="member">Benchmark::show_testTimes_v</ref>(){</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>(signed)this-&gt;<ref refid="class_benchmark_1a5563f218941d6b01ac7783f1e6582025" kindref="member">testTimes</ref>.size();<sp/>i++){</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/><ref refid="class_benchmark_1a5563f218941d6b01ac7783f1e6582025" kindref="member">testTimes</ref>[i]<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab1/src/benchmark_frm.cpp"/>
+    <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/benchmark_frm.cpp"/>
   </compounddef>
 </doxygen>

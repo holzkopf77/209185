@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="list__node_8h" kind="file" language="C++">
+    <compoundname>list_node.h</compoundname>
+    <includedby refid="list_8h" local="yes">C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/list.h</includedby>
+    <includedby refid="list__node_8cpp" local="yes">C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/list_node.cpp</includedby>
+    <invincdepgraph>
+      <node id="130">
+        <label>C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="131">
+        <label>C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/list_node.cpp</label>
+        <link refid="list__node_8cpp"/>
+      </node>
+      <node id="128">
+        <label>C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/benchmark_frm.cpp</label>
+        <link refid="benchmark__frm_8cpp"/>
+      </node>
+      <node id="129">
+        <label>C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/list.cpp</label>
+        <link refid="list_8cpp"/>
+      </node>
+      <node id="127">
+        <label>C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/list.h</label>
+        <link refid="list_8h"/>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/list_node.h</label>
+        <link refid="list_node.h"/>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_l_node" prot="public">LNode</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="list__node_8h_1a35fba912e03500485d01e37d4a70f3dd" prot="public" static="no">
+        <name>LIST_NODE_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/list_node.h" line="6" column="9" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/list_node.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Nodes for list. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="5"><highlight class="preprocessor">#ifndef<sp/>lIST_NODE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="list__node_8h_1a35fba912e03500485d01e37d4a70f3dd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LIST_NODE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_l_node" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_l_node" kindref="compound">LNode</ref>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\param<sp/>data<sp/>a<sp/>container<sp/>for<sp/>data<sp/>insine<sp/>node</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_l_node_1ac1e2dab9c211dabbc0dfcaabf3a30f7a" kindref="member">LNode</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>data);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_l_node_1a903aa263b8ff2f07ae93935a3e16b23c" kindref="member">~LNode</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27" refid="class_l_node_1a97c342a895b9c19e6a279acfe2c5d05c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_l_node_1a97c342a895b9c19e6a279acfe2c5d05c" kindref="member">nodeData</ref>;</highlight></codeline>
+<codeline lineno="31" refid="class_l_node_1a4c8c3667cfa6a78673b91fa6a5bb93e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_l_node" kindref="compound">LNode</ref>*<sp/><ref refid="class_l_node_1a4c8c3667cfa6a78673b91fa6a5bb93e6" kindref="member">nextNode</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="class_l_node_1a8cee552d09eaeb60a09d95309a87b498" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_list" kindref="compound">List</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/list_node.h"/>
+  </compounddef>
+</doxygen>

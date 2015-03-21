@@ -1,27 +1,31 @@
 # 209185
 Projektowanie Algorytmów i Metody Sztucznej Inteligencji (LAB)
------
-LAB 1 ver 1.1
+----
+LAB 2 - TESTOWANIE ZŁOŻONOŚCI OBLICZENIOWEJ WYBRANYCH STRUKTUR DANYCH
+----
+Testowano:
 
-Dokumentacja w pdfie ./latex/DOCUMENTATION.pdf
+1.Drzewo binarne
 
-Testowanie wydajności tablicy dynamicznej.
+2.Kolejke
 
-Użyto bibliotek Boost, więcej info: http://www.boost.org/
-------
-Wywołanie programu z lini poleceń:
+3.Listę jednokierunkową
 
-./nazwa_programu [arg1 arg2 ... arg]
+4.Stos
 
-[arg1 arg2 ... arg] - rozmiary plików wypełnianych losowymi wartościami(do testów)
--------
-TODO:
-Wsadzić szablony
+Do testów wykorzystano wygenerowane pliki z losowymi liczbami całkowitymi z przedziału (0, 2147483647)
+Do każdej struktury generowano kolejne rozmiary plików: 10, 100, 1000, 10000, 100000, 1000000, 10000000.
+W przypadku większych plików czas testowania był zbyt duży.
 
-Uzupełnić dokumentacje:
+Test polegał na obliczaniu czasu wypełnienia każdej struktury danymi z plików.
+Każdy test wykonano 10 razy, wynik dla każdej struktury uśredniono.
+---
+Wywołanie programu:
 
-  -strona tytułowa
-  
-  -wsadzić wykresy, obrazki, ogarnąć doxygena
-  
-Uprościć kod
+.\nazwa_programu 10 100 ... n
+
+(gdzie n - rozmiar kolejno losowo wygenerowanych plików)
+---
+W folderze docs znajduje się pełna dokumentacja ( DOCUMENTATION.pdf )
+W folderze docs/SCREENS znajdują się zrzuty ekranu działań programu oraz obliczone wykresy złożoności dla każdej struktury.
+---

@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="stack_8cpp" kind="file" language="C++">
+    <compoundname>stack.cpp</compoundname>
+    <includes refid="stack_8h" local="yes">stack.h</includes>
+    <incdepgraph>
+      <node id="203">
+        <label>boost/algorithm/string/erase.hpp</label>
+      </node>
+      <node id="193">
+        <label>stack.h</label>
+        <link refid="stack_8h"/>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+      </node>
+      <node id="204">
+        <label>benchmark_frm.h</label>
+        <link refid="benchmark__frm_8h"/>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="208" relation="include">
+        </childnode>
+      </node>
+      <node id="192">
+        <label>C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/stack.cpp</label>
+        <link refid="stack.cpp"/>
+        <childnode refid="193" relation="include">
+        </childnode>
+      </node>
+      <node id="200">
+        <label>cassert</label>
+      </node>
+      <node id="196">
+        <label>string</label>
+      </node>
+      <node id="206">
+        <label>boost\chrono\duration.hpp</label>
+      </node>
+      <node id="197">
+        <label>fstream</label>
+      </node>
+      <node id="194">
+        <label>inputfile_txt.h</label>
+        <link refid="inputfile__txt_8h"/>
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="202">
+        <label>random</label>
+      </node>
+      <node id="199">
+        <label>cstdio</label>
+      </node>
+      <node id="201">
+        <label>ctime</label>
+      </node>
+      <node id="208">
+        <label>tree_node.h</label>
+        <link refid="tree__node_8h"/>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+      </node>
+      <node id="198">
+        <label>vector</label>
+      </node>
+      <node id="207">
+        <label>boost\algorithm\string\replace.hpp</label>
+      </node>
+      <node id="195">
+        <label>iostream</label>
+      </node>
+      <node id="205">
+        <label>boost\timer\timer.hpp</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>A stack class source code. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="5"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stack_8h" kindref="compound">stack.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>constructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_stack_1a71b2f560de949f04ef9eab5ad9163bbd" refkind="member"><highlight class="normal"><ref refid="class_stack_1a71b2f560de949f04ef9eab5ad9163bbd" kindref="member">Stack::Stack</ref>(<ref refid="class_input_files" kindref="compound">InputFiles</ref>&amp;<sp/>file,<sp/><ref refid="class_benchmark" kindref="compound">Benchmark</ref>&amp;<sp/>stackTest){</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>open<sp/>file<sp/>for<sp/>data<sp/>in<sp/>root</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>std::fstream<sp/>openFile;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>take<sp/>name<sp/>of<sp/>this<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>fileName;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>file<sp/>size</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fileSize;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>average<sp/>time<sp/>from<sp/>test</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>avrgTime;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>file.<ref refid="class_input_files_1a3db5accd81913e0b89fdd3b4650c8923" kindref="member">return_number_files</ref>()<sp/>-<sp/><ref refid="inputfile__txt_8h_1ac6795aca310766e1b10d90013aac6d47" kindref="member">FIRST_ARGUMENT</ref>;<sp/>i++){</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fileName<sp/>=<sp/>file.<ref refid="class_input_files_1a9246bc217efcfa1569478bcf44e1cd20" kindref="member">return_file_name</ref>(i);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fileSize<sp/>=<sp/>file.<ref refid="class_input_files_1a9c65bfcc0e684642c40c999959d6d014" kindref="member">return_file_size</ref>(i);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>10;<sp/>i++){</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>openFile.open(fileName<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.txt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>file<sp/>is<sp/>opened<sp/>correctly</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(openFile.is_open()<sp/>&amp;&amp;<sp/></highlight><highlight class="stringliteral">&quot;I<sp/>can&apos;t<sp/>open<sp/>this<sp/>file.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_stack_1aa14462f08b194e58a777a3390c0ebb31" kindref="member">stackContainer</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">[fileSize];</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_stack_1a59b3d0f6dad7a0c6c131a87a765a9687" kindref="member">nrOfElement</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stackTest.<ref refid="class_benchmark_1a4107fff4e0da31d561fc6109e359b341" kindref="member">test</ref>(fileSize,<sp/>openFile,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//initial<sp/>again<sp/>for<sp/>next<sp/>test</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_stack_1aa14462f08b194e58a777a3390c0ebb31" kindref="member">stackContainer</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_stack_1a59b3d0f6dad7a0c6c131a87a765a9687" kindref="member">nrOfElement</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>openFile.close();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//generate<sp/>raport</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>avrgTime<sp/>=<sp/>stackTest.<ref refid="class_benchmark_1a3efa1ec3d4e76eb0fa1633dda265c711" kindref="member">getAvr</ref>(stackTest.<ref refid="class_benchmark_1a5563f218941d6b01ac7783f1e6582025" kindref="member">testTimes</ref>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stackTest.<ref refid="class_benchmark_1abf697c20cfadd6d084cd32bc2c9f6c9f" kindref="member">generateRaport</ref>(avrgTime,<sp/>fileSize,<sp/>fileName,<sp/><ref refid="benchmark__frm_8h_1ac2ad7f431e3446fddcd9b6b9f93c4c14a3bfeb3e4822bcc96abf42601a42bbcd3" kindref="member">STACK</ref>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="class_stack_1a1f6b76a21e8f574d54123fbb460b0975" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_stack_1a1f6b76a21e8f574d54123fbb460b0975" kindref="member">Stack::add</ref>(std::fstream&amp;<sp/>openFile,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fileSize){</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//container<sp/>for<sp/>temporary<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tempData;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//take<sp/>first<sp/>element</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>openFile<sp/>&gt;&gt;<sp/>tempData;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_stack_1aa14462f08b194e58a777a3390c0ebb31" kindref="member">stackContainer</ref>[this-&gt;<ref refid="class_stack_1a59b3d0f6dad7a0c6c131a87a765a9687" kindref="member">nrOfElement</ref>];</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(openFile<sp/>&gt;&gt;<sp/>tempData){</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_stack_1a59b3d0f6dad7a0c6c131a87a765a9687" kindref="member">nrOfElement</ref><sp/>+=<sp/>1;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="class_stack_1a59b3d0f6dad7a0c6c131a87a765a9687" kindref="member">nrOfElement</ref><sp/>&gt;=<sp/>fileSize){</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;STACK<sp/>OVERFLOW<sp/>OMG<sp/>OMG<sp/>OMG<sp/>NOSCOPE<sp/>M8&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_stack_1aa14462f08b194e58a777a3390c0ebb31" kindref="member">stackContainer</ref>[this-&gt;<ref refid="class_stack_1a59b3d0f6dad7a0c6c131a87a765a9687" kindref="member">nrOfElement</ref>]<sp/>=<sp/>tempData;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/stack.cpp"/>
+  </compounddef>
+</doxygen>

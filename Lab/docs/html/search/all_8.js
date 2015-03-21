@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['test',['test',['../class_benchmark.html#a9d8c911b12652e87e91da87f85e6cdf7',1,'Benchmark']]],
-  ['testtimes',['testTimes',['../class_benchmark.html#a5563f218941d6b01ac7783f1e6582025',1,'Benchmark']]],
-  ['todo_20list',['Todo List',['../todo.html',1,'']]]
+  ['main',['main',['../main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main.cpp']]],
+  ['main_2ecpp',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['measuretime',['measureTime',['../class_benchmark.html#a2256d13e70e2e5f0df7583118dd88d49',1,'Benchmark']]]
 ];

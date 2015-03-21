@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="class_l_node" kind="class" language="C++" prot="public">
+    <compoundname>LNode</compoundname>
+    <includes refid="list__node_8h" local="no">list_node.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_l_node_1a4c8c3667cfa6a78673b91fa6a5bb93e6" prot="private" static="no" mutable="no">
+        <type><ref refid="class_l_node" kindref="compound">LNode</ref> *</type>
+        <definition>LNode::nextNode</definition>
+        <argsstring></argsstring>
+        <name>nextNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to the next node in linked list. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/list_node.h" line="31" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/list_node.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_l_node_1a97c342a895b9c19e6a279acfe2c5d05c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>LNode::nodeData</definition>
+        <argsstring></argsstring>
+        <name>nodeData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Container for data inside node. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/list_node.h" line="27" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/list_node.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_l_node_1a8cee552d09eaeb60a09d95309a87b498" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class List</definition>
+        <argsstring></argsstring>
+        <name>List</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/list_node.h" line="33" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/list_node.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_l_node_1ac1e2dab9c211dabbc0dfcaabf3a30f7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LNode::LNode</definition>
+        <argsstring>(int data)</argsstring>
+        <name>LNode</name>
+        <param>
+          <type>int</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>A constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/list_node.h" line="18" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/list_node.cpp" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_l_node_1a903aa263b8ff2f07ae93935a3e16b23c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LNode::~LNode</definition>
+        <argsstring>()</argsstring>
+        <name>~LNode</name>
+        <briefdescription>
+<para>A deconstructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/list_node.h" line="21" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/list_node.cpp" bodystart="14" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>An implementation for nodes to the linked list </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="8">
+        <label>LNode</label>
+        <link refid="class_l_node"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>nextNode</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/list_node.h" line="12" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/list_node.h" bodystart="12" bodyend="34"/>
+    <listofallmembers>
+      <member refid="class_l_node_1a8cee552d09eaeb60a09d95309a87b498" prot="private" virt="non-virtual"><scope>LNode</scope><name>List</name></member>
+      <member refid="class_l_node_1ac1e2dab9c211dabbc0dfcaabf3a30f7a" prot="public" virt="non-virtual"><scope>LNode</scope><name>LNode</name></member>
+      <member refid="class_l_node_1a4c8c3667cfa6a78673b91fa6a5bb93e6" prot="private" virt="non-virtual"><scope>LNode</scope><name>nextNode</name></member>
+      <member refid="class_l_node_1a97c342a895b9c19e6a279acfe2c5d05c" prot="private" virt="non-virtual"><scope>LNode</scope><name>nodeData</name></member>
+      <member refid="class_l_node_1a903aa263b8ff2f07ae93935a3e16b23c" prot="public" virt="non-virtual"><scope>LNode</scope><name>~LNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

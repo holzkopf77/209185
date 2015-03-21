@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['filesnamestab',['filesNamesTab',['../class_input_files.html#abbdfa73eda4af470d13c3d54a8665a0e',1,'InputFiles']]],
-  ['filesnumber',['filesNumber',['../class_input_files.html#a9614705947e6240bc2daa8cf3db42310',1,'InputFiles']]],
-  ['filessizes',['filesSizes',['../class_input_files.html#a2d6426414a58ca39751e3b26135341e0',1,'InputFiles']]],
-  ['first_5fargument',['FIRST_ARGUMENT',['../inputfile__txt_8h.html#ac6795aca310766e1b10d90013aac6d47',1,'inputfile_txt.h']]]
+  ['benchmark',['Benchmark',['../class_benchmark.html',1,'Benchmark'],['../class_benchmark.html#acfca497989836a688d44477802e822d8',1,'Benchmark::Benchmark()'],['../class_benchmark.html#ae9237b5fd5cac90bdcc953837e8aee1a',1,'Benchmark::Benchmark(const Benchmark &amp;copy)']]],
+  ['benchmark_5ffrm_2ecpp',['benchmark_frm.cpp',['../benchmark__frm_8cpp.html',1,'']]],
+  ['benchmark_5ffrm_2eh',['benchmark_frm.h',['../benchmark__frm_8h.html',1,'']]],
+  ['bin_5ftree',['BIN_TREE',['../benchmark__frm_8h.html#ac2ad7f431e3446fddcd9b6b9f93c4c14ae7f0b7f228990e5b8ce4a9541f26c062',1,'benchmark_frm.h']]]
 ];

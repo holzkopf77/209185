@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="class_node" kind="class" language="C++" prot="public">
+    <compoundname>Node</compoundname>
+    <includes refid="tree__node_8h" local="no">tree_node.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_node_1ab10f24c6461961ed57ca11e942fc8c3e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>Node::data_container</definition>
+        <argsstring></argsstring>
+        <name>data_container</name>
+        <briefdescription>
+<para>Container for random integer data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.h" line="118" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_node_1a03859657e8fb6e70be22fa53cb848241" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Node::is_empty</definition>
+        <argsstring></argsstring>
+        <name>is_empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.h" line="113" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_node_1a05ef70dd2b0b89db38cda977021ee696" prot="private" static="no" mutable="no">
+        <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+        <definition>Node::left</definition>
+        <argsstring></argsstring>
+        <name>left</name>
+        <briefdescription>
+<para>link with left branch node from parent </para>        </briefdescription>
+        <detaileddescription>
+<para>Data smaller than parent data. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.h" line="103" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_node_1a2149dcf83c930a3c0b388f51dbb42410" prot="private" static="no" mutable="no">
+        <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+        <definition>Node::parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <briefdescription>
+<para>link with parent node from tree </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.h" line="96" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_node_1a45c7b7ddeefcffe349a1f13ec586107c" prot="private" static="no" mutable="no">
+        <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+        <definition>Node::right</definition>
+        <argsstring></argsstring>
+        <name>right</name>
+        <briefdescription>
+<para>link with right branch node from parent </para>        </briefdescription>
+        <detaileddescription>
+<para>Data bigger than parent data. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.h" line="110" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_node_1ace073e8a8e2688a520e432360a4212f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>Node::add</definition>
+        <argsstring>(std::fstream &amp;openFile, int tempData)</argsstring>
+        <name>add</name>
+        <param>
+          <type>std::fstream &amp;</type>
+          <declname>openFile</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tempData</declname>
+        </param>
+        <briefdescription>
+<para>adding new branch nodes to the parent node </para>        </briefdescription>
+        <detaileddescription>
+<para>!! This is a recursive function.!! End point: when file is ended. Open file with random int data, check if there is open left/right branch node from parent: Algorithm: add(openFile,dataFromFile){ if rootData is bigger or equal dataFromFile if thereIsLeftNode add(openFile,datafromFile) // opening new node else create leftNode and add data if rootData is smaller than dataFromFile if thereisRightNode add(openFile,datafromFile) // opening new node else create rightNode and add data</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>openFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>actually opened file with random int data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tempData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>container for data from file </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.h" line="90" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.cpp" bodystart="31" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1a76d508260acf793cffe7115d3a3a81ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const int</type>
+        <definition>Node::get_data_container</definition>
+        <argsstring>()</argsstring>
+        <name>get_data_container</name>
+        <briefdescription>
+<para>return value of date from node </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.h" line="40" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.h" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1a2016871f73cb26fd033bbaa07ff91425" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>Node::is_emptyf</definition>
+        <argsstring>()</argsstring>
+        <name>is_emptyf</name>
+        <briefdescription>
+<para>return state of node </para>        </briefdescription>
+        <detaileddescription>
+<para>true - empty node false - not empty node </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.h" line="64" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.h" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1a0d68253f48f4deb1e078ef6cf08a5bf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Node::Node</definition>
+        <argsstring>(int data)</argsstring>
+        <name>Node</name>
+        <param>
+          <type>int</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>root constructor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.h" line="21" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.cpp" bodystart="8" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1a096e084c1e92bef24a06b09fd9fb7249" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Node::Node</definition>
+        <argsstring>(int data, Node *parent_ptr)</argsstring>
+        <name>Node</name>
+        <param>
+          <type>int</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+          <declname>parent_ptr</declname>
+        </param>
+        <briefdescription>
+<para>child constructor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.h" line="28" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.cpp" bodystart="17" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1a82da98f383fdd0649c037b454432487d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+        <definition>Node::return_left</definition>
+        <argsstring>()</argsstring>
+        <name>return_left</name>
+        <briefdescription>
+<para>return pointer to the left branch of node </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.h" line="47" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.h" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1a2789b35639dd329c7f406a5908ec386a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+        <definition>Node::return_right</definition>
+        <argsstring>()</argsstring>
+        <name>return_right</name>
+        <briefdescription>
+<para>return pointer to the right branch of node </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.h" line="54" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.h" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1aa0840c3cb5c7159be6d992adecd2097c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Node::~Node</definition>
+        <argsstring>()</argsstring>
+        <name>~Node</name>
+        <briefdescription>
+<para>deconstructor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.h" line="35" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.cpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="10">
+        <label>Node</label>
+        <link refid="class_node"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>right</edgelabel>
+          <edgelabel>left</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.h" line="14" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.h" bodystart="14" bodyend="119"/>
+    <listofallmembers>
+      <member refid="class_node_1ace073e8a8e2688a520e432360a4212f5" prot="public" virt="non-virtual"><scope>Node</scope><name>add</name></member>
+      <member refid="class_node_1ab10f24c6461961ed57ca11e942fc8c3e" prot="private" virt="non-virtual"><scope>Node</scope><name>data_container</name></member>
+      <member refid="class_node_1a76d508260acf793cffe7115d3a3a81ba" prot="public" virt="non-virtual"><scope>Node</scope><name>get_data_container</name></member>
+      <member refid="class_node_1a03859657e8fb6e70be22fa53cb848241" prot="private" virt="non-virtual"><scope>Node</scope><name>is_empty</name></member>
+      <member refid="class_node_1a2016871f73cb26fd033bbaa07ff91425" prot="public" virt="non-virtual"><scope>Node</scope><name>is_emptyf</name></member>
+      <member refid="class_node_1a05ef70dd2b0b89db38cda977021ee696" prot="private" virt="non-virtual"><scope>Node</scope><name>left</name></member>
+      <member refid="class_node_1a0d68253f48f4deb1e078ef6cf08a5bf4" prot="public" virt="non-virtual"><scope>Node</scope><name>Node</name></member>
+      <member refid="class_node_1a096e084c1e92bef24a06b09fd9fb7249" prot="public" virt="non-virtual"><scope>Node</scope><name>Node</name></member>
+      <member refid="class_node_1a2149dcf83c930a3c0b388f51dbb42410" prot="private" virt="non-virtual"><scope>Node</scope><name>parent</name></member>
+      <member refid="class_node_1a82da98f383fdd0649c037b454432487d" prot="public" virt="non-virtual"><scope>Node</scope><name>return_left</name></member>
+      <member refid="class_node_1a2789b35639dd329c7f406a5908ec386a" prot="public" virt="non-virtual"><scope>Node</scope><name>return_right</name></member>
+      <member refid="class_node_1a45c7b7ddeefcffe349a1f13ec586107c" prot="private" virt="non-virtual"><scope>Node</scope><name>right</name></member>
+      <member refid="class_node_1aa0840c3cb5c7159be6d992adecd2097c" prot="public" virt="non-virtual"><scope>Node</scope><name>~Node</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

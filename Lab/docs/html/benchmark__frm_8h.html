@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>Lab 1: src/benchmark_frm.h File Reference</title>
+<title>Lab 2: C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/benchmark_frm.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,10 +23,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Lab 1
-   &#160;<span id="projectnumber">1.1</span>
+   <div id="projectname">Lab 2
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">Dynamic tables</div>
+   <div id="projectbrief">Testing computational complexity of different data structures</div>
   </td>
  </tr>
  </tbody>
@@ -89,6 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">benchmark_frm.h File Reference</div>  </div>
@@ -102,12 +103,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;boost\timer\timer.hpp&gt;</code><br />
 <code>#include &lt;boost\chrono\duration.hpp&gt;</code><br />
 <code>#include &lt;boost\algorithm\string\replace.hpp&gt;</code><br />
-<code>#include &quot;<a class="el" href="inputfile__txt_8h.html">inputfile_txt.h</a>&quot;</code><br />
-</div><table class="memberdecls">
+<code>#include &quot;<a class="el" href="">inputfile_txt.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="">tree_node.h</a>&quot;</code><br />
+</div>
+<p><a href="">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html">Benchmark</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ac2ad7f431e3446fddcd9b6b9f93c4c14"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="benchmark__frm_8h.html#ac2ad7f431e3446fddcd9b6b9f93c4c14">data_type</a> { <a class="el" href="benchmark__frm_8h.html#ac2ad7f431e3446fddcd9b6b9f93c4c14ae7f0b7f228990e5b8ce4a9541f26c062">BIN_TREE</a> = 1, 
+<a class="el" href="benchmark__frm_8h.html#ac2ad7f431e3446fddcd9b6b9f93c4c14a15daaafacaefff3b690c1c2669ef0caa">QUEUE</a> = 2, 
+<a class="el" href="benchmark__frm_8h.html#ac2ad7f431e3446fddcd9b6b9f93c4c14a25688e799536738ea469158ef15fd1c0">LIST</a> = 3, 
+<a class="el" href="benchmark__frm_8h.html#ac2ad7f431e3446fddcd9b6b9f93c4c14a3bfeb3e4822bcc96abf42601a42bbcd3">STACK</a> = 4
+ }</td></tr>
+<tr class="separator:ac2ad7f431e3446fddcd9b6b9f93c4c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -116,7 +129,43 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A <a class="el" href="class_benchmark.html">Benchmark</a> class. </p>
-</div><h2 class="groupheader">Variable Documentation</h2>
+
+<p>Definition in file <a class="el" href="">benchmark_frm.h</a>.</p>
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="ac2ad7f431e3446fddcd9b6b9f93c4c14"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="benchmark__frm_8h.html#ac2ad7f431e3446fddcd9b6b9f93c4c14">data_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>enum type to describe provided data types: binary tree(1), queue(2), linked list(3), stack(4) </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ac2ad7f431e3446fddcd9b6b9f93c4c14ae7f0b7f228990e5b8ce4a9541f26c062"></a>BIN_TREE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac2ad7f431e3446fddcd9b6b9f93c4c14a15daaafacaefff3b690c1c2669ef0caa"></a>QUEUE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac2ad7f431e3446fddcd9b6b9f93c4c14a25688e799536738ea469158ef15fd1c0"></a>LIST&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac2ad7f431e3446fddcd9b6b9f93c4c14a3bfeb3e4822bcc96abf42601a42bbcd3"></a>STACK&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;              {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="benchmark__frm_8h.html#ac2ad7f431e3446fddcd9b6b9f93c4c14ae7f0b7f228990e5b8ce4a9541f26c062">BIN_TREE</a> = 1,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="benchmark__frm_8h.html#ac2ad7f431e3446fddcd9b6b9f93c4c14a15daaafacaefff3b690c1c2669ef0caa">QUEUE</a> = 2,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="benchmark__frm_8h.html#ac2ad7f431e3446fddcd9b6b9f93c4c14a25688e799536738ea469158ef15fd1c0">LIST</a> = 3,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="benchmark__frm_8h.html#ac2ad7f431e3446fddcd9b6b9f93c4c14a3bfeb3e4822bcc96abf42601a42bbcd3">STACK</a> = 4</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
+<div class="ttc" id="benchmark__frm_8h_html_ac2ad7f431e3446fddcd9b6b9f93c4c14ae7f0b7f228990e5b8ce4a9541f26c062"><div class="ttname"><a href="benchmark__frm_8h.html#ac2ad7f431e3446fddcd9b6b9f93c4c14ae7f0b7f228990e5b8ce4a9541f26c062">BIN_TREE</a></div><div class="ttdef"><b>Definition:</b> benchmark_frm.h:30</div></div>
+<div class="ttc" id="benchmark__frm_8h_html_ac2ad7f431e3446fddcd9b6b9f93c4c14a15daaafacaefff3b690c1c2669ef0caa"><div class="ttname"><a href="benchmark__frm_8h.html#ac2ad7f431e3446fddcd9b6b9f93c4c14a15daaafacaefff3b690c1c2669ef0caa">QUEUE</a></div><div class="ttdef"><b>Definition:</b> benchmark_frm.h:31</div></div>
+<div class="ttc" id="benchmark__frm_8h_html_ac2ad7f431e3446fddcd9b6b9f93c4c14a25688e799536738ea469158ef15fd1c0"><div class="ttname"><a href="benchmark__frm_8h.html#ac2ad7f431e3446fddcd9b6b9f93c4c14a25688e799536738ea469158ef15fd1c0">LIST</a></div><div class="ttdef"><b>Definition:</b> benchmark_frm.h:32</div></div>
+<div class="ttc" id="benchmark__frm_8h_html_ac2ad7f431e3446fddcd9b6b9f93c4c14a3bfeb3e4822bcc96abf42601a42bbcd3"><div class="ttname"><a href="benchmark__frm_8h.html#ac2ad7f431e3446fddcd9b6b9f93c4c14a3bfeb3e4822bcc96abf42601a42bbcd3">STACK</a></div><div class="ttdef"><b>Definition:</b> benchmark_frm.h:33</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
 <a class="anchor" id="a0383b9707104291ad0c37593d975221b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -132,7 +181,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 12 2015 03:33:33 for Lab 1 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 19 2015 05:23:31 for Lab 2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

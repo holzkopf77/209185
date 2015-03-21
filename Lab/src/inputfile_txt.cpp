@@ -1,5 +1,6 @@
-/*! \file inputfile_txt.cpp
-	\brief Source code for InputFile class
+/*! 
+\file inputfile_txt.cpp
+\brief Source code for InputFile class
 */
 #include "inputfile_txt.h"
 
@@ -66,7 +67,7 @@ void InputFiles::generate_random_int_data(){
 		<a href="linkURL">http://pl.wikipedia.org/wiki/Rozk%C5%82ad_jednostajny</a>
 	*/
 	//std::cout << std::numeric_limits<int>::max() << std::endl;
-	std::uniform_int_distribution<>newDistr(0,9999);
+	std::uniform_int_distribution<>newDistr;
 
 	std::ofstream NewFile;
 	for (int i = 1; i < filesNumber; i++){

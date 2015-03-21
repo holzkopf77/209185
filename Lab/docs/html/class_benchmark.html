@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>Lab 1: Benchmark Class Reference</title>
+<title>Lab 2: Benchmark Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,10 +23,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Lab 1
-   &#160;<span id="projectnumber">1.1</span>
+   <div id="projectname">Lab 2
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">Dynamic tables</div>
+   <div id="projectbrief">Testing computational complexity of different data structures</div>
   </td>
  </tr>
  </tbody>
@@ -88,25 +88,41 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_benchmark-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Benchmark Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;benchmark_frm.h&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="">benchmark_frm.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9d8c911b12652e87e91da87f85e6cdf7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#a9d8c911b12652e87e91da87f85e6cdf7">test</a> (<a class="el" href="class_input_files.html">InputFiles</a> files)</td></tr>
-<tr class="memdesc:a9d8c911b12652e87e91da87f85e6cdf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main testing function.  <a href="#a9d8c911b12652e87e91da87f85e6cdf7">More...</a><br /></td></tr>
-<tr class="separator:a9d8c911b12652e87e91da87f85e6cdf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfca497989836a688d44477802e822d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#acfca497989836a688d44477802e822d8">Benchmark</a> ()</td></tr>
+<tr class="separator:acfca497989836a688d44477802e822d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9237b5fd5cac90bdcc953837e8aee1a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#ae9237b5fd5cac90bdcc953837e8aee1a">Benchmark</a> (const <a class="el" href="class_benchmark.html">Benchmark</a> &amp;copy)</td></tr>
+<tr class="separator:ae9237b5fd5cac90bdcc953837e8aee1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a973fa2d47ed4383e23dd710de955b03b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#a973fa2d47ed4383e23dd710de955b03b">show_testTimes_v</a> ()</td></tr>
+<tr class="memdesc:a973fa2d47ed4383e23dd710de955b03b"><td class="mdescLeft">&#160;</td><td class="mdescRight">show filled vector with test times  <a href="#a973fa2d47ed4383e23dd710de955b03b">More...</a><br /></td></tr>
+<tr class="separator:a973fa2d47ed4383e23dd710de955b03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4107fff4e0da31d561fc6109e359b341"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#a4107fff4e0da31d561fc6109e359b341">test</a> (<a class="el" href="class_input_files.html">InputFiles</a> files)</td></tr>
+<tr class="separator:a4107fff4e0da31d561fc6109e359b341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4143fd45a2d12adaab64820a54d446a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#a4143fd45a2d12adaab64820a54d446a1">test</a> (std::fstream &amp;file, <a class="el" href="class_node.html">Node</a> *root)</td></tr>
+<tr class="separator:a4143fd45a2d12adaab64820a54d446a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fafa73a98bc705879c1cf369244b91a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#a6fafa73a98bc705879c1cf369244b91a">test</a> (int fileSize, std::fstream &amp;openFile, <a class="el" href="class_queue.html">Queue</a> *newQueue)</td></tr>
+<tr class="separator:a6fafa73a98bc705879c1cf369244b91a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a700cf39637091962d47c6c6ac0a1ecca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#a700cf39637091962d47c6c6ac0a1ecca">test</a> (std::fstream &amp;openFile, <a class="el" href="class_list.html">List</a> *newList)</td></tr>
+<tr class="separator:a700cf39637091962d47c6c6ac0a1ecca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbb9f8719dd94407c114683c88a2170d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#acbb9f8719dd94407c114683c88a2170d">test</a> (int fileSize, std::fstream &amp;openFile, <a class="el" href="class_stack.html">Stack</a> *newStack)</td></tr>
+<tr class="separator:acbb9f8719dd94407c114683c88a2170d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a967a51b006393725fedf53119f467a16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#a967a51b006393725fedf53119f467a16">generateRaport</a> (long double nextTime, int size)</td></tr>
-<tr class="memdesc:a967a51b006393725fedf53119f467a16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates raport with program tests outputs.  <a href="#a967a51b006393725fedf53119f467a16">More...</a><br /></td></tr>
-<tr class="separator:a967a51b006393725fedf53119f467a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf697c20cfadd6d084cd32bc2c9f6c9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#abf697c20cfadd6d084cd32bc2c9f6c9f">generateRaport</a> (long double nextTime, int size)</td></tr>
+<tr class="separator:abf697c20cfadd6d084cd32bc2c9f6c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a3439fc5d0841cada080cdd14c9ebd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#a5a3439fc5d0841cada080cdd14c9ebd1">generateRaport</a> (long double avgTime, int size, std::string fileName, <a class="el" href="benchmark__frm_8h.html#ac2ad7f431e3446fddcd9b6b9f93c4c14">data_type</a> type)</td></tr>
+<tr class="separator:a5a3439fc5d0841cada080cdd14c9ebd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3efa1ec3d4e76eb0fa1633dda265c711"><td class="memItemLeft" align="right" valign="top">long double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#a3efa1ec3d4e76eb0fa1633dda265c711">getAvr</a> (std::vector&lt; long double &gt;times)</td></tr>
 <tr class="memdesc:a3efa1ec3d4e76eb0fa1633dda265c711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Measures the average duration from 10 samples.  <a href="#a3efa1ec3d4e76eb0fa1633dda265c711">More...</a><br /></td></tr>
 <tr class="separator:a3efa1ec3d4e76eb0fa1633dda265c711"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,11 +135,61 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a5563f218941d6b01ac7783f1e6582025"><td class="memItemLeft" align="right" valign="top">std::vector&lt; long double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#a5563f218941d6b01ac7783f1e6582025">testTimes</a></td></tr>
 <tr class="memdesc:a5563f218941d6b01ac7783f1e6582025"><td class="mdescLeft">&#160;</td><td class="mdescRight">A container for calculated times.  <a href="#a5563f218941d6b01ac7783f1e6582025">More...</a><br /></td></tr>
 <tr class="separator:a5563f218941d6b01ac7783f1e6582025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a8cee552d09eaeb60a09d95309a87b498"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#a8cee552d09eaeb60a09d95309a87b498">List</a></td></tr>
+<tr class="separator:a8cee552d09eaeb60a09d95309a87b498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47dfc6f2bc0d50a6e7c92eb00d97b064"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#a47dfc6f2bc0d50a6e7c92eb00d97b064">Queue</a></td></tr>
+<tr class="separator:a47dfc6f2bc0d50a6e7c92eb00d97b064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4641b458711966e157e765a8aef3476c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#a4641b458711966e157e765a8aef3476c">Stack</a></td></tr>
+<tr class="separator:a4641b458711966e157e765a8aef3476c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b682814d14447120dd184fd300deade"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#a4b682814d14447120dd184fd300deade">Tree</a></td></tr>
+<tr class="separator:a4b682814d14447120dd184fd300deade"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Making a framework for testing inserted data structure. Using time to estimate computational complexity. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a967a51b006393725fedf53119f467a16"></a>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="acfca497989836a688d44477802e822d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Benchmark::Benchmark </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                    {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    ;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ae9237b5fd5cac90bdcc953837e8aee1a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Benchmark::Benchmark </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_benchmark.html">Benchmark</a> &amp;&#160;</td>
+          <td class="paramname"><em>copy</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                                         {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_benchmark.html#a5563f218941d6b01ac7783f1e6582025">testTimes</a> = copy.<a class="code" href="class_benchmark.html#a5563f218941d6b01ac7783f1e6582025">testTimes</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
+<div class="ttc" id="class_benchmark_html_a5563f218941d6b01ac7783f1e6582025"><div class="ttname"><a href="class_benchmark.html#a5563f218941d6b01ac7783f1e6582025">Benchmark::testTimes</a></div><div class="ttdeci">std::vector&lt; long double &gt; testTimes</div><div class="ttdoc">A container for calculated times. </div><div class="ttdef"><b>Definition:</b> benchmark_frm.h:156</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="abf697c20cfadd6d084cd32bc2c9f6c9f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -131,7 +197,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Benchmark::generateRaport </td>
+          <td class="memname">void Benchmark::generateRaport </td>
           <td>(</td>
           <td class="paramtype">long double&#160;</td>
           <td class="paramname"><em>nextTime</em>, </td>
@@ -154,30 +220,123 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Generates raport with program tests outputs. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">nextTime</td><td>A new calculated time (for new file size). </td></tr>
-    <tr><td class="paramname">Size</td><td>A size of the currently working file. </td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>FILE OVERWRITING, NEED TO IMPLEMENT NEW NAMES </dd></dl>
-<div class="fragment"><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;                                                            {<span class="comment"></span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">    /*! \todo FILE OVERWRITING, NEED TO IMPLEMENT NEW NAMES */</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    std::ofstream raportFile;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    std::string stringNextTime = std::to_string(nextTime);</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="comment">// .xls as excel file format</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    raportFile.open(<span class="stringliteral">&quot;test.xls&quot;</span>, std::ios::in | std::ios::app);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        assert(raportFile.is_open() &amp;&amp; (<span class="stringliteral">&quot;I can&#39;t open file.&quot;</span>));</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">// need to change &#39;.&#39; on &#39;,&#39; due to excel string format </span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    boost::algorithm::replace_first(stringNextTime, <span class="stringliteral">&quot;.&quot;</span>, <span class="stringliteral">&quot;,&quot;</span>);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    raportFile &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; stringNextTime &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    raportFile.close();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                                            {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    std::ofstream raportFile;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    std::string stringNextTime = std::to_string(nextTime);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">// .xls as excel file format</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    raportFile.open(<span class="stringliteral">&quot;test.xls&quot;</span>, std::ios::in | std::ios::app);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        assert(raportFile.is_open() &amp;&amp; (<span class="stringliteral">&quot;I can&#39;t open file.&quot;</span>));</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">// need to change &#39;.&#39; on &#39;,&#39; due to excel string format </span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    boost::algorithm::replace_first(stringNextTime, <span class="stringliteral">&quot;.&quot;</span>, <span class="stringliteral">&quot;,&quot;</span>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    raportFile &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; stringNextTime &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    raportFile.close();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a5a3439fc5d0841cada080cdd14c9ebd1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Benchmark::generateRaport </td>
+          <td>(</td>
+          <td class="paramtype">long double&#160;</td>
+          <td class="paramname"><em>avgTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="benchmark__frm_8h.html#ac2ad7f431e3446fddcd9b6b9f93c4c14">data_type</a>&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                                                                                               {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    std::ofstream raportFile;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    std::string stringNextTime = std::to_string(avgTime);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">if</span> (type == <a class="code" href="benchmark__frm_8h.html#ac2ad7f431e3446fddcd9b6b9f93c4c14ae7f0b7f228990e5b8ce4a9541f26c062">BIN_TREE</a>){</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="comment">// .xls as excel file format</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        raportFile.open(<span class="stringliteral">&quot;test_btree.xls&quot;</span>, std::ios::in | std::ios::app);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        assert(raportFile.is_open() &amp;&amp; (<span class="stringliteral">&quot;I can&#39;t open file.&quot;</span>));</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="comment">// need to change &#39;.&#39; on &#39;,&#39; due to excel string format </span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        boost::algorithm::replace_first(stringNextTime, <span class="stringliteral">&quot;.&quot;</span>, <span class="stringliteral">&quot;,&quot;</span>);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        raportFile &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; stringNextTime &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        raportFile.close();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;(BinaryTree) For file &quot;</span> &lt;&lt; <span class="stringliteral">&quot;&gt; &quot;</span> &lt;&lt; fileName &lt;&lt; <span class="stringliteral">&quot; &lt;&quot;</span> &lt;&lt; <span class="stringliteral">&quot; (size: &quot;</span> &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot;)&quot;</span> &lt;&lt; <span class="stringliteral">&quot; average test time (10 times) was: &quot;</span> &lt;&lt; avgTime &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (type == <a class="code" href="benchmark__frm_8h.html#ac2ad7f431e3446fddcd9b6b9f93c4c14a15daaafacaefff3b690c1c2669ef0caa">QUEUE</a>){</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="comment">// .xls as excel file format</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        raportFile.open(<span class="stringliteral">&quot;test_queue.xls&quot;</span>, std::ios::in | std::ios::app);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        assert(raportFile.is_open() &amp;&amp; (<span class="stringliteral">&quot;I can&#39;t open file.&quot;</span>));</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="comment">// need to change &#39;.&#39; on &#39;,&#39; due to excel string format </span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        boost::algorithm::replace_first(stringNextTime, <span class="stringliteral">&quot;.&quot;</span>, <span class="stringliteral">&quot;,&quot;</span>);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        raportFile &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; stringNextTime &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        raportFile.close();</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;(Queue) For file &quot;</span> &lt;&lt; <span class="stringliteral">&quot;&gt; &quot;</span> &lt;&lt; fileName &lt;&lt; <span class="stringliteral">&quot; &lt;&quot;</span> &lt;&lt; <span class="stringliteral">&quot; (size: &quot;</span> &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot;)&quot;</span> &lt;&lt; <span class="stringliteral">&quot; average test time (10 times) was: &quot;</span> &lt;&lt; avgTime &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (type == <a class="code" href="benchmark__frm_8h.html#ac2ad7f431e3446fddcd9b6b9f93c4c14a25688e799536738ea469158ef15fd1c0">LIST</a>){</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="comment">// .xls as excel file format</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        raportFile.open(<span class="stringliteral">&quot;test_list.xls&quot;</span>, std::ios::in | std::ios::app);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            assert(raportFile.is_open() &amp;&amp; (<span class="stringliteral">&quot;I can&#39;t open file.&quot;</span>));</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="comment">// need to change &#39;.&#39; on &#39;,&#39; due to excel string format </span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        boost::algorithm::replace_first(stringNextTime, <span class="stringliteral">&quot;.&quot;</span>, <span class="stringliteral">&quot;,&quot;</span>);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        raportFile &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; stringNextTime &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        raportFile.close();</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;(List) For file &quot;</span> &lt;&lt; <span class="stringliteral">&quot;&gt; &quot;</span> &lt;&lt; fileName &lt;&lt; <span class="stringliteral">&quot; &lt;&quot;</span> &lt;&lt; <span class="stringliteral">&quot; (size: &quot;</span> &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot;)&quot;</span> &lt;&lt; <span class="stringliteral">&quot; average test time (10 times) was: &quot;</span> &lt;&lt; avgTime &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (type == <a class="code" href="benchmark__frm_8h.html#ac2ad7f431e3446fddcd9b6b9f93c4c14a3bfeb3e4822bcc96abf42601a42bbcd3">STACK</a>){</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="comment">// .xls as excel file format</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        raportFile.open(<span class="stringliteral">&quot;test_stack.xls&quot;</span>, std::ios::in | std::ios::app);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        assert(raportFile.is_open() &amp;&amp; (<span class="stringliteral">&quot;I can&#39;t open file.&quot;</span>));</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="comment">// need to change &#39;.&#39; on &#39;,&#39; due to excel string format </span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        boost::algorithm::replace_first(stringNextTime, <span class="stringliteral">&quot;.&quot;</span>, <span class="stringliteral">&quot;,&quot;</span>);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        raportFile &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; stringNextTime &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        raportFile.close();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;(Stack) For file &quot;</span> &lt;&lt; <span class="stringliteral">&quot;&gt; &quot;</span> &lt;&lt; fileName &lt;&lt; <span class="stringliteral">&quot; &lt;&quot;</span> &lt;&lt; <span class="stringliteral">&quot; (size: &quot;</span> &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot;)&quot;</span> &lt;&lt; <span class="stringliteral">&quot; average test time (10 times) was: &quot;</span> &lt;&lt; avgTime &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    }</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;}</div>
+<div class="ttc" id="benchmark__frm_8h_html_ac2ad7f431e3446fddcd9b6b9f93c4c14ae7f0b7f228990e5b8ce4a9541f26c062"><div class="ttname"><a href="benchmark__frm_8h.html#ac2ad7f431e3446fddcd9b6b9f93c4c14ae7f0b7f228990e5b8ce4a9541f26c062">BIN_TREE</a></div><div class="ttdef"><b>Definition:</b> benchmark_frm.h:30</div></div>
+<div class="ttc" id="benchmark__frm_8h_html_ac2ad7f431e3446fddcd9b6b9f93c4c14a15daaafacaefff3b690c1c2669ef0caa"><div class="ttname"><a href="benchmark__frm_8h.html#ac2ad7f431e3446fddcd9b6b9f93c4c14a15daaafacaefff3b690c1c2669ef0caa">QUEUE</a></div><div class="ttdef"><b>Definition:</b> benchmark_frm.h:31</div></div>
+<div class="ttc" id="benchmark__frm_8h_html_ac2ad7f431e3446fddcd9b6b9f93c4c14a25688e799536738ea469158ef15fd1c0"><div class="ttname"><a href="benchmark__frm_8h.html#ac2ad7f431e3446fddcd9b6b9f93c4c14a25688e799536738ea469158ef15fd1c0">LIST</a></div><div class="ttdef"><b>Definition:</b> benchmark_frm.h:32</div></div>
+<div class="ttc" id="benchmark__frm_8h_html_ac2ad7f431e3446fddcd9b6b9f93c4c14a3bfeb3e4822bcc96abf42601a42bbcd3"><div class="ttname"><a href="benchmark__frm_8h.html#ac2ad7f431e3446fddcd9b6b9f93c4c14a3bfeb3e4822bcc96abf42601a42bbcd3">STACK</a></div><div class="ttdef"><b>Definition:</b> benchmark_frm.h:33</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -210,17 +369,17 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                                                        {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">double</span> avrg = 0.0;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">//add 10 values, than count average</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; (signed)times.size(); i++){</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        avrg += times[i];</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    avrg /= (<span class="keywordtype">long</span> double)times.size();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> avrg;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                                                        {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">double</span> avrg = 0.0;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="comment">//add 10 values, than count average</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; (signed)times.size(); i++){</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        avrg += times[i];</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    avrg /= (<span class="keywordtype">long</span> double)times.size();</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordflow">return</span> avrg;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -257,6 +416,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Measures the duration of the work of assignment function. </p>
+<p>Version for dynamic table</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dataTable</td><td>A container with random integers from earlier made files. </td></tr>
@@ -264,36 +424,61 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                                       {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">// container for counted working times</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    std::vector&lt;long double&gt; estimateTimes;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; 10; j++){</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="comment">// Here starts the timer</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        boost::timer::cpu_timer startTime;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; dataSize; i++){</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            dataTable[i] *= 2;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="comment">// Here it ends</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        boost::timer::cpu_times endTime = startTime.elapsed();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="comment">// add new time to the vector</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        estimateTimes.push_back(static_cast&lt;long double&gt;(endTime.wall * <a class="code" href="benchmark__frm_8h.html#a0383b9707104291ad0c37593d975221b">SEC</a>));</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// for better display</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    std::cout.fixed;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">double</span> DurTime = <a class="code" href="class_benchmark.html#a3efa1ec3d4e76eb0fa1633dda265c711" title="Measures the average duration from 10 samples. ">getAvr</a>(estimateTimes);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Time (average, 10 samples) for &quot;</span> &lt;&lt; dataSize &lt;&lt; <span class="stringliteral">&quot; elements: &quot;</span> &lt;&lt; DurTime &lt;&lt; <span class="stringliteral">&quot; sec&quot;</span>&lt;&lt; std::endl;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_benchmark.html#a967a51b006393725fedf53119f467a16" title="Generates raport with program tests outputs. ">generateRaport</a>(DurTime, dataSize);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                                                       {</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="comment">// container for counted working times</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    std::vector&lt;long double&gt; estimateTimes;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; 10; j++){</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="comment">// Here starts the timer</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        boost::timer::cpu_timer startTime;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; dataSize; i++){</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            dataTable[i] *= 2;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="comment">// Here it ends</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        boost::timer::cpu_times endTime = startTime.elapsed();</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="comment">// add new time to the vector</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        estimateTimes.push_back(static_cast&lt;long double&gt;(endTime.wall * <a class="code" href="benchmark__frm_8h.html#a0383b9707104291ad0c37593d975221b">SEC</a>));</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    }</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="comment">// for better display</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    std::cout.fixed;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">double</span> DurTime = <a class="code" href="class_benchmark.html#a3efa1ec3d4e76eb0fa1633dda265c711">getAvr</a>(estimateTimes);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Time (average, 10 samples) for &quot;</span> &lt;&lt; dataSize &lt;&lt; <span class="stringliteral">&quot; elements: &quot;</span> &lt;&lt; DurTime &lt;&lt; <span class="stringliteral">&quot; sec&quot;</span>&lt;&lt; std::endl;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <a class="code" href="class_benchmark.html#abf697c20cfadd6d084cd32bc2c9f6c9f">generateRaport</a>(DurTime, dataSize);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;}</div>
+<div class="ttc" id="benchmark__frm_8h_html_a0383b9707104291ad0c37593d975221b"><div class="ttname"><a href="benchmark__frm_8h.html#a0383b9707104291ad0c37593d975221b">SEC</a></div><div class="ttdeci">const long double SEC</div><div class="ttdef"><b>Definition:</b> benchmark_frm.h:23</div></div>
+<div class="ttc" id="class_benchmark_html_abf697c20cfadd6d084cd32bc2c9f6c9f"><div class="ttname"><a href="class_benchmark.html#abf697c20cfadd6d084cd32bc2c9f6c9f">Benchmark::generateRaport</a></div><div class="ttdeci">void generateRaport(long double nextTime, int size)</div><div class="ttdef"><b>Definition:</b> benchmark_frm.cpp:101</div></div>
+<div class="ttc" id="class_benchmark_html_a3efa1ec3d4e76eb0fa1633dda265c711"><div class="ttname"><a href="class_benchmark.html#a3efa1ec3d4e76eb0fa1633dda265c711">Benchmark::getAvr</a></div><div class="ttdeci">long double getAvr(std::vector&lt; long double &gt;times)</div><div class="ttdoc">Measures the average duration from 10 samples. </div><div class="ttdef"><b>Definition:</b> benchmark_frm.cpp:170</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a9d8c911b12652e87e91da87f85e6cdf7"></a>
+<a class="anchor" id="a973fa2d47ed4383e23dd710de955b03b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Benchmark::test </td>
+          <td class="memname">Benchmark::show_testTimes_v </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>show filled vector with test times </p>
+<div class="fragment"><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                                {</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; (signed)this-&gt;<a class="code" href="class_benchmark.html#a5563f218941d6b01ac7783f1e6582025">testTimes</a>.size(); i++){</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        std::cout &lt;&lt; <a class="code" href="class_benchmark.html#a5563f218941d6b01ac7783f1e6582025">testTimes</a>[i] &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    }</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;}<div class="ttc" id="class_benchmark_html_a5563f218941d6b01ac7783f1e6582025"><div class="ttname"><a href="class_benchmark.html#a5563f218941d6b01ac7783f1e6582025">Benchmark::testTimes</a></div><div class="ttdeci">std::vector&lt; long double &gt; testTimes</div><div class="ttdoc">A container for calculated times. </div><div class="ttdef"><b>Definition:</b> benchmark_frm.h:156</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a4107fff4e0da31d561fc6109e359b341"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Benchmark::test </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_input_files.html">InputFiles</a>&#160;</td>
           <td class="paramname"><em>files</em></td><td>)</td>
@@ -301,41 +486,293 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Main testing function. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">files</td><td>random generated files with integers </td></tr>
-  </table>
-  </dd>
-</dl>
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                    {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// temp memory container</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span>* tabForData = NULL;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">int</span> tempValue = 0;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">int</span> count = 0;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    std::fstream newFile;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; files.<a class="code" href="class_input_files.html#a3db5accd81913e0b89fdd3b4650c8923" title="Return number of files. ">return_number_files</a>() - <a class="code" href="inputfile__txt_8h.html#ac6795aca310766e1b10d90013aac6d47" title="A const value for representing first argument from command prompt (name of the program) */...">FIRST_ARGUMENT</a>; i++){</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="comment">// Opening file + making new table with content</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        tabForData = <span class="keyword">new</span> <span class="keywordtype">int</span>[files.<a class="code" href="class_input_files.html#a9c65bfcc0e684642c40c999959d6d014" title="Return sizes of files (only for read purpose) ">return_file_size</a>(i)];</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        newFile.open((files.<a class="code" href="class_input_files.html#a9246bc217efcfa1569478bcf44e1cd20" title="Return names of files (only for read purpose) ">return_file_name</a>(i) + <span class="stringliteral">&quot;.txt&quot;</span>), std::ios::in);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="comment">// Checking if file is opened correctly</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        assert(newFile.is_open() &amp;&amp; (<span class="stringliteral">&quot;I can&#39;t open file.&quot;</span>));</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; files.<a class="code" href="class_input_files.html#a9c65bfcc0e684642c40c999959d6d014" title="Return sizes of files (only for read purpose) ">return_file_size</a>(i); j++){</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            newFile &gt;&gt; tempValue;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            tabForData[j] = tempValue;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        newFile.close();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="comment">// Testing time here</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <a class="code" href="class_benchmark.html#a2256d13e70e2e5f0df7583118dd88d49" title="Measures the duration of the work of assignment function. ">measureTime</a>(tabForData, files.<a class="code" href="class_input_files.html#a9c65bfcc0e684642c40c999959d6d014" title="Return sizes of files (only for read purpose) ">return_file_size</a>(i));</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keyword">delete</span>[] tabForData;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                                    {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">// temp memory container</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">int</span>* tabForData = NULL;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">int</span> tempValue = 0;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    std::fstream newFile;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; files.<a class="code" href="class_input_files.html#a3db5accd81913e0b89fdd3b4650c8923">return_number_files</a>() - <a class="code" href="inputfile__txt_8h.html#ac6795aca310766e1b10d90013aac6d47">FIRST_ARGUMENT</a>; i++){</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="comment">// Opening file + making new table with content</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        tabForData = <span class="keyword">new</span> <span class="keywordtype">int</span>[files.<a class="code" href="class_input_files.html#a9c65bfcc0e684642c40c999959d6d014">return_file_size</a>(i)];</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        newFile.open((files.<a class="code" href="class_input_files.html#a9246bc217efcfa1569478bcf44e1cd20">return_file_name</a>(i) + <span class="stringliteral">&quot;.txt&quot;</span>), std::ios::in);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="comment">// Checking if file is opened correctly</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        assert(newFile.is_open() &amp;&amp; (<span class="stringliteral">&quot;I can&#39;t open file.&quot;</span>));</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; files.<a class="code" href="class_input_files.html#a9c65bfcc0e684642c40c999959d6d014">return_file_size</a>(i); j++){</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            newFile &gt;&gt; tempValue;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            tabForData[j] = tempValue;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        newFile.close();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="comment">// Testing time here</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="class_benchmark.html#a2256d13e70e2e5f0df7583118dd88d49">measureTime</a>(tabForData, files.<a class="code" href="class_input_files.html#a9c65bfcc0e684642c40c999959d6d014">return_file_size</a>(i));</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">delete</span>[] tabForData;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="ttc" id="class_input_files_html_a3db5accd81913e0b89fdd3b4650c8923"><div class="ttname"><a href="class_input_files.html#a3db5accd81913e0b89fdd3b4650c8923">InputFiles::return_number_files</a></div><div class="ttdeci">const int return_number_files()</div><div class="ttdoc">Return number of files. </div><div class="ttdef"><b>Definition:</b> inputfile_txt.h:85</div></div>
+<div class="ttc" id="class_benchmark_html_a2256d13e70e2e5f0df7583118dd88d49"><div class="ttname"><a href="class_benchmark.html#a2256d13e70e2e5f0df7583118dd88d49">Benchmark::measureTime</a></div><div class="ttdeci">void measureTime(int *dataTable, int dataSize)</div><div class="ttdoc">Measures the duration of the work of assignment function. </div><div class="ttdef"><b>Definition:</b> benchmark_frm.cpp:182</div></div>
+<div class="ttc" id="inputfile__txt_8h_html_ac6795aca310766e1b10d90013aac6d47"><div class="ttname"><a href="inputfile__txt_8h.html#ac6795aca310766e1b10d90013aac6d47">FIRST_ARGUMENT</a></div><div class="ttdeci">const int FIRST_ARGUMENT</div><div class="ttdoc">A const value for representing first argument from command prompt (name of the program) */...</div><div class="ttdef"><b>Definition:</b> inputfile_txt.h:19</div></div>
+<div class="ttc" id="class_input_files_html_a9246bc217efcfa1569478bcf44e1cd20"><div class="ttname"><a href="class_input_files.html#a9246bc217efcfa1569478bcf44e1cd20">InputFiles::return_file_name</a></div><div class="ttdeci">const std::string return_file_name(int Nmbr)</div><div class="ttdoc">Return names of files (only for read purpose) </div><div class="ttdef"><b>Definition:</b> inputfile_txt.h:70</div></div>
+<div class="ttc" id="class_input_files_html_a9c65bfcc0e684642c40c999959d6d014"><div class="ttname"><a href="class_input_files.html#a9c65bfcc0e684642c40c999959d6d014">InputFiles::return_file_size</a></div><div class="ttdeci">const int return_file_size(int Nmbr)</div><div class="ttdoc">Return sizes of files (only for read purpose) </div><div class="ttdef"><b>Definition:</b> inputfile_txt.h:78</div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a4143fd45a2d12adaab64820a54d446a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Benchmark::test </td>
+          <td>(</td>
+          <td class="paramtype">std::fstream &amp;&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_node.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>root</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                                {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// temporary data container</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">int</span> tempData;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">//here starts timer</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    boost::timer::cpu_timer startTime;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">while</span> (file &gt;&gt; tempData)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        root-&gt;<a class="code" href="class_node.html#ace073e8a8e2688a520e432360a4212f5">add</a>(file, tempData);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">//here ends</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    boost::timer::cpu_times endTime = startTime.elapsed();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">//put new time to the vector</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    this-&gt;<a class="code" href="class_benchmark.html#a5563f218941d6b01ac7783f1e6582025">testTimes</a>.push_back(static_cast&lt;long double&gt;(endTime.wall * <a class="code" href="benchmark__frm_8h.html#a0383b9707104291ad0c37593d975221b">SEC</a>));</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="ttc" id="benchmark__frm_8h_html_a0383b9707104291ad0c37593d975221b"><div class="ttname"><a href="benchmark__frm_8h.html#a0383b9707104291ad0c37593d975221b">SEC</a></div><div class="ttdeci">const long double SEC</div><div class="ttdef"><b>Definition:</b> benchmark_frm.h:23</div></div>
+<div class="ttc" id="class_node_html_ace073e8a8e2688a520e432360a4212f5"><div class="ttname"><a href="class_node.html#ace073e8a8e2688a520e432360a4212f5">Node::add</a></div><div class="ttdeci">void add(std::fstream &amp;openFile, int tempData)</div><div class="ttdoc">adding new branch nodes to the parent node </div><div class="ttdef"><b>Definition:</b> tree_node.cpp:31</div></div>
+<div class="ttc" id="class_benchmark_html_a5563f218941d6b01ac7783f1e6582025"><div class="ttname"><a href="class_benchmark.html#a5563f218941d6b01ac7783f1e6582025">Benchmark::testTimes</a></div><div class="ttdeci">std::vector&lt; long double &gt; testTimes</div><div class="ttdoc">A container for calculated times. </div><div class="ttdef"><b>Definition:</b> benchmark_frm.h:156</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a6fafa73a98bc705879c1cf369244b91a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Benchmark::test </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fileSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::fstream &amp;&#160;</td>
+          <td class="paramname"><em>openFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_queue.html">Queue</a> *&#160;</td>
+          <td class="paramname"><em>newQueue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                                                       {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//here starts timer</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    boost::timer::cpu_timer startTime;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    newQueue-&gt;<a class="code" href="class_queue.html#a906083f1eae7bc4efb1e4ac04684f83a">add</a>(openFile, fileSize);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//here ends</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    boost::timer::cpu_times endTime = startTime.elapsed();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">//put new time to the vector</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    this-&gt;<a class="code" href="class_benchmark.html#a5563f218941d6b01ac7783f1e6582025">testTimes</a>.push_back(static_cast&lt;long double&gt;(endTime.wall * <a class="code" href="benchmark__frm_8h.html#a0383b9707104291ad0c37593d975221b">SEC</a>));</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="ttc" id="benchmark__frm_8h_html_a0383b9707104291ad0c37593d975221b"><div class="ttname"><a href="benchmark__frm_8h.html#a0383b9707104291ad0c37593d975221b">SEC</a></div><div class="ttdeci">const long double SEC</div><div class="ttdef"><b>Definition:</b> benchmark_frm.h:23</div></div>
+<div class="ttc" id="class_benchmark_html_a5563f218941d6b01ac7783f1e6582025"><div class="ttname"><a href="class_benchmark.html#a5563f218941d6b01ac7783f1e6582025">Benchmark::testTimes</a></div><div class="ttdeci">std::vector&lt; long double &gt; testTimes</div><div class="ttdoc">A container for calculated times. </div><div class="ttdef"><b>Definition:</b> benchmark_frm.h:156</div></div>
+<div class="ttc" id="class_queue_html_a906083f1eae7bc4efb1e4ac04684f83a"><div class="ttname"><a href="class_queue.html#a906083f1eae7bc4efb1e4ac04684f83a">Queue::add</a></div><div class="ttdeci">void add(std::fstream &amp;openFile, int fileSize)</div><div class="ttdoc">Adding new element to the rear part of queue. </div><div class="ttdef"><b>Definition:</b> queue.cpp:55</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a700cf39637091962d47c6c6ac0a1ecca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Benchmark::test </td>
+          <td>(</td>
+          <td class="paramtype">std::fstream &amp;&#160;</td>
+          <td class="paramname"><em>openFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_list.html">List</a> *&#160;</td>
+          <td class="paramname"><em>newList</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                                       {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">//here starts timer</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    boost::timer::cpu_timer startTime;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    newList-&gt;<a class="code" href="class_list.html#a2356cce9e60410b48020bca33c661032">add</a>(openFile);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">//here ends</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    boost::timer::cpu_times endTime = startTime.elapsed();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">//put new time to the vector</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    this-&gt;<a class="code" href="class_benchmark.html#a5563f218941d6b01ac7783f1e6582025">testTimes</a>.push_back(static_cast&lt;long double&gt;(endTime.wall * <a class="code" href="benchmark__frm_8h.html#a0383b9707104291ad0c37593d975221b">SEC</a>));</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
+<div class="ttc" id="benchmark__frm_8h_html_a0383b9707104291ad0c37593d975221b"><div class="ttname"><a href="benchmark__frm_8h.html#a0383b9707104291ad0c37593d975221b">SEC</a></div><div class="ttdeci">const long double SEC</div><div class="ttdef"><b>Definition:</b> benchmark_frm.h:23</div></div>
+<div class="ttc" id="class_list_html_a2356cce9e60410b48020bca33c661032"><div class="ttname"><a href="class_list.html#a2356cce9e60410b48020bca33c661032">List::add</a></div><div class="ttdeci">void add(std::fstream &amp;file)</div><div class="ttdef"><b>Definition:</b> list.cpp:51</div></div>
+<div class="ttc" id="class_benchmark_html_a5563f218941d6b01ac7783f1e6582025"><div class="ttname"><a href="class_benchmark.html#a5563f218941d6b01ac7783f1e6582025">Benchmark::testTimes</a></div><div class="ttdeci">std::vector&lt; long double &gt; testTimes</div><div class="ttdoc">A container for calculated times. </div><div class="ttdef"><b>Definition:</b> benchmark_frm.h:156</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="acbb9f8719dd94407c114683c88a2170d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Benchmark::test </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fileSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::fstream &amp;&#160;</td>
+          <td class="paramname"><em>openFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_stack.html">Stack</a> *&#160;</td>
+          <td class="paramname"><em>newStack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                                                       {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">//here starts timer</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    boost::timer::cpu_timer startTime;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    newStack-&gt;<a class="code" href="class_stack.html#a1f6b76a21e8f574d54123fbb460b0975">add</a>(openFile, fileSize);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">//here ends</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    boost::timer::cpu_times endTime = startTime.elapsed();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">//put new time to the vector</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    this-&gt;<a class="code" href="class_benchmark.html#a5563f218941d6b01ac7783f1e6582025">testTimes</a>.push_back(static_cast&lt;long double&gt;(endTime.wall * <a class="code" href="benchmark__frm_8h.html#a0383b9707104291ad0c37593d975221b">SEC</a>));</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
+<div class="ttc" id="benchmark__frm_8h_html_a0383b9707104291ad0c37593d975221b"><div class="ttname"><a href="benchmark__frm_8h.html#a0383b9707104291ad0c37593d975221b">SEC</a></div><div class="ttdeci">const long double SEC</div><div class="ttdef"><b>Definition:</b> benchmark_frm.h:23</div></div>
+<div class="ttc" id="class_benchmark_html_a5563f218941d6b01ac7783f1e6582025"><div class="ttname"><a href="class_benchmark.html#a5563f218941d6b01ac7783f1e6582025">Benchmark::testTimes</a></div><div class="ttdeci">std::vector&lt; long double &gt; testTimes</div><div class="ttdoc">A container for calculated times. </div><div class="ttdef"><b>Definition:</b> benchmark_frm.h:156</div></div>
+<div class="ttc" id="class_stack_html_a1f6b76a21e8f574d54123fbb460b0975"><div class="ttname"><a href="class_stack.html#a1f6b76a21e8f574d54123fbb460b0975">Stack::add</a></div><div class="ttdeci">void add(std::fstream &amp;openFile, int fileSize)</div><div class="ttdef"><b>Definition:</b> stack.cpp:41</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a class="anchor" id="a8cee552d09eaeb60a09d95309a87b498"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_list.html">List</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a47dfc6f2bc0d50a6e7c92eb00d97b064"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_queue.html">Queue</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4641b458711966e157e765a8aef3476c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_stack.html">Stack</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4b682814d14447120dd184fd300deade"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_tree.html">Tree</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -362,13 +799,13 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>src/<a class="el" href="benchmark__frm_8h.html">benchmark_frm.h</a></li>
-<li>src/<a class="el" href="benchmark__frm_8cpp.html">benchmark_frm.cpp</a></li>
+<li>C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/<a class="el" href="">benchmark_frm.h</a></li>
+<li>C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/<a class="el" href="">benchmark_frm.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 12 2015 03:33:33 for Lab 1 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 19 2015 05:23:33 for Lab 2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

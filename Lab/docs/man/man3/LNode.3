@@ -1,0 +1,80 @@
+.TH "LNode" 3 "Thu Mar 19 2015" "Version 1.0" "Lab 2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+LNode \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <list_node\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBLNode\fP (int data)"
+.br
+.RI "\fIA constructor\&. \fP"
+.ti -1c
+.RI "\fB~LNode\fP ()"
+.br
+.RI "\fIA deconstructor\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBLNode\fP * \fBnextNode\fP"
+.br
+.ti -1c
+.RI "int \fBnodeData\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBList\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+An implementation for nodes to the linked list 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "LNode::LNode (int data)"
+
+.PP
+A constructor\&. 
+.PP
+.nf
+8                     {
+9     this->nodeData = data;
+10     this->nextNode = nullptr;
+11 }
+.fi
+.SS "LNode::~LNode ()"
+
+.PP
+A deconstructor\&. 
+.PP
+.nf
+14              {
+15     this->nextNode = nullptr;
+16     delete this->nextNode;
+17 }
+.fi
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class \fBList\fP\fC [friend]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "LNode::nextNode\fC [private]\fP"
+Pointer to the next node in linked list\&. 
+.SS "LNode::nodeData\fC [private]\fP"
+Container for data inside node\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Lab 2 from the source code\&.

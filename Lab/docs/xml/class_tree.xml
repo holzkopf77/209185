@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="class_tree" kind="class" language="C++" prot="public">
+    <compoundname>Tree</compoundname>
+    <includes refid="tree_8h" local="no">tree.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_tree_1adea11d0e123823b769f7c3ee9a5a1088" prot="private" static="no" mutable="no">
+        <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+        <definition>Tree::root</definition>
+        <argsstring></argsstring>
+        <name>root</name>
+        <briefdescription>
+<para>Root node of the tree. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree.h" line="44" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_tree_1ac32b48f984b2d1bb4e4ae22316a05eb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>Tree::show_tree</definition>
+        <argsstring>()</argsstring>
+        <name>show_tree</name>
+        <briefdescription>
+<para>show 3 levels from tree, starting from root node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree.h" line="39" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree.cpp" bodystart="54" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tree_1a567c6c7e5542e547fdb1957985144a9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Tree::Tree</definition>
+        <argsstring>(InputFiles &amp;file, Benchmark &amp;TreeTest)</argsstring>
+        <name>Tree</name>
+        <param>
+          <type><ref refid="class_input_files" kindref="compound">InputFiles</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type><ref refid="class_benchmark" kindref="compound">Benchmark</ref> &amp;</type>
+          <declname>TreeTest</declname>
+        </param>
+        <briefdescription>
+<para>constructor </para>        </briefdescription>
+        <detaileddescription>
+<para>Open file with random integers (range: 0 - 99999), create root node, than add new branch nodes depends on data from file. </para>        </detaileddescription>
+        <inbodydescription>
+<para><xrefsect id="todo_1_todo000004"><xreftitle>Todo</xreftitle><xrefdescription><para>memory problems, maybe new deconstructor? </para></xrefdescription></xrefsect></para>        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree.h" line="28" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree.cpp" bodystart="8" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tree_1abdc38545cf3f588725b5d8b8075b3866" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Tree::~Tree</definition>
+        <argsstring>()</argsstring>
+        <name>~Tree</name>
+        <briefdescription>
+<para>deconstructor </para>        </briefdescription>
+        <detaileddescription>
+<para>Empty all memory space for tree </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree.h" line="34" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree.cpp" bodystart="50" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="17">
+        <label>Node</label>
+        <link refid="class_node"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>right</edgelabel>
+          <edgelabel>left</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Tree</label>
+        <link refid="class_tree"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree.h" line="21" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree.h" bodystart="21" bodyend="45"/>
+    <listofallmembers>
+      <member refid="class_tree_1adea11d0e123823b769f7c3ee9a5a1088" prot="private" virt="non-virtual"><scope>Tree</scope><name>root</name></member>
+      <member refid="class_tree_1ac32b48f984b2d1bb4e4ae22316a05eb9" prot="public" virt="non-virtual"><scope>Tree</scope><name>show_tree</name></member>
+      <member refid="class_tree_1a567c6c7e5542e547fdb1957985144a9d" prot="public" virt="non-virtual"><scope>Tree</scope><name>Tree</name></member>
+      <member refid="class_tree_1abdc38545cf3f588725b5d8b8075b3866" prot="public" virt="non-virtual"><scope>Tree</scope><name>~Tree</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

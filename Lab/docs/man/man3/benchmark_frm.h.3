@@ -1,8 +1,8 @@
-.TH "src/benchmark_frm.h" 3 "Thu Mar 12 2015" "Version 1.1" "Lab 1" \" -*- nroff -*-
+.TH "C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/benchmark_frm.h" 3 "Thu Mar 19 2015" "Version 1.0" "Lab 2" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-src/benchmark_frm.h \- A \fBBenchmark\fP class\&.  
+C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/benchmark_frm.h \- A \fBBenchmark\fP class\&.  
 
 .SH SYNOPSIS
 .br
@@ -19,12 +19,21 @@ src/benchmark_frm.h \- A \fBBenchmark\fP class\&.
 .br
 \fC#include 'inputfile_txt\&.h'\fP
 .br
+\fC#include 'tree_node\&.h'\fP
+.br
 
 .SS "Classes"
 
 .in +1c
 .ti -1c
 .RI "class \fBBenchmark\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBdata_type\fP { \fBBIN_TREE\fP = 1, \fBQUEUE\fP = 2, \fBLIST\fP = 3, \fBSTACK\fP = 4 }"
 .br
 .in -1c
 .SS "Variables"
@@ -39,10 +48,36 @@ src/benchmark_frm.h \- A \fBBenchmark\fP class\&.
 A \fBBenchmark\fP class\&. 
 
 
+.PP
+Definition in file \fBbenchmark_frm\&.h\fP\&.
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBdata_type\fP"
+enum type to describe provided data types: binary tree(1), queue(2), linked list(3), stack(4) 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIBIN_TREE \fP\fP
+.TP
+\fB\fIQUEUE \fP\fP
+.TP
+\fB\fILIST \fP\fP
+.TP
+\fB\fISTACK \fP\fP
+.PP
+.nf
+29               {
+30     BIN_TREE = 1,
+31     QUEUE = 2,
+32     LIST = 3,
+33     STACK = 4
+34 };
+.fi
 .SH "Variable Documentation"
 .PP 
 .SS "const long double SEC = 0\&.000000001"
 
 .SH "Author"
 .PP 
-Generated automatically by Doxygen for Lab 1 from the source code\&.
+Generated automatically by Doxygen for Lab 2 from the source code\&.

@@ -2,8 +2,20 @@
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.9.1">
   <compound refid="class_benchmark" kind="class"><name>Benchmark</name>
     <member refid="class_benchmark_1a5563f218941d6b01ac7783f1e6582025" kind="variable"><name>testTimes</name></member>
-    <member refid="class_benchmark_1a9d8c911b12652e87e91da87f85e6cdf7" kind="function"><name>test</name></member>
-    <member refid="class_benchmark_1a967a51b006393725fedf53119f467a16" kind="function"><name>generateRaport</name></member>
+    <member refid="class_benchmark_1a8cee552d09eaeb60a09d95309a87b498" kind="friend"><name>List</name></member>
+    <member refid="class_benchmark_1a47dfc6f2bc0d50a6e7c92eb00d97b064" kind="friend"><name>Queue</name></member>
+    <member refid="class_benchmark_1a4641b458711966e157e765a8aef3476c" kind="friend"><name>Stack</name></member>
+    <member refid="class_benchmark_1a4b682814d14447120dd184fd300deade" kind="friend"><name>Tree</name></member>
+    <member refid="class_benchmark_1acfca497989836a688d44477802e822d8" kind="function"><name>Benchmark</name></member>
+    <member refid="class_benchmark_1ae9237b5fd5cac90bdcc953837e8aee1a" kind="function"><name>Benchmark</name></member>
+    <member refid="class_benchmark_1a973fa2d47ed4383e23dd710de955b03b" kind="function"><name>show_testTimes_v</name></member>
+    <member refid="class_benchmark_1a4107fff4e0da31d561fc6109e359b341" kind="function"><name>test</name></member>
+    <member refid="class_benchmark_1a4143fd45a2d12adaab64820a54d446a1" kind="function"><name>test</name></member>
+    <member refid="class_benchmark_1a6fafa73a98bc705879c1cf369244b91a" kind="function"><name>test</name></member>
+    <member refid="class_benchmark_1a700cf39637091962d47c6c6ac0a1ecca" kind="function"><name>test</name></member>
+    <member refid="class_benchmark_1acbb9f8719dd94407c114683c88a2170d" kind="function"><name>test</name></member>
+    <member refid="class_benchmark_1abf697c20cfadd6d084cd32bc2c9f6c9f" kind="function"><name>generateRaport</name></member>
+    <member refid="class_benchmark_1a5a3439fc5d0841cada080cdd14c9ebd1" kind="function"><name>generateRaport</name></member>
     <member refid="class_benchmark_1a3efa1ec3d4e76eb0fa1633dda265c711" kind="function"><name>getAvr</name></member>
     <member refid="class_benchmark_1a2256d13e70e2e5f0df7583118dd88d49" kind="function"><name>measureTime</name></member>
   </compound>
@@ -19,9 +31,64 @@
     <member refid="class_input_files_1a3db5accd81913e0b89fdd3b4650c8923" kind="function"><name>return_number_files</name></member>
     <member refid="class_input_files_1ad4d447795b387fa94c1db7a14a965113" kind="function"><name>show_info</name></member>
   </compound>
+  <compound refid="class_list" kind="class"><name>List</name>
+    <member refid="class_list_1a5610353d95d627beab38b7366921e0c3" kind="variable"><name>headPtr</name></member>
+    <member refid="class_list_1a73c6ff858ccd116181acc4795bd1ed58" kind="variable"><name>tailPtr</name></member>
+    <member refid="class_list_1a9a3a51357cab8c53233ba00b8545eb5a" kind="variable"><name>tempPtr</name></member>
+    <member refid="class_list_1a2356cce9e60410b48020bca33c661032" kind="function"><name>add</name></member>
+    <member refid="class_list_1a0b116ff5e92f7289b1bd9b8b1e66a8e3" kind="function"><name>List</name></member>
+    <member refid="class_list_1a70aecf37bd9d779a394e4d50377fbf5f" kind="function"><name>~List</name></member>
+  </compound>
+  <compound refid="class_l_node" kind="class"><name>LNode</name>
+    <member refid="class_l_node_1a4c8c3667cfa6a78673b91fa6a5bb93e6" kind="variable"><name>nextNode</name></member>
+    <member refid="class_l_node_1a97c342a895b9c19e6a279acfe2c5d05c" kind="variable"><name>nodeData</name></member>
+    <member refid="class_l_node_1a8cee552d09eaeb60a09d95309a87b498" kind="friend"><name>List</name></member>
+    <member refid="class_l_node_1ac1e2dab9c211dabbc0dfcaabf3a30f7a" kind="function"><name>LNode</name></member>
+    <member refid="class_l_node_1a903aa263b8ff2f07ae93935a3e16b23c" kind="function"><name>~LNode</name></member>
+  </compound>
+  <compound refid="class_node" kind="class"><name>Node</name>
+    <member refid="class_node_1ab10f24c6461961ed57ca11e942fc8c3e" kind="variable"><name>data_container</name></member>
+    <member refid="class_node_1a03859657e8fb6e70be22fa53cb848241" kind="variable"><name>is_empty</name></member>
+    <member refid="class_node_1a05ef70dd2b0b89db38cda977021ee696" kind="variable"><name>left</name></member>
+    <member refid="class_node_1a2149dcf83c930a3c0b388f51dbb42410" kind="variable"><name>parent</name></member>
+    <member refid="class_node_1a45c7b7ddeefcffe349a1f13ec586107c" kind="variable"><name>right</name></member>
+    <member refid="class_node_1ace073e8a8e2688a520e432360a4212f5" kind="function"><name>add</name></member>
+    <member refid="class_node_1a76d508260acf793cffe7115d3a3a81ba" kind="function"><name>get_data_container</name></member>
+    <member refid="class_node_1a2016871f73cb26fd033bbaa07ff91425" kind="function"><name>is_emptyf</name></member>
+    <member refid="class_node_1a0d68253f48f4deb1e078ef6cf08a5bf4" kind="function"><name>Node</name></member>
+    <member refid="class_node_1a096e084c1e92bef24a06b09fd9fb7249" kind="function"><name>Node</name></member>
+    <member refid="class_node_1a82da98f383fdd0649c037b454432487d" kind="function"><name>return_left</name></member>
+    <member refid="class_node_1a2789b35639dd329c7f406a5908ec386a" kind="function"><name>return_right</name></member>
+    <member refid="class_node_1aa0840c3cb5c7159be6d992adecd2097c" kind="function"><name>~Node</name></member>
+  </compound>
+  <compound refid="class_queue" kind="class"><name>Queue</name>
+    <member refid="class_queue_1a6d40dfb591ad9ff13fd1084b9e1eb0d5" kind="variable"><name>front</name></member>
+    <member refid="class_queue_1a8e206ea3eba2e59137f36b4425761a1d" kind="variable"><name>queueTab</name></member>
+    <member refid="class_queue_1ac09196d6d91d62b8547bae02ae9063c5" kind="variable"><name>rear</name></member>
+    <member refid="class_queue_1a906083f1eae7bc4efb1e4ac04684f83a" kind="function"><name>add</name></member>
+    <member refid="class_queue_1a435084ac15aec95620f6fee2198174bf" kind="function"><name>Queue</name></member>
+    <member refid="class_queue_1a00d119db8fa3050da37746e82cbcf94f" kind="function"><name>~Queue</name></member>
+  </compound>
+  <compound refid="class_stack" kind="class"><name>Stack</name>
+    <member refid="class_stack_1a59b3d0f6dad7a0c6c131a87a765a9687" kind="variable"><name>nrOfElement</name></member>
+    <member refid="class_stack_1aa14462f08b194e58a777a3390c0ebb31" kind="variable"><name>stackContainer</name></member>
+    <member refid="class_stack_1a1f6b76a21e8f574d54123fbb460b0975" kind="function"><name>add</name></member>
+    <member refid="class_stack_1a71b2f560de949f04ef9eab5ad9163bbd" kind="function"><name>Stack</name></member>
+  </compound>
+  <compound refid="class_tree" kind="class"><name>Tree</name>
+    <member refid="class_tree_1adea11d0e123823b769f7c3ee9a5a1088" kind="variable"><name>root</name></member>
+    <member refid="class_tree_1ac32b48f984b2d1bb4e4ae22316a05eb9" kind="function"><name>show_tree</name></member>
+    <member refid="class_tree_1a567c6c7e5542e547fdb1957985144a9d" kind="function"><name>Tree</name></member>
+    <member refid="class_tree_1abdc38545cf3f588725b5d8b8075b3866" kind="function"><name>~Tree</name></member>
+  </compound>
   <compound refid="benchmark__frm_8cpp" kind="file"><name>benchmark_frm.cpp</name>
   </compound>
   <compound refid="benchmark__frm_8h" kind="file"><name>benchmark_frm.h</name>
+    <member refid="benchmark__frm_8h_1ac2ad7f431e3446fddcd9b6b9f93c4c14" kind="enum"><name>data_type</name></member>
+    <member refid="benchmark__frm_8h_1ac2ad7f431e3446fddcd9b6b9f93c4c14ae7f0b7f228990e5b8ce4a9541f26c062" kind="enumvalue"><name>BIN_TREE</name></member>
+    <member refid="benchmark__frm_8h_1ac2ad7f431e3446fddcd9b6b9f93c4c14a15daaafacaefff3b690c1c2669ef0caa" kind="enumvalue"><name>QUEUE</name></member>
+    <member refid="benchmark__frm_8h_1ac2ad7f431e3446fddcd9b6b9f93c4c14a25688e799536738ea469158ef15fd1c0" kind="enumvalue"><name>LIST</name></member>
+    <member refid="benchmark__frm_8h_1ac2ad7f431e3446fddcd9b6b9f93c4c14a3bfeb3e4822bcc96abf42601a42bbcd3" kind="enumvalue"><name>STACK</name></member>
     <member refid="benchmark__frm_8h_1a0383b9707104291ad0c37593d975221b" kind="variable"><name>SEC</name></member>
   </compound>
   <compound refid="inputfile__txt_8cpp" kind="file"><name>inputfile_txt.cpp</name>
@@ -31,11 +98,37 @@
     <member refid="inputfile__txt_8h_1a902304230ce19afe946c01bcdb5f4d6b" kind="variable"><name>PROGRAM_NAME</name></member>
     <member refid="inputfile__txt_8h_1adccf682ffd569bf29d8a9e214a411771" kind="variable"><name>UNDEF_VALUE</name></member>
   </compound>
+  <compound refid="list_8cpp" kind="file"><name>list.cpp</name>
+  </compound>
+  <compound refid="list_8h" kind="file"><name>list.h</name>
+  </compound>
+  <compound refid="list__node_8cpp" kind="file"><name>list_node.cpp</name>
+  </compound>
+  <compound refid="list__node_8h" kind="file"><name>list_node.h</name>
+    <member refid="list__node_8h_1a35fba912e03500485d01e37d4a70f3dd" kind="define"><name>LIST_NODE_H</name></member>
+  </compound>
   <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
     <member refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
   </compound>
+  <compound refid="queue_8cpp" kind="file"><name>queue.cpp</name>
+  </compound>
+  <compound refid="queue_8h" kind="file"><name>queue.h</name>
+  </compound>
+  <compound refid="stack_8cpp" kind="file"><name>stack.cpp</name>
+  </compound>
+  <compound refid="stack_8h" kind="file"><name>stack.h</name>
+  </compound>
+  <compound refid="tree_8cpp" kind="file"><name>tree.cpp</name>
+  </compound>
+  <compound refid="tree_8h" kind="file"><name>tree.h</name>
+    <member refid="tree_8h_1a0acebb7e81d7ecc2f3fb225b68607772" kind="variable"><name>FIRST_FILE</name></member>
+  </compound>
+  <compound refid="tree__node_8cpp" kind="file"><name>tree_node.cpp</name>
+  </compound>
+  <compound refid="tree__node_8h" kind="file"><name>tree_node.h</name>
+  </compound>
   <compound refid="todo" kind="page"><name>todo</name>
   </compound>
-  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src</name>
   </compound>
 </doxygenindex>

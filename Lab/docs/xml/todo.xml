@@ -5,10 +5,12 @@
     <title>Todo List</title>
     <detaileddescription>
 <para><variablelist>
-<varlistentry><term><anchor id="todo_1_todo000001"/>Member <ref refid="class_benchmark_1a967a51b006393725fedf53119f467a16" kindref="member">Benchmark::generateRaport</ref>  (long double nextTime, int size)</term></varlistentry>
+<varlistentry><term><anchor id="todo_1_todo000001"/>Member <ref refid="class_benchmark_1abf697c20cfadd6d084cd32bc2c9f6c9f" kindref="member">Benchmark::generateRaport</ref>  (long double nextTime, int size)</term></varlistentry>
 <listitem><para>FILE OVERWRITING, NEED TO IMPLEMENT NEW NAMES  </para></listitem>
-<varlistentry><term><anchor id="todo_1_todo000002"/>Member <ref refid="class_input_files_1a85a092f7ad25a9f959f1a93e5afb2045" kindref="member">InputFiles::InputFiles</ref>  ()</term></varlistentry>
-<listitem><para>EXCEPTIONS HANDLING </para></listitem>
+<varlistentry><term><anchor id="todo_1_todo000003"/>Member <ref refid="class_input_files_1a85a092f7ad25a9f959f1a93e5afb2045" kindref="member">InputFiles::InputFiles</ref>  ()</term></varlistentry>
+<listitem><para>EXCEPTIONS HANDLING  </para></listitem>
+<varlistentry><term><anchor id="todo_1_todo000004"/>Member <ref refid="class_tree_1a567c6c7e5542e547fdb1957985144a9d" kindref="member">Tree::Tree</ref>  (<ref refid="class_input_files" kindref="compound">InputFiles</ref> &amp;file, <ref refid="class_benchmark" kindref="compound">Benchmark</ref> &amp;TreeTest)</term></varlistentry>
+<listitem><para>memory problems, maybe new deconstructor? </para></listitem>
 </variablelist>
 </para>    </detaileddescription>
   </compounddef>

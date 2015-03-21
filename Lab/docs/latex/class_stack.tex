@@ -1,0 +1,130 @@
+\hypertarget{class_stack}{}\section{Stack Class Reference}
+\label{class_stack}\index{Stack@{Stack}}
+
+
+{\ttfamily \#include $<$stack.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_stack_a1f6b76a21e8f574d54123fbb460b0975}{add} (std\+::fstream \&open\+File, int file\+Size)
+\item 
+\hyperlink{class_stack_a71b2f560de949f04ef9eab5ad9163bbd}{Stack} (\hyperlink{class_input_files}{Input\+Files} \&file, \hyperlink{class_benchmark}{Benchmark} \&stack\+Test)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_stack_a59b3d0f6dad7a0c6c131a87a765a9687}{nr\+Of\+Element}
+\item 
+int $\ast$ \hyperlink{class_stack_aa14462f08b194e58a777a3390c0ebb31}{stack\+Container}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Own implementation of stack. As simple as possible. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_stack_a71b2f560de949f04ef9eab5ad9163bbd}{}\index{Stack@{Stack}!Stack@{Stack}}
+\index{Stack@{Stack}!Stack@{Stack}}
+\subsubsection[{Stack}]{\setlength{\rightskip}{0pt plus 5cm}Stack\+::\+Stack (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\+Files} \&}]{file, }
+\item[{{\bf Benchmark} \&}]{stack\+Test}
+\end{DoxyParamCaption}
+)}\label{class_stack_a71b2f560de949f04ef9eab5ad9163bbd}
+
+
+A constructor. 
+
+
+\begin{DoxyCode}
+8                                                   \{
+9     \textcolor{comment}{// open file for data in root}
+10     std::fstream openFile;
+11     \textcolor{comment}{// take name of this file}
+12     std::string fileName;
+13     \textcolor{comment}{// file size}
+14     \textcolor{keywordtype}{int} fileSize;
+15     \textcolor{comment}{// average time from test}
+16     \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} avrgTime;
+17 
+18     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < file.\hyperlink{class_input_files_a3db5accd81913e0b89fdd3b4650c8923}{return\_number\_files}() - 
+      \hyperlink{inputfile__txt_8h_ac6795aca310766e1b10d90013aac6d47}{FIRST\_ARGUMENT}; i++)\{
+19         fileName = file.\hyperlink{class_input_files_a9246bc217efcfa1569478bcf44e1cd20}{return\_file\_name}(i);
+20         fileSize = file.\hyperlink{class_input_files_a9c65bfcc0e684642c40c999959d6d014}{return\_file\_size}(i);
+21         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 10; i++)\{
+22             openFile.open(fileName + \textcolor{stringliteral}{".txt"});
+23             \textcolor{comment}{// Check if file is opened correctly}
+24             assert(openFile.is\_open() && \textcolor{stringliteral}{"I can't open this file."});
+25             
+26             this->\hyperlink{class_stack_aa14462f08b194e58a777a3390c0ebb31}{stackContainer} = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[fileSize];
+27             this->\hyperlink{class_stack_a59b3d0f6dad7a0c6c131a87a765a9687}{nrOfElement} = 0;
+28             stackTest.\hyperlink{class_benchmark_a4107fff4e0da31d561fc6109e359b341}{test}(fileSize, openFile, \textcolor{keyword}{this});
+29 
+30             \textcolor{comment}{//initial again for next test}
+31             \textcolor{keyword}{delete} this->\hyperlink{class_stack_aa14462f08b194e58a777a3390c0ebb31}{stackContainer};
+32             this->\hyperlink{class_stack_a59b3d0f6dad7a0c6c131a87a765a9687}{nrOfElement} = 0;
+33             openFile.close();
+34         \}
+35         \textcolor{comment}{//generate raport}
+36         avrgTime = stackTest.\hyperlink{class_benchmark_a3efa1ec3d4e76eb0fa1633dda265c711}{getAvr}(stackTest.\hyperlink{class_benchmark_a5563f218941d6b01ac7783f1e6582025}{testTimes});
+37         stackTest.\hyperlink{class_benchmark_abf697c20cfadd6d084cd32bc2c9f6c9f}{generateRaport}(avrgTime, fileSize, fileName, 
+      \hyperlink{benchmark__frm_8h_ac2ad7f431e3446fddcd9b6b9f93c4c14a3bfeb3e4822bcc96abf42601a42bbcd3}{STACK});
+38     \}
+39 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_stack_a1f6b76a21e8f574d54123fbb460b0975}{}\index{Stack@{Stack}!add@{add}}
+\index{add@{add}!Stack@{Stack}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}Stack\+::add (
+\begin{DoxyParamCaption}
+\item[{std\+::fstream \&}]{open\+File, }
+\item[{int}]{file\+Size}
+\end{DoxyParamCaption}
+)}\label{class_stack_a1f6b76a21e8f574d54123fbb460b0975}
+Puts new element on the top of the stack
+
+
+\begin{DoxyParams}{Parameters}
+{\em open\+File} & pointer to the actually opened file with random data \\
+\hline
+{\em file\+Size} & size of actually opened file \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+41                                                  \{
+42     \textcolor{comment}{//container for temporary data}
+43     \textcolor{keywordtype}{int} tempData;
+44 
+45     \textcolor{comment}{//take first element}
+46     openFile >> tempData;
+47     this->\hyperlink{class_stack_aa14462f08b194e58a777a3390c0ebb31}{stackContainer}[this->\hyperlink{class_stack_a59b3d0f6dad7a0c6c131a87a765a9687}{nrOfElement}];
+48 
+49     \textcolor{keywordflow}{while} (openFile >> tempData)\{
+50         this->\hyperlink{class_stack_a59b3d0f6dad7a0c6c131a87a765a9687}{nrOfElement} += 1;
+51         \textcolor{keywordflow}{if} (this->\hyperlink{class_stack_a59b3d0f6dad7a0c6c131a87a765a9687}{nrOfElement} >= fileSize)\{
+52             std::cout << \textcolor{stringliteral}{"STACK OVERFLOW OMG OMG OMG NOSCOPE M8"} << std::endl;
+53         \}
+54         \textcolor{keywordflow}{else}\{
+55             this->\hyperlink{class_stack_aa14462f08b194e58a777a3390c0ebb31}{stackContainer}[this->\hyperlink{class_stack_a59b3d0f6dad7a0c6c131a87a765a9687}{nrOfElement}] = tempData;
+56         \}
+57     \}
+58 \}\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_stack_a59b3d0f6dad7a0c6c131a87a765a9687}{}\index{Stack@{Stack}!nr\+Of\+Element@{nr\+Of\+Element}}
+\index{nr\+Of\+Element@{nr\+Of\+Element}!Stack@{Stack}}
+\subsubsection[{nr\+Of\+Element}]{\setlength{\rightskip}{0pt plus 5cm}Stack\+::nr\+Of\+Element\hspace{0.3cm}{\ttfamily [private]}}\label{class_stack_a59b3d0f6dad7a0c6c131a87a765a9687}
+Number of actually element from stack. \hypertarget{class_stack_aa14462f08b194e58a777a3390c0ebb31}{}\index{Stack@{Stack}!stack\+Container@{stack\+Container}}
+\index{stack\+Container@{stack\+Container}!Stack@{Stack}}
+\subsubsection[{stack\+Container}]{\setlength{\rightskip}{0pt plus 5cm}Stack\+::stack\+Container\hspace{0.3cm}{\ttfamily [private]}}\label{class_stack_aa14462f08b194e58a777a3390c0ebb31}
+Dynamically created table for date from stack. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Desktop/my\+Stuff/209185/\+Lab2/src/\hyperlink{stack_8h}{stack.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Desktop/my\+Stuff/209185/\+Lab2/src/\hyperlink{stack_8cpp}{stack.\+cpp}\end{DoxyCompactItemize}

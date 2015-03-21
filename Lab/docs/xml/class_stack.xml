@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="class_stack" kind="class" language="C++" prot="public">
+    <compoundname>Stack</compoundname>
+    <includes refid="stack_8h" local="no">stack.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_stack_1a59b3d0f6dad7a0c6c131a87a765a9687" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>Stack::nrOfElement</definition>
+        <argsstring></argsstring>
+        <name>nrOfElement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of actually element from stack. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/stack.h" line="42" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/stack.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_stack_1aa14462f08b194e58a777a3390c0ebb31" prot="private" static="no" mutable="no">
+        <type>int *</type>
+        <definition>Stack::stackContainer</definition>
+        <argsstring></argsstring>
+        <name>stackContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Dynamically created table for date from stack. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/stack.h" line="37" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/stack.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_stack_1a1f6b76a21e8f574d54123fbb460b0975" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>Stack::add</definition>
+        <argsstring>(std::fstream &amp;openFile, int fileSize)</argsstring>
+        <name>add</name>
+        <param>
+          <type>std::fstream &amp;</type>
+          <declname>openFile</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>fileSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Puts new element on the top of the stack</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>openFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the actually opened file with random data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fileSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of actually opened file </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/stack.h" line="32" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/stack.cpp" bodystart="41" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stack_1a71b2f560de949f04ef9eab5ad9163bbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Stack::Stack</definition>
+        <argsstring>(InputFiles &amp;file, Benchmark &amp;stackTest)</argsstring>
+        <name>Stack</name>
+        <param>
+          <type><ref refid="class_input_files" kindref="compound">InputFiles</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type><ref refid="class_benchmark" kindref="compound">Benchmark</ref> &amp;</type>
+          <declname>stackTest</declname>
+        </param>
+        <briefdescription>
+<para>A constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/stack.h" line="23" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/stack.cpp" bodystart="8" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Own implementation of stack. As simple as possible. </para>    </detaileddescription>
+    <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/stack.h" line="16" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/stack.h" bodystart="16" bodyend="43"/>
+    <listofallmembers>
+      <member refid="class_stack_1a1f6b76a21e8f574d54123fbb460b0975" prot="public" virt="non-virtual"><scope>Stack</scope><name>add</name></member>
+      <member refid="class_stack_1a59b3d0f6dad7a0c6c131a87a765a9687" prot="private" virt="non-virtual"><scope>Stack</scope><name>nrOfElement</name></member>
+      <member refid="class_stack_1a71b2f560de949f04ef9eab5ad9163bbd" prot="public" virt="non-virtual"><scope>Stack</scope><name>Stack</name></member>
+      <member refid="class_stack_1aa14462f08b194e58a777a3390c0ebb31" prot="private" virt="non-virtual"><scope>Stack</scope><name>stackContainer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

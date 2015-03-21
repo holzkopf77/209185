@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="tree__node_8h" kind="file" language="C++">
+    <compoundname>tree_node.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">fstream</includes>
+    <includedby refid="benchmark__frm_8h" local="yes">C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/benchmark_frm.h</includedby>
+    <includedby refid="tree_8h" local="yes">C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree.h</includedby>
+    <includedby refid="main_8cpp" local="yes">C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/main.cpp</includedby>
+    <includedby refid="tree__node_8cpp" local="yes">C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.cpp</includedby>
+    <incdepgraph>
+      <node id="274">
+        <label>fstream</label>
+      </node>
+      <node id="272">
+        <label>C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.h</label>
+        <link refid="tree_node.h"/>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="274" relation="include">
+        </childnode>
+      </node>
+      <node id="273">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="279">
+        <label>C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="283">
+        <label>C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/stack.h</label>
+        <link refid="stack_8h"/>
+        <childnode refid="277" relation="include">
+        </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
+        <childnode refid="284" relation="include">
+        </childnode>
+      </node>
+      <node id="276">
+        <label>C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/benchmark_frm.h</label>
+        <link refid="benchmark__frm_8h"/>
+        <childnode refid="277" relation="include">
+        </childnode>
+        <childnode refid="278" relation="include">
+        </childnode>
+        <childnode refid="281" relation="include">
+        </childnode>
+        <childnode refid="283" relation="include">
+        </childnode>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
+        <childnode refid="280" relation="include">
+        </childnode>
+      </node>
+      <node id="284">
+        <label>C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/stack.cpp</label>
+        <link refid="stack_8cpp"/>
+      </node>
+      <node id="277">
+        <label>C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/benchmark_frm.cpp</label>
+        <link refid="benchmark__frm_8cpp"/>
+      </node>
+      <node id="282">
+        <label>C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/list.cpp</label>
+        <link refid="list_8cpp"/>
+      </node>
+      <node id="287">
+        <label>C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.cpp</label>
+        <link refid="tree__node_8cpp"/>
+      </node>
+      <node id="285">
+        <label>C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree.h</label>
+        <link refid="tree_8h"/>
+        <childnode refid="279" relation="include">
+        </childnode>
+        <childnode refid="286" relation="include">
+        </childnode>
+      </node>
+      <node id="286">
+        <label>C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree.cpp</label>
+        <link refid="tree_8cpp"/>
+      </node>
+      <node id="275">
+        <label>C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.h</label>
+        <link refid="tree_node.h"/>
+        <childnode refid="276" relation="include">
+        </childnode>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
+        <childnode refid="287" relation="include">
+        </childnode>
+      </node>
+      <node id="278">
+        <label>C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/queue.h</label>
+        <link refid="queue_8h"/>
+        <childnode refid="277" relation="include">
+        </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
+        <childnode refid="280" relation="include">
+        </childnode>
+      </node>
+      <node id="280">
+        <label>C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/queue.cpp</label>
+        <link refid="queue_8cpp"/>
+      </node>
+      <node id="281">
+        <label>C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/list.h</label>
+        <link refid="list_8h"/>
+        <childnode refid="277" relation="include">
+        </childnode>
+        <childnode refid="282" relation="include">
+        </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_node" prot="public">Node</innerclass>
+    <briefdescription>
+<para>Own implementation of tree data structure (nodes of tree) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="5"><highlight class="preprocessor">#ifndef<sp/>TREE_NODE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TREE_NODE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>\class<sp/>Node</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>Binary<sp/>tree<sp/>nodes<sp/>implementation.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_node" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_node" kindref="compound">Node</ref>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Only<sp/>adding<sp/>first<sp/>data<sp/>from<sp/>file<sp/>to<sp/>data_container.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Every<sp/>pointer<sp/>is<sp/>NULL.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_node_1a0d68253f48f4deb1e078ef6cf08a5bf4" kindref="member">Node</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>data);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Adding<sp/>data<sp/>to<sp/>data_container</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Parent<sp/>pointer<sp/>init<sp/>with<sp/>parent<sp/>object<sp/>pointer.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_node_1a0d68253f48f4deb1e078ef6cf08a5bf4" kindref="member">Node</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>data,<sp/><ref refid="class_node" kindref="compound">Node</ref>*<sp/>parent_ptr);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Free<sp/>all<sp/>memory.</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Deleting<sp/>this<sp/>pointer,<sp/>so<sp/>it&apos;s<sp/>dangerous.</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_node_1aa0840c3cb5c7159be6d992adecd2097c" kindref="member">~Node</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="class_node_1a76d508260acf793cffe7115d3a3a81ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_node_1a76d508260acf793cffe7115d3a3a81ba" kindref="member">get_data_container</ref>(){</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_node_1ab10f24c6461961ed57ca11e942fc8c3e" kindref="member">data_container</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="class_node_1a82da98f383fdd0649c037b454432487d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="class_node" kindref="compound">Node</ref>*<sp/><ref refid="class_node_1a82da98f383fdd0649c037b454432487d" kindref="member">return_left</ref>(){</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_node_1a05ef70dd2b0b89db38cda977021ee696" kindref="member">left</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="class_node_1a2789b35639dd329c7f406a5908ec386a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="class_node" kindref="compound">Node</ref>*<sp/><ref refid="class_node_1a2789b35639dd329c7f406a5908ec386a" kindref="member">return_right</ref>(){</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_node_1a45c7b7ddeefcffe349a1f13ec586107c" kindref="member">right</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="class_node_1a2016871f73cb26fd033bbaa07ff91425" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_node_1a2016871f73cb26fd033bbaa07ff91425" kindref="member">is_emptyf</ref>(){</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_node_1a03859657e8fb6e70be22fa53cb848241" kindref="member">is_empty</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_node_1ace073e8a8e2688a520e432360a4212f5" kindref="member">add</ref>(std::fstream&amp;<sp/>openFile,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tempData);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="96" refid="class_node_1a2149dcf83c930a3c0b388f51dbb42410" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_node" kindref="compound">Node</ref>*<sp/><ref refid="class_node_1a2149dcf83c930a3c0b388f51dbb42410" kindref="member">parent</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="class_node_1a05ef70dd2b0b89db38cda977021ee696" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_node" kindref="compound">Node</ref>*<sp/><ref refid="class_node_1a05ef70dd2b0b89db38cda977021ee696" kindref="member">left</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="class_node_1a45c7b7ddeefcffe349a1f13ec586107c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_node" kindref="compound">Node</ref>*<sp/><ref refid="class_node_1a45c7b7ddeefcffe349a1f13ec586107c" kindref="member">right</ref>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="class_node_1a03859657e8fb6e70be22fa53cb848241" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_node_1a03859657e8fb6e70be22fa53cb848241" kindref="member">is_empty</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="class_node_1ab10f24c6461961ed57ca11e942fc8c3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_node_1ab10f24c6461961ed57ca11e942fc8c3e" kindref="member">data_container</ref>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Daniel/Desktop/myStuff/209185/Lab2/src/tree_node.h"/>
+  </compounddef>
+</doxygen>

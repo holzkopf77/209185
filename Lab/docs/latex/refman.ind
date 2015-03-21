@@ -1,97 +1,286 @@
 \begin{theindex}
 
+  \item {$\sim$\+L\+Node}
+    \subitem {L\+Node}, \hyperpage{17}
+  \item {$\sim$\+List}
+    \subitem {List}, \hyperpage{16}
+  \item {$\sim$\+Node}
+    \subitem {Node}, \hyperpage{19}
+  \item {$\sim$\+Queue}
+    \subitem {Queue}, \hyperpage{22}
+  \item {$\sim$\+Tree}
+    \subitem {Tree}, \hyperpage{26}
+
+  \indexspace
+
+  \item {add}
+    \subitem {List}, \hyperpage{16}
+    \subitem {Node}, \hyperpage{19}
+    \subitem {Queue}, \hyperpage{22}
+    \subitem {Stack}, \hyperpage{24}
+
+  \indexspace
+
+  \item {B\+I\+N\+\_\+\+T\+R\+E\+E}
+    \subitem {benchmark\+\_\+frm.\+h}, \hyperpage{28}
   \item {Benchmark}, \hyperpage{7}
-    \subitem {generate\+Raport}, \hyperpage{7}
-    \subitem {get\+Avr}, \hyperpage{8}
-    \subitem {measure\+Time}, \hyperpage{8}
-    \subitem {test}, \hyperpage{8}
-    \subitem {test\+Times}, \hyperpage{9}
+    \subitem {Benchmark}, \hyperpage{8}
+    \subitem {generate\+Raport}, \hyperpage{8}
+    \subitem {get\+Avr}, \hyperpage{9}
+    \subitem {List}, \hyperpage{11}
+    \subitem {measure\+Time}, \hyperpage{9}
+    \subitem {Queue}, \hyperpage{11}
+    \subitem {show\+\_\+test\+Times\+\_\+v}, \hyperpage{10}
+    \subitem {Stack}, \hyperpage{11}
+    \subitem {test}, \hyperpage{10, 11}
+    \subitem {test\+Times}, \hyperpage{11}
+    \subitem {Tree}, \hyperpage{11}
   \item {benchmark\+\_\+frm.\+h}
-    \subitem {S\+E\+C}, \hyperpage{16}
+    \subitem {B\+I\+N\+\_\+\+T\+R\+E\+E}, \hyperpage{28}
+    \subitem {data\+\_\+type}, \hyperpage{28}
+    \subitem {L\+I\+S\+T}, \hyperpage{28}
+    \subitem {Q\+U\+E\+U\+E}, \hyperpage{28}
+    \subitem {S\+E\+C}, \hyperpage{28}
+    \subitem {S\+T\+A\+C\+K}, \hyperpage{28}
+
+  \indexspace
+
+  \item {C\+:/\+Users/\+Daniel/\+Desktop/my\+Stuff/209185/\+Lab2/src/benchmark\+\_\+frm.\+cpp}, 
+		\hyperpage{27}
+  \item {C\+:/\+Users/\+Daniel/\+Desktop/my\+Stuff/209185/\+Lab2/src/benchmark\+\_\+frm.\+h}, 
+		\hyperpage{27}
+  \item {C\+:/\+Users/\+Daniel/\+Desktop/my\+Stuff/209185/\+Lab2/src/inputfile\+\_\+txt.\+cpp}, 
+		\hyperpage{28}
+  \item {C\+:/\+Users/\+Daniel/\+Desktop/my\+Stuff/209185/\+Lab2/src/inputfile\+\_\+txt.\+h}, 
+		\hyperpage{28}
+  \item {C\+:/\+Users/\+Daniel/\+Desktop/my\+Stuff/209185/\+Lab2/src/list.\+cpp}, 
+		\hyperpage{29}
+  \item {C\+:/\+Users/\+Daniel/\+Desktop/my\+Stuff/209185/\+Lab2/src/list.\+h}, 
+		\hyperpage{29}
+  \item {C\+:/\+Users/\+Daniel/\+Desktop/my\+Stuff/209185/\+Lab2/src/list\+\_\+node.\+cpp}, 
+		\hyperpage{30}
+  \item {C\+:/\+Users/\+Daniel/\+Desktop/my\+Stuff/209185/\+Lab2/src/list\+\_\+node.\+h}, 
+		\hyperpage{30}
+  \item {C\+:/\+Users/\+Daniel/\+Desktop/my\+Stuff/209185/\+Lab2/src/main.\+cpp}, 
+		\hyperpage{30}
+  \item {C\+:/\+Users/\+Daniel/\+Desktop/my\+Stuff/209185/\+Lab2/src/queue.\+cpp}, 
+		\hyperpage{31}
+  \item {C\+:/\+Users/\+Daniel/\+Desktop/my\+Stuff/209185/\+Lab2/src/queue.\+h}, 
+		\hyperpage{31}
+  \item {C\+:/\+Users/\+Daniel/\+Desktop/my\+Stuff/209185/\+Lab2/src/stack.\+cpp}, 
+		\hyperpage{32}
+  \item {C\+:/\+Users/\+Daniel/\+Desktop/my\+Stuff/209185/\+Lab2/src/stack.\+h}, 
+		\hyperpage{32}
+  \item {C\+:/\+Users/\+Daniel/\+Desktop/my\+Stuff/209185/\+Lab2/src/tree.\+cpp}, 
+		\hyperpage{32}
+  \item {C\+:/\+Users/\+Daniel/\+Desktop/my\+Stuff/209185/\+Lab2/src/tree.\+h}, 
+		\hyperpage{33}
+  \item {C\+:/\+Users/\+Daniel/\+Desktop/my\+Stuff/209185/\+Lab2/src/tree\+\_\+node.\+cpp}, 
+		\hyperpage{33}
+  \item {C\+:/\+Users/\+Daniel/\+Desktop/my\+Stuff/209185/\+Lab2/src/tree\+\_\+node.\+h}, 
+		\hyperpage{33}
+
+  \indexspace
+
+  \item {data\+\_\+container}
+    \subitem {Node}, \hyperpage{20}
+  \item {data\+\_\+type}
+    \subitem {benchmark\+\_\+frm.\+h}, \hyperpage{28}
 
   \indexspace
 
   \item {F\+I\+R\+S\+T\+\_\+\+A\+R\+G\+U\+M\+E\+N\+T}
-    \subitem {inputfile\+\_\+txt.\+h}, \hyperpage{16}
+    \subitem {inputfile\+\_\+txt.\+h}, \hyperpage{29}
+  \item {F\+I\+R\+S\+T\+\_\+\+F\+I\+L\+E}
+    \subitem {tree.\+h}, \hyperpage{33}
   \item {files\+Names\+Tab}
-    \subitem {Input\+Files}, \hyperpage{12}
+    \subitem {Input\+Files}, \hyperpage{14}
   \item {files\+Number}
-    \subitem {Input\+Files}, \hyperpage{12}
+    \subitem {Input\+Files}, \hyperpage{14}
   \item {files\+Sizes}
-    \subitem {Input\+Files}, \hyperpage{12}
+    \subitem {Input\+Files}, \hyperpage{15}
+  \item {front}
+    \subitem {Queue}, \hyperpage{23}
 
   \indexspace
 
   \item {generate\+\_\+random\+\_\+int\+\_\+data}
-    \subitem {Input\+Files}, \hyperpage{11}
+    \subitem {Input\+Files}, \hyperpage{13}
   \item {generate\+Raport}
-    \subitem {Benchmark}, \hyperpage{7}
+    \subitem {Benchmark}, \hyperpage{8}
+  \item {get\+\_\+data\+\_\+container}
+    \subitem {Node}, \hyperpage{20}
   \item {get\+Avr}
-    \subitem {Benchmark}, \hyperpage{8}
-
-  \indexspace
-
-  \item {Input\+Files}, \hyperpage{9}
-    \subitem {files\+Names\+Tab}, \hyperpage{12}
-    \subitem {files\+Number}, \hyperpage{12}
-    \subitem {files\+Sizes}, \hyperpage{12}
-    \subitem {generate\+\_\+random\+\_\+int\+\_\+data}, \hyperpage{11}
-    \subitem {Input\+Files}, \hyperpage{10}
-    \subitem {return\+\_\+file\+\_\+name}, \hyperpage{11}
-    \subitem {return\+\_\+file\+\_\+size}, \hyperpage{12}
-    \subitem {return\+\_\+number\+\_\+files}, \hyperpage{12}
-    \subitem {show\+\_\+info}, \hyperpage{12}
-  \item {inputfile\+\_\+txt.\+h}
-    \subitem {F\+I\+R\+S\+T\+\_\+\+A\+R\+G\+U\+M\+E\+N\+T}, 
-		\hyperpage{16}
-    \subitem {P\+R\+O\+G\+R\+A\+M\+\_\+\+N\+A\+M\+E}, \hyperpage{16}
-    \subitem {U\+N\+D\+E\+F\+\_\+\+V\+A\+L\+U\+E}, \hyperpage{17}
-
-  \indexspace
-
-  \item {main}
-    \subitem {main.\+cpp}, \hyperpage{17}
-  \item {main.\+cpp}
-    \subitem {main}, \hyperpage{17}
-  \item {measure\+Time}
-    \subitem {Benchmark}, \hyperpage{8}
-
-  \indexspace
-
-  \item {P\+R\+O\+G\+R\+A\+M\+\_\+\+N\+A\+M\+E}
-    \subitem {inputfile\+\_\+txt.\+h}, \hyperpage{16}
-
-  \indexspace
-
-  \item {return\+\_\+file\+\_\+name}
-    \subitem {Input\+Files}, \hyperpage{11}
-  \item {return\+\_\+file\+\_\+size}
-    \subitem {Input\+Files}, \hyperpage{12}
-  \item {return\+\_\+number\+\_\+files}
-    \subitem {Input\+Files}, \hyperpage{12}
-
-  \indexspace
-
-  \item {S\+E\+C}
-    \subitem {benchmark\+\_\+frm.\+h}, \hyperpage{16}
-  \item {show\+\_\+info}
-    \subitem {Input\+Files}, \hyperpage{12}
-  \item {src/benchmark\+\_\+frm.\+cpp}, \hyperpage{15}
-  \item {src/benchmark\+\_\+frm.\+h}, \hyperpage{15}
-  \item {src/inputfile\+\_\+txt.\+cpp}, \hyperpage{16}
-  \item {src/inputfile\+\_\+txt.\+h}, \hyperpage{16}
-  \item {src/main.\+cpp}, \hyperpage{17}
-
-  \indexspace
-
-  \item {test}
-    \subitem {Benchmark}, \hyperpage{8}
-  \item {test\+Times}
     \subitem {Benchmark}, \hyperpage{9}
 
   \indexspace
 
+  \item {head\+Ptr}
+    \subitem {List}, \hyperpage{16}
+
+  \indexspace
+
+  \item {Input\+Files}, \hyperpage{12}
+    \subitem {files\+Names\+Tab}, \hyperpage{14}
+    \subitem {files\+Number}, \hyperpage{14}
+    \subitem {files\+Sizes}, \hyperpage{15}
+    \subitem {generate\+\_\+random\+\_\+int\+\_\+data}, \hyperpage{13}
+    \subitem {Input\+Files}, \hyperpage{12}
+    \subitem {return\+\_\+file\+\_\+name}, \hyperpage{14}
+    \subitem {return\+\_\+file\+\_\+size}, \hyperpage{14}
+    \subitem {return\+\_\+number\+\_\+files}, \hyperpage{14}
+    \subitem {show\+\_\+info}, \hyperpage{14}
+  \item {inputfile\+\_\+txt.\+h}
+    \subitem {F\+I\+R\+S\+T\+\_\+\+A\+R\+G\+U\+M\+E\+N\+T}, 
+		\hyperpage{29}
+    \subitem {P\+R\+O\+G\+R\+A\+M\+\_\+\+N\+A\+M\+E}, \hyperpage{29}
+    \subitem {U\+N\+D\+E\+F\+\_\+\+V\+A\+L\+U\+E}, \hyperpage{29}
+  \item {is\+\_\+empty}
+    \subitem {Node}, \hyperpage{20}
+  \item {is\+\_\+emptyf}
+    \subitem {Node}, \hyperpage{20}
+
+  \indexspace
+
+  \item {L\+I\+S\+T}
+    \subitem {benchmark\+\_\+frm.\+h}, \hyperpage{28}
+  \item {L\+I\+S\+T\+\_\+\+N\+O\+D\+E\+\_\+\+H}
+    \subitem {list\+\_\+node.\+h}, \hyperpage{30}
+  \item {L\+Node}, \hyperpage{17}
+    \subitem {$\sim$\+L\+Node}, \hyperpage{17}
+    \subitem {L\+Node}, \hyperpage{17}
+    \subitem {List}, \hyperpage{18}
+    \subitem {next\+Node}, \hyperpage{18}
+    \subitem {node\+Data}, \hyperpage{18}
+  \item {left}
+    \subitem {Node}, \hyperpage{20}
+  \item {List}, \hyperpage{15}
+    \subitem {$\sim$\+List}, \hyperpage{16}
+    \subitem {add}, \hyperpage{16}
+    \subitem {Benchmark}, \hyperpage{11}
+    \subitem {head\+Ptr}, \hyperpage{16}
+    \subitem {L\+Node}, \hyperpage{18}
+    \subitem {List}, \hyperpage{15}
+    \subitem {tail\+Ptr}, \hyperpage{16}
+    \subitem {temp\+Ptr}, \hyperpage{16}
+  \item {list\+\_\+node.\+h}
+    \subitem {L\+I\+S\+T\+\_\+\+N\+O\+D\+E\+\_\+\+H}, \hyperpage{30}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.\+cpp}, \hyperpage{31}
+  \item {main.\+cpp}
+    \subitem {main}, \hyperpage{31}
+  \item {measure\+Time}
+    \subitem {Benchmark}, \hyperpage{9}
+
+  \indexspace
+
+  \item {next\+Node}
+    \subitem {L\+Node}, \hyperpage{18}
+  \item {Node}, \hyperpage{18}
+    \subitem {$\sim$\+Node}, \hyperpage{19}
+    \subitem {add}, \hyperpage{19}
+    \subitem {data\+\_\+container}, \hyperpage{20}
+    \subitem {get\+\_\+data\+\_\+container}, \hyperpage{20}
+    \subitem {is\+\_\+empty}, \hyperpage{20}
+    \subitem {is\+\_\+emptyf}, \hyperpage{20}
+    \subitem {left}, \hyperpage{20}
+    \subitem {Node}, \hyperpage{19}
+    \subitem {parent}, \hyperpage{20}
+    \subitem {return\+\_\+left}, \hyperpage{20}
+    \subitem {return\+\_\+right}, \hyperpage{20}
+    \subitem {right}, \hyperpage{21}
+  \item {node\+Data}
+    \subitem {L\+Node}, \hyperpage{18}
+  \item {nr\+Of\+Element}
+    \subitem {Stack}, \hyperpage{24}
+
+  \indexspace
+
+  \item {P\+R\+O\+G\+R\+A\+M\+\_\+\+N\+A\+M\+E}
+    \subitem {inputfile\+\_\+txt.\+h}, \hyperpage{29}
+  \item {parent}
+    \subitem {Node}, \hyperpage{20}
+
+  \indexspace
+
+  \item {Q\+U\+E\+U\+E}
+    \subitem {benchmark\+\_\+frm.\+h}, \hyperpage{28}
+  \item {Queue}, \hyperpage{21}
+    \subitem {$\sim$\+Queue}, \hyperpage{22}
+    \subitem {add}, \hyperpage{22}
+    \subitem {Benchmark}, \hyperpage{11}
+    \subitem {front}, \hyperpage{23}
+    \subitem {Queue}, \hyperpage{21}
+    \subitem {queue\+Tab}, \hyperpage{23}
+    \subitem {rear}, \hyperpage{23}
+  \item {queue\+Tab}
+    \subitem {Queue}, \hyperpage{23}
+
+  \indexspace
+
+  \item {rear}
+    \subitem {Queue}, \hyperpage{23}
+  \item {return\+\_\+file\+\_\+name}
+    \subitem {Input\+Files}, \hyperpage{14}
+  \item {return\+\_\+file\+\_\+size}
+    \subitem {Input\+Files}, \hyperpage{14}
+  \item {return\+\_\+left}
+    \subitem {Node}, \hyperpage{20}
+  \item {return\+\_\+number\+\_\+files}
+    \subitem {Input\+Files}, \hyperpage{14}
+  \item {return\+\_\+right}
+    \subitem {Node}, \hyperpage{20}
+  \item {right}
+    \subitem {Node}, \hyperpage{21}
+  \item {root}
+    \subitem {Tree}, \hyperpage{26}
+
+  \indexspace
+
+  \item {S\+E\+C}
+    \subitem {benchmark\+\_\+frm.\+h}, \hyperpage{28}
+  \item {S\+T\+A\+C\+K}
+    \subitem {benchmark\+\_\+frm.\+h}, \hyperpage{28}
+  \item {show\+\_\+info}
+    \subitem {Input\+Files}, \hyperpage{14}
+  \item {show\+\_\+test\+Times\+\_\+v}
+    \subitem {Benchmark}, \hyperpage{10}
+  \item {show\+\_\+tree}
+    \subitem {Tree}, \hyperpage{26}
+  \item {Stack}, \hyperpage{23}
+    \subitem {add}, \hyperpage{24}
+    \subitem {Benchmark}, \hyperpage{11}
+    \subitem {nr\+Of\+Element}, \hyperpage{24}
+    \subitem {Stack}, \hyperpage{23}
+    \subitem {stack\+Container}, \hyperpage{24}
+  \item {stack\+Container}
+    \subitem {Stack}, \hyperpage{24}
+
+  \indexspace
+
+  \item {tail\+Ptr}
+    \subitem {List}, \hyperpage{16}
+  \item {temp\+Ptr}
+    \subitem {List}, \hyperpage{16}
+  \item {test}
+    \subitem {Benchmark}, \hyperpage{10, 11}
+  \item {test\+Times}
+    \subitem {Benchmark}, \hyperpage{11}
+  \item {Tree}, \hyperpage{25}
+    \subitem {$\sim$\+Tree}, \hyperpage{26}
+    \subitem {Benchmark}, \hyperpage{11}
+    \subitem {root}, \hyperpage{26}
+    \subitem {show\+\_\+tree}, \hyperpage{26}
+    \subitem {Tree}, \hyperpage{25}
+  \item {tree.\+h}
+    \subitem {F\+I\+R\+S\+T\+\_\+\+F\+I\+L\+E}, \hyperpage{33}
+
+  \indexspace
+
   \item {U\+N\+D\+E\+F\+\_\+\+V\+A\+L\+U\+E}
-    \subitem {inputfile\+\_\+txt.\+h}, \hyperpage{17}
+    \subitem {inputfile\+\_\+txt.\+h}, \hyperpage{29}
 
 \end{theindex}
