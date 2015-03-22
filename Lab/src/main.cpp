@@ -1,11 +1,14 @@
 /*! 
-\file main.cpp
-\brief A master file
+	\file main.cpp
+	\brief A master file
 */
 #include <iostream>
 
 #include "inputfile_txt.h"
 #include "stack.h"
+#include "list.h"
+
+#include "list.cpp"
 #include "stack.cpp"
 
 int main(int argc, char* argv[]){
@@ -18,6 +21,10 @@ int main(int argc, char* argv[]){
 	
 	InputFiles openFile(argc, fileSize);
 	openFile.generate_random_int_data();
+
+
+	List<float> list;
+	Stack<int> stack;
 
 	std::cin.get();
 	return 0;

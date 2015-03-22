@@ -1,6 +1,6 @@
 /*!
-\file stack.h
-\brief Own implementation of stack data structure.
+	\file stack.h
+	\brief Own implementation of stack data structure.
 */
 #ifndef STACK_H
 #define STACK_H
@@ -15,8 +15,15 @@
 template<class T>
 class Stack {
 public:
-	/*! \fn A constructor
+	/*! \fn Stack
 		\brief Create stack memory, assign size of the stack
+	*/
+	Stack() : stack(std::vector<T>(0)), sizeStc(0), addCount(0) {}
+	
+	/*! \fn Stack
+		\brief Create stack memory, assign size of the stack
+
+		\param stackSize size of the new stack
 	*/
 	Stack(int stackSize) : stack(std::vector<T>(stackSize)), sizeStc(stackSize), addCount(0) {}
 
@@ -35,16 +42,20 @@ public:
 		After hitting fullness, multiply size of the vector twice.
 	*/
 	void push_prc(T data);
-	/*! \fn pop */
+	/*! \fn pop
+	*/
 	T pop();
 
-	/*!	\fn size */
-	inline int size(){
-		return this->sizeStc;
+	/*!	\fn size 
+	*/
+	inline int size() {
+		return sizeStc;
 	}
 
-	/*! \fn operator<< */
-	friend std::ostream& operator<<(std::ostream& out, const Stack& stack){
+	/*! \fn operator<<
+		\brief Overloaded operator << for displaying
+	*/
+	friend std::ostream& operator<<(std::ostream& out, Stack& stack){
 		for (auto iterator : stack.stack){
 			out << iterator << ' ';
 		}
@@ -56,7 +67,8 @@ private:
 	*/
 	std::vector<T> stack;
 
-	/*! \var sizeStc */
+	/*! \var sizeStc 
+	*/
 	int sizeStc;
 
 	/*! \var addCount

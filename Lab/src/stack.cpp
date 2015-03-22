@@ -1,6 +1,6 @@
 /*!	
-\file stack.cpp
-\brief A stack class source code.
+	\file stack.cpp
+	\brief A stack class source code.
 */
 #include <stack.h>
 template<class T>
@@ -26,6 +26,7 @@ void Stack<T>::push_prc(T data){
 
 template<class T>
 T Stack<T>::pop(){
+	//pop one from stack
 	--addCount;
 	assert(addCount >= 0 && "You're trying to pop element from empty vector.");
 	T element = stack[addCount];
