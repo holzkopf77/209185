@@ -26,3 +26,4 @@ Obsługa następujących struktur danych:
   
   - size: rozmiar listy
 
+ Obsługuje wszystkie typu danych (szablony).
