@@ -2,8 +2,8 @@
 	\file stack.h
 	\brief Own implementation of stack data structure.
 */
-#ifndef STACK_H
-#define STACK_H
+#ifndef STACK_H_
+#define STACK_H_
 
 #include <vector>
 #include <cassert>
@@ -55,7 +55,7 @@ public:
 	/*! \fn operator<<
 		\brief Overloaded operator << for displaying
 	*/
-	friend std::ostream& operator<<(std::ostream& out, Stack& stack){
+	friend std::ostream& operator<<(std::ostream& out, const Stack& stack){
 		for (auto iterator : stack.stack){
 			out << iterator << ' ';
 		}

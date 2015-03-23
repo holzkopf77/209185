@@ -2,8 +2,8 @@
 	\file list_node.h
 	\brief Nodes for the list
 */
-#ifndef lIST_NODE_H
-#define LIST_NODE_H
+#ifndef lIST_NODE_H_
+#define LIST_NODE_H_
 
 /*! \class LNode
 t

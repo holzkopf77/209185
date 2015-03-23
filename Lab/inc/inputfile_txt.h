@@ -2,8 +2,8 @@
 \file inputfile_txt.h
 \brief A InputFile class
 */
-#ifndef INPUTFILE_TXT_H
-#define INPUTFILE_TXT_H
+#ifndef INPUTFILE_TXT_H_
+#define INPUTFILE_TXT_H_
 
 #include <iostream>
 #include <string>

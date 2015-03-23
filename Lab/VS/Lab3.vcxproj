@@ -70,12 +70,14 @@
     <ClInclude Include="..\inc\inputfile_txt.h" />
     <ClInclude Include="..\inc\list.h" />
     <ClInclude Include="..\inc\list_node.h" />
+    <ClInclude Include="..\inc\queue.h" />
     <ClInclude Include="..\inc\stack.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\inputfile_txt.cpp" />
     <ClCompile Include="..\src\list.cpp" />
     <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\queue.cpp" />
     <ClCompile Include="..\src\stack.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

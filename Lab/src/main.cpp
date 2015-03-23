@@ -7,9 +7,11 @@
 #include "inputfile_txt.h"
 #include "stack.h"
 #include "list.h"
+#include "queue.h"
 
 #include "list.cpp"
 #include "stack.cpp"
+#include "queue.cpp"
 
 int main(int argc, char* argv[]){
 	
@@ -22,7 +24,7 @@ int main(int argc, char* argv[]){
 	InputFiles openFile(argc, fileSize);
 	openFile.generate_random_int_data();
 
-
+	Queue<double> queue;
 	List<float> list;
 	Stack<int> stack;
 
