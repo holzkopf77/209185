@@ -28,7 +28,7 @@ Obsługa następujących struktur danych:
 
  Obsługuje wszystkie typu danych (szablony).
  
- 3.Kolejka
+3.Kolejka
  
   - push: wrzucenie danych na początek kolejki
   
