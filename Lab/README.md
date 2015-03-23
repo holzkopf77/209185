@@ -36,12 +36,12 @@ Obsługa następujących struktur danych:
 
   - size: rozmiar kolejki
   
------
+----
   Kolejka automatycznie zwiększa liczbę miejsc, jeśli pełna i wszystko zapełnione.
   
   Kolejka automatycznie dodaje element na wolne miejsce, jeśli pełna i jest coś wolnego.
   
-  Kolejka nie usuwa miejsca bo zwróceniu elementu, wsadza tam 0, miejsce obsługuje kolejne dane.
+  Kolejka nie usuwa miejsca po zwróceniu elementu, wsadza tam 0, a miejsce obsługuje kolejne dane.
 ----
 
  Obsługuje wszystkie typu danych (szablony).
