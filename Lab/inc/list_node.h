@@ -22,7 +22,7 @@ public:
 	Node(T data) : nodeData(T(data)), nextNode(nullptr) {}
 	
 	/*! \fn ~Node()
-		\brief A deconstructor
+		\brief A destructor
 	*/
 	~Node(){
 			delete nextNode;

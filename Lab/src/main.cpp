@@ -8,10 +8,12 @@
 #include "stack.h"
 #include "list.h"
 #include "queue.h"
+#include "tree.h"
 
 #include "list.cpp"
 #include "stack.cpp"
 #include "queue.cpp"
+#include "tree.cpp"
 
 int main(int argc, char* argv[]){
 	
@@ -24,10 +26,7 @@ int main(int argc, char* argv[]){
 	InputFiles openFile(argc, fileSize);
 	openFile.generate_random_int_data();
 
-	Queue<double> queue;
-	List<float> list;
-	Stack<int> stack;
-
+	Tree<int> tree;
 	std::cin.get();
 	return 0;
 }

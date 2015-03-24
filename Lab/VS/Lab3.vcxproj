@@ -72,6 +72,8 @@
     <ClInclude Include="..\inc\list_node.h" />
     <ClInclude Include="..\inc\queue.h" />
     <ClInclude Include="..\inc\stack.h" />
+    <ClInclude Include="..\inc\tree.h" />
+    <ClInclude Include="..\inc\tree_node.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\inputfile_txt.cpp" />
@@ -79,6 +81,7 @@
     <ClCompile Include="..\src\main.cpp" />
     <ClCompile Include="..\src\queue.cpp" />
     <ClCompile Include="..\src\stack.cpp" />
+    <ClCompile Include="..\src\tree.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

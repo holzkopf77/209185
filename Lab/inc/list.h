@@ -25,7 +25,7 @@ public:
 	List() : headPtr(nullptr), tempPtr(nullptr), tailPtr(nullptr), sizeLst(0) {}
 
 	/*!	\fn ~List
-		\brief A deconstructor
+		\brief A destructor
 
 		Null for all pointers
 		Delete memory.
