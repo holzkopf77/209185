@@ -51,5 +51,9 @@ Obsługa następujących struktur danych:
   - pop: usuwanie węzła z argumentem podanym w wyłowaniu funkcji (aktualnie usuwa poprawnie tylko węzły bez dzieci) 
   
   - size: ilość węzłów drzewie (romiar drzewa)
+  
+  - show_tree: pokazanie zawartości pierwszych 3 poziomów drzewa
+  
+  - is_empty: sprawdzenie czy drzewo jest puste
 
  Obsługuje wszystkie typu danych (szablony).
