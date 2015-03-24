@@ -43,3 +43,13 @@ Obsługa następujących struktur danych:
   Kolejka nie usuwa miejsca po zwróceniu elementu, wsadza tam 0, a miejsce obsługuje kolejne dane.
 
  Obsługuje wszystkie typu danych (szablony).
+ 
+4.Drzewo binarne
+ 
+  - push: wrzucenie elementu do drzewa
+
+  - pop: usuwanie węzła z argumentem podanym w wyłowaniu funkcji (aktualnie usuwa poprawnie tylko węzły bez dzieci) 
+  
+  - size: ilość węzłów drzewie (romiar drzewa)
+
+ Obsługuje wszystkie typu danych (szablony).
