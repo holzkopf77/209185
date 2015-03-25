@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="dir_bfccd401955b95cf8c75461437045ac0" kind="dir">
+    <compoundname>inc</compoundname>
+    <innerfile refid="benchmark__frm_8h">benchmark_frm.h</innerfile>
+    <innerfile refid="inputfile__txt_8h">inputfile_txt.h</innerfile>
+    <innerfile refid="list_8h">list.h</innerfile>
+    <innerfile refid="list__node_8h">list_node.h</innerfile>
+    <innerfile refid="queue_8h">queue.h</innerfile>
+    <innerfile refid="stack_8h">stack.h</innerfile>
+    <innerfile refid="tree_8h">tree.h</innerfile>
+    <innerfile refid="tree__node_8h">tree_node.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/"/>
+  </compounddef>
+</doxygen>

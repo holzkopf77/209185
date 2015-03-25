@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="class_node" kind="class" language="C++" prot="public">
+    <compoundname>Node</compoundname>
+    <includes refid="tree__node_8h" local="no">tree_node.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_node_1a8740adf5dfdafdc64940ab42ed663bd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>friend class</type>
+        <definition>friend class List</definition>
+        <argsstring></argsstring>
+        <name>List</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list_node.h" line="48" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list_node.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_node_1a50e5c8a038f32c6dd61a3ba97d5c7ffc" prot="private" static="no" mutable="no">
+        <type><ref refid="class_node" kindref="compound">Node</ref>&lt; T &gt; *</type>
+        <definition>Node&lt; T &gt;::nextNode</definition>
+        <argsstring></argsstring>
+        <name>nextNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to the next node in linked list. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list_node.h" line="59" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list_node.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_node_1a16f6a8aec196f06a83ad0d09c4887c25" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>Node&lt; T &gt;::nodeData</definition>
+        <argsstring></argsstring>
+        <name>nodeData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Container for data inside node. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list_node.h" line="54" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list_node.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_node_1af8d9a6a0e0f820e7c23cd75d0d07b819" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T</type>
+        <definition>Node&lt; T &gt;::get_data</definition>
+        <argsstring>() const </argsstring>
+        <name>get_data</name>
+        <briefdescription>
+<para>return data from selected node </para>        </briefdescription>
+        <detaileddescription>
+<para>return pointer to the next node. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list_node.h" line="35" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list_node.h" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1a9af46e4b578436facc66ccca78b9b8b0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_node" kindref="compound">Node</ref>&lt; T &gt; *</type>
+        <definition>const Node&lt;T&gt;* Node&lt; T &gt;::get_nextNode</definition>
+        <argsstring>() const </argsstring>
+        <name>get_nextNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list_node.h" line="42" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list_node.h" bodystart="42" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1a0ac1d44cfe588be564acf25485029bd8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Node&lt; T &gt;::Node</definition>
+        <argsstring>()</argsstring>
+        <name>Node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list_node.h" line="18" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list_node.h" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1a0692b16d246460bf94c18d49592facdd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Node&lt; T &gt;::Node</definition>
+        <argsstring>(T data)</argsstring>
+        <name>Node</name>
+        <param>
+          <type>T</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list_node.h" line="22" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list_node.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1ae923d0417581dd19784d55b901f0f7f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Node&lt; T &gt;::~Node</definition>
+        <argsstring>()</argsstring>
+        <name>~Node</name>
+        <briefdescription>
+<para>A destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list_node.h" line="27" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list_node.h" bodystart="27" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Binary tree nodes implementation. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="15">
+        <label>T</label>
+      </node>
+      <node id="14">
+        <label>Node&lt; T &gt;</label>
+        <link refid="class_node"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>nodeData</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list_node.h" line="13" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list_node.h" bodystart="13" bodyend="60"/>
+    <listofallmembers>
+      <member refid="class_node_1af8d9a6a0e0f820e7c23cd75d0d07b819" prot="public" virt="non-virtual"><scope>Node</scope><name>get_data</name></member>
+      <member refid="class_node_1a9af46e4b578436facc66ccca78b9b8b0" prot="public" virt="non-virtual"><scope>Node</scope><name>get_nextNode</name></member>
+      <member refid="class_node_1a8740adf5dfdafdc64940ab42ed663bd2" prot="public" virt="non-virtual"><scope>Node</scope><name>List</name></member>
+      <member refid="class_node_1a50e5c8a038f32c6dd61a3ba97d5c7ffc" prot="private" virt="non-virtual"><scope>Node</scope><name>nextNode</name></member>
+      <member refid="class_node_1a0ac1d44cfe588be564acf25485029bd8" prot="public" virt="non-virtual"><scope>Node</scope><name>Node</name></member>
+      <member refid="class_node_1a0692b16d246460bf94c18d49592facdd" prot="public" virt="non-virtual"><scope>Node</scope><name>Node</name></member>
+      <member refid="class_node_1a16f6a8aec196f06a83ad0d09c4887c25" prot="private" virt="non-virtual"><scope>Node</scope><name>nodeData</name></member>
+      <member refid="class_node_1ae923d0417581dd19784d55b901f0f7f0" prot="public" virt="non-virtual"><scope>Node</scope><name>~Node</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

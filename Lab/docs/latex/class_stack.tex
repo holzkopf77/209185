@@ -1,0 +1,128 @@
+\hypertarget{class_stack}{}\section{Stack$<$ T $>$ Class Template Reference}
+\label{class_stack}\index{Stack$<$ T $>$@{Stack$<$ T $>$}}
+
+
+{\ttfamily \#include $<$stack.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_stack_aa2ea0e8c3293648589dd734d52487408}{}T {\bfseries pop} ()\label{class_stack_aa2ea0e8c3293648589dd734d52487408}
+
+\item 
+void \hyperlink{class_stack_a5a629b74999375d2751ce88eaf24f78e}{push} (T data)
+\begin{DoxyCompactList}\small\item\em Puts one object on the stack. \end{DoxyCompactList}\item 
+\hypertarget{class_stack_adee3fd0171b575c5ffad38fe543af1e9}{}void {\bfseries push\+\_\+prc} (T data)\label{class_stack_adee3fd0171b575c5ffad38fe543af1e9}
+
+\item 
+int \hyperlink{class_stack_a635bef053184eb267c919982390ee18f}{size} ()
+\begin{DoxyCompactList}\small\item\em return size of the stack \end{DoxyCompactList}\item 
+\hyperlink{class_stack_aefee698059467258bbd79045aca62a63}{Stack} ()
+\begin{DoxyCompactList}\small\item\em Create stack memory, assign size of the stack. \end{DoxyCompactList}\item 
+\hypertarget{class_stack_adaae7700876392c39fd797d685463b86}{}{\bfseries Stack} (int stack\+Size)\label{class_stack_adaae7700876392c39fd797d685463b86}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_stack_a1d8a45347230c7da1b7ad93b846f3b7e}{add\+Count}
+\begin{DoxyCompactList}\small\item\em Counter of elements added to the vector. \end{DoxyCompactList}\item 
+int \hyperlink{class_stack_a9e4b1d3525fd1febea119fb92610d207}{size\+Stc}
+\begin{DoxyCompactList}\small\item\em size of the stack \end{DoxyCompactList}\item 
+std\+::vector$<$ T $>$ \hyperlink{class_stack_ae2364efb487e7798c28a9c33a8e64f7a}{stack}
+\begin{DoxyCompactList}\small\item\em Container for stack date. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_stack_abe90d193ce343c152f2e9c46f17dc7de}{}std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, const \hyperlink{class_stack}{Stack} \&\hyperlink{class_stack_ae2364efb487e7798c28a9c33a8e64f7a}{stack})\label{class_stack_abe90d193ce343c152f2e9c46f17dc7de}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class Stack$<$ T $>$}
+
+Own implementation of stack. As simple as possible. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_stack_aefee698059467258bbd79045aca62a63}{}\index{Stack@{Stack}!Stack@{Stack}}
+\index{Stack@{Stack}!Stack@{Stack}}
+\subsubsection[{Stack}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Stack}$<$ T $>$\+::{\bf Stack} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_stack_aefee698059467258bbd79045aca62a63}
+
+
+Create stack memory, assign size of the stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack\+Size} & size of the new stack \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_stack_a5a629b74999375d2751ce88eaf24f78e}{}\index{Stack@{Stack}!push@{push}}
+\index{push@{push}!Stack@{Stack}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Stack}$<$ T $>$\+::push (
+\begin{DoxyParamCaption}
+\item[{T}]{data}
+\end{DoxyParamCaption}
+)}\label{class_stack_a5a629b74999375d2751ce88eaf24f78e}
+
+
+Puts one object on the stack. 
+
+When stack is overload, automatticaly add one more place. (Used vector abillity to adding new memory space in this case) 
+\begin{DoxyParams}{Parameters}
+{\em data} & object inserted to the stack\\
+\hline
+\end{DoxyParams}
+When stack is overload, automatticaly add percent of old place as a added new memory. After hitting fullness, multiply size of the vector twice. 
+\begin{DoxyParams}{Parameters}
+{\em data} & object inserted to the stack \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_stack_a635bef053184eb267c919982390ee18f}{}\index{Stack@{Stack}!size@{size}}
+\index{size@{size}!Stack@{Stack}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Stack}$<$ T $>$\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_stack_a635bef053184eb267c919982390ee18f}
+
+
+return size of the stack 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_stack_a1d8a45347230c7da1b7ad93b846f3b7e}{}\index{Stack@{Stack}!add\+Count@{add\+Count}}
+\index{add\+Count@{add\+Count}!Stack@{Stack}}
+\subsubsection[{add\+Count}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Stack}$<$ T $>$\+::add\+Count\hspace{0.3cm}{\ttfamily [private]}}\label{class_stack_a1d8a45347230c7da1b7ad93b846f3b7e}
+
+
+Counter of elements added to the vector. 
+
+Used in push\+\_\+prc, if add\+Count == size, dupcilate vector. Testing purpose. \hypertarget{class_stack_a9e4b1d3525fd1febea119fb92610d207}{}\index{Stack@{Stack}!size\+Stc@{size\+Stc}}
+\index{size\+Stc@{size\+Stc}!Stack@{Stack}}
+\subsubsection[{size\+Stc}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Stack}$<$ T $>$\+::size\+Stc\hspace{0.3cm}{\ttfamily [private]}}\label{class_stack_a9e4b1d3525fd1febea119fb92610d207}
+
+
+size of the stack 
+
+\hypertarget{class_stack_ae2364efb487e7798c28a9c33a8e64f7a}{}\index{Stack@{Stack}!stack@{stack}}
+\index{stack@{stack}!Stack@{Stack}}
+\subsubsection[{stack}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Stack}$<$ T $>$\+::stack\hspace{0.3cm}{\ttfamily [private]}}\label{class_stack_ae2364efb487e7798c28a9c33a8e64f7a}
+
+
+Container for stack date. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{stack_8h}{stack.\+h}\item 
+src/\hyperlink{stack_8cpp}{stack.\+cpp}\end{DoxyCompactItemize}

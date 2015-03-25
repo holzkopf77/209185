@@ -91,7 +91,7 @@ class InputFiles {
 		*/
 		int filesNumber;
 
-		/*! \varfilesNamesTab
+		/*! \var filesNamesTab
 			\brief Container for generated file names
 		*/
 		std::vector<std::string>filesNamesTab;

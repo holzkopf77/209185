@@ -1,0 +1,162 @@
+\hypertarget{class_node_b}{}\section{Node\+B$<$ T $>$ Class Template Reference}
+\label{class_node_b}\index{Node\+B$<$ T $>$@{Node\+B$<$ T $>$}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_node_b_ae5540d7200ba2dc49617abb2cfd710b4}{}T {\bfseries get\+\_\+data} ()\label{class_node_b_ae5540d7200ba2dc49617abb2cfd710b4}
+
+\item 
+const bool \hyperlink{class_node_b_a08d7227797bed893b5124da7d222154c}{is\+\_\+empty} ()
+\begin{DoxyCompactList}\small\item\em return state of node \end{DoxyCompactList}\item 
+\hyperlink{class_node_b_a5ef89d0aa079d6d7661eb9eeefd8ad2d}{Node\+B} ()
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_node_b_ab791d657a0e5db5eccd1715b24bdbeff}{}{\bfseries Node\+B} (T \hyperlink{class_node_b_a9ce10550e81de48553bf37679a491ef5}{data})\label{class_node_b_ab791d657a0e5db5eccd1715b24bdbeff}
+
+\item 
+\hyperlink{class_node_b}{Node\+B}$<$ T $>$ $\ast$ \hyperlink{class_node_b_a42c20008f8d375b5386bb050b4330882}{return\+\_\+left} ()
+\begin{DoxyCompactList}\small\item\em return pointer to the left branch of node \end{DoxyCompactList}\item 
+\hyperlink{class_node_b}{Node\+B}$<$ T $>$ $\ast$ \hyperlink{class_node_b_a2e720fb5a79c8171e09d647f06de51f6}{return\+\_\+parent} ()
+\begin{DoxyCompactList}\small\item\em return pointer to the parent of node \end{DoxyCompactList}\item 
+\hyperlink{class_node_b}{Node\+B}$<$ T $>$ $\ast$ \hyperlink{class_node_b_a2fc22bbaf6b604dd5ad4ab60b26b35d5}{return\+\_\+right} ()
+\begin{DoxyCompactList}\small\item\em return pointer to the right branch of node \end{DoxyCompactList}\item 
+\hyperlink{class_node_b_a4c3fbc5d2fc1c386e71067a7db7bb84c}{$\sim$\+Node\+B} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T \hyperlink{class_node_b_a9ce10550e81de48553bf37679a491ef5}{data}
+\begin{DoxyCompactList}\small\item\em Container for random integer data. \end{DoxyCompactList}\item 
+bool \hyperlink{class_node_b_a62077bf9d12b532c6177544bce9947d0}{empty}
+\item 
+\hyperlink{class_node_b}{Node\+B}$<$ T $>$ $\ast$ \hyperlink{class_node_b_a8d8ba7388e899b41d6a50ba3e910d065}{left}
+\begin{DoxyCompactList}\small\item\em link with left branch node from parent \end{DoxyCompactList}\item 
+\hyperlink{class_node_b}{Node\+B}$<$ T $>$ $\ast$ \hyperlink{class_node_b_afba2126c75ecfa0d8e3320c07e3257dc}{parent}
+\begin{DoxyCompactList}\small\item\em link with parent node from tree \end{DoxyCompactList}\item 
+\hyperlink{class_node_b}{Node\+B}$<$ T $>$ $\ast$ \hyperlink{class_node_b_a91e0cdfcaf563461d96079054627ced4}{right}
+\begin{DoxyCompactList}\small\item\em link with right branch node from parent \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_node_b_aa2f9f90efcd38311bf153da95f3561c0}{}{\footnotesize template$<$class T $>$ }\\class {\bfseries Tree}\label{class_node_b_aa2f9f90efcd38311bf153da95f3561c0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_node_b_a5ef89d0aa079d6d7661eb9eeefd8ad2d}{}\index{Node\+B@{Node\+B}!Node\+B@{Node\+B}}
+\index{Node\+B@{Node\+B}!Node\+B@{Node\+B}}
+\subsubsection[{Node\+B}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Node\+B}$<$ T $>$\+::{\bf Node\+B} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_node_b_a5ef89d0aa079d6d7661eb9eeefd8ad2d}
+
+
+A constructor. 
+
+Create empty node. Every pointer is N\+U\+L\+L. root data = 0;
+
+Create empty \hyperlink{class_node_b}{Node\+B}. Every pointer is N\+U\+L\+L.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & inserted data from argument \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_node_b_a4c3fbc5d2fc1c386e71067a7db7bb84c}{}\index{Node\+B@{Node\+B}!````~Node\+B@{$\sim$\+Node\+B}}
+\index{````~Node\+B@{$\sim$\+Node\+B}!Node\+B@{Node\+B}}
+\subsubsection[{$\sim$\+Node\+B}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Node\+B}$<$ T $>$\+::$\sim${\bf Node\+B} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_node_b_a4c3fbc5d2fc1c386e71067a7db7bb84c}
+
+
+A destructor. 
+
+Free all memory. Deleting this pointer, so it\textquotesingle{}s dangerous. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_node_b_a08d7227797bed893b5124da7d222154c}{}\index{Node\+B@{Node\+B}!is\+\_\+empty@{is\+\_\+empty}}
+\index{is\+\_\+empty@{is\+\_\+empty}!Node\+B@{Node\+B}}
+\subsubsection[{is\+\_\+empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Node\+B}$<$ T $>$\+::is\+\_\+empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_node_b_a08d7227797bed893b5124da7d222154c}
+
+
+return state of node 
+
+true -\/ empty \hyperlink{class_node_b}{Node\+B} false -\/ not empty \hyperlink{class_node_b}{Node\+B} \hypertarget{class_node_b_a42c20008f8d375b5386bb050b4330882}{}\index{Node\+B@{Node\+B}!return\+\_\+left@{return\+\_\+left}}
+\index{return\+\_\+left@{return\+\_\+left}!Node\+B@{Node\+B}}
+\subsubsection[{return\+\_\+left}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Node\+B}$<$ T $>$\+::return\+\_\+left (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_node_b_a42c20008f8d375b5386bb050b4330882}
+
+
+return pointer to the left branch of node 
+
+\hypertarget{class_node_b_a2e720fb5a79c8171e09d647f06de51f6}{}\index{Node\+B@{Node\+B}!return\+\_\+parent@{return\+\_\+parent}}
+\index{return\+\_\+parent@{return\+\_\+parent}!Node\+B@{Node\+B}}
+\subsubsection[{return\+\_\+parent}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Node\+B}$<$ T $>$\+::return\+\_\+parent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_node_b_a2e720fb5a79c8171e09d647f06de51f6}
+
+
+return pointer to the parent of node 
+
+\hypertarget{class_node_b_a2fc22bbaf6b604dd5ad4ab60b26b35d5}{}\index{Node\+B@{Node\+B}!return\+\_\+right@{return\+\_\+right}}
+\index{return\+\_\+right@{return\+\_\+right}!Node\+B@{Node\+B}}
+\subsubsection[{return\+\_\+right}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Node\+B}$<$ T $>$\+::return\+\_\+right (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_node_b_a2fc22bbaf6b604dd5ad4ab60b26b35d5}
+
+
+return pointer to the right branch of node 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_node_b_a9ce10550e81de48553bf37679a491ef5}{}\index{Node\+B@{Node\+B}!data@{data}}
+\index{data@{data}!Node\+B@{Node\+B}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Node\+B}$<$ T $>$\+::data\hspace{0.3cm}{\ttfamily [private]}}\label{class_node_b_a9ce10550e81de48553bf37679a491ef5}
+
+
+Container for random integer data. 
+
+\hypertarget{class_node_b_a62077bf9d12b532c6177544bce9947d0}{}\index{Node\+B@{Node\+B}!empty@{empty}}
+\index{empty@{empty}!Node\+B@{Node\+B}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Node\+B}$<$ T $>$\+::empty\hspace{0.3cm}{\ttfamily [private]}}\label{class_node_b_a62077bf9d12b532c6177544bce9947d0}
+Flag for empty(true)/nonempty node(false) \hypertarget{class_node_b_a8d8ba7388e899b41d6a50ba3e910d065}{}\index{Node\+B@{Node\+B}!left@{left}}
+\index{left@{left}!Node\+B@{Node\+B}}
+\subsubsection[{left}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Node\+B}$<$ T $>$\+::left\hspace{0.3cm}{\ttfamily [private]}}\label{class_node_b_a8d8ba7388e899b41d6a50ba3e910d065}
+
+
+link with left branch node from parent 
+
+Data smaller than parent data. \hypertarget{class_node_b_afba2126c75ecfa0d8e3320c07e3257dc}{}\index{Node\+B@{Node\+B}!parent@{parent}}
+\index{parent@{parent}!Node\+B@{Node\+B}}
+\subsubsection[{parent}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Node\+B}$<$ T $>$\+::parent\hspace{0.3cm}{\ttfamily [private]}}\label{class_node_b_afba2126c75ecfa0d8e3320c07e3257dc}
+
+
+link with parent node from tree 
+
+\hypertarget{class_node_b_a91e0cdfcaf563461d96079054627ced4}{}\index{Node\+B@{Node\+B}!right@{right}}
+\index{right@{right}!Node\+B@{Node\+B}}
+\subsubsection[{right}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Node\+B}$<$ T $>$\+::right\hspace{0.3cm}{\ttfamily [private]}}\label{class_node_b_a91e0cdfcaf563461d96079054627ced4}
+
+
+link with right branch node from parent 
+
+Data bigger than parent data. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{tree__node_8h}{tree\+\_\+node.\+h}\end{DoxyCompactItemize}

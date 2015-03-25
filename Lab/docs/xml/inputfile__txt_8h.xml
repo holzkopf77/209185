@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="inputfile__txt_8h" kind="file" language="C++">
+    <compoundname>inputfile_txt.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">string</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">cstdio</includes>
+    <includes local="no">cassert</includes>
+    <includes local="no">ctime</includes>
+    <includes local="no">random</includes>
+    <includes local="no">boost/algorithm/string/erase.hpp</includes>
+    <includedby refid="benchmark__frm_8h" local="yes">inc/benchmark_frm.h</includedby>
+    <includedby refid="inputfile__txt_8cpp" local="yes">src/inputfile_txt.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">src/main.cpp</includedby>
+    <incdepgraph>
+      <node id="26">
+        <label>boost/algorithm/string/erase.hpp</label>
+      </node>
+      <node id="23">
+        <label>cassert</label>
+      </node>
+      <node id="19">
+        <label>string</label>
+      </node>
+      <node id="17">
+        <label>inc/inputfile_txt.h</label>
+        <link refid="inputfile_txt.h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>fstream</label>
+      </node>
+      <node id="25">
+        <label>random</label>
+      </node>
+      <node id="22">
+        <label>cstdio</label>
+      </node>
+      <node id="24">
+        <label>ctime</label>
+      </node>
+      <node id="21">
+        <label>vector</label>
+      </node>
+      <node id="18">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="31">
+        <label>src/inputfile_txt.cpp</label>
+        <link refid="inputfile__txt_8cpp"/>
+      </node>
+      <node id="27">
+        <label>inc/inputfile_txt.h</label>
+        <link refid="inputfile_txt.h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="29">
+        <label>src/benchmark_frm.cpp</label>
+        <link refid="benchmark__frm_8cpp"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>inc/benchmark_frm.h</label>
+        <link refid="benchmark__frm_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_input_files" prot="public">InputFiles</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="inputfile__txt_8h_1ac6795aca310766e1b10d90013aac6d47" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int FIRST_ARGUMENT</definition>
+        <argsstring></argsstring>
+        <name>FIRST_ARGUMENT</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+<para>A const value for representing first argument from command prompt (name of the program) */. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/inputfile_txt.h" line="19" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/inputfile_txt.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="inputfile__txt_8h_1a902304230ce19afe946c01bcdb5f4d6b" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int PROGRAM_NAME</definition>
+        <argsstring></argsstring>
+        <name>PROGRAM_NAME</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+<para>The same as FIRST_ARGUMENT */. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/inputfile_txt.h" line="21" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/inputfile_txt.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="inputfile__txt_8h_1adccf682ffd569bf29d8a9e214a411771" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int UNDEF_VALUE</definition>
+        <argsstring></argsstring>
+        <name>UNDEF_VALUE</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+<para>A value for undefined arguments */. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/inputfile_txt.h" line="20" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/inputfile_txt.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A InputFile class. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="5"><highlight class="preprocessor">#ifndef<sp/>INPUTFILE_TXT_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INPUTFILE_TXT_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdio&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cassert&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ctime&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;random&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/algorithm/string/erase.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="inputfile__txt_8h_1ac6795aca310766e1b10d90013aac6d47" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="inputfile__txt_8h_1ac6795aca310766e1b10d90013aac6d47" kindref="member">FIRST_ARGUMENT</ref><sp/>=<sp/>1;<sp/></highlight></codeline>
+<codeline lineno="20" refid="inputfile__txt_8h_1adccf682ffd569bf29d8a9e214a411771" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="inputfile__txt_8h_1adccf682ffd569bf29d8a9e214a411771" kindref="member">UNDEF_VALUE</ref><sp/>=<sp/>1;<sp/></highlight></codeline>
+<codeline lineno="21" refid="inputfile__txt_8h_1a902304230ce19afe946c01bcdb5f4d6b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="inputfile__txt_8h_1a902304230ce19afe946c01bcdb5f4d6b" kindref="member">PROGRAM_NAME</ref><sp/>=<sp/>1;<sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="class_input_files" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_input_files" kindref="compound">InputFiles</ref><sp/>{<sp/><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30"></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_input_files_1a85a092f7ad25a9f959f1a93e5afb2045" kindref="member">InputFiles</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40"></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_input_files_1a85a092f7ad25a9f959f1a93e5afb2045" kindref="member">InputFiles</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filNr,<sp/>std::vector&lt;int&gt;filSiz);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_input_files_1adacb161e743183a2acef22b26dc7b954" kindref="member">show_info</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_input_files_1ae5bb1d7ff253b873327a3a3d84f64584" kindref="member">generate_random_int_data</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="class_input_files_1a9246bc217efcfa1569478bcf44e1cd20" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_input_files_1a9246bc217efcfa1569478bcf44e1cd20" kindref="member">return_file_name</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Nmbr){</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_input_files_1aaf048323d861b7cd19f14dff8848c4bf" kindref="member">filesNamesTab</ref>[Nmbr];</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="class_input_files_1a9c65bfcc0e684642c40c999959d6d014" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_input_files_1a9c65bfcc0e684642c40c999959d6d014" kindref="member">return_file_size</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Nmbr){</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_input_files_1a2d6426414a58ca39751e3b26135341e0" kindref="member">filesSizes</ref>[Nmbr];</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="class_input_files_1a3db5accd81913e0b89fdd3b4650c8923" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_input_files_1a3db5accd81913e0b89fdd3b4650c8923" kindref="member">return_number_files</ref>(){</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_input_files_1a9614705947e6240bc2daa8cf3db42310" kindref="member">filesNumber</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="92" refid="class_input_files_1a9614705947e6240bc2daa8cf3db42310" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_input_files_1a9614705947e6240bc2daa8cf3db42310" kindref="member">filesNumber</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="class_input_files_1aaf048323d861b7cd19f14dff8848c4bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<ref refid="class_input_files_1aaf048323d861b7cd19f14dff8848c4bf" kindref="member">filesNamesTab</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="class_input_files_1a2d6426414a58ca39751e3b26135341e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<ref refid="class_input_files_1a2d6426414a58ca39751e3b26135341e0" kindref="member">filesSizes</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">};<sp/><sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/inputfile_txt.h"/>
+  </compounddef>
+</doxygen>

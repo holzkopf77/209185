@@ -62,6 +62,7 @@ public:
 	void show_tree();
 
 	/*! \fn is_empty
+		\brief return info if the tree is empty
 	*/
 	const bool is_empty(){
 		return empty;

@@ -31,9 +31,14 @@ public:
 		\brief Main testing function
 
 		\param files random generated files with integers
+		\param data_structure tested structure
 	*/
 	void test(T data_structure, InputFiles& files);
 
+	/*! \fn raport
+		\brief Create a .xls file (excel) with file sizes and test times 
+	*/
+	void raport(InputFiles& files);
 private:
 	/*! \fn average
 		\brief get average time from testing (10 probes)

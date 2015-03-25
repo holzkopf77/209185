@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="stack_8h" kind="file" language="C++">
+    <compoundname>stack.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">cassert</includes>
+    <includedby refid="main_8cpp" local="yes">src/main.cpp</includedby>
+    <includedby refid="stack_8cpp" local="no">src/stack.cpp</includedby>
+    <incdepgraph>
+      <node id="51">
+        <label>cassert</label>
+      </node>
+      <node id="49">
+        <label>inc/stack.h</label>
+        <link refid="stack.h"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="52">
+        <label>inc/stack.h</label>
+        <link refid="stack.h"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="54">
+        <label>src/stack.cpp</label>
+        <link refid="stack_8cpp"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_stack" prot="public">Stack</innerclass>
+    <briefdescription>
+<para>Own implementation of stack data structure. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="5"><highlight class="preprocessor">#ifndef<sp/>STACK_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cassert&gt;</highlight></codeline>
+<codeline lineno="15"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="16" refid="class_stack" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_stack" kindref="compound">Stack</ref><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21" refid="class_stack_1aefee698059467258bbd79045aca62a63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_stack_1aefee698059467258bbd79045aca62a63" kindref="member">Stack</ref>()<sp/>:<sp/><ref refid="class_stack_1ae2364efb487e7798c28a9c33a8e64f7a" kindref="member">stack</ref>(<ref refid="namespacestd" kindref="compound">std</ref>::vector&lt;T&gt;(0)),<sp/><ref refid="class_stack_1a9e4b1d3525fd1febea119fb92610d207" kindref="member">sizeStc</ref>(0),<sp/><ref refid="class_stack_1a1d8a45347230c7da1b7ad93b846f3b7e" kindref="member">addCount</ref>(0)<sp/>{}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_stack_1aefee698059467258bbd79045aca62a63" kindref="member">Stack</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stackSize)<sp/>:<sp/><ref refid="class_stack_1ae2364efb487e7798c28a9c33a8e64f7a" kindref="member">stack</ref>(<ref refid="namespacestd" kindref="compound">std</ref>::vector&lt;T&gt;(stackSize)),<sp/><ref refid="class_stack_1a9e4b1d3525fd1febea119fb92610d207" kindref="member">sizeStc</ref>(stackSize),<sp/><ref refid="class_stack_1a1d8a45347230c7da1b7ad93b846f3b7e" kindref="member">addCount</ref>(0)<sp/>{}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_stack_1a5a629b74999375d2751ce88eaf24f78e" kindref="member">push</ref>(T<sp/>data);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>push_prc(T<sp/>data);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/>pop();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="class_stack_1a635bef053184eb267c919982390ee18f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_stack_1a635bef053184eb267c919982390ee18f" kindref="member">size</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_stack_1a9e4b1d3525fd1febea119fb92610d207" kindref="member">sizeStc</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>std::ostream&amp;<sp/>operator&lt;&lt;(std::ostream&amp;<sp/>out,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_stack" kindref="compound">Stack</ref>&amp;<sp/><ref refid="class_stack_1ae2364efb487e7798c28a9c33a8e64f7a" kindref="member">stack</ref>){</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>iterator<sp/>:<sp/>stack.<ref refid="class_stack_1ae2364efb487e7798c28a9c33a8e64f7a" kindref="member">stack</ref>){</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/>iterator<sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="71" refid="class_stack_1ae2364efb487e7798c28a9c33a8e64f7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;T&gt;<sp/><ref refid="class_stack_1ae2364efb487e7798c28a9c33a8e64f7a" kindref="member">stack</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="class_stack_1a9e4b1d3525fd1febea119fb92610d207" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_stack_1a9e4b1d3525fd1febea119fb92610d207" kindref="member">sizeStc</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="class_stack_1a1d8a45347230c7da1b7ad93b846f3b7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_stack_1a1d8a45347230c7da1b7ad93b846f3b7e" kindref="member">addCount</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/stack.h"/>
+  </compounddef>
+</doxygen>

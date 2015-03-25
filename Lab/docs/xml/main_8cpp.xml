@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="main_8cpp" kind="file" language="C++">
+    <compoundname>main.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">typeinfo</includes>
+    <includes refid="benchmark__frm_8h" local="yes">benchmark_frm.h</includes>
+    <includes refid="inputfile__txt_8h" local="yes">inputfile_txt.h</includes>
+    <includes refid="stack_8h" local="yes">stack.h</includes>
+    <includes refid="list_8h" local="yes">list.h</includes>
+    <includes refid="queue_8h" local="yes">queue.h</includes>
+    <includes refid="tree_8h" local="yes">tree.h</includes>
+    <includes refid="benchmark__frm_8cpp" local="yes">benchmark_frm.cpp</includes>
+    <includes refid="list_8cpp" local="yes">list.cpp</includes>
+    <includes refid="stack_8cpp" local="yes">stack.cpp</includes>
+    <includes refid="queue_8cpp" local="yes">queue.cpp</includes>
+    <includes refid="tree_8cpp" local="yes">tree.cpp</includes>
+    <incdepgraph>
+      <node id="122">
+        <label>list_node.h</label>
+        <link refid="list__node_8h"/>
+      </node>
+      <node id="124">
+        <label>tree.h</label>
+        <link refid="tree_8h"/>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>boost/algorithm/string/erase.hpp</label>
+      </node>
+      <node id="109">
+        <label>cassert</label>
+      </node>
+      <node id="114">
+        <label>string</label>
+      </node>
+      <node id="113">
+        <label>inputfile_txt.h</label>
+        <link refid="inputfile__txt_8h"/>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+      </node>
+      <node id="121">
+        <label>list.h</label>
+        <link refid="list_8h"/>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="111">
+        <label>boost\chrono\duration.hpp</label>
+      </node>
+      <node id="115">
+        <label>fstream</label>
+      </node>
+      <node id="120">
+        <label>stack.h</label>
+        <link refid="stack_8h"/>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>random</label>
+      </node>
+      <node id="106">
+        <label>typeinfo</label>
+      </node>
+      <node id="116">
+        <label>cstdio</label>
+      </node>
+      <node id="117">
+        <label>ctime</label>
+      </node>
+      <node id="108">
+        <label>vector</label>
+      </node>
+      <node id="112">
+        <label>boost\algorithm\string\replace.hpp</label>
+      </node>
+      <node id="123">
+        <label>queue.h</label>
+        <link refid="queue_8h"/>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>tree.cpp</label>
+        <link refid="tree_8cpp"/>
+        <childnode refid="124" relation="include">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>tree_node.h</label>
+        <link refid="tree__node_8h"/>
+      </node>
+      <node id="104">
+        <label>src/main.cpp</label>
+        <link refid="main.cpp"/>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>stack.cpp</label>
+        <link refid="stack_8cpp"/>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>benchmark_frm.cpp</label>
+        <link refid="benchmark__frm_8cpp"/>
+        <childnode refid="107" relation="include">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>iostream</label>
+      </node>
+      <node id="110">
+        <label>boost\timer\timer.hpp</label>
+      </node>
+      <node id="107">
+        <label>benchmark_frm.h</label>
+        <link refid="benchmark__frm_8h"/>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>list.cpp</label>
+        <link refid="list_8cpp"/>
+        <childnode refid="121" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char *argv[])</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/src/main.cpp" line="21" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/src/main.cpp" bodystart="21" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A master file. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="5"><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;typeinfo&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="benchmark__frm_8h" kindref="compound">benchmark_frm.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="inputfile__txt_8h" kindref="compound">inputfile_txt.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stack_8h" kindref="compound">stack.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="list_8h" kindref="compound">list.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="queue_8h" kindref="compound">queue.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="tree_8h" kindref="compound">tree.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="benchmark__frm_8cpp" kindref="compound">benchmark_frm.cpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="list_8cpp" kindref="compound">list.cpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stack_8cpp" kindref="compound">stack.cpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;queue.cpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="tree_8cpp" kindref="compound">tree.cpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>argv[]){</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/************file<sp/>management***********/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>contains<sp/>only<sp/>one<sp/>size,<sp/>implementation<sp/>from<sp/>Lab1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;fileSize;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>first<sp/>argument<sp/>is<sp/>a<sp/>name<sp/>of<sp/>the<sp/>program<sp/>so<sp/>i<sp/>=<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>argc;<sp/>i++)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fileSize.push_back(atoi(argv[i]));</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_input_files" kindref="compound">InputFiles</ref><sp/>openFile(argc,<sp/>fileSize);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>openFile.generate_random_int_data();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/************file<sp/>management***********/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_benchmark" kindref="compound">Benchmark&lt;Tree&lt;int&gt;</ref>&gt;<sp/>treeTest;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_benchmark" kindref="compound">Benchmark&lt;Stack&lt;int&gt;</ref>&gt;<sp/>stackTest;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_benchmark" kindref="compound">Benchmark&lt;Queue&lt;int&gt;</ref>&gt;<sp/>queueTest;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_benchmark" kindref="compound">Benchmark&lt;List&lt;int&gt;</ref>&gt;<sp/>listTest;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_list" kindref="compound">List&lt;int&gt;</ref><sp/>list;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_stack" kindref="compound">Stack&lt;int&gt;</ref><sp/>stack;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tree" kindref="compound">Tree&lt;int&gt;</ref><sp/>tree;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_queue" kindref="compound">Queue&lt;int&gt;</ref><sp/>queue;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>stackTest.<ref refid="class_benchmark_1a2cd457b30f1756d063eff2e1df375c4c" kindref="member">test</ref>(stack,<sp/>openFile);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>treeTest.<ref refid="class_benchmark_1a2cd457b30f1756d063eff2e1df375c4c" kindref="member">test</ref>(tree,<sp/>openFile);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>queueTest.<ref refid="class_benchmark_1a2cd457b30f1756d063eff2e1df375c4c" kindref="member">test</ref>(queue,<sp/>openFile);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>listTest.<ref refid="class_benchmark_1a2cd457b30f1756d063eff2e1df375c4c" kindref="member">test</ref>(list,<sp/>openFile);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>stackTest.<ref refid="class_benchmark_1a8985652680b36c2416d30e39b1ec7918" kindref="member">raport</ref>(openFile);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cin.get();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/src/main.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="class_benchmark" kind="class" language="C++" prot="public">
+    <compoundname>Benchmark</compoundname>
+    <includes refid="benchmark__frm_8h" local="no">benchmark_frm.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_benchmark_1a9bfca8010e678170e36a44dd9e83661f" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; long double &gt;</type>
+        <definition>Benchmark&lt; T &gt;::avrTestTimes</definition>
+        <argsstring></argsstring>
+        <name>avrTestTimes</name>
+        <briefdescription>
+<para>A container for calculated times. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/benchmark_frm.h" line="51" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/benchmark_frm.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_benchmark_1a8985652680b36c2416d30e39b1ec7918" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Benchmark&lt; T &gt;::raport</definition>
+        <argsstring>(InputFiles &amp;files)</argsstring>
+        <name>raport</name>
+        <param>
+          <type><ref refid="class_input_files" kindref="compound">InputFiles</ref> &amp;</type>
+          <declname>files</declname>
+        </param>
+        <briefdescription>
+<para>Create a .xls file (excel) with file sizes and test times. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/benchmark_frm.h" line="41" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/src/benchmark_frm.cpp" bodystart="59" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_benchmark_1a2cd457b30f1756d063eff2e1df375c4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Benchmark&lt; T &gt;::test</definition>
+        <argsstring>(T data_structure, InputFiles &amp;files)</argsstring>
+        <name>test</name>
+        <param>
+          <type>T</type>
+          <declname>data_structure</declname>
+        </param>
+        <param>
+          <type><ref refid="class_input_files" kindref="compound">InputFiles</ref> &amp;</type>
+          <declname>files</declname>
+        </param>
+        <briefdescription>
+<para>Main testing function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>files</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>random generated files with integers </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data_structure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tested structure </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/benchmark_frm.h" line="36" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/src/benchmark_frm.cpp" bodystart="8" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_benchmark_1a9a1fec8387a129f1212645121ab81f44" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long double</type>
+        <definition>long double Benchmark&lt; T &gt;::average</definition>
+        <argsstring>(std::vector&lt; long double &gt;times)</argsstring>
+        <name>average</name>
+        <param>
+          <type>std::vector&lt; long double &gt;</type>
+          <declname>times</declname>
+        </param>
+        <briefdescription>
+<para>get average time from testing (10 probes) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/benchmark_frm.h" line="46" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/src/benchmark_frm.cpp" bodystart="46" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Making a framework for testing inserted data structure. Using time to estimate computational complexity. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Benchmark&lt; T &gt;</label>
+        <link refid="class_benchmark"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>avrTestTimes</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::vector&lt; long double &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/benchmark_frm.h" line="28" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/benchmark_frm.h" bodystart="28" bodyend="52"/>
+    <listofallmembers>
+      <member refid="class_benchmark_1a9a1fec8387a129f1212645121ab81f44" prot="private" virt="non-virtual"><scope>Benchmark</scope><name>average</name></member>
+      <member refid="class_benchmark_1a9bfca8010e678170e36a44dd9e83661f" prot="private" virt="non-virtual"><scope>Benchmark</scope><name>avrTestTimes</name></member>
+      <member refid="class_benchmark_1a8985652680b36c2416d30e39b1ec7918" prot="public" virt="non-virtual"><scope>Benchmark</scope><name>raport</name></member>
+      <member refid="class_benchmark_1a2cd457b30f1756d063eff2e1df375c4c" prot="public" virt="non-virtual"><scope>Benchmark</scope><name>test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

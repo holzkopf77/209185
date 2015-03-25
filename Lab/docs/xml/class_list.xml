@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="class_list" kind="class" language="C++" prot="public">
+    <compoundname>List</compoundname>
+    <includes refid="list_8h" local="no">list.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_list_1a458d07dddccbd1f2658c507ae4a88b85" prot="private" static="no" mutable="no">
+        <type><ref refid="class_node" kindref="compound">Node</ref>&lt; T &gt; *</type>
+        <definition>List&lt; T &gt;::headPtr</definition>
+        <argsstring></argsstring>
+        <name>headPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>First element from the list pointer. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list.h" line="100" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_list_1a47c59c2a737b6866511ea709ce832804" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int List&lt; T &gt;::sizeLst</definition>
+        <argsstring></argsstring>
+        <name>sizeLst</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list.h" line="115" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_list_1ae2eb29a2f13bad16ac2617217576e3ea" prot="private" static="no" mutable="no">
+        <type><ref refid="class_node" kindref="compound">Node</ref>&lt; T &gt; *</type>
+        <definition>List&lt; T &gt;::tailPtr</definition>
+        <argsstring></argsstring>
+        <name>tailPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer for last element </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list.h" line="110" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_list_1a9a6f2723e2a68e2193850ff649b126d4" prot="private" static="no" mutable="no">
+        <type><ref refid="class_node" kindref="compound">Node</ref>&lt; T &gt; *</type>
+        <definition>List&lt; T &gt;::tempPtr</definition>
+        <argsstring></argsstring>
+        <name>tempPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Temporary pointer, help for adding new nodes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list.h" line="105" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_list_1a5c5e27671b21b3815d4e25b953c69454" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>List&lt; T &gt;::List</definition>
+        <argsstring>()</argsstring>
+        <name>List</name>
+        <briefdescription>
+<para>A default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Create empty list. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list.h" line="25" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1ad19661456bd18843dfe970b5309e7516" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>T List&lt; T &gt;::pop</definition>
+        <argsstring>()</argsstring>
+        <name>pop</name>
+        <briefdescription>
+<para>return data from last element of the list </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list.h" line="58" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/src/list.cpp" bodystart="44" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1a7fcb48a6742a21eb3f6666018b3edb20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>T List&lt; T &gt;::pop_front</definition>
+        <argsstring>()</argsstring>
+        <name>pop_front</name>
+        <briefdescription>
+<para>return data from first element of the list </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list.h" line="63" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/src/list.cpp" bodystart="67" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1a7aedb99ebfb318e7e847ab80a1c0207c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void List&lt; T &gt;::push</definition>
+        <argsstring>(T data)</argsstring>
+        <name>push</name>
+        <param>
+          <type>T</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Add new node to the END of the list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>inserted data into node. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list.h" line="46" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/src/list.cpp" bodystart="7" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1ac7612ccf36cd935d4cc10a59ceab14d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void List&lt; T &gt;::push_front</definition>
+        <argsstring>(T data)</argsstring>
+        <name>push_front</name>
+        <param>
+          <type>T</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Add new node to the BEGINING of the list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>inserted data into node </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list.h" line="53" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/src/list.cpp" bodystart="25" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1a1fd3d5197baa65c12c3217b1e406e7f3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_node" kindref="compound">Node</ref>&lt; T &gt; *</type>
+        <definition>List&lt; T &gt;::return_head</definition>
+        <argsstring>() const </argsstring>
+        <name>return_head</name>
+        <briefdescription>
+<para>return first node </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list.h" line="75" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list.h" bodystart="75" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1a2f8c57c710d2e9052f29a60af4c514ae" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>List&lt; T &gt;::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>return size of the list </para>        </briefdescription>
+        <detaileddescription>
+<para>Size of the list </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list.h" line="68" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list.h" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1a2b58189090f6e5ce52939c9195e59e85" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>List&lt; T &gt;::~List</definition>
+        <argsstring>()</argsstring>
+        <name>~List</name>
+        <briefdescription>
+<para>A destructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Null for all pointers Delete memory. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list.h" line="33" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list.h" bodystart="33" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_list_1a4c7712bf47d8f2bdf5dfd1c828c92129" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, const List &amp;list)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_list" kindref="compound">List</ref> &amp;</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list.h" line="82" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list.h" bodystart="82" bodyend="94"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_list_1acba757cd4643bf99859ffd710b941983" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void List&lt; T &gt;::delete_list</definition>
+        <argsstring>()</argsstring>
+        <name>delete_list</name>
+        <briefdescription>
+<para>delete all nodes from list </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list.h" line="120" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/src/list.cpp" bodystart="79" bodyend="92"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>An implementation of linked list. </para>    </detaileddescription>
+    <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list.h" line="18" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list.h" bodystart="18" bodyend="121"/>
+    <listofallmembers>
+      <member refid="class_list_1acba757cd4643bf99859ffd710b941983" prot="private" virt="non-virtual"><scope>List</scope><name>delete_list</name></member>
+      <member refid="class_list_1a458d07dddccbd1f2658c507ae4a88b85" prot="private" virt="non-virtual"><scope>List</scope><name>headPtr</name></member>
+      <member refid="class_list_1a5c5e27671b21b3815d4e25b953c69454" prot="public" virt="non-virtual"><scope>List</scope><name>List</name></member>
+      <member refid="class_list_1a4c7712bf47d8f2bdf5dfd1c828c92129" prot="public" virt="non-virtual"><scope>List</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_list_1ad19661456bd18843dfe970b5309e7516" prot="public" virt="non-virtual"><scope>List</scope><name>pop</name></member>
+      <member refid="class_list_1a7fcb48a6742a21eb3f6666018b3edb20" prot="public" virt="non-virtual"><scope>List</scope><name>pop_front</name></member>
+      <member refid="class_list_1a7aedb99ebfb318e7e847ab80a1c0207c" prot="public" virt="non-virtual"><scope>List</scope><name>push</name></member>
+      <member refid="class_list_1ac7612ccf36cd935d4cc10a59ceab14d7" prot="public" virt="non-virtual"><scope>List</scope><name>push_front</name></member>
+      <member refid="class_list_1a1fd3d5197baa65c12c3217b1e406e7f3" prot="public" virt="non-virtual"><scope>List</scope><name>return_head</name></member>
+      <member refid="class_list_1a2f8c57c710d2e9052f29a60af4c514ae" prot="public" virt="non-virtual"><scope>List</scope><name>size</name></member>
+      <member refid="class_list_1a47c59c2a737b6866511ea709ce832804" prot="private" virt="non-virtual"><scope>List</scope><name>sizeLst</name></member>
+      <member refid="class_list_1ae2eb29a2f13bad16ac2617217576e3ea" prot="private" virt="non-virtual"><scope>List</scope><name>tailPtr</name></member>
+      <member refid="class_list_1a9a6f2723e2a68e2193850ff649b126d4" prot="private" virt="non-virtual"><scope>List</scope><name>tempPtr</name></member>
+      <member refid="class_list_1a2b58189090f6e5ce52939c9195e59e85" prot="public" virt="non-virtual"><scope>List</scope><name>~List</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

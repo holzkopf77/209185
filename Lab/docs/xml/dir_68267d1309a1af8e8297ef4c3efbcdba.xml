@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>src</compoundname>
+    <innerfile refid="benchmark__frm_8cpp">benchmark_frm.cpp</innerfile>
+    <innerfile refid="inputfile__txt_8cpp">inputfile_txt.cpp</innerfile>
+    <innerfile refid="list_8cpp">list.cpp</innerfile>
+    <innerfile refid="main_8cpp">main.cpp</innerfile>
+    <innerfile refid="queue_8cpp">queue.cpp</innerfile>
+    <innerfile refid="stack_8cpp">stack.cpp</innerfile>
+    <innerfile refid="tree_8cpp">tree.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/src/"/>
+  </compounddef>
+</doxygen>

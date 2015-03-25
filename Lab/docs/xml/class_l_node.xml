@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="class_l_node" kind="class" language="C++" prot="public">
+    <compoundname>LNode</compoundname>
+    <includes refid="list__node_8h" local="no">list_node.h</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>t An implementation for nodes to the linked list </para>    </detaileddescription>
+    <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/list_node.h" line="8" column="1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="benchmark__frm_8h" kind="file" language="C++">
+    <compoundname>benchmark_frm.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">cassert</includes>
+    <includes local="no">boost\timer\timer.hpp</includes>
+    <includes local="no">boost\chrono\duration.hpp</includes>
+    <includes local="no">boost\algorithm\string\replace.hpp</includes>
+    <includes refid="inputfile__txt_8h" local="yes">inputfile_txt.h</includes>
+    <includedby refid="benchmark__frm_8cpp" local="yes">src/benchmark_frm.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">src/main.cpp</includedby>
+    <incdepgraph>
+      <node id="13">
+        <label>boost/algorithm/string/erase.hpp</label>
+      </node>
+      <node id="2">
+        <label>cassert</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>inputfile_txt.h</label>
+        <link refid="inputfile__txt_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>boost\chrono\duration.hpp</label>
+      </node>
+      <node id="9">
+        <label>fstream</label>
+      </node>
+      <node id="12">
+        <label>random</label>
+      </node>
+      <node id="10">
+        <label>cstdio</label>
+      </node>
+      <node id="11">
+        <label>ctime</label>
+      </node>
+      <node id="1">
+        <label>vector</label>
+      </node>
+      <node id="5">
+        <label>boost\algorithm\string\replace.hpp</label>
+      </node>
+      <node id="7">
+        <label>iostream</label>
+      </node>
+      <node id="3">
+        <label>boost\timer\timer.hpp</label>
+      </node>
+      <node id="0">
+        <label>inc/benchmark_frm.h</label>
+        <link refid="benchmark_frm.h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="16">
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="15">
+        <label>src/benchmark_frm.cpp</label>
+        <link refid="benchmark__frm_8cpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>inc/benchmark_frm.h</label>
+        <link refid="benchmark_frm.h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_benchmark" prot="public">Benchmark</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="benchmark__frm_8h_1a3d1c0d1bb69d2fc466d2c8f3a8611e52" prot="public" static="no" mutable="no">
+        <type>const long double</type>
+        <definition>SEC</definition>
+        <argsstring></argsstring>
+        <name>SEC</name>
+        <initializer>= 0.000000001</initializer>
+        <briefdescription>
+<para>For multiplying. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/benchmark_frm.h" line="20" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/benchmark_frm.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A <ref refid="class_benchmark" kindref="compound">Benchmark</ref> class. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="5"><highlight class="preprocessor">#ifndef<sp/>BENCHMARK_FRM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BENCHMARK_FRM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cassert&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost\timer\timer.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost\chrono\duration.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost\algorithm\string\replace.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="inputfile__txt_8h" kindref="compound">inputfile_txt.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="benchmark__frm_8h_1a3d1c0d1bb69d2fc466d2c8f3a8611e52" refkind="member"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="benchmark__frm_8h_1a3d1c0d1bb69d2fc466d2c8f3a8611e52" kindref="member">SEC</ref><sp/>=<sp/>0.000000001;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="28" refid="class_benchmark" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_benchmark" kindref="compound">Benchmark</ref><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_benchmark_1a2cd457b30f1756d063eff2e1df375c4c" kindref="member">test</ref>(T<sp/>data_structure,<sp/><ref refid="class_input_files" kindref="compound">InputFiles</ref>&amp;<sp/>files);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_benchmark_1a8985652680b36c2416d30e39b1ec7918" kindref="member">raport</ref>(<ref refid="class_input_files" kindref="compound">InputFiles</ref>&amp;<sp/>files);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_benchmark_1a9a1fec8387a129f1212645121ab81f44" kindref="member">average</ref>(std::vector&lt;long<sp/>double&gt;times);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51" refid="class_benchmark_1a9bfca8010e678170e36a44dd9e83661f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;long<sp/>double&gt;<ref refid="class_benchmark_1a9bfca8010e678170e36a44dd9e83661f" kindref="member">avrTestTimes</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/benchmark_frm.h"/>
+  </compounddef>
+</doxygen>

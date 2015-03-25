@@ -1,0 +1,184 @@
+\hypertarget{class_input_files}{}\section{Input\+Files Class Reference}
+\label{class_input_files}\index{Input\+Files@{Input\+Files}}
+
+
+{\ttfamily \#include $<$inputfile\+\_\+txt.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_input_files_ae5bb1d7ff253b873327a3a3d84f64584}{generate\+\_\+random\+\_\+int\+\_\+data} ()
+\begin{DoxyCompactList}\small\item\em Puts random int data into files. \end{DoxyCompactList}\item 
+\hyperlink{class_input_files_a85a092f7ad25a9f959f1a93e5afb2045}{Input\+Files} ()
+\begin{DoxyCompactList}\small\item\em A default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_input_files_a500e1a86787be57b9525836c6c912311}{Input\+Files} (int fil\+Nr, std\+::vector$<$ int $>$fil\+Siz)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+const std\+::string \hyperlink{class_input_files_a9246bc217efcfa1569478bcf44e1cd20}{return\+\_\+file\+\_\+name} (int Nmbr)
+\begin{DoxyCompactList}\small\item\em Return names of files (only for read purpose) \end{DoxyCompactList}\item 
+const int \hyperlink{class_input_files_a9c65bfcc0e684642c40c999959d6d014}{return\+\_\+file\+\_\+size} (int Nmbr)
+\begin{DoxyCompactList}\small\item\em Return sizes of files (only for read purpose) \end{DoxyCompactList}\item 
+const int \hyperlink{class_input_files_a3db5accd81913e0b89fdd3b4650c8923}{return\+\_\+number\+\_\+files} ()
+\begin{DoxyCompactList}\small\item\em Return number of files. \end{DoxyCompactList}\item 
+void \hyperlink{class_input_files_adacb161e743183a2acef22b26dc7b954}{show\+\_\+info} ()
+\begin{DoxyCompactList}\small\item\em Showes info obout files. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{class_input_files_aaf048323d861b7cd19f14dff8848c4bf}{files\+Names\+Tab}
+\begin{DoxyCompactList}\small\item\em Container for generated file names. \end{DoxyCompactList}\item 
+int \hyperlink{class_input_files_a9614705947e6240bc2daa8cf3db42310}{files\+Number}
+\begin{DoxyCompactList}\small\item\em Number of generated files. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \hyperlink{class_input_files_a2d6426414a58ca39751e3b26135341e0}{files\+Sizes}
+\begin{DoxyCompactList}\small\item\em Container for file sizes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Making an object which contain text files with generated random integer numbers. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_input_files_a85a092f7ad25a9f959f1a93e5afb2045}{}\index{Input\+Files@{Input\+Files}!Input\+Files@{Input\+Files}}
+\index{Input\+Files@{Input\+Files}!Input\+Files@{Input\+Files}}
+\subsubsection[{Input\+Files}]{\setlength{\rightskip}{0pt plus 5cm}Input\+Files\+::\+Input\+Files (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_input_files_a85a092f7ad25a9f959f1a93e5afb2045}
+
+
+A default constructor. 
+
+Adding number of files(U\+N\+D\+E\+F\+\_\+\+V\+A\+L\+U\+E = 1); Generating file name; Adding size of file (U\+N\+D\+E\+F\+\_\+\+V\+A\+L\+U\+E = 1);
+
+Just in case, when program starts without any parameters. \begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]E\+X\+C\+E\+P\+T\+I\+O\+N\+S H\+A\+N\+D\+L\+I\+N\+G \end{DoxyRefDesc}
+\hypertarget{class_input_files_a500e1a86787be57b9525836c6c912311}{}\index{Input\+Files@{Input\+Files}!Input\+Files@{Input\+Files}}
+\index{Input\+Files@{Input\+Files}!Input\+Files@{Input\+Files}}
+\subsubsection[{Input\+Files}]{\setlength{\rightskip}{0pt plus 5cm}Input\+Files\+::\+Input\+Files (
+\begin{DoxyParamCaption}
+\item[{int}]{fil\+Nr, }
+\item[{std\+::vector$<$ int $>$}]{fil\+Siz}
+\end{DoxyParamCaption}
+)}\label{class_input_files_a500e1a86787be57b9525836c6c912311}
+
+
+A constructor. 
+
+Adding number of files; Generating files names; Adding sizes of files; Parameters inherit from list of arguments from command prompt
+
+
+\begin{DoxyParams}{Parameters}
+{\em fil\+Nr} & number of files \\
+\hline
+{\em fil\+Siz} & sizes of files \\
+\hline
+\end{DoxyParams}
+Open files with new names
+
+Check if file is opened correctly 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_input_files_ae5bb1d7ff253b873327a3a3d84f64584}{}\index{Input\+Files@{Input\+Files}!generate\+\_\+random\+\_\+int\+\_\+data@{generate\+\_\+random\+\_\+int\+\_\+data}}
+\index{generate\+\_\+random\+\_\+int\+\_\+data@{generate\+\_\+random\+\_\+int\+\_\+data}!Input\+Files@{Input\+Files}}
+\subsubsection[{generate\+\_\+random\+\_\+int\+\_\+data}]{\setlength{\rightskip}{0pt plus 5cm}void Input\+Files\+::generate\+\_\+random\+\_\+int\+\_\+data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_input_files_ae5bb1d7ff253b873327a3a3d84f64584}
+
+
+Puts random int data into files. 
+
+Generating random integers data (size from files\+Sizes vector) and putting them into files (names from files\+Names\+Tab) $<$ Seed for Mersenne Twister 19937 generator
+
+Mersenne Twister 19937 generator
+
+More info about this generator\+: \href{linkURL}{\tt http\+://pl.\+wikipedia.\+org/wiki/\+Mersenne\+\_\+\+Twister}
+
+Uniform distribution random number
+
+Max number\+: uncomment next line More info about this distribution\+: \href{linkURL}{\tt http\+://pl.\+wikipedia.\+org/wiki/\+Rozk\%\+C5\%82ad\+\_\+jednostajny}
+
+Check if file is opened correctly \hypertarget{class_input_files_a9246bc217efcfa1569478bcf44e1cd20}{}\index{Input\+Files@{Input\+Files}!return\+\_\+file\+\_\+name@{return\+\_\+file\+\_\+name}}
+\index{return\+\_\+file\+\_\+name@{return\+\_\+file\+\_\+name}!Input\+Files@{Input\+Files}}
+\subsubsection[{return\+\_\+file\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}Input\+Files\+::return\+\_\+file\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{int}]{Nmbr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_input_files_a9246bc217efcfa1569478bcf44e1cd20}
+
+
+Return names of files (only for read purpose) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Nmbr} & Number of the file. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_input_files_a9c65bfcc0e684642c40c999959d6d014}{}\index{Input\+Files@{Input\+Files}!return\+\_\+file\+\_\+size@{return\+\_\+file\+\_\+size}}
+\index{return\+\_\+file\+\_\+size@{return\+\_\+file\+\_\+size}!Input\+Files@{Input\+Files}}
+\subsubsection[{return\+\_\+file\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}Input\+Files\+::return\+\_\+file\+\_\+size (
+\begin{DoxyParamCaption}
+\item[{int}]{Nmbr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_input_files_a9c65bfcc0e684642c40c999959d6d014}
+
+
+Return sizes of files (only for read purpose) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Nmbr} & Number of the file. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_input_files_a3db5accd81913e0b89fdd3b4650c8923}{}\index{Input\+Files@{Input\+Files}!return\+\_\+number\+\_\+files@{return\+\_\+number\+\_\+files}}
+\index{return\+\_\+number\+\_\+files@{return\+\_\+number\+\_\+files}!Input\+Files@{Input\+Files}}
+\subsubsection[{return\+\_\+number\+\_\+files}]{\setlength{\rightskip}{0pt plus 5cm}Input\+Files\+::return\+\_\+number\+\_\+files (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_input_files_a3db5accd81913e0b89fdd3b4650c8923}
+
+
+Return number of files. 
+
+\hypertarget{class_input_files_adacb161e743183a2acef22b26dc7b954}{}\index{Input\+Files@{Input\+Files}!show\+\_\+info@{show\+\_\+info}}
+\index{show\+\_\+info@{show\+\_\+info}!Input\+Files@{Input\+Files}}
+\subsubsection[{show\+\_\+info}]{\setlength{\rightskip}{0pt plus 5cm}void Input\+Files\+::show\+\_\+info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_input_files_adacb161e743183a2acef22b26dc7b954}
+
+
+Showes info obout files. 
+
+Display\+: number of files, names of files, sizes of files 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_input_files_aaf048323d861b7cd19f14dff8848c4bf}{}\index{Input\+Files@{Input\+Files}!files\+Names\+Tab@{files\+Names\+Tab}}
+\index{files\+Names\+Tab@{files\+Names\+Tab}!Input\+Files@{Input\+Files}}
+\subsubsection[{files\+Names\+Tab}]{\setlength{\rightskip}{0pt plus 5cm}Input\+Files\+::files\+Names\+Tab\hspace{0.3cm}{\ttfamily [private]}}\label{class_input_files_aaf048323d861b7cd19f14dff8848c4bf}
+
+
+Container for generated file names. 
+
+\hypertarget{class_input_files_a9614705947e6240bc2daa8cf3db42310}{}\index{Input\+Files@{Input\+Files}!files\+Number@{files\+Number}}
+\index{files\+Number@{files\+Number}!Input\+Files@{Input\+Files}}
+\subsubsection[{files\+Number}]{\setlength{\rightskip}{0pt plus 5cm}Input\+Files\+::files\+Number\hspace{0.3cm}{\ttfamily [private]}}\label{class_input_files_a9614705947e6240bc2daa8cf3db42310}
+
+
+Number of generated files. 
+
+\hypertarget{class_input_files_a2d6426414a58ca39751e3b26135341e0}{}\index{Input\+Files@{Input\+Files}!files\+Sizes@{files\+Sizes}}
+\index{files\+Sizes@{files\+Sizes}!Input\+Files@{Input\+Files}}
+\subsubsection[{files\+Sizes}]{\setlength{\rightskip}{0pt plus 5cm}Input\+Files\+::files\+Sizes\hspace{0.3cm}{\ttfamily [private]}}\label{class_input_files_a2d6426414a58ca39751e3b26135341e0}
+
+
+Container for file sizes. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{inputfile__txt_8h}{inputfile\+\_\+txt.\+h}\item 
+src/\hyperlink{inputfile__txt_8cpp}{inputfile\+\_\+txt.\+cpp}\end{DoxyCompactItemize}

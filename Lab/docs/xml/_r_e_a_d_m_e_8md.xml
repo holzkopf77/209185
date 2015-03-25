@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">LAB<sp/>3<sp/>-<sp/>TESTOWANIE<sp/>STRUKTUR<sp/>DANYCH<sp/>-<sp/>209186</highlight></codeline>
+<codeline><highlight class="normal">----------</highlight></codeline>
+<codeline><highlight class="normal">Obsługa<sp/>następujących<sp/>struktur<sp/>danych:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Stos</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>push:<sp/>wrzucenie<sp/>danych<sp/>na<sp/>góre<sp/>stosu,<sp/>gdy<sp/>brak<sp/>miejsca,<sp/>dodaje<sp/>jedno<sp/>miejsce</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>push_prc:<sp/>wrzucenie<sp/>danych<sp/>na<sp/>góre<sp/>stosu,<sp/>gdy<sp/>brak<sp/>miejsca,<sp/>podwaja<sp/>stos</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>pop:<sp/>ściągnięcie<sp/>+<sp/>zwrócenie<sp/>danych<sp/>z<sp/>góry<sp/>stosu</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>size:<sp/>rozmiar<sp/>stosu</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Obsługuje<sp/>wszystkie<sp/>typu<sp/>danych<sp/>(szablony).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">2.Lista</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>push:<sp/>wrzucenie<sp/>danych<sp/>na<sp/>koniec<sp/>listy</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>push_front:<sp/>wrzucenie<sp/>danych<sp/>na<sp/>początek<sp/>listy</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>pop:<sp/>usunięcie<sp/>+<sp/>zwrócenie<sp/>elementu<sp/>z<sp/>końca<sp/>listy</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>pop_front:<sp/>usunięcie<sp/>+<sp/>zwrócenie<sp/>elementu<sp/>z<sp/>początku<sp/>listy</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>size:<sp/>rozmiar<sp/>listy</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>Obsługuje<sp/>wszystkie<sp/>typu<sp/>danych<sp/>(szablony).</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight></codeline>
+<codeline><highlight class="normal">3.Kolejka</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>push:<sp/>wrzucenie<sp/>danych<sp/>na<sp/>początek<sp/>kolejki</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>pop:<sp/>usunięcie<sp/>danych<sp/>z<sp/>końca<sp/>kolejki</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>size:<sp/>rozmiar<sp/>kolejki</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Kolejka<sp/>automatycznie<sp/>zwiększa<sp/>liczbę<sp/>miejsc,<sp/>jeśli<sp/>pełna<sp/>i<sp/>wszystko<sp/>zapełnione.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Kolejka<sp/>automatycznie<sp/>dodaje<sp/>element<sp/>na<sp/>wolne<sp/>miejsce,<sp/>jeśli<sp/>jest<sp/>pełna<sp/>i<sp/>jest<sp/>coś<sp/>wolnego.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Kolejka<sp/>nie<sp/>usuwa<sp/>miejsca<sp/>po<sp/>zwróceniu<sp/>elementu,<sp/>wsadza<sp/>tam<sp/>0,<sp/>a<sp/>miejsce<sp/>obsługuje<sp/>kolejne<sp/>dane.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>Obsługuje<sp/>wszystkie<sp/>typu<sp/>danych<sp/>(szablony).</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight></codeline>
+<codeline><highlight class="normal">4.Drzewo<sp/>binarne</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>push:<sp/>wrzucenie<sp/>elementu<sp/>do<sp/>drzewa</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>pop:<sp/>usuwanie<sp/>węzła<sp/>z<sp/>argumentem<sp/>podanym<sp/>w<sp/>wyłowaniu<sp/>funkcji<sp/>(aktualnie<sp/>usuwa<sp/>poprawnie<sp/>tylko<sp/>węzły<sp/>bez<sp/>dzieci)<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>size:<sp/>ilość<sp/>węzłów<sp/>drzewie<sp/>(romiar<sp/>drzewa)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>show_tree:<sp/>pokazanie<sp/>zawartości<sp/>pierwszych<sp/>3<sp/>poziomów<sp/>drzewa</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>is_empty:<sp/>sprawdzenie<sp/>czy<sp/>drzewo<sp/>jest<sp/>puste</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>Obsługuje<sp/>wszystkie<sp/>typu<sp/>danych<sp/>(szablony).</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/README.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,99 @@
+\hypertarget{class_queue}{}\section{Queue$<$ T $>$ Class Template Reference}
+\label{class_queue}\index{Queue$<$ T $>$@{Queue$<$ T $>$}}
+
+
+{\ttfamily \#include $<$queue.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_queue_abeee018138cbb5226e5352a5788e23bd}{}T {\bfseries pop} ()\label{class_queue_abeee018138cbb5226e5352a5788e23bd}
+
+\item 
+void \hyperlink{class_queue_a69f99535bf8b0f40138dd047cc122dc6}{push} (T data)
+\begin{DoxyCompactList}\small\item\em add new data to the queue \end{DoxyCompactList}\item 
+\hypertarget{class_queue_acc7bcb68deda2adcb42243e879d404f6}{}{\bfseries Queue} (int queue\+Size)\label{class_queue_acc7bcb68deda2adcb42243e879d404f6}
+
+\item 
+const int \hyperlink{class_queue_a9d4d900136edc4d81cc7ad014b43822c}{size} ()
+\begin{DoxyCompactList}\small\item\em return size of the queue \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_queue_a23216ad7a3dbc31936c378467237ce4e}{add\+Count}
+\begin{DoxyCompactList}\small\item\em Counter of elements added to the vector. \end{DoxyCompactList}\item 
+int \hyperlink{class_queue_a8409d616f193d95adfd31378ea47a466}{head}
+\item 
+std\+::vector$<$ T $>$ \hyperlink{class_queue_a8c371802bf77f0313a8b210d2ffa7113}{queue}
+\item 
+\hypertarget{class_queue_a2d467c8dc285b1cc40865f9c17959f5b}{}int {\bfseries size\+Que}\label{class_queue_a2d467c8dc285b1cc40865f9c17959f5b}
+
+\item 
+int \hyperlink{class_queue_a1e772a8071d79b71c433a78f10c4bf3e}{tail}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_queue_a66d32fd21c0212cc180f881b353d8214}{}std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, const \hyperlink{class_queue}{Queue} \&\hyperlink{class_queue_a8c371802bf77f0313a8b210d2ffa7113}{queue})\label{class_queue_a66d32fd21c0212cc180f881b353d8214}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class Queue$<$ T $>$}
+
+An implementation of queue based on dynamically created table. Info based on \href{http://www.studytonight.com/data-structures/queue-data-structure}{\tt http\+://www.\+studytonight.\+com/data-\/structures/queue-\/data-\/structure} 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_queue_a69f99535bf8b0f40138dd047cc122dc6}{}\index{Queue@{Queue}!push@{push}}
+\index{push@{push}!Queue@{Queue}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Queue}$<$ T $>$\+::push (
+\begin{DoxyParamCaption}
+\item[{T}]{data}
+\end{DoxyParamCaption}
+)}\label{class_queue_a69f99535bf8b0f40138dd047cc122dc6}
+
+
+add new data to the queue 
+
+When queue is full + all filled -\/$>$ add new place at the end When queue is full + some free space -\/$>$ put at first free space new element When queue is not full -\/$>$ put at first free space new element When queue is empty, and you want to pop something -\/$>$ assert is on When queue is fill, and you want to pop -\/$>$ pop very first element. Just like normal queue. \hypertarget{class_queue_a9d4d900136edc4d81cc7ad014b43822c}{}\index{Queue@{Queue}!size@{size}}
+\index{size@{size}!Queue@{Queue}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Queue}$<$ T $>$\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_queue_a9d4d900136edc4d81cc7ad014b43822c}
+
+
+return size of the queue 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_queue_a23216ad7a3dbc31936c378467237ce4e}{}\index{Queue@{Queue}!add\+Count@{add\+Count}}
+\index{add\+Count@{add\+Count}!Queue@{Queue}}
+\subsubsection[{add\+Count}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Queue}$<$ T $>$\+::add\+Count\hspace{0.3cm}{\ttfamily [private]}}\label{class_queue_a23216ad7a3dbc31936c378467237ce4e}
+
+
+Counter of elements added to the vector. 
+
+Testing purpose. \hypertarget{class_queue_a8409d616f193d95adfd31378ea47a466}{}\index{Queue@{Queue}!head@{head}}
+\index{head@{head}!Queue@{Queue}}
+\subsubsection[{head}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Queue}$<$ T $>$\+::head\hspace{0.3cm}{\ttfamily [private]}}\label{class_queue_a8409d616f193d95adfd31378ea47a466}
+Last element from the queue \hypertarget{class_queue_a8c371802bf77f0313a8b210d2ffa7113}{}\index{Queue@{Queue}!queue@{queue}}
+\index{queue@{queue}!Queue@{Queue}}
+\subsubsection[{queue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ A constructor with fixed {\bf size} of the {\bf Queue}$<$ T $>$\+::queue\hspace{0.3cm}{\ttfamily [private]}}\label{class_queue_a8c371802bf77f0313a8b210d2ffa7113}
+
+\begin{DoxyParams}{Parameters}
+{\em queue\+Size} & fixed size of the queue; \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_queue_a1e772a8071d79b71c433a78f10c4bf3e}{}\index{Queue@{Queue}!tail@{tail}}
+\index{tail@{tail}!Queue@{Queue}}
+\subsubsection[{tail}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Queue}$<$ T $>$\+::tail\hspace{0.3cm}{\ttfamily [private]}}\label{class_queue_a1e772a8071d79b71c433a78f10c4bf3e}
+A free place inside the queue 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{queue_8h}{queue.\+h}\item 
+src/queue.\+cpp\end{DoxyCompactItemize}

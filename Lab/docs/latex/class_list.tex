@@ -1,0 +1,186 @@
+\hypertarget{class_list}{}\section{List$<$ T $>$ Class Template Reference}
+\label{class_list}\index{List$<$ T $>$@{List$<$ T $>$}}
+
+
+{\ttfamily \#include $<$list.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_list_a5c5e27671b21b3815d4e25b953c69454}{List} ()
+\begin{DoxyCompactList}\small\item\em A default constructor. \end{DoxyCompactList}\item 
+T \hyperlink{class_list_ad19661456bd18843dfe970b5309e7516}{pop} ()
+\begin{DoxyCompactList}\small\item\em return data from last element of the list \end{DoxyCompactList}\item 
+T \hyperlink{class_list_a7fcb48a6742a21eb3f6666018b3edb20}{pop\+\_\+front} ()
+\begin{DoxyCompactList}\small\item\em return data from first element of the list \end{DoxyCompactList}\item 
+void \hyperlink{class_list_a7aedb99ebfb318e7e847ab80a1c0207c}{push} (T data)
+\begin{DoxyCompactList}\small\item\em Add new node to the E\+N\+D of the list. \end{DoxyCompactList}\item 
+void \hyperlink{class_list_ac7612ccf36cd935d4cc10a59ceab14d7}{push\+\_\+front} (T data)
+\begin{DoxyCompactList}\small\item\em Add new node to the B\+E\+G\+I\+N\+I\+N\+G of the list. \end{DoxyCompactList}\item 
+const \hyperlink{class_node}{Node}$<$ T $>$ $\ast$ \hyperlink{class_list_a1fd3d5197baa65c12c3217b1e406e7f3}{return\+\_\+head} () const 
+\begin{DoxyCompactList}\small\item\em return first node \end{DoxyCompactList}\item 
+int \hyperlink{class_list_a2f8c57c710d2e9052f29a60af4c514ae}{size} () const 
+\begin{DoxyCompactList}\small\item\em return size of the list \end{DoxyCompactList}\item 
+\hyperlink{class_list_a2b58189090f6e5ce52939c9195e59e85}{$\sim$\+List} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_list_acba757cd4643bf99859ffd710b941983}{delete\+\_\+list} ()
+\begin{DoxyCompactList}\small\item\em delete all nodes from list \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_node}{Node}$<$ T $>$ $\ast$ \hyperlink{class_list_a458d07dddccbd1f2658c507ae4a88b85}{head\+Ptr}
+\item 
+\hypertarget{class_list_a47c59c2a737b6866511ea709ce832804}{}int {\bfseries size\+Lst}\label{class_list_a47c59c2a737b6866511ea709ce832804}
+
+\item 
+\hyperlink{class_node}{Node}$<$ T $>$ $\ast$ \hyperlink{class_list_ae2eb29a2f13bad16ac2617217576e3ea}{tail\+Ptr}
+\item 
+\hyperlink{class_node}{Node}$<$ T $>$ $\ast$ \hyperlink{class_list_a9a6f2723e2a68e2193850ff649b126d4}{temp\+Ptr}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_list_a4c7712bf47d8f2bdf5dfd1c828c92129}{}std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, const \hyperlink{class_list}{List} \&list)\label{class_list_a4c7712bf47d8f2bdf5dfd1c828c92129}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class List$<$ T $>$}
+
+An implementation of linked list. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_list_a5c5e27671b21b3815d4e25b953c69454}{}\index{List@{List}!List@{List}}
+\index{List@{List}!List@{List}}
+\subsubsection[{List}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf List}$<$ T $>$\+::{\bf List} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_list_a5c5e27671b21b3815d4e25b953c69454}
+
+
+A default constructor. 
+
+Create empty list. \hypertarget{class_list_a2b58189090f6e5ce52939c9195e59e85}{}\index{List@{List}!````~List@{$\sim$\+List}}
+\index{````~List@{$\sim$\+List}!List@{List}}
+\subsubsection[{$\sim$\+List}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf List}$<$ T $>$\+::$\sim${\bf List} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_list_a2b58189090f6e5ce52939c9195e59e85}
+
+
+A destructor. 
+
+Null for all pointers Delete memory. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_list_acba757cd4643bf99859ffd710b941983}{}\index{List@{List}!delete\+\_\+list@{delete\+\_\+list}}
+\index{delete\+\_\+list@{delete\+\_\+list}!List@{List}}
+\subsubsection[{delete\+\_\+list}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf List}$<$ T $>$\+::delete\+\_\+list (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_list_acba757cd4643bf99859ffd710b941983}
+
+
+delete all nodes from list 
+
+\hypertarget{class_list_ad19661456bd18843dfe970b5309e7516}{}\index{List@{List}!pop@{pop}}
+\index{pop@{pop}!List@{List}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ T {\bf List}$<$ T $>$\+::pop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_list_ad19661456bd18843dfe970b5309e7516}
+
+
+return data from last element of the list 
+
+\hypertarget{class_list_a7fcb48a6742a21eb3f6666018b3edb20}{}\index{List@{List}!pop\+\_\+front@{pop\+\_\+front}}
+\index{pop\+\_\+front@{pop\+\_\+front}!List@{List}}
+\subsubsection[{pop\+\_\+front}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ T {\bf List}$<$ T $>$\+::pop\+\_\+front (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_list_a7fcb48a6742a21eb3f6666018b3edb20}
+
+
+return data from first element of the list 
+
+\hypertarget{class_list_a7aedb99ebfb318e7e847ab80a1c0207c}{}\index{List@{List}!push@{push}}
+\index{push@{push}!List@{List}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf List}$<$ T $>$\+::push (
+\begin{DoxyParamCaption}
+\item[{T}]{data}
+\end{DoxyParamCaption}
+)}\label{class_list_a7aedb99ebfb318e7e847ab80a1c0207c}
+
+
+Add new node to the E\+N\+D of the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & inserted data into node. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_list_ac7612ccf36cd935d4cc10a59ceab14d7}{}\index{List@{List}!push\+\_\+front@{push\+\_\+front}}
+\index{push\+\_\+front@{push\+\_\+front}!List@{List}}
+\subsubsection[{push\+\_\+front}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf List}$<$ T $>$\+::push\+\_\+front (
+\begin{DoxyParamCaption}
+\item[{T}]{data}
+\end{DoxyParamCaption}
+)}\label{class_list_ac7612ccf36cd935d4cc10a59ceab14d7}
+
+
+Add new node to the B\+E\+G\+I\+N\+I\+N\+G of the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & inserted data into node \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_list_a1fd3d5197baa65c12c3217b1e406e7f3}{}\index{List@{List}!return\+\_\+head@{return\+\_\+head}}
+\index{return\+\_\+head@{return\+\_\+head}!List@{List}}
+\subsubsection[{return\+\_\+head}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf List}$<$ T $>$\+::return\+\_\+head (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_list_a1fd3d5197baa65c12c3217b1e406e7f3}
+
+
+return first node 
+
+\hypertarget{class_list_a2f8c57c710d2e9052f29a60af4c514ae}{}\index{List@{List}!size@{size}}
+\index{size@{size}!List@{List}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf List}$<$ T $>$\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_list_a2f8c57c710d2e9052f29a60af4c514ae}
+
+
+return size of the list 
+
+Size of the list 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_list_a458d07dddccbd1f2658c507ae4a88b85}{}\index{List@{List}!head\+Ptr@{head\+Ptr}}
+\index{head\+Ptr@{head\+Ptr}!List@{List}}
+\subsubsection[{head\+Ptr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf List}$<$ T $>$\+::head\+Ptr\hspace{0.3cm}{\ttfamily [private]}}\label{class_list_a458d07dddccbd1f2658c507ae4a88b85}
+First element from the list pointer. \hypertarget{class_list_ae2eb29a2f13bad16ac2617217576e3ea}{}\index{List@{List}!tail\+Ptr@{tail\+Ptr}}
+\index{tail\+Ptr@{tail\+Ptr}!List@{List}}
+\subsubsection[{tail\+Ptr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf List}$<$ T $>$\+::tail\+Ptr\hspace{0.3cm}{\ttfamily [private]}}\label{class_list_ae2eb29a2f13bad16ac2617217576e3ea}
+Pointer for last element \hypertarget{class_list_a9a6f2723e2a68e2193850ff649b126d4}{}\index{List@{List}!temp\+Ptr@{temp\+Ptr}}
+\index{temp\+Ptr@{temp\+Ptr}!List@{List}}
+\subsubsection[{temp\+Ptr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf List}$<$ T $>$\+::temp\+Ptr\hspace{0.3cm}{\ttfamily [private]}}\label{class_list_a9a6f2723e2a68e2193850ff649b126d4}
+Temporary pointer, help for adding new nodes. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{list_8h}{list.\+h}\item 
+src/\hyperlink{list_8cpp}{list.\+cpp}\end{DoxyCompactItemize}

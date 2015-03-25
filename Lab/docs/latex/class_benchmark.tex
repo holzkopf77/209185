@@ -1,0 +1,88 @@
+\hypertarget{class_benchmark}{}\section{Benchmark$<$ T $>$ Class Template Reference}
+\label{class_benchmark}\index{Benchmark$<$ T $>$@{Benchmark$<$ T $>$}}
+
+
+{\ttfamily \#include $<$benchmark\+\_\+frm.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_benchmark_a8985652680b36c2416d30e39b1ec7918}{raport} (\hyperlink{class_input_files}{Input\+Files} \&files)
+\begin{DoxyCompactList}\small\item\em Create a .xls file (excel) with file sizes and test times. \end{DoxyCompactList}\item 
+void \hyperlink{class_benchmark_a2cd457b30f1756d063eff2e1df375c4c}{test} (T data\+\_\+structure, \hyperlink{class_input_files}{Input\+Files} \&files)
+\begin{DoxyCompactList}\small\item\em Main testing function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+long double \hyperlink{class_benchmark_a9a1fec8387a129f1212645121ab81f44}{average} (std\+::vector$<$ long double $>$times)
+\begin{DoxyCompactList}\small\item\em get average time from testing (10 probes) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ long double $>$ \hyperlink{class_benchmark_a9bfca8010e678170e36a44dd9e83661f}{avr\+Test\+Times}
+\begin{DoxyCompactList}\small\item\em A container for calculated times. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class Benchmark$<$ T $>$}
+
+Making a framework for testing inserted data structure. Using time to estimate computational complexity. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_benchmark_a9a1fec8387a129f1212645121ab81f44}{}\index{Benchmark@{Benchmark}!average@{average}}
+\index{average@{average}!Benchmark@{Benchmark}}
+\subsubsection[{average}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ long double {\bf Benchmark}$<$ T $>$\+::average (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ long double $>$}]{times}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_benchmark_a9a1fec8387a129f1212645121ab81f44}
+
+
+get average time from testing (10 probes) 
+
+\hypertarget{class_benchmark_a8985652680b36c2416d30e39b1ec7918}{}\index{Benchmark@{Benchmark}!raport@{raport}}
+\index{raport@{raport}!Benchmark@{Benchmark}}
+\subsubsection[{raport}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Benchmark}$<$ T $>$\+::raport (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\+Files} \&}]{files}
+\end{DoxyParamCaption}
+)}\label{class_benchmark_a8985652680b36c2416d30e39b1ec7918}
+
+
+Create a .xls file (excel) with file sizes and test times. 
+
+\hypertarget{class_benchmark_a2cd457b30f1756d063eff2e1df375c4c}{}\index{Benchmark@{Benchmark}!test@{test}}
+\index{test@{test}!Benchmark@{Benchmark}}
+\subsubsection[{test}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Benchmark}$<$ T $>$\+::test (
+\begin{DoxyParamCaption}
+\item[{T}]{data\+\_\+structure, }
+\item[{{\bf Input\+Files} \&}]{files}
+\end{DoxyParamCaption}
+)}\label{class_benchmark_a2cd457b30f1756d063eff2e1df375c4c}
+
+
+Main testing function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em files} & random generated files with integers \\
+\hline
+{\em data\+\_\+structure} & tested structure \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_benchmark_a9bfca8010e678170e36a44dd9e83661f}{}\index{Benchmark@{Benchmark}!avr\+Test\+Times@{avr\+Test\+Times}}
+\index{avr\+Test\+Times@{avr\+Test\+Times}!Benchmark@{Benchmark}}
+\subsubsection[{avr\+Test\+Times}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Benchmark}$<$ T $>$\+::avr\+Test\+Times\hspace{0.3cm}{\ttfamily [private]}}\label{class_benchmark_a9bfca8010e678170e36a44dd9e83661f}
+
+
+A container for calculated times. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{benchmark__frm_8h}{benchmark\+\_\+frm.\+h}\item 
+src/\hyperlink{benchmark__frm_8cpp}{benchmark\+\_\+frm.\+cpp}\end{DoxyCompactItemize}

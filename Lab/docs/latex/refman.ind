@@ -1,0 +1,260 @@
+\begin{theindex}
+
+  \item {$\sim$\+List}
+    \subitem {List}, \hyperpage{13}
+  \item {$\sim$\+Node}
+    \subitem {Node}, \hyperpage{16}
+  \item {$\sim$\+Node\+B}
+    \subitem {Node\+B}, \hyperpage{17}
+
+  \indexspace
+
+  \item {add\+Count}
+    \subitem {Queue}, \hyperpage{19}
+    \subitem {Stack}, \hyperpage{21}
+  \item {average}
+    \subitem {Benchmark}, \hyperpage{9}
+  \item {avr\+Test\+Times}
+    \subitem {Benchmark}, \hyperpage{10}
+
+  \indexspace
+
+  \item {Benchmark}
+    \subitem {average}, \hyperpage{9}
+    \subitem {avr\+Test\+Times}, \hyperpage{10}
+    \subitem {raport}, \hyperpage{9}
+    \subitem {test}, \hyperpage{9}
+  \item {Benchmark$<$ T $>$}, \hyperpage{9}
+  \item {benchmark\+\_\+frm.\+h}
+    \subitem {S\+E\+C}, \hyperpage{25}
+
+  \indexspace
+
+  \item {data}
+    \subitem {Node\+B}, \hyperpage{18}
+  \item {delete\+\_\+list}
+    \subitem {List}, \hyperpage{14}
+
+  \indexspace
+
+  \item {empty}
+    \subitem {Node\+B}, \hyperpage{18}
+    \subitem {Tree}, \hyperpage{23}
+
+  \indexspace
+
+  \item {F\+I\+R\+S\+T\+\_\+\+A\+R\+G\+U\+M\+E\+N\+T}
+    \subitem {inputfile\+\_\+txt.\+h}, \hyperpage{26}
+  \item {files\+Names\+Tab}
+    \subitem {Input\+Files}, \hyperpage{12}
+  \item {files\+Number}
+    \subitem {Input\+Files}, \hyperpage{12}
+  \item {files\+Sizes}
+    \subitem {Input\+Files}, \hyperpage{12}
+
+  \indexspace
+
+  \item {generate\+\_\+random\+\_\+int\+\_\+data}
+    \subitem {Input\+Files}, \hyperpage{11}
+  \item {get\+\_\+data}
+    \subitem {Node}, \hyperpage{16}
+
+  \indexspace
+
+  \item {head}
+    \subitem {Queue}, \hyperpage{19}
+  \item {head\+Ptr}
+    \subitem {List}, \hyperpage{14}
+
+  \indexspace
+
+  \item {inc/benchmark\+\_\+frm.\+h}, \hyperpage{25}
+  \item {inc/inputfile\+\_\+txt.\+h}, \hyperpage{25}
+  \item {inc/list.\+h}, \hyperpage{26}
+  \item {inc/list\+\_\+node.\+h}, \hyperpage{27}
+  \item {inc/queue.\+h}, \hyperpage{27}
+  \item {inc/stack.\+h}, \hyperpage{27}
+  \item {inc/tree.\+h}, \hyperpage{28}
+  \item {inc/tree\+\_\+node.\+h}, \hyperpage{28}
+  \item {Input\+Files}, \hyperpage{10}
+    \subitem {files\+Names\+Tab}, \hyperpage{12}
+    \subitem {files\+Number}, \hyperpage{12}
+    \subitem {files\+Sizes}, \hyperpage{12}
+    \subitem {generate\+\_\+random\+\_\+int\+\_\+data}, \hyperpage{11}
+    \subitem {Input\+Files}, \hyperpage{11}
+    \subitem {return\+\_\+file\+\_\+name}, \hyperpage{11}
+    \subitem {return\+\_\+file\+\_\+size}, \hyperpage{12}
+    \subitem {return\+\_\+number\+\_\+files}, \hyperpage{12}
+    \subitem {show\+\_\+info}, \hyperpage{12}
+  \item {inputfile\+\_\+txt.\+h}
+    \subitem {F\+I\+R\+S\+T\+\_\+\+A\+R\+G\+U\+M\+E\+N\+T}, 
+		\hyperpage{26}
+    \subitem {P\+R\+O\+G\+R\+A\+M\+\_\+\+N\+A\+M\+E}, \hyperpage{26}
+    \subitem {U\+N\+D\+E\+F\+\_\+\+V\+A\+L\+U\+E}, \hyperpage{26}
+  \item {is\+\_\+empty}
+    \subitem {Node\+B}, \hyperpage{17}
+    \subitem {Tree}, \hyperpage{22}
+
+  \indexspace
+
+  \item {L\+Node}, \hyperpage{15}
+  \item {left}
+    \subitem {Node\+B}, \hyperpage{18}
+  \item {List}
+    \subitem {$\sim$\+List}, \hyperpage{13}
+    \subitem {delete\+\_\+list}, \hyperpage{14}
+    \subitem {head\+Ptr}, \hyperpage{14}
+    \subitem {List}, \hyperpage{13}
+    \subitem {pop}, \hyperpage{14}
+    \subitem {pop\+\_\+front}, \hyperpage{14}
+    \subitem {push}, \hyperpage{14}
+    \subitem {push\+\_\+front}, \hyperpage{14}
+    \subitem {return\+\_\+head}, \hyperpage{14}
+    \subitem {size}, \hyperpage{14}
+    \subitem {tail\+Ptr}, \hyperpage{14}
+    \subitem {temp\+Ptr}, \hyperpage{14}
+  \item {List$<$ T $>$}, \hyperpage{12}
+
+  \indexspace
+
+  \item {next\+Node}
+    \subitem {Node}, \hyperpage{16}
+  \item {Node}
+    \subitem {$\sim$\+Node}, \hyperpage{16}
+    \subitem {get\+\_\+data}, \hyperpage{16}
+    \subitem {next\+Node}, \hyperpage{16}
+    \subitem {node\+Data}, \hyperpage{16}
+  \item {Node$<$ T $>$}, \hyperpage{15}
+  \item {Node\+B}
+    \subitem {$\sim$\+Node\+B}, \hyperpage{17}
+    \subitem {data}, \hyperpage{18}
+    \subitem {empty}, \hyperpage{18}
+    \subitem {is\+\_\+empty}, \hyperpage{17}
+    \subitem {left}, \hyperpage{18}
+    \subitem {Node\+B}, \hyperpage{17}
+    \subitem {parent}, \hyperpage{18}
+    \subitem {return\+\_\+left}, \hyperpage{17}
+    \subitem {return\+\_\+parent}, \hyperpage{17}
+    \subitem {return\+\_\+right}, \hyperpage{17}
+    \subitem {right}, \hyperpage{18}
+  \item {Node\+B$<$ T $>$}, \hyperpage{16}
+  \item {node\+Data}
+    \subitem {Node}, \hyperpage{16}
+
+  \indexspace
+
+  \item {P\+R\+O\+G\+R\+A\+M\+\_\+\+N\+A\+M\+E}
+    \subitem {inputfile\+\_\+txt.\+h}, \hyperpage{26}
+  \item {parent}
+    \subitem {Node\+B}, \hyperpage{18}
+  \item {pop}
+    \subitem {List}, \hyperpage{14}
+    \subitem {Tree}, \hyperpage{22}
+  \item {pop\+\_\+front}
+    \subitem {List}, \hyperpage{14}
+  \item {push}
+    \subitem {List}, \hyperpage{14}
+    \subitem {Queue}, \hyperpage{19}
+    \subitem {Stack}, \hyperpage{20}
+    \subitem {Tree}, \hyperpage{22}
+  \item {push\+\_\+front}
+    \subitem {List}, \hyperpage{14}
+
+  \indexspace
+
+  \item {Queue}
+    \subitem {add\+Count}, \hyperpage{19}
+    \subitem {head}, \hyperpage{19}
+    \subitem {push}, \hyperpage{19}
+    \subitem {queue}, \hyperpage{19}
+    \subitem {size}, \hyperpage{19}
+    \subitem {tail}, \hyperpage{19}
+  \item {queue}
+    \subitem {Queue}, \hyperpage{19}
+  \item {Queue$<$ T $>$}, \hyperpage{18}
+
+  \indexspace
+
+  \item {raport}
+    \subitem {Benchmark}, \hyperpage{9}
+  \item {return\+\_\+file\+\_\+name}
+    \subitem {Input\+Files}, \hyperpage{11}
+  \item {return\+\_\+file\+\_\+size}
+    \subitem {Input\+Files}, \hyperpage{12}
+  \item {return\+\_\+head}
+    \subitem {List}, \hyperpage{14}
+  \item {return\+\_\+left}
+    \subitem {Node\+B}, \hyperpage{17}
+  \item {return\+\_\+number\+\_\+files}
+    \subitem {Input\+Files}, \hyperpage{12}
+  \item {return\+\_\+parent}
+    \subitem {Node\+B}, \hyperpage{17}
+  \item {return\+\_\+right}
+    \subitem {Node\+B}, \hyperpage{17}
+  \item {right}
+    \subitem {Node\+B}, \hyperpage{18}
+  \item {root}
+    \subitem {Tree}, \hyperpage{23}
+
+  \indexspace
+
+  \item {S\+E\+C}
+    \subitem {benchmark\+\_\+frm.\+h}, \hyperpage{25}
+  \item {show\+\_\+info}
+    \subitem {Input\+Files}, \hyperpage{12}
+  \item {show\+\_\+tree}
+    \subitem {Tree}, \hyperpage{23}
+  \item {size}
+    \subitem {List}, \hyperpage{14}
+    \subitem {Queue}, \hyperpage{19}
+    \subitem {Stack}, \hyperpage{21}
+    \subitem {Tree}, \hyperpage{23}
+  \item {size\+Stc}
+    \subitem {Stack}, \hyperpage{21}
+  \item {size\+Tre}
+    \subitem {Tree}, \hyperpage{23}
+  \item {src/benchmark\+\_\+frm.\+cpp}, \hyperpage{28}
+  \item {src/inputfile\+\_\+txt.\+cpp}, \hyperpage{28}
+  \item {src/list.\+cpp}, \hyperpage{29}
+  \item {src/main.\+cpp}, \hyperpage{29}
+  \item {src/stack.\+cpp}, \hyperpage{29}
+  \item {src/tree.\+cpp}, \hyperpage{30}
+  \item {Stack}
+    \subitem {add\+Count}, \hyperpage{21}
+    \subitem {push}, \hyperpage{20}
+    \subitem {size}, \hyperpage{21}
+    \subitem {size\+Stc}, \hyperpage{21}
+    \subitem {Stack}, \hyperpage{20}
+    \subitem {stack}, \hyperpage{21}
+  \item {stack}
+    \subitem {Stack}, \hyperpage{21}
+  \item {Stack$<$ T $>$}, \hyperpage{20}
+
+  \indexspace
+
+  \item {tail}
+    \subitem {Queue}, \hyperpage{19}
+  \item {tail\+Ptr}
+    \subitem {List}, \hyperpage{14}
+  \item {temp\+Ptr}
+    \subitem {List}, \hyperpage{14}
+  \item {test}
+    \subitem {Benchmark}, \hyperpage{9}
+  \item {Tree}
+    \subitem {empty}, \hyperpage{23}
+    \subitem {is\+\_\+empty}, \hyperpage{22}
+    \subitem {pop}, \hyperpage{22}
+    \subitem {push}, \hyperpage{22}
+    \subitem {root}, \hyperpage{23}
+    \subitem {show\+\_\+tree}, \hyperpage{23}
+    \subitem {size}, \hyperpage{23}
+    \subitem {size\+Tre}, \hyperpage{23}
+    \subitem {Tree}, \hyperpage{22}
+  \item {Tree$<$ T $>$}, \hyperpage{21}
+
+  \indexspace
+
+  \item {U\+N\+D\+E\+F\+\_\+\+V\+A\+L\+U\+E}
+    \subitem {inputfile\+\_\+txt.\+h}, \hyperpage{26}
+
+\end{theindex}

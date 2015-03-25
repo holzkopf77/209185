@@ -32,6 +32,7 @@ public:
 
 		When stack is overload, automatticaly add one more place.
 		(Used vector abillity to adding new memory space in this case)
+		\param data object inserted to the stack
 	*/
 	void push(T data);
 
@@ -40,6 +41,7 @@ public:
 
 		When stack is overload, automatticaly add percent of old place as a added new memory.
 		After hitting fullness, multiply size of the vector twice.
+		\param data object inserted to the stack
 	*/
 	void push_prc(T data);
 	/*! \fn pop
@@ -47,6 +49,7 @@ public:
 	T pop();
 
 	/*!	\fn size 
+		\brief return size of the stack
 	*/
 	inline int size() {
 		return sizeStc;
@@ -62,12 +65,13 @@ public:
 		return out;
 	}
 private:
-	/*!	\var stackBox
+	/*!	\var stack
 		\brief Container for stack date.
 	*/
 	std::vector<T> stack;
 
 	/*! \var sizeStc 
+		\brief size of the stack
 	*/
 	int sizeStc;
 

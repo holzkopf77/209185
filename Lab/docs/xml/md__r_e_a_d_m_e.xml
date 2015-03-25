@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="md__r_e_a_d_m_e" kind="page">
+    <compoundname>md_README</compoundname>
+    <title>LAB 3 - TESTOWANIE STRUKTUR DANYCH - 209186</title>
+    <detaileddescription>
+<para>Obsługa następujących struktur danych:</para><para><orderedlist>
+<listitem><para>Stos<itemizedlist>
+<listitem><para>push: wrzucenie danych na góre stosu, gdy brak miejsca, dodaje jedno miejsce</para></listitem><listitem><para>push_prc: wrzucenie danych na góre stosu, gdy brak miejsca, podwaja stos</para></listitem><listitem><para>pop: ściągnięcie + zwrócenie danych z góry stosu</para></listitem><listitem><para>size: rozmiar stosu</para></listitem></itemizedlist>
+</para><para>Obsługuje wszystkie typu danych (szablony).</para></listitem></orderedlist>
+</para><para>2.Lista</para><para><itemizedlist>
+<listitem><para>push: wrzucenie danych na koniec listy</para></listitem><listitem><para>push_front: wrzucenie danych na początek listy</para></listitem><listitem><para>pop: usunięcie + zwrócenie elementu z końca listy</para></listitem><listitem><para>pop_front: usunięcie + zwrócenie elementu z początku listy</para></listitem><listitem><para>size: rozmiar listy</para></listitem></itemizedlist>
+</para><para>Obsługuje wszystkie typu danych (szablony).</para><para>3.Kolejka</para><para><itemizedlist>
+<listitem><para>push: wrzucenie danych na początek kolejki</para></listitem><listitem><para>pop: usunięcie danych z końca kolejki</para></listitem><listitem><para>size: rozmiar kolejki</para></listitem></itemizedlist>
+</para><para>Kolejka automatycznie zwiększa liczbę miejsc, jeśli pełna i wszystko zapełnione.</para><para>Kolejka automatycznie dodaje element na wolne miejsce, jeśli jest pełna i jest coś wolnego.</para><para>Kolejka nie usuwa miejsca po zwróceniu elementu, wsadza tam 0, a miejsce obsługuje kolejne dane.</para><para>Obsługuje wszystkie typu danych (szablony).</para><para>4.Drzewo binarne</para><para><itemizedlist>
+<listitem><para>push: wrzucenie elementu do drzewa</para></listitem><listitem><para>pop: usuwanie węzła z argumentem podanym w wyłowaniu funkcji (aktualnie usuwa poprawnie tylko węzły bez dzieci)</para></listitem><listitem><para>size: ilość węzłów drzewie (romiar drzewa)</para></listitem><listitem><para>show_tree: pokazanie zawartości pierwszych 3 poziomów drzewa</para></listitem><listitem><para>is_empty: sprawdzenie czy drzewo jest puste</para></listitem></itemizedlist>
+</para><para>Obsługuje wszystkie typu danych (szablony). </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

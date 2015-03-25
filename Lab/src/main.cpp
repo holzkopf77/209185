@@ -3,6 +3,7 @@
 	\brief A master file
 */
 #include <iostream>
+#include <typeinfo>
 
 #include "benchmark_frm.h"
 #include "inputfile_txt.h"
@@ -30,6 +31,7 @@ int main(int argc, char* argv[]){
 	openFile.generate_random_int_data();
 	/************file management***********/
 
+	//
 
 	Benchmark<Tree<int>> treeTest;
 	Benchmark<Stack<int>> stackTest;
@@ -46,6 +48,7 @@ int main(int argc, char* argv[]){
 	queueTest.test(queue, openFile);
 	listTest.test(list, openFile);
 
+	stackTest.raport(openFile);
 	std::cin.get();
 	return 0;
 }

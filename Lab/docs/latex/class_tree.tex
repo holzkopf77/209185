@@ -1,0 +1,159 @@
+\hypertarget{class_tree}{}\section{Tree$<$ T $>$ Class Template Reference}
+\label{class_tree}\index{Tree$<$ T $>$@{Tree$<$ T $>$}}
+
+
+{\ttfamily \#include $<$tree.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const bool \hyperlink{class_tree_aa119545d5d6150991f6fedd9d3228f3b}{is\+\_\+empty} ()
+\begin{DoxyCompactList}\small\item\em return info if the tree is empty \end{DoxyCompactList}\item 
+T \hyperlink{class_tree_ad6d219c36ddc01167033f023a1dcacb6}{pop} (T data)
+\begin{DoxyCompactList}\small\item\em delete node with data from argument, than return data from this node \end{DoxyCompactList}\item 
+void \hyperlink{class_tree_aa4770f34190c5fa521af4daeaa29897f}{push} (T data)
+\begin{DoxyCompactList}\small\item\em add new node to the tree \end{DoxyCompactList}\item 
+void \hyperlink{class_tree_a942e97d64f27142f8fa765fb2e5b1a2f}{show\+\_\+tree} ()
+\begin{DoxyCompactList}\small\item\em show 3 levels from tree, starting from root node. \end{DoxyCompactList}\item 
+const int \hyperlink{class_tree_aa3b52f331cae9b52dc5262fa33b09fc2}{size} ()
+\begin{DoxyCompactList}\small\item\em return size of the tree \end{DoxyCompactList}\item 
+\hyperlink{class_tree_a30ebe31999547d31fea5b40cc805f6a2}{Tree} ()
+\begin{DoxyCompactList}\small\item\em A constructor (default) \end{DoxyCompactList}\item 
+\hypertarget{class_tree_ade4d2a6282967bbe2ad5157e056d1562}{}{\bfseries Tree} (T data)\label{class_tree_ade4d2a6282967bbe2ad5157e056d1562}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_tree_a6a8efc96e49c135f3782ee170c588e23}{empty}
+\item 
+\hyperlink{class_node_b}{Node\+B}$<$ T $>$ $\ast$ \hyperlink{class_tree_a5d88060c2f8354c3682d8fbe5a17ae8e}{root}
+\begin{DoxyCompactList}\small\item\em Root node of the tree. \end{DoxyCompactList}\item 
+int \hyperlink{class_tree_ab7a8d3c9f9227a1a72cdd0e4d44b4c0a}{size\+Tre}
+\begin{DoxyCompactList}\small\item\em Quantity of nodes from the tree (with root node) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class Tree$<$ T $>$}
+
+Own binary tree class, based on information from book\+: \char`\"{}\+Data structure and algorithms in C++\char`\"{}-\/ Goodrich Time tested in constructor. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_tree_a30ebe31999547d31fea5b40cc805f6a2}{}\index{Tree@{Tree}!Tree@{Tree}}
+\index{Tree@{Tree}!Tree@{Tree}}
+\subsubsection[{Tree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Tree}$<$ T $>$\+::{\bf Tree} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_tree_a30ebe31999547d31fea5b40cc805f6a2}
+
+
+A constructor (default) 
+
+A constructor.
+
+Create tree with only root node ( init with 0 in this type constructor)
+
+Create tree with only root node ( init with data from argument) 
+\begin{DoxyParams}{Parameters}
+{\em data} & new data inserted to the node \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_tree_aa119545d5d6150991f6fedd9d3228f3b}{}\index{Tree@{Tree}!is\+\_\+empty@{is\+\_\+empty}}
+\index{is\+\_\+empty@{is\+\_\+empty}!Tree@{Tree}}
+\subsubsection[{is\+\_\+empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Tree}$<$ T $>$\+::is\+\_\+empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_tree_aa119545d5d6150991f6fedd9d3228f3b}
+
+
+return info if the tree is empty 
+
+\hypertarget{class_tree_ad6d219c36ddc01167033f023a1dcacb6}{}\index{Tree@{Tree}!pop@{pop}}
+\index{pop@{pop}!Tree@{Tree}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ T {\bf Tree}$<$ T $>$\+::pop (
+\begin{DoxyParamCaption}
+\item[{T}]{data}
+\end{DoxyParamCaption}
+)}\label{class_tree_ad6d219c36ddc01167033f023a1dcacb6}
+
+
+delete node with data from argument, than return data from this node 
+
+Find data inside the tree than delete node with it, reorganize the tree. If pop from tree with size = 1, return value from root node, than set it to 0.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & element with data will be deleted \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_tree_aa4770f34190c5fa521af4daeaa29897f}{}\index{Tree@{Tree}!push@{push}}
+\index{push@{push}!Tree@{Tree}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Tree}$<$ T $>$\+::push (
+\begin{DoxyParamCaption}
+\item[{T}]{data}
+\end{DoxyParamCaption}
+)}\label{class_tree_aa4770f34190c5fa521af4daeaa29897f}
+
+
+add new node to the tree 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & new data inserted to the node \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_tree_a942e97d64f27142f8fa765fb2e5b1a2f}{}\index{Tree@{Tree}!show\+\_\+tree@{show\+\_\+tree}}
+\index{show\+\_\+tree@{show\+\_\+tree}!Tree@{Tree}}
+\subsubsection[{show\+\_\+tree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Tree}$<$ T $>$\+::show\+\_\+tree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_tree_a942e97d64f27142f8fa765fb2e5b1a2f}
+
+
+show 3 levels from tree, starting from root node. 
+
+\hypertarget{class_tree_aa3b52f331cae9b52dc5262fa33b09fc2}{}\index{Tree@{Tree}!size@{size}}
+\index{size@{size}!Tree@{Tree}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Tree}$<$ T $>$\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_tree_aa3b52f331cae9b52dc5262fa33b09fc2}
+
+
+return size of the tree 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_tree_a6a8efc96e49c135f3782ee170c588e23}{}\index{Tree@{Tree}!empty@{empty}}
+\index{empty@{empty}!Tree@{Tree}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Tree}$<$ T $>$\+::empty\hspace{0.3cm}{\ttfamily [private]}}\label{class_tree_a6a8efc96e49c135f3782ee170c588e23}
+True -\/ tree has only default root node with 0; False -\/ tree has something inside
+
+if there is only init root node with something from user, still false \hypertarget{class_tree_a5d88060c2f8354c3682d8fbe5a17ae8e}{}\index{Tree@{Tree}!root@{root}}
+\index{root@{root}!Tree@{Tree}}
+\subsubsection[{root}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Tree}$<$ T $>$\+::root\hspace{0.3cm}{\ttfamily [private]}}\label{class_tree_a5d88060c2f8354c3682d8fbe5a17ae8e}
+
+
+Root node of the tree. 
+
+\hypertarget{class_tree_ab7a8d3c9f9227a1a72cdd0e4d44b4c0a}{}\index{Tree@{Tree}!size\+Tre@{size\+Tre}}
+\index{size\+Tre@{size\+Tre}!Tree@{Tree}}
+\subsubsection[{size\+Tre}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Tree}$<$ T $>$\+::size\+Tre\hspace{0.3cm}{\ttfamily [private]}}\label{class_tree_ab7a8d3c9f9227a1a72cdd0e4d44b4c0a}
+
+
+Quantity of nodes from the tree (with root node) 
+
+if root node has default value = 0 $<$-\/ size\+Tre = 0 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{tree_8h}{tree.\+h}\item 
+src/\hyperlink{tree_8cpp}{tree.\+cpp}\end{DoxyCompactItemize}

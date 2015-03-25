@@ -55,79 +55,24 @@ long double Benchmark<T>::average(std::vector<long double>times){
 	return avrg;
 }
 
-
-
-
-
-
-
-/*
-void Benchmark::generateRaport(long double nextTime, int size){
+template<class T>
+void Benchmark<T>::raport(InputFiles& files){
 	
-	std::ofstream raportFile;
-	std::string stringNextTime = std::to_string(nextTime);
+	std::ofstream raportFile; 
+	std::string stringNextTime;
+	int fileCount = 0;
 
 	// .xls as excel file format
 	raportFile.open("test.xls", std::ios::in | std::ios::app);
-		assert(raportFile.is_open() && ("I can't open file."));
+	assert(raportFile.is_open() && ("I can't open file."));
 	// need to change '.' on ',' due to excel string format 
-	boost::algorithm::replace_first(stringNextTime, ".", ",");
-	
-	raportFile << size << "\n" << stringNextTime << "\n";
+
+	for (int i = 0; i < avrTestTimes.size();i++){
+		stringNextTime = std::to_string(avrTestTimes[fileCount]);
+		boost::algorithm::replace_first(stringNextTime, ".", ",");
+		raportFile << files.return_file_size(fileCount) << "\n" << stringNextTime << "\n";
+		++fileCount;
+	}
+
 	raportFile.close();
 }
-
-void Benchmark::generateRaport(long double avgTime, int size, std::string fileName, data_type type){
-	std::ofstream raportFile;
-	std::string stringNextTime = std::to_string(avgTime);
-
-	if (type == BIN_TREE){
-		// .xls as excel file format
-		raportFile.open("test_btree.xls", std::ios::in | std::ios::app);
-		assert(raportFile.is_open() && ("I can't open file."));
-		// need to change '.' on ',' due to excel string format 
-		boost::algorithm::replace_first(stringNextTime, ".", ",");
-
-		raportFile << size << "\n" << stringNextTime << "\n";
-		raportFile.close();
-
-		std::cout << "(BinaryTree) For file " << "> " << fileName << " <" << " (size: " << size << ")" << " average test time (10 times) was: " << avgTime << std::endl;
-	}
-	else if (type == QUEUE){
-		// .xls as excel file format
-		raportFile.open("test_queue.xls", std::ios::in | std::ios::app);
-		assert(raportFile.is_open() && ("I can't open file."));
-		// need to change '.' on ',' due to excel string format 
-		boost::algorithm::replace_first(stringNextTime, ".", ",");
-
-		raportFile << size << "\n" << stringNextTime << "\n";
-		raportFile.close();
-
-		std::cout << "(Queue) For file " << "> " << fileName << " <" << " (size: " << size << ")" << " average test time (10 times) was: " << avgTime << std::endl;
-	}
-	else if (type == LIST){
-		// .xls as excel file format
-		raportFile.open("test_list.xls", std::ios::in | std::ios::app);
-			assert(raportFile.is_open() && ("I can't open file."));
-		// need to change '.' on ',' due to excel string format 
-		boost::algorithm::replace_first(stringNextTime, ".", ",");
-
-		raportFile << size << "\n" << stringNextTime << "\n";
-		raportFile.close();
-
-		std::cout << "(List) For file " << "> " << fileName << " <" << " (size: " << size << ")" << " average test time (10 times) was: " << avgTime << std::endl;
-	}
-	else if (type == STACK){
-		// .xls as excel file format
-		raportFile.open("test_stack.xls", std::ios::in | std::ios::app);
-		assert(raportFile.is_open() && ("I can't open file."));
-		// need to change '.' on ',' due to excel string format 
-		boost::algorithm::replace_first(stringNextTime, ".", ",");
-
-		raportFile << size << "\n" << stringNextTime << "\n";
-		raportFile.close();
-
-		std::cout << "(Stack) For file " << "> " << fileName << " <" << " (size: " << size << ")" << " average test time (10 times) was: " << avgTime << std::endl;
-	}
-}
-*/

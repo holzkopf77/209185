@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="class_tree" kind="class" language="C++" prot="public">
+    <compoundname>Tree</compoundname>
+    <includes refid="tree_8h" local="no">tree.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_tree_1a6a8efc96e49c135f3782ee170c588e23" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>Tree&lt; T &gt;::empty</definition>
+        <argsstring></argsstring>
+        <name>empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True - tree has only default root node with 0; False - tree has something inside</para><para>if there is only init root node with something from user, still false </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/tree.h" line="98" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/tree.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_tree_1a5d88060c2f8354c3682d8fbe5a17ae8e" prot="private" static="no" mutable="no">
+        <type><ref refid="class_node_b" kindref="compound">NodeB</ref>&lt; T &gt; *</type>
+        <definition>Tree&lt; T &gt;::root</definition>
+        <argsstring></argsstring>
+        <name>root</name>
+        <briefdescription>
+<para>Root node of the tree. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/tree.h" line="82" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/tree.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_tree_1ab7a8d3c9f9227a1a72cdd0e4d44b4c0a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>Tree&lt; T &gt;::sizeTre</definition>
+        <argsstring></argsstring>
+        <name>sizeTre</name>
+        <briefdescription>
+<para>Quantity of nodes from the tree (with root node) </para>        </briefdescription>
+        <detaileddescription>
+<para>if root node has default value = 0 &lt;- sizeTre = 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/tree.h" line="89" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/tree.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_tree_1aa119545d5d6150991f6fedd9d3228f3b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const bool</type>
+        <definition>Tree&lt; T &gt;::is_empty</definition>
+        <argsstring>()</argsstring>
+        <name>is_empty</name>
+        <briefdescription>
+<para>return info if the tree is empty </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/tree.h" line="67" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/tree.h" bodystart="67" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tree_1ad6d219c36ddc01167033f023a1dcacb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>T Tree&lt; T &gt;::pop</definition>
+        <argsstring>(T data)</argsstring>
+        <name>pop</name>
+        <param>
+          <type>T</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>delete node with data from argument, than return data from this node </para>        </briefdescription>
+        <detaileddescription>
+<para>Find data inside the tree than delete node with it, reorganize the tree. If pop from tree with size = 1, return value from root node, than set it to 0.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>element with data will be deleted </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/tree.h" line="57" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/src/tree.cpp" bodystart="64" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tree_1aa4770f34190c5fa521af4daeaa29897f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Tree&lt; T &gt;::push</definition>
+        <argsstring>(T data)</argsstring>
+        <name>push</name>
+        <param>
+          <type>T</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>add new node to the tree </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new data inserted to the node </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/tree.h" line="47" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/src/tree.cpp" bodystart="25" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tree_1a942e97d64f27142f8fa765fb2e5b1a2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Tree&lt; T &gt;::show_tree</definition>
+        <argsstring>()</argsstring>
+        <name>show_tree</name>
+        <briefdescription>
+<para>show 3 levels from tree, starting from root node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/tree.h" line="62" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/src/tree.cpp" bodystart="8" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tree_1aa3b52f331cae9b52dc5262fa33b09fc2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const int</type>
+        <definition>Tree&lt; T &gt;::size</definition>
+        <argsstring>()</argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>return size of the tree </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/tree.h" line="74" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/tree.h" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tree_1a30ebe31999547d31fea5b40cc805f6a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Tree&lt; T &gt;::Tree</definition>
+        <argsstring>()</argsstring>
+        <name>Tree</name>
+        <briefdescription>
+<para>A constructor (default) </para>        </briefdescription>
+        <detaileddescription>
+<para>A constructor.</para><para>Create tree with only root node ( init with 0 in this type constructor)</para><para>Create tree with only root node ( init with data from argument) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new data inserted to the node </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/tree.h" line="25" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/tree.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tree_1ade4d2a6282967bbe2ad5157e056d1562" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Tree&lt; T &gt;::Tree</definition>
+        <argsstring>(T data)</argsstring>
+        <name>Tree</name>
+        <param>
+          <type>T</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/tree.h" line="33" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/tree.h" bodystart="33" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Own binary tree class, based on information from book: &quot;Data structure and algorithms in C++&quot;- Goodrich Time tested in constructor. </para>    </detaileddescription>
+    <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/tree.h" line="18" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/tree.h" bodystart="18" bodyend="99"/>
+    <listofallmembers>
+      <member refid="class_tree_1a6a8efc96e49c135f3782ee170c588e23" prot="private" virt="non-virtual"><scope>Tree</scope><name>empty</name></member>
+      <member refid="class_tree_1aa119545d5d6150991f6fedd9d3228f3b" prot="public" virt="non-virtual"><scope>Tree</scope><name>is_empty</name></member>
+      <member refid="class_tree_1ad6d219c36ddc01167033f023a1dcacb6" prot="public" virt="non-virtual"><scope>Tree</scope><name>pop</name></member>
+      <member refid="class_tree_1aa4770f34190c5fa521af4daeaa29897f" prot="public" virt="non-virtual"><scope>Tree</scope><name>push</name></member>
+      <member refid="class_tree_1a5d88060c2f8354c3682d8fbe5a17ae8e" prot="private" virt="non-virtual"><scope>Tree</scope><name>root</name></member>
+      <member refid="class_tree_1a942e97d64f27142f8fa765fb2e5b1a2f" prot="public" virt="non-virtual"><scope>Tree</scope><name>show_tree</name></member>
+      <member refid="class_tree_1aa3b52f331cae9b52dc5262fa33b09fc2" prot="public" virt="non-virtual"><scope>Tree</scope><name>size</name></member>
+      <member refid="class_tree_1ab7a8d3c9f9227a1a72cdd0e4d44b4c0a" prot="private" virt="non-virtual"><scope>Tree</scope><name>sizeTre</name></member>
+      <member refid="class_tree_1a30ebe31999547d31fea5b40cc805f6a2" prot="public" virt="non-virtual"><scope>Tree</scope><name>Tree</name></member>
+      <member refid="class_tree_1ade4d2a6282967bbe2ad5157e056d1562" prot="public" virt="non-virtual"><scope>Tree</scope><name>Tree</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

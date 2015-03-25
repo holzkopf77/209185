@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="class_stack" kind="class" language="C++" prot="public">
+    <compoundname>Stack</compoundname>
+    <includes refid="stack_8h" local="no">stack.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_stack_1a1d8a45347230c7da1b7ad93b846f3b7e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>Stack&lt; T &gt;::addCount</definition>
+        <argsstring></argsstring>
+        <name>addCount</name>
+        <briefdescription>
+<para>Counter of elements added to the vector. </para>        </briefdescription>
+        <detaileddescription>
+<para>Used in push_prc, if addCount == size, dupcilate vector. Testing purpose. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/stack.h" line="84" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/stack.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_stack_1a9e4b1d3525fd1febea119fb92610d207" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>Stack&lt; T &gt;::sizeStc</definition>
+        <argsstring></argsstring>
+        <name>sizeStc</name>
+        <briefdescription>
+<para>size of the stack </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/stack.h" line="76" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/stack.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_stack_1ae2364efb487e7798c28a9c33a8e64f7a" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; T &gt;</type>
+        <definition>Stack&lt; T &gt;::stack</definition>
+        <argsstring></argsstring>
+        <name>stack</name>
+        <briefdescription>
+<para>Container for stack date. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/stack.h" line="71" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/stack.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_stack_1aa2ea0e8c3293648589dd734d52487408" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>T Stack&lt; T &gt;::pop</definition>
+        <argsstring>()</argsstring>
+        <name>pop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/stack.h" line="49" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/src/stack.cpp" bodystart="28" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stack_1a5a629b74999375d2751ce88eaf24f78e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stack&lt; T &gt;::push</definition>
+        <argsstring>(T data)</argsstring>
+        <name>push</name>
+        <param>
+          <type>T</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Puts one object on the stack. </para>        </briefdescription>
+        <detaileddescription>
+<para>When stack is overload, automatticaly add one more place. (Used vector abillity to adding new memory space in this case) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object inserted to the stack</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+When stack is overload, automatticaly add percent of old place as a added new memory. After hitting fullness, multiply size of the vector twice. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object inserted to the stack </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/stack.h" line="37" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/src/stack.cpp" bodystart="7" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stack_1adee3fd0171b575c5ffad38fe543af1e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stack&lt; T &gt;::push_prc</definition>
+        <argsstring>(T data)</argsstring>
+        <name>push_prc</name>
+        <param>
+          <type>T</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/stack.h" line="46" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/src/stack.cpp" bodystart="16" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stack_1a635bef053184eb267c919982390ee18f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>Stack&lt; T &gt;::size</definition>
+        <argsstring>()</argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>return size of the stack </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/stack.h" line="54" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/stack.h" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stack_1aefee698059467258bbd79045aca62a63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Stack&lt; T &gt;::Stack</definition>
+        <argsstring>()</argsstring>
+        <name>Stack</name>
+        <briefdescription>
+<para>Create stack memory, assign size of the stack. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stackSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of the new stack </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/stack.h" line="21" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/stack.h" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stack_1adaae7700876392c39fd797d685463b86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Stack&lt; T &gt;::Stack</definition>
+        <argsstring>(int stackSize)</argsstring>
+        <name>Stack</name>
+        <param>
+          <type>int</type>
+          <declname>stackSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/stack.h" line="28" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/stack.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_stack_1abe90d193ce343c152f2e9c46f17dc7de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, const Stack &amp;stack)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_stack" kindref="compound">Stack</ref> &amp;</type>
+          <declname>stack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/stack.h" line="61" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/stack.h" bodystart="61" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Own implementation of stack. As simple as possible. </para>    </detaileddescription>
+    <location file="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/stack.h" line="16" column="1" bodyfile="C:/Users/Daniel/Desktop/myStuff/209185/209185/Lab/inc/stack.h" bodystart="16" bodyend="85"/>
+    <listofallmembers>
+      <member refid="class_stack_1a1d8a45347230c7da1b7ad93b846f3b7e" prot="private" virt="non-virtual"><scope>Stack</scope><name>addCount</name></member>
+      <member refid="class_stack_1abe90d193ce343c152f2e9c46f17dc7de" prot="public" virt="non-virtual"><scope>Stack</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_stack_1aa2ea0e8c3293648589dd734d52487408" prot="public" virt="non-virtual"><scope>Stack</scope><name>pop</name></member>
+      <member refid="class_stack_1a5a629b74999375d2751ce88eaf24f78e" prot="public" virt="non-virtual"><scope>Stack</scope><name>push</name></member>
+      <member refid="class_stack_1adee3fd0171b575c5ffad38fe543af1e9" prot="public" virt="non-virtual"><scope>Stack</scope><name>push_prc</name></member>
+      <member refid="class_stack_1a635bef053184eb267c919982390ee18f" prot="public" virt="non-virtual"><scope>Stack</scope><name>size</name></member>
+      <member refid="class_stack_1a9e4b1d3525fd1febea119fb92610d207" prot="private" virt="non-virtual"><scope>Stack</scope><name>sizeStc</name></member>
+      <member refid="class_stack_1aefee698059467258bbd79045aca62a63" prot="public" virt="non-virtual"><scope>Stack</scope><name>Stack</name></member>
+      <member refid="class_stack_1adaae7700876392c39fd797d685463b86" prot="public" virt="non-virtual"><scope>Stack</scope><name>Stack</name></member>
+      <member refid="class_stack_1ae2364efb487e7798c28a9c33a8e64f7a" prot="private" virt="non-virtual"><scope>Stack</scope><name>stack</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
