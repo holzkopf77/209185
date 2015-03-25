@@ -62,7 +62,10 @@ Obsługa następujących struktur danych:
 
 Benchmark:
 
-  test: sprawdza czas wypełniania sturuktury danymi z wygenerowanych plikow ( każdy test wykonuje 10 razy i uśrednia wynik)
+  - test: sprawdza czas wypełniania sturuktury danymi z wygenerowanych plikow ( każdy test wykonuje 10 razy i uśrednia wynik)
+  
+  - raport: generuje raport da podanej struktury ( UWAGA: NADPISUJE STARE RAPORTY ) 
+  
 
 --
 Wywołanie:
