@@ -57,3 +57,16 @@ Obsługa następujących struktur danych:
   - is_empty: sprawdzenie czy drzewo jest puste
 
  Obsługuje wszystkie typu danych (szablony).
+
+--
+
+Benchmark:
+  
+    test: sprawdza czas wypełniania sturuktury danymi z wygenerowanych plikow ( każdy test wykonuje 10 razy i uśrednia wynik)
+
+--
+Wywołanie:
+  ./nazwa_programu [1 10 100 100 ... ]
+  
+  1 10 100 ... to rozmiary kolejnych wygenerowanych plików z losowymi wartościami całkowitymi
+--
