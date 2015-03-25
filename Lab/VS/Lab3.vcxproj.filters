@@ -36,6 +36,9 @@
     <ClInclude Include="..\inc\tree_node.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\inc\benchmark_frm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\inputfile_txt.cpp">
@@ -54,6 +57,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\src\tree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\benchmark_frm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

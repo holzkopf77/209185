@@ -37,9 +37,7 @@ public:
 
 		Delete all nodes, all pointers = NULL;
 	*/
-	~Tree(){
-		//TODO
-	}
+	//~Tree();
 
 	/*! \fn push
 		\brief add new node to the tree

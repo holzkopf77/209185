@@ -67,6 +67,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\inc\benchmark_frm.h" />
     <ClInclude Include="..\inc\inputfile_txt.h" />
     <ClInclude Include="..\inc\list.h" />
     <ClInclude Include="..\inc\list_node.h" />
@@ -76,6 +77,7 @@
     <ClInclude Include="..\inc\tree_node.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\benchmark_frm.cpp" />
     <ClCompile Include="..\src\inputfile_txt.cpp" />
     <ClCompile Include="..\src\list.cpp" />
     <ClCompile Include="..\src\main.cpp" />

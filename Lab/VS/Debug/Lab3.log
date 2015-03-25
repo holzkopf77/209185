@@ -1,25 +1,19 @@
-﻿Build started 2015-03-25 00:18:37.
-     1>Project "C:\Users\Daniel\Desktop\myStuff\209185\209185\Lab\VS\lab3.vcxproj" on node 2 (Rebuild target(s)).
+﻿Build started 2015-03-25 01:51:18.
+     1>Project "C:\Users\Daniel\Desktop\myStuff\209185\209185\Lab\VS\lab3.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         E:\Programy\VisualStudio\VC\bin\CL.exe /c /IC:\Users\Daniel\Desktop\myStuff\209185\209185\Lab\inc /IE:\Programy\VisualStudio\VC\boost_1_57_0 /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\inputfile_txt.cpp ..\src\list.cpp ..\src\main.cpp ..\src\queue.cpp ..\src\stack.cpp ..\src\tree.cpp
-         tree.cpp
-         stack.cpp
-         queue.cpp
+         E:\Programy\VisualStudio\VC\bin\CL.exe /c /IC:\Users\Daniel\Desktop\myStuff\209185\209185\Lab\inc /IE:\Programy\VisualStudio\VC\boost_1_57_0 /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\main.cpp
          main.cpp
-         list.cpp
-         inputfile_txt.cpp
-     1>c:\users\daniel\desktop\mystuff\209185\209185\lab\src\inputfile_txt.cpp(54): warning C4244: 'initializing' : conversion from 'time_t' to 'int', possible loss of data
-         Generating Code...
        Link:
-         E:\Programy\VisualStudio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Daniel\Desktop\myStuff\209185\209185\Lab\VS\Debug\lab3.exe" /INCREMENTAL /NOLOGO /LIBPATH:E:\Programy\VisualStudio\VC\boost_1_57_0\stage\lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Daniel\Desktop\myStuff\209185\209185\Lab\VS\Debug\lab3.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Daniel\Desktop\myStuff\209185\209185\Lab\VS\Debug\lab3.lib" /MACHINE:X86 Debug\inputfile_txt.obj
+         E:\Programy\VisualStudio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Daniel\Desktop\myStuff\209185\209185\Lab\VS\Debug\lab3.exe" /INCREMENTAL /NOLOGO /LIBPATH:E:\Programy\VisualStudio\VC\boost_1_57_0\stage\lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Daniel\Desktop\myStuff\209185\209185\Lab\VS\Debug\lab3.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Daniel\Desktop\myStuff\209185\209185\Lab\VS\Debug\lab3.lib" /MACHINE:X86 Debug\benchmark_frm.obj
+         Debug\inputfile_txt.obj
          Debug\list.obj
          Debug\main.obj
          Debug\queue.obj
          Debug\stack.obj
          Debug\tree.obj
          lab3.vcxproj -> C:\Users\Daniel\Desktop\myStuff\209185\209185\Lab\VS\Debug\lab3.exe
-     1>Done Building Project "C:\Users\Daniel\Desktop\myStuff\209185\209185\Lab\VS\lab3.vcxproj" (Rebuild target(s)).
+     1>Done Building Project "C:\Users\Daniel\Desktop\myStuff\209185\209185\Lab\VS\lab3.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:17.43
+Time Elapsed 00:00:05.34
