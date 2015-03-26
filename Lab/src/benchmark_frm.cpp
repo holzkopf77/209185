@@ -23,7 +23,7 @@ void Benchmark<T>::test(T data_structur, InputFiles& files){
 			//start test here
 			boost::timer::cpu_timer startTime;
 			for (int k = 0; k < files.return_file_size(i); k++){
-			
+				//****TESTED ALGORITHM****//
 				file >> tempValue;
 				data_structur.push(tempValue);
 			}

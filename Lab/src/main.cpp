@@ -43,12 +43,9 @@ int main(int argc, char* argv[]){
 	Tree<int> tree;
 	Queue<int> queue;
 
-	stackTest.test(stack, openFile);
-	treeTest.test(tree, openFile);
-	queueTest.test(queue, openFile);
 	listTest.test(list, openFile);
+	listTest.raport(openFile);
 
-	stackTest.raport(openFile);
 	std::cin.get();
 	return 0;
 }
